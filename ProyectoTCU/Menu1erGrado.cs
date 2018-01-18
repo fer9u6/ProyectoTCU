@@ -13,6 +13,7 @@ namespace ProyectoTCU
     public partial class Menu1erGrado : Form
     {
         MenuPrincipal mp;
+        Parejas1erGrado par;
         public Menu1erGrado()
         {
             InitializeComponent();
@@ -42,6 +43,14 @@ namespace ProyectoTCU
         {
             mp = new MenuPrincipal();
             mp.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            par = new Parejas1erGrado();
+            par.Show();
             this.Hide();
         }
     }
