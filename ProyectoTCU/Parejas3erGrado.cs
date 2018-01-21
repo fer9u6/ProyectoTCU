@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Parejas1erGrado : Form
+    public partial class Parejas3erGrado : Form
     {
         Menu1erGrado m1grado;
 

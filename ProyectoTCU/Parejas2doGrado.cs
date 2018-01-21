@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Parejas1erGrado : Form
+    public partial class Parejas2doGrado : Form
     {
-        Menu1erGrado m1grado;
+        //Menu2doGrado m2grado;
 
         // firstClicked points to the first Label control 
         // that the player clicks, but it will be null 
@@ -82,7 +82,7 @@ namespace ProyectoTCU
             // and added to each label
 
             int count = 0;
-            foreach (Control control in tableLayoutPanel1erGrado.Controls)
+            foreach (Control control in tableLayoutPanel2doGrado.Controls)
             {
                 labels[count] = control as Label;
                 count++;
@@ -113,7 +113,7 @@ namespace ProyectoTCU
             }
         }
 
-        public Parejas1erGrado()
+        public Parejas2doGrado()
         {
             InitializeComponent();
 
@@ -238,7 +238,7 @@ namespace ProyectoTCU
         {
             // Go through all of the labels in the TableLayoutPanel, 
             // checking each one to see if its icon is matched
-            foreach (Control control in tableLayoutPanel1erGrado.Controls)
+            foreach (Control control in tableLayoutPanel2doGrado.Controls)
             {
                 Label iconLabel = control as Label;
 
@@ -254,10 +254,10 @@ namespace ProyectoTCU
             // any unmatched icons
             // That means the user won. Show a message and close the form
             MessageBox.Show("You matched all the icons!", "Congratulations");
-            InitializeComponent();
-            m1grado = new Menu1erGrado();
-            m1grado.Show();
-            this.Hide();
+            //InitializeComponent();
+            //m1grado = new Menu1erGrado();
+            //m1grado.Show();
+            //this.Hide();
             //Close();
         }
     }

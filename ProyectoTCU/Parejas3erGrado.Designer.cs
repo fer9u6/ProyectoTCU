@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTCU
 {
-    partial class Parejas1erGrado
+    partial class Parejas3erGrado
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tableLayoutPanel1erGrado = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3erGrado = new System.Windows.Forms.TableLayoutPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -47,44 +47,44 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tableLayoutPanel1erGrado.SuspendLayout();
+            this.tableLayoutPanel3erGrado.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1erGrado
+            // tableLayoutPanel3erGrado
             // 
-            this.tableLayoutPanel1erGrado.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tableLayoutPanel1erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
-            this.tableLayoutPanel1erGrado.ColumnCount = 4;
-            this.tableLayoutPanel1erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label16, 3, 3);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label15, 2, 3);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label14, 1, 3);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label13, 0, 3);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label12, 3, 2);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label11, 2, 2);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label10, 1, 2);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label9, 0, 2);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label8, 3, 1);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label7, 2, 1);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label6, 1, 1);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label5, 0, 1);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label4, 3, 0);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1erGrado.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1erGrado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1erGrado.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1erGrado.Name = "tableLayoutPanel1erGrado";
-            this.tableLayoutPanel1erGrado.RowCount = 4;
-            this.tableLayoutPanel1erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1erGrado.Size = new System.Drawing.Size(737, 487);
-            this.tableLayoutPanel1erGrado.TabIndex = 0;
+            this.tableLayoutPanel3erGrado.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tableLayoutPanel3erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
+            this.tableLayoutPanel3erGrado.ColumnCount = 4;
+            this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label16, 3, 3);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label15, 2, 3);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label14, 1, 3);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label13, 0, 3);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label12, 3, 2);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label11, 2, 2);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label10, 1, 2);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label9, 0, 2);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label8, 3, 1);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label7, 2, 1);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label6, 1, 1);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label5, 0, 1);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label4, 3, 0);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label3, 2, 0);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutPanel3erGrado.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel3erGrado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3erGrado.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3erGrado.Name = "tableLayoutPanel3erGrado";
+            this.tableLayoutPanel3erGrado.RowCount = 4;
+            this.tableLayoutPanel3erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3erGrado.Size = new System.Drawing.Size(737, 487);
+            this.tableLayoutPanel3erGrado.TabIndex = 0;
             // 
             // label16
             // 
@@ -288,17 +288,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 487);
-            this.Controls.Add(this.tableLayoutPanel1erGrado);
+            this.Controls.Add(this.tableLayoutPanel3erGrado);
             this.Name = "Parejas1erGrado";
             this.Text = "Matching Game";
-            this.tableLayoutPanel1erGrado.ResumeLayout(false);
+            this.tableLayoutPanel3erGrado.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1erGrado;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3erGrado;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Parejas1erGrado : Form
+    public partial class Parejas6toGrado : Form
     {
         Menu1erGrado m1grado;
 
@@ -82,7 +82,7 @@ namespace ProyectoTCU
             // and added to each label
 
             int count = 0;
-            foreach (Control control in tableLayoutPanel1erGrado.Controls)
+            foreach (Control control in tableLayoutPanel6toGrado.Controls)
             {
                 labels[count] = control as Label;
                 count++;
@@ -113,7 +113,7 @@ namespace ProyectoTCU
             }
         }
 
-        public Parejas1erGrado()
+        public Parejas6toGrado()
         {
             InitializeComponent();
 
@@ -238,7 +238,7 @@ namespace ProyectoTCU
         {
             // Go through all of the labels in the TableLayoutPanel, 
             // checking each one to see if its icon is matched
-            foreach (Control control in tableLayoutPanel1erGrado.Controls)
+            foreach (Control control in tableLayoutPanel6toGrado.Controls)
             {
                 Label iconLabel = control as Label;
 
