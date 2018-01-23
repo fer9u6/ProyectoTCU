@@ -29,14 +29,9 @@ namespace ProyectoTCU
         // Each of these letters is an interesting icon
         // in the Webdings font,
         // and each icon appears twice in this list
-        //YA NO TIENE UTILIDAD, ELIMINAR DESPUÉS
-        List<string> icons = new List<string>()
-        {
-            "!", "!", "N", "N", ",", ",", "k", "k",
-            "b", "b", "v", "v", "w", "w", "z", "z"
-        };
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
+
 
         Dictionary<string, int> pairsFamilySpanish = new Dictionary<string, int>()
         {
@@ -90,9 +85,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsFamilySpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(0, labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsFamilySpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -102,7 +98,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsFamilySpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(0, labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsFamilyEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés

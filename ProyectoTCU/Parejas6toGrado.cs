@@ -84,9 +84,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsCRSpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsCRSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -96,7 +97,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsCRSpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsCREnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés

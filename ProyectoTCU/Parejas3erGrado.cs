@@ -35,33 +35,37 @@ namespace ProyectoTCU
         Dictionary<string, int> pairsHouseSpanish = new Dictionary<string, int>()
         {
             {"cocina", 0}, {"baño", 1}, {"sala", 2}, {"cuarto", 3},
-            {"garaje", 4}, {"patio", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"garaje", 4}, {"patio", 5}, {"sillón", 6}, {"silla", 7},
+            {"mesa", 8}, {"cama", 9}, {"horno", 10}, {"ducha", 11},
+            {"inodoro", 12}, {"refrigeradora", 13}, {"televisión", 14},
+            {"librero", 15 }
         };
 
         Dictionary<string, int> pairsHouseEnglish = new Dictionary<string, int>()
         {
             {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
-            {"garage", 4}, {"patio???", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
+            {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
+            {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
+            {"bookshelf", 15 }
         };
 
         Dictionary<string, int> pairsHouseSpanishReal = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"cocina", 0}, {"baño", 1}, {"sala", 2}, {"cuarto", 3},
+            {"garaje", 4}, {"patio", 5}, {"sillón", 6}, {"silla", 7},
+            {"mesa", 8}, {"cama", 9}, {"horno", 10}, {"ducha", 11},
+            {"inodoro", 12}, {"refrigeradora", 13}, {"televisión", 14},
+            {"librero", 15 }
         };
 
         Dictionary<string, int> pairsHouseEnglishReal = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
+            {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
+            {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
+            {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
+            {"bookshelf", 15 }
         };
 
 
@@ -84,9 +88,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsHouseSpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsHouseSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -96,7 +101,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsHouseSpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(0, labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsHouseEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés

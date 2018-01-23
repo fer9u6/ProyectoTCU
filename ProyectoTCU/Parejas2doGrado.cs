@@ -37,32 +37,36 @@ namespace ProyectoTCU
         {
             {"hamburguesa", 0}, {"papas fritas", 1}, {"pollo frito", 2}, {"frituras", 3},
             {"lechuga", 4}, {"tomate", 5}, {"zanahoria", 6}, {"brócoli", 7},
-            {"zuchini", 8}, {"chayote", 9}, {"chocolate", 10}, {"carne de cerdo(?)", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"espinaca", 8}, {"cebolla", 9}, {"chocolate", 10}, {"dulces", 11},
+            {"garbanzos", 12}, {"lentejas", 13}, {"vainicas", 14}, {"helado", 15},
+            {"pop corn", 16}, {"galletas", 17}
         };
 
         Dictionary<string, int> pairsFoodEnglish = new Dictionary<string, int>()
         {
-            {"hamburger", 0}, {"french fries", 1}, {"fried chicken", 2}, {"", 3},
-            {"garage", 4}, {"patio???", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"hamburger", 0}, {"french fries", 1}, {"fried chicken", 2}, {"chips", 3},
+            {"lettuce", 4}, {"tomato", 5}, {"carrot", 6}, {"broccoli", 7},
+            {"spinach", 8}, {"onion", 9}, {"chocolate", 10}, {"sweets", 11},
+            {"chickpeas", 12}, {"lentils", 13}, {"green beans", 14}, {"ice cream", 15},
+            {"pop corn", 16}, {"cookies", 17}
         };
 
         Dictionary<string, int> pairsFoodSpanishReal = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"hamburguesa", 0}, {"papas fritas", 1}, {"pollo frito", 2}, {"frituras", 3},
+            {"lechuga", 4}, {"tomate", 5}, {"zanahoria", 6}, {"brócoli", 7},
+            {"espinaca", 8}, {"cebolla", 9}, {"chocolate", 10}, {"dulces", 11},
+            {"garbanzos", 12}, {"lentejas", 13}, {"vainicas", 14}, {"helado", 15},
+            {"pop corn", 16}, {"galletas", 17}
         };
 
         Dictionary<string, int> pairsFoodEnglishReal = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"hamburger", 0}, {"french fries", 1}, {"fried chicken", 2}, {"chips", 3},
+            {"lettuce", 4}, {"tomato", 5}, {"carrot", 6}, {"broccoli", 7},
+            {"spinach", 8}, {"onion", 9}, {"chocolate", 10}, {"sweets", 11},
+            {"chickpeas", 12}, {"lentils", 13}, {"green beans", 14}, {"ice cream", 15},
+            {"pop corn", 16}, {"cookies", 17}
         };
 
 
@@ -85,9 +89,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsFoodSpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(0, labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsFoodSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -97,7 +102,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsFoodSpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(0, labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsFoodEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés

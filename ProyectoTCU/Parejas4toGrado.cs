@@ -36,28 +36,28 @@ namespace ProyectoTCU
         {
             {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
             {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
-            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}
+            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}, {"vejiga", 11}
         };
 
         Dictionary<string, int> pairsOrgansEnglish = new Dictionary<string, int>()
         {
             {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
             {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
-            {"large intestine", 8}, {"", 9}, {"kidneys", 10}
+            {"large intestine", 8}, {"pancreas", 9}, {"kidneys", 10}, {"bladder", 11}
         };
 
         Dictionary<string, int> pairsOrgansSpanishReal = new Dictionary<string, int>()
         {
             {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
             {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
-            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}
+            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}, {"vejiga", 11}
         };
 
         Dictionary<string, int> pairsOrgansEnglishReal = new Dictionary<string, int>()
         {
-             {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
+            {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
             {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
-            {"large intestine", 8}, {"", 9}, {"kidneys", 10}
+            {"large intestine", 8}, {"pancreas", 9}, {"kidneys", 10}, {"bladder", 11}
         };
 
 
@@ -80,9 +80,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsOrgansSpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsOrgansSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -92,7 +93,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsOrgansSpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(0, labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsOrgansEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés

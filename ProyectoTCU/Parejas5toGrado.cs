@@ -36,7 +36,7 @@ namespace ProyectoTCU
         Dictionary<string, int> pairsNaturalSpanish = new Dictionary<string, int>()
         {
             {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
+            {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
             {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
             {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
         };
@@ -44,7 +44,7 @@ namespace ProyectoTCU
         Dictionary<string, int> pairsNaturalEnglish = new Dictionary<string, int>()
         {
             {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
+            {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
             {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
             {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
         };
@@ -85,9 +85,10 @@ namespace ProyectoTCU
 
             while (labels.Count != 0)  //string, int
             {
-                Random rand = new Random();
-                int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsNaturalSpanish.Count);
+                Random rand1 = new Random();
+                Random rand2 = new Random();
+                int randomNumber1 = rand1.Next(labels.Count);
+                int randomNumber2 = rand2.Next(0, pairsNaturalSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
@@ -97,7 +98,7 @@ namespace ProyectoTCU
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
                     pairsNaturalSpanish.Remove(pair.Key);
 
-                    randomNumber1 = random.Next(labels.Count);
+                    randomNumber1 = rand1.Next(0, labels.Count);
                     iconLabel = labels[randomNumber1];
                     pair = pairsNaturalEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés
