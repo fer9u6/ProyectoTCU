@@ -29,16 +29,10 @@ namespace ProyectoTCU
         // Each of these letters is an interesting icon
         // in the Webdings font,
         // and each icon appears twice in this list
-        //YA NO TIENE UTILIDAD, ELIMINAR DESPUÉS
-        List<string> icons = new List<string>()
-        {
-            "!", "!", "N", "N", ",", ",", "k", "k",
-            "b", "b", "v", "v", "w", "w", "z", "z"
-        };
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
 
-        Dictionary<string, int> pairsFamilySpanish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsCRSpanish = new Dictionary<string, int>()
         {
             {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
             {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
@@ -46,7 +40,7 @@ namespace ProyectoTCU
             {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
         };
 
-        Dictionary<string, int> pairsFamilyEnglish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsCREnglish = new Dictionary<string, int>()
         {
             {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
             {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
@@ -54,7 +48,7 @@ namespace ProyectoTCU
             {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
         };
 
-        Dictionary<string, int> pairsFamilySpanishReal = new Dictionary<string, int>()
+        Dictionary<string, int> pairsCRSpanishReal = new Dictionary<string, int>()
         {
             {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
             {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
@@ -62,7 +56,7 @@ namespace ProyectoTCU
             {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
         };
 
-        Dictionary<string, int> pairsFamilyEnglishReal = new Dictionary<string, int>()
+        Dictionary<string, int> pairsCREnglishReal = new Dictionary<string, int>()
         {
             {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
             {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
@@ -92,23 +86,23 @@ namespace ProyectoTCU
             {
                 Random rand = new Random();
                 int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsFamilySpanish.Count);
+                int randomNumber2 = rand.Next(0, pairsCRSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
                 {
-                    pair = pairsFamilySpanish.ElementAt(randomNumber2);
+                    pair = pairsCRSpanish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra en español
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
-                    pairsFamilySpanish.Remove(pair.Key);
+                    pairsCRSpanish.Remove(pair.Key);
 
                     randomNumber1 = random.Next(labels.Count);
                     iconLabel = labels[randomNumber1];
-                    pair = pairsFamilyEnglish.ElementAt(randomNumber2);
+                    pair = pairsCREnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés
 
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
-                    pairsFamilyEnglish.Remove(pair.Key);
+                    pairsCREnglish.Remove(pair.Key);
                 }
             }
         }
@@ -178,10 +172,10 @@ namespace ProyectoTCU
                 //firstClicked y secondClicked se ponen en null
 
                 //Si uno esta en español y el otro esté en ingles
-                if (pairsFamilySpanishReal.ContainsKey(firstClicked.Text) &&
-                   pairsFamilyEnglishReal.ContainsKey(secondClicked.Text))
+                if (pairsCRSpanishReal.ContainsKey(firstClicked.Text) &&
+                   pairsCREnglishReal.ContainsKey(secondClicked.Text))
                 {
-                    if (pairsFamilySpanishReal[firstClicked.Text] == pairsFamilyEnglishReal[secondClicked.Text])
+                    if (pairsCRSpanishReal[firstClicked.Text] == pairsCREnglishReal[secondClicked.Text])
                     {
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
@@ -193,10 +187,10 @@ namespace ProyectoTCU
                     }
                 }
                 else if //Si uno esta en ingles y el otro este en español
-                (pairsFamilyEnglishReal.ContainsKey(firstClicked.Text) &&
-                 pairsFamilySpanishReal.ContainsKey(secondClicked.Text))
+                (pairsCREnglishReal.ContainsKey(firstClicked.Text) &&
+                 pairsCRSpanishReal.ContainsKey(secondClicked.Text))
                 {
-                    if (pairsFamilyEnglishReal[firstClicked.Text] == pairsFamilySpanishReal[secondClicked.Text])
+                    if (pairsCREnglishReal[firstClicked.Text] == pairsCRSpanishReal[secondClicked.Text])
                     {
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;

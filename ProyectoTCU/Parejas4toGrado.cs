@@ -29,45 +29,35 @@ namespace ProyectoTCU
         // Each of these letters is an interesting icon
         // in the Webdings font,
         // and each icon appears twice in this list
-        //YA NO TIENE UTILIDAD, ELIMINAR DESPUÉS
-        List<string> icons = new List<string>()
-        {
-            "!", "!", "N", "N", ",", ",", "k", "k",
-            "b", "b", "v", "v", "w", "w", "z", "z"
-        };
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
 
-        Dictionary<string, int> pairsFamilySpanish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsOrgansSpanish = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
+            {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
+            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}
         };
 
-        Dictionary<string, int> pairsFamilyEnglish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsOrgansEnglish = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
+            {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
+            {"large intestine", 8}, {"", 9}, {"kidneys", 10}
         };
 
-        Dictionary<string, int> pairsFamilySpanishReal = new Dictionary<string, int>()
+        Dictionary<string, int> pairsOrgansSpanishReal = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
+            {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
+            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}
         };
 
-        Dictionary<string, int> pairsFamilyEnglishReal = new Dictionary<string, int>()
+        Dictionary<string, int> pairsOrgansEnglishReal = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+             {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
+            {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
+            {"large intestine", 8}, {"", 9}, {"kidneys", 10}
         };
 
 
@@ -92,23 +82,23 @@ namespace ProyectoTCU
             {
                 Random rand = new Random();
                 int randomNumber1 = random.Next(labels.Count);
-                int randomNumber2 = rand.Next(0, pairsFamilySpanish.Count);
+                int randomNumber2 = rand.Next(0, pairsOrgansSpanish.Count);
                 KeyValuePair<string, int> pair;
                 Label iconLabel = labels[randomNumber1];
                 if (iconLabel != null)
                 {
-                    pair = pairsFamilySpanish.ElementAt(randomNumber2);
+                    pair = pairsOrgansSpanish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra en español
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
-                    pairsFamilySpanish.Remove(pair.Key);
+                    pairsOrgansSpanish.Remove(pair.Key);
 
                     randomNumber1 = random.Next(labels.Count);
                     iconLabel = labels[randomNumber1];
-                    pair = pairsFamilyEnglish.ElementAt(randomNumber2);
+                    pair = pairsOrgansEnglish.ElementAt(randomNumber2);
                     iconLabel.Text = pair.Key; //Pone palabra equivalente en inglés
 
                     labels.Remove(iconLabel); //Se quita de la lista el espacio que se acaba de usar
-                    pairsFamilyEnglish.Remove(pair.Key);
+                    pairsOrgansEnglish.Remove(pair.Key);
                 }
             }
         }
@@ -178,10 +168,10 @@ namespace ProyectoTCU
                 //firstClicked y secondClicked se ponen en null
 
                 //Si uno esta en español y el otro esté en ingles
-                if (pairsFamilySpanishReal.ContainsKey(firstClicked.Text) &&
-                   pairsFamilyEnglishReal.ContainsKey(secondClicked.Text))
+                if (pairsOrgansSpanishReal.ContainsKey(firstClicked.Text) &&
+                   pairsOrgansEnglishReal.ContainsKey(secondClicked.Text))
                 {
-                    if (pairsFamilySpanishReal[firstClicked.Text] == pairsFamilyEnglishReal[secondClicked.Text])
+                    if (pairsOrgansSpanishReal[firstClicked.Text] == pairsOrgansEnglishReal[secondClicked.Text])
                     {
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
@@ -193,10 +183,10 @@ namespace ProyectoTCU
                     }
                 }
                 else if //Si uno esta en ingles y el otro este en español
-                (pairsFamilyEnglishReal.ContainsKey(firstClicked.Text) &&
-                 pairsFamilySpanishReal.ContainsKey(secondClicked.Text))
+                (pairsOrgansEnglishReal.ContainsKey(firstClicked.Text) &&
+                 pairsOrgansSpanishReal.ContainsKey(secondClicked.Text))
                 {
-                    if (pairsFamilyEnglishReal[firstClicked.Text] == pairsFamilySpanishReal[secondClicked.Text])
+                    if (pairsOrgansEnglishReal[firstClicked.Text] == pairsOrgansSpanishReal[secondClicked.Text])
                     {
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;

@@ -75,11 +75,11 @@
     <Compile Include="Parejas6toGrado.Designer.cs">
       <DependentUpon>Parejas6toGrado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Parejas4toGrado - Copia.cs">
+    <Compile Include="Parejas4toGrado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Parejas4toGrado - Copia.Designer.cs">
-      <DependentUpon>Parejas4toGrado - Copia.cs</DependentUpon>
+    <Compile Include="Parejas4toGrado.Designer.cs">
+      <DependentUpon>Parejas4toGrado.cs</DependentUpon>
     </Compile>
     <Compile Include="Parejas3erGrado.cs">
       <SubType>Form</SubType>
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="Parejas6toGrado.resx">
       <DependentUpon>Parejas6toGrado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Parejas4toGrado - Copia.resx">
-      <DependentUpon>Parejas4toGrado - Copia.cs</DependentUpon>
+    <EmbeddedResource Include="Parejas4toGrado.resx">
+      <DependentUpon>Parejas4toGrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parejas3erGrado.resx">
       <DependentUpon>Parejas3erGrado.cs</DependentUpon>
