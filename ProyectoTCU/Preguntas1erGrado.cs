@@ -15,8 +15,7 @@ namespace ProyectoTCU
         Menu1erGrado m1er;
 
         //int score = 0; //La verdad no quiero hacerlo con puntos
-        int i = -1; //La cantidad de preguntas hechas hasta el momento 
-        int a = 0; //Lleva cuenta de las respuestas que se tienen que usar en las opciones
+        int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
         string[] questions = new string[]
@@ -26,12 +25,24 @@ namespace ProyectoTCU
             "What is 18 backwards?"
         };
 
-        string[] answers = new string[] 
+        string[] answers = new string[]
         {
         "9", "81", "729", "2",
         "4", "2", "9", "1",
         "zebra", "aardvark", "fish", "gnu",
         "31", "81", "91", "88"
+        };
+
+        int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
+
+        //new string[]{ }
+        Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
+        {
+            { new string[]{"9", "81", "729", "2"}, 0}, {new string[]{"4", "2", "9", "1"}, 1},
+            { new string[]{"zebra", "aardvark", "fish", "gnu"}, 2}, {new string[]{"31", "81", "91", "88"}, 3}
+            /*{"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
+            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
+            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}*/
         };
 
         string[] quizAnswers = new string[] { "729", "9", "aardvark", "81" };
@@ -52,21 +63,27 @@ namespace ProyectoTCU
                 m1er = new Menu1erGrado();
                 m1er.Show();
                 this.Hide();
+                return;
             }
-                
+
+            KeyValuePair<string[], int> pair;
 
             labelQuant.Text = (i+1).ToString() + " / " + questions.Length.ToString();
 
-            labelQuestion.Text = questions[i]; 
+            labelQuestion.Text = questions[i];
 
-            labelAnswer1.Text = answers[a];
-            a++;
-            labelAnswer2.Text = answers[a];
-            a++;
-            labelAnswer3.Text = answers[a];
-            a++;
-            labelAnswer4.Text = answers[a];
-            a++;
+            int cant;
+            Random rand = new Random();
+            numbers = new int[4] { 0, 1, 2, 3 };
+            pair = allAnswers.ElementAt(i);
+            labelAnswer1.Text = pair.Key[numbers[cant = rand.Next(0, numbers.Length)]]; 
+            numbers = numbers.Where(w => w != numbers[cant]).ToArray();
+            labelAnswer2.Text = pair.Key[numbers[cant = rand.Next(0, numbers.Length)]];
+            numbers = numbers.Where(w => w != numbers[cant]).ToArray();
+            labelAnswer3.Text = pair.Key[numbers[cant = rand.Next(0, numbers.Length)]];
+            numbers = numbers.Where(w => w != numbers[cant]).ToArray();
+            labelAnswer4.Text = pair.Key[numbers[cant = rand.Next(0, numbers.Length)]];
+            //numbers = numbers.Where(w => w != numbers[cant]).ToArray();
 
             labelNext.Visible = false;
         }
@@ -129,7 +146,7 @@ namespace ProyectoTCU
 
             else
             {
-                MessageBox.Show("Incorrect.../nCorrect answer: " + quizAnswers[i]);
+                MessageBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i]);
                 asignarPregYResp();
 
             }

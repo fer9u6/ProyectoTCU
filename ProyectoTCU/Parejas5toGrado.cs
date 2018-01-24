@@ -33,23 +33,11 @@ namespace ProyectoTCU
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
 
-        Dictionary<string, int> pairsNaturalSpanish = new Dictionary<string, int>()
-        {
-            {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
-            {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
-        };
+        Dictionary<string, int> pairsNaturalSpanish = new Dictionary<string, int>();
 
-        Dictionary<string, int> pairsNaturalEnglish = new Dictionary<string, int>()
-        {
-            {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
-            {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
-        };
+        Dictionary<string, int> pairsNaturalEnglish = new Dictionary<string, int>();
 
-        Dictionary<string, int> pairsNaturalSpanishReal = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsNaturalSpanishReal = new Dictionary<string, int>()
         {
             {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
             {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
@@ -57,7 +45,7 @@ namespace ProyectoTCU
             {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
         };
 
-        Dictionary<string, int> pairsNaturalEnglishReal = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsNaturalEnglishReal = new Dictionary<string, int>()
         {
             {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
             {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
@@ -65,12 +53,29 @@ namespace ProyectoTCU
             {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
         };
 
+        int[] numbers = new int[pairsNaturalSpanishReal.Count];
 
         /// <summary>
         /// Assign each icon from the list of icons to a random square
         /// </summary>
         private void AssignIconsToSquares() //Agrega las figuras a la tabla en posiciones al azar
         {
+            pairsNaturalSpanish = new Dictionary<string, int>()
+            {
+                {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
+                {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
+                {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
+                {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            };
+
+            pairsNaturalEnglish = new Dictionary<string, int>()
+            {
+                {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
+                {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
+                {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
+                {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            };
+
             // The TableLayoutPanel has 16 labels,
             // and the icon list has 16 icons,
             // so an icon is pulled at random from the list

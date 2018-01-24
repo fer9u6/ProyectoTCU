@@ -32,7 +32,11 @@ namespace ProyectoTCU
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
 
-        Dictionary<string, int> pairsHouseSpanish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsHouseSpanish = new Dictionary<string, int>();
+
+        Dictionary<string, int> pairsHouseEnglish = new Dictionary<string, int>();
+
+        static Dictionary<string, int> pairsHouseSpanishReal = new Dictionary<string, int>()
         {
             {"cocina", 0}, {"baño", 1}, {"sala", 2}, {"cuarto", 3},
             {"garaje", 4}, {"patio", 5}, {"sillón", 6}, {"silla", 7},
@@ -41,7 +45,7 @@ namespace ProyectoTCU
             {"librero", 15 }
         };
 
-        Dictionary<string, int> pairsHouseEnglish = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsHouseEnglishReal = new Dictionary<string, int>()
         {
             {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
             {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
@@ -49,31 +53,30 @@ namespace ProyectoTCU
             {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
             {"bookshelf", 15 }
         };
-
-        Dictionary<string, int> pairsHouseSpanishReal = new Dictionary<string, int>()
-        {
-            {"cocina", 0}, {"baño", 1}, {"sala", 2}, {"cuarto", 3},
-            {"garaje", 4}, {"patio", 5}, {"sillón", 6}, {"silla", 7},
-            {"mesa", 8}, {"cama", 9}, {"horno", 10}, {"ducha", 11},
-            {"inodoro", 12}, {"refrigeradora", 13}, {"televisión", 14},
-            {"librero", 15 }
-        };
-
-        Dictionary<string, int> pairsHouseEnglishReal = new Dictionary<string, int>()
-        {
-            {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
-            {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
-            {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
-            {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
-            {"bookshelf", 15 }
-        };
-
 
         /// <summary>
         /// Assign each icon from the list of icons to a random square
         /// </summary>
         private void AssignIconsToSquares() //Agrega las figuras a la tabla en posiciones al azar
         {
+            pairsHouseSpanish = new Dictionary<string, int>()
+            {
+                {"cocina", 0}, {"baño", 1}, {"sala", 2}, {"cuarto", 3},
+                {"garaje", 4}, {"patio", 5}, {"sillón", 6}, {"silla", 7},
+                {"mesa", 8}, {"cama", 9}, {"horno", 10}, {"ducha", 11},
+                {"inodoro", 12}, {"refrigeradora", 13}, {"televisión", 14},
+                {"librero", 15 }
+            };
+
+            pairsHouseEnglish = new Dictionary<string, int>()
+            {
+                {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
+                {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
+                {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
+                {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
+                {"bookshelf", 15 }
+            };
+
             // The TableLayoutPanel has 16 labels,
             // and the icon list has 16 icons,
             // so an icon is pulled at random from the list

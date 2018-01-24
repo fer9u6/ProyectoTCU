@@ -32,28 +32,18 @@ namespace ProyectoTCU
 
         List<Label> labels = new List<Label>(new Label[16]); //Inicializada
 
-        Dictionary<string, int> pairsOrgansSpanish = new Dictionary<string, int>()
+        Dictionary<string, int> pairsOrgansSpanish = new Dictionary<string, int>();
+
+        Dictionary<string, int> pairsOrgansEnglish = new Dictionary<string, int>();
+
+        static Dictionary<string, int> pairsOrgansSpanishReal = new Dictionary<string, int>()
         {
             {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
             {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
             {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}, {"vejiga", 11}
         };
 
-        Dictionary<string, int> pairsOrgansEnglish = new Dictionary<string, int>()
-        {
-            {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
-            {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
-            {"large intestine", 8}, {"pancreas", 9}, {"kidneys", 10}, {"bladder", 11}
-        };
-
-        Dictionary<string, int> pairsOrgansSpanishReal = new Dictionary<string, int>()
-        {
-            {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
-            {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
-            {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}, {"vejiga", 11}
-        };
-
-        Dictionary<string, int> pairsOrgansEnglishReal = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsOrgansEnglishReal = new Dictionary<string, int>()
         {
             {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
             {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
@@ -66,6 +56,20 @@ namespace ProyectoTCU
         /// </summary>
         private void AssignIconsToSquares() //Agrega las figuras a la tabla en posiciones al azar
         {
+            pairsOrgansSpanish = new Dictionary<string, int>()
+            {
+                {"cerebro", 0}, {"ojos", 1}, {"piel", 2}, {"hígado", 3},
+                {"corazón", 4}, {"pulmones", 5}, {"estómago", 6}, {"intestino delgado", 7},
+                {"intestino grueso", 8}, {"páncreas", 9}, {"riñones", 10}, {"vejiga", 11}
+            };
+
+            pairsOrgansEnglish = new Dictionary<string, int>()
+            {
+                {"brain", 0}, {"eyes", 1}, {"skin", 2}, {"liver", 3},
+                {"heart", 4}, {"lungs", 5}, {"stomach", 6}, {"small intestine", 7},
+                {"large intestine", 8}, {"pancreas", 9}, {"kidneys", 10}, {"bladder", 11}
+            };
+
             // The TableLayoutPanel has 16 labels,
             // and the icon list has 16 icons,
             // so an icon is pulled at random from the list

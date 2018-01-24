@@ -51,7 +51,7 @@ namespace ProyectoTCU
             {"pop corn", 16}, {"cookies", 17}
         };
 
-        Dictionary<string, int> pairsFoodSpanishReal = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsFoodSpanishReal = new Dictionary<string, int>()
         {
             {"hamburguesa", 0}, {"papas fritas", 1}, {"pollo frito", 2}, {"frituras", 3},
             {"lechuga", 4}, {"tomate", 5}, {"zanahoria", 6}, {"brócoli", 7},
@@ -60,7 +60,7 @@ namespace ProyectoTCU
             {"pop corn", 16}, {"galletas", 17}
         };
 
-        Dictionary<string, int> pairsFoodEnglishReal = new Dictionary<string, int>()
+        static Dictionary<string, int> pairsFoodEnglishReal = new Dictionary<string, int>()
         {
             {"hamburger", 0}, {"french fries", 1}, {"fried chicken", 2}, {"chips", 3},
             {"lettuce", 4}, {"tomato", 5}, {"carrot", 6}, {"broccoli", 7},
@@ -69,12 +69,12 @@ namespace ProyectoTCU
             {"pop corn", 16}, {"cookies", 17}
         };
 
-
         /// <summary>
         /// Assign each icon from the list of icons to a random square
         /// </summary>
         private void AssignIconsToSquares() //Agrega las figuras a la tabla en posiciones al azar
         {
+
             // The TableLayoutPanel has 16 labels,
             // and the icon list has 16 icons,
             // so an icon is pulled at random from the list
