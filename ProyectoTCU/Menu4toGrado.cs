@@ -17,6 +17,9 @@ namespace ProyectoTCU
         socializingOrdenar so;
         MemoryMatch mm;
         Diseases d;
+        Parejas4toGrado par;
+        Preguntas4toGrado preg;
+
         public Menu4toGrado()
         {
             InitializeComponent();
@@ -73,6 +76,22 @@ namespace ProyectoTCU
             d = new Diseases();
             this.Hide();
             d.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            par = new Parejas4toGrado();
+            par.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            preg = new Preguntas4toGrado();
+            preg.Show();
+            this.Hide();
         }
     }
 }

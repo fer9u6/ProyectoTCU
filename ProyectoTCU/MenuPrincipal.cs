@@ -14,7 +14,11 @@ namespace ProyectoTCU
     public partial class MenuPrincipal : Form
     {
         Menu1erGrado m1grado;
+        Menu2doGrado m2grado;
+        Menu3erGrado m3grado;
         Menu4toGrado m4grado;
+        Menu5toGrado m5grado;
+        Menu6toGrado m6grado;
 
         public MenuPrincipal()
         {
@@ -36,12 +40,18 @@ namespace ProyectoTCU
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            InitializeComponent();
+            m2grado = new Menu2doGrado();
+            m2grado.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            InitializeComponent();
+            m3grado = new Menu3erGrado();
+            m3grado.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -49,6 +59,22 @@ namespace ProyectoTCU
             InitializeComponent();
             m4grado = new Menu4toGrado();
             m4grado.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m5grado = new Menu5toGrado();
+            m5grado.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m6grado = new Menu6toGrado();
+            m6grado.Show();
             this.Hide();
         }
 

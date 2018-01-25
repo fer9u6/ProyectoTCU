@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Menu1erGrado : Form
+    public partial class Menu3erGrado : Form
     {
         MenuPrincipal mp;
-        Classroom c;
-        Parejas1erGrado par;
-        Preguntas1erGrado preg;
+        Parejas3erGrado par;
+        Preguntas3erGrado preg;
 
-        public Menu1erGrado()
+        public Menu3erGrado()
         {
             InitializeComponent();
         }
@@ -29,9 +28,7 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            c = new Classroom();
-            this.Hide();
-            c.Show();
+
         }
 
         private void backB_MouseHover(object sender, EventArgs e)
@@ -54,7 +51,7 @@ namespace ProyectoTCU
         private void button3_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            par = new Parejas1erGrado();
+            par = new Parejas3erGrado();
             par.Show();
             this.Hide();
         }
@@ -62,7 +59,7 @@ namespace ProyectoTCU
         private void button4_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            preg = new Preguntas1erGrado();
+            preg = new Preguntas3erGrado();
             preg.Show();
             this.Hide();
         }

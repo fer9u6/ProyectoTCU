@@ -60,6 +60,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu2doGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu2doGrado.Designer.cs">
+      <DependentUpon>Menu2doGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu3erGrado.Designer.cs">
+      <DependentUpon>Menu3erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu5toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu5toGrado.Designer.cs">
+      <DependentUpon>Menu5toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu6toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu6toGrado.Designer.cs">
+      <DependentUpon>Menu6toGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classroom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +126,84 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMsgBox.Designer.cs">
+      <DependentUpon>MyMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas5toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas5toGrado.Designer.cs">
+      <DependentUpon>Parejas5toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas6toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas6toGrado.Designer.cs">
+      <DependentUpon>Parejas6toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas4toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas4toGrado.Designer.cs">
+      <DependentUpon>Parejas4toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas3erGrado.Designer.cs">
+      <DependentUpon>Parejas3erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas2doGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas2doGrado.Designer.cs">
+      <DependentUpon>Parejas2doGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parejas1erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parejas1erGrado.Designer.cs">
+      <DependentUpon>Parejas1erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas2doGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas2doGrado.Designer.cs">
+      <DependentUpon>Preguntas2doGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas3erGrado.Designer.cs">
+      <DependentUpon>Preguntas3erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas4toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas4toGrado.Designer.cs">
+      <DependentUpon>Preguntas4toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas5toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas5toGrado.Designer.cs">
+      <DependentUpon>Preguntas5toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas6toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas6toGrado.Designer.cs">
+      <DependentUpon>Preguntas6toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas1erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas1erGrado.Designer.cs">
+      <DependentUpon>Preguntas1erGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -139,6 +241,18 @@
     <EmbeddedResource Include="MemoryMatch.resx">
       <DependentUpon>MemoryMatch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu2doGrado.resx">
+      <DependentUpon>Menu2doGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu3erGrado.resx">
+      <DependentUpon>Menu3erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu5toGrado.resx">
+      <DependentUpon>Menu5toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu6toGrado.resx">
+      <DependentUpon>Menu6toGrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu1erGrado.resx">
       <DependentUpon>Menu1erGrado.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +261,45 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMsgBox.resx">
+      <DependentUpon>MyMsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas5toGrado.resx">
+      <DependentUpon>Parejas5toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas6toGrado.resx">
+      <DependentUpon>Parejas6toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas4toGrado.resx">
+      <DependentUpon>Parejas4toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas3erGrado.resx">
+      <DependentUpon>Parejas3erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas2doGrado.resx">
+      <DependentUpon>Parejas2doGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parejas1erGrado.resx">
+      <DependentUpon>Parejas1erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas2doGrado.resx">
+      <DependentUpon>Preguntas2doGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas3erGrado.resx">
+      <DependentUpon>Preguntas3erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas4toGrado.resx">
+      <DependentUpon>Preguntas4toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas5toGrado.resx">
+      <DependentUpon>Preguntas5toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas6toGrado.resx">
+      <DependentUpon>Preguntas6toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas1erGrado.resx">
+      <DependentUpon>Preguntas1erGrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
