@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu4toGrado));
-            this.backB = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,6 +36,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.backB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // backB
@@ -82,6 +83,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Keeping healthy\r\n";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -95,7 +97,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(314, 66);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Socializing\r\n";
+            this.button1.Text = "Socializing Training\r\n";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,8 +113,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(314, 66);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Socializing\r\n";
+            this.button3.Text = "Socializing 1\r\n\r\n";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -126,8 +129,40 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(315, 66);
             this.button4.TabIndex = 9;
-            this.button4.Text = "Keeping healthy\r\n";
+            this.button4.Text = "Memory Match\r\n\r\n";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(56, 279);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(209, 43);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Socializing 2\r\n\r\n";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // backB
+            // 
+            this.backB.BackColor = System.Drawing.Color.White;
+            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
+            this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backB.Location = new System.Drawing.Point(30, 32);
+            this.backB.Name = "backB";
+            this.backB.Size = new System.Drawing.Size(70, 60);
+            this.backB.TabIndex = 7;
+            this.backB.UseVisualStyleBackColor = false;
+            this.backB.Click += new System.EventHandler(this.backB_Click);
+            this.backB.MouseLeave += new System.EventHandler(this.backB_MouseLeave);
+            this.backB.MouseHover += new System.EventHandler(this.backB_MouseHover);
             // 
             // button5
             // 

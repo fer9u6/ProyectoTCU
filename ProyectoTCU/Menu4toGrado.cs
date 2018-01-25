@@ -13,6 +13,10 @@ namespace ProyectoTCU
     public partial class Menu4toGrado : Form
     {
         MenuPrincipal mp;
+        SocializingTraining st;
+        socializingOrdenar so;
+        MemoryMatch mm;
+        Diseases d;
         Parejas4toGrado par;
         Preguntas4toGrado preg;
 
@@ -40,7 +44,38 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
+            st = new SocializingTraining();
+            st.Show();
+            this.Hide();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TiposdeSaludos ts = new TiposdeSaludos();
+            this.Hide();
+            ts.Show();
+           
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            socializingOrdenar so = new socializingOrdenar();
+            this.Hide();
+            so.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            mm = new MemoryMatch();
+            this.Hide();
+            mm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            d = new Diseases();
+            this.Hide();
+            d.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
