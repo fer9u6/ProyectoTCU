@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Preguntas1erGrado : Form
+    public partial class Preguntas3erGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu3erGrado m3er;
 
         int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
@@ -20,45 +20,38 @@ namespace ProyectoTCU
 
         string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            "In the morning I take a shower, eat breakfast, ______________, and go to school.",
+            "When meeting new people you should ______________",
+            "__________ is a good place to meet new people:",
+            "At night, I eat dinner, ______________, brush my teeth and go to sleep.",
+            "When meeting someone new it is recommended to:",
+            "I brush my teeth in the ______________.",
+            "You can find the armchairs in the ______________.",
+            "I sleep in the ______________.",
+            "I eat dinner in the ______________.",
+            "The refrigerator and the oven can be found in the ______________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
-        //new string[]{ }
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{"brush my teeth", "go to sleep", "take a shower", "eat dinner"}, 0},
+            { new string[]{"introduce yourself", "put your hands up", "avoid eye contact", "babble"}, 1},
+            { new string[]{"A family reunion", "The school", "Your house", "A party"}, 2},
+            { new string[]{"go to sleep", "eat breakfast", "put on my pajamas", "go to school"}, 3},
+            {new string[]{"make an angry face", "shake hands", "be impolite", "sound disinterested"}, 4},
+            { new string[]{"living room", "bedroom", "kitchen", "bathroom"}, 5},
+            {new string[]{"bedroom", "living room", "bathroom", "courtyard"}, 6},
+            { new string[]{"bedroom", "courtyard", "kitchen", "bathroom"}, 7},
+            {new string[]{"bathroom", "living room", "courtyard", "bedroom"}, 8},
+            { new string[]{"kitchen", "bathroom", "living room", "bedroom"}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "brush my teeth", "introduce yourself", "A party", "put on my pajamas",
+            "shake hands", "bathroom", "living room", "bedroom", "living room", "kitchen"
         };
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
@@ -74,8 +67,8 @@ namespace ProyectoTCU
             {
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
-                m1er = new Menu1erGrado();
-                m1er.Show();
+                m3er = new Menu3erGrado();
+                m3er.Show();
                 this.Hide();
                 return;
             }
@@ -103,7 +96,7 @@ namespace ProyectoTCU
             labelNext.Visible = false;
         }
 
-        public Preguntas1erGrado()
+        public Preguntas3erGrado()
         {
             InitializeComponent();
             asignarPregYResp();
@@ -173,8 +166,8 @@ namespace ProyectoTCU
         private void labelReturn_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m3er = new Menu3erGrado();
+            m3er.Show();
             this.Hide();
         }
     }

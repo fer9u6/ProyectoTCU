@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Preguntas1erGrado : Form
+    public partial class Preguntas4toGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu4toGrado m4to;
 
         int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
@@ -20,45 +20,41 @@ namespace ProyectoTCU
 
         string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            "A formal way of answer a greeting is:",
+            "When someone is being rude at you, you should ______________.",
+            "Complete the greeting: 'Hello, ______________?'",
+            "An informal way of answer a greeting is:",
+            "Complete the farewell: 'I got to go. ______________!'",
+            "The organs that keep pumping air through the body are the ______________.",
+            "If you are exposed to a cold weather and rain, it is possible you'll get ______________.",
+            "Watching a screen for extended periods of time can give you ______________.",
+            "The organ that keeps pumping blood through the body is the:",
+            "You should drink plenty of water, so your body can ______________.",
+            "Being under the sun for long periods of time without protection can give you ______________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
-        //new string[]{ }
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{"What up?", "Hi", "Pleased to meet you", "See you later"}, 0},
+            { new string[]{"be rude at them", "stop talking to them ever again", "get angry", "be polite anyway"}, 1},
+            { new string[]{"how are you doing", "hi", "can you leave", "my name is"}, 2},
+            { new string[]{"See ya!", "How are you doing?", "Hello", "How do you do?"}, 3},
+            {new string[]{"Hello", "Where's the classroom", "See you later", "How are you"}, 4},
+            { new string[]{"pancreas", "lungs", "eyes", "liver"}, 5},
+            {new string[]{"good luck", "a migraine", "a cold", "a stomachache"}, 6},
+            { new string[]{"eye pain", "a sore throat", "an infection", "sugar loss"}, 7},
+            {new string[]{"stomach", "liver", "heart", "brain"}, 8},
+            { new string[]{"breath", "keep itself clean", "run faster", "grow nails"}, 9},
+            {new string[]{"a rash", "a cold", "skin burns", "a stomachache"}, 10}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "Pleased to meet you", "be polite anyway", "how are you doing",
+            "Hello", "See you later", "lungs", "a cold", "eye pain", "heart",
+            "keep itself clean", "skin burns"
         };
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
@@ -74,8 +70,8 @@ namespace ProyectoTCU
             {
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
-                m1er = new Menu1erGrado();
-                m1er.Show();
+                m4to = new Menu4toGrado();
+                m4to.Show();
                 this.Hide();
                 return;
             }
@@ -103,7 +99,7 @@ namespace ProyectoTCU
             labelNext.Visible = false;
         }
 
-        public Preguntas1erGrado()
+        public Preguntas4toGrado()
         {
             InitializeComponent();
             asignarPregYResp();
@@ -173,8 +169,8 @@ namespace ProyectoTCU
         private void labelReturn_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m4to = new Menu4toGrado();
+            m4to.Show();
             this.Hide();
         }
     }

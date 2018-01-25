@@ -12,6 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Parejas1erGrado : Form
     {
+
         Menu1erGrado m1grado;
 
         // firstClicked points to the first Label control 
@@ -264,7 +265,14 @@ namespace ProyectoTCU
             this.Hide();
             return;
         }
-        
 
+        private void labelReturn_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m1grado = new Menu1erGrado();
+            m1grado.Show();
+            this.Hide();
+            return;
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Preguntas1erGrado : Form
+    public partial class Preguntas2doGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu2doGrado m2do;
 
         int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
@@ -20,45 +20,39 @@ namespace ProyectoTCU
 
         string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            "It is recommended to drink ____ glasses of water a day.",
+            "It is specially not recommended to eat ______________ at night.",
+            "You should eat as much vegetables, such as __________ and __________ as you can.",
+            "It is recommended to sleep at least ____ hours a day. ",
+            "______________ and ______________ have a lot of carbohydrates.",
+            "You should exercise at least ____ times a week",
+            "______________ and ______________ are considered junk food.",
+            "It is best to eat fruits ______________ to burn the natural sugars that come with them",
+            "At restaurants you should avoid meals that are ______________.",
+            "______________ and ______________ are considered healthy food."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
-        //new string[]{ }
+        
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{"20", "2", "8", "4"}, 0},
+            { new string[]{"sweets", "carrots", "potatoes", "fish"}, 1},
+            { new string[]{"green beans / apples", "lettuce / chicken", "carrots / broccoli", "bread and watermelon"}, 2},
+            { new string[]{"4", "24", "8", "6"}, 3},
+            {new string[]{"Potatoes / yucca", "Sweet potatoes / oranges", "Chicken / pizza", "Bananas / pineapples"}, 4},
+            { new string[]{"7", "3", "2", "1"}, 5},
+            {new string[]{"pizza / fried chicken", "chocolates / carrots", "bread / rice", "tomatoes / cookies"}, 6},
+            { new string[]{"in the afternoon", "at night", "at noon", "in the morning"}, 7},
+            {new string[]{"green", "hot", "cooked on grill", "fried"}, 8},
+            { new string[]{"Fried fish / lettuce", "Celery / tomato", "Chicken / mayonnaise", "Cucumber / caramel"}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "8", "sweets", "carrots / broccoli", "8", "Potatoes / yucca",
+            "3", "pizza / fried chicken", "in the morning", "fried", "Celery / tomato"
         };
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
@@ -74,8 +68,8 @@ namespace ProyectoTCU
             {
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
-                m1er = new Menu1erGrado();
-                m1er.Show();
+                m2do = new Menu2doGrado();
+                m2do.Show();
                 this.Hide();
                 return;
             }
@@ -103,7 +97,7 @@ namespace ProyectoTCU
             labelNext.Visible = false;
         }
 
-        public Preguntas1erGrado()
+        public Preguntas2doGrado()
         {
             InitializeComponent();
             asignarPregYResp();
@@ -173,8 +167,8 @@ namespace ProyectoTCU
         private void labelReturn_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m2do = new Menu2doGrado();
+            m2do.Show();
             this.Hide();
         }
     }

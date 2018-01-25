@@ -129,6 +129,36 @@
     <Compile Include="Parejas1erGrado.Designer.cs">
       <DependentUpon>Parejas1erGrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Preguntas2doGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas2doGrado.Designer.cs">
+      <DependentUpon>Preguntas2doGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas3erGrado.Designer.cs">
+      <DependentUpon>Preguntas3erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas4toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas4toGrado.Designer.cs">
+      <DependentUpon>Preguntas4toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas5toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas5toGrado.Designer.cs">
+      <DependentUpon>Preguntas5toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preguntas6toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas6toGrado.Designer.cs">
+      <DependentUpon>Preguntas6toGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Preguntas1erGrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +208,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Parejas1erGrado.resx">
       <DependentUpon>Parejas1erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas2doGrado.resx">
+      <DependentUpon>Preguntas2doGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas3erGrado.resx">
+      <DependentUpon>Preguntas3erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas4toGrado.resx">
+      <DependentUpon>Preguntas4toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas5toGrado.resx">
+      <DependentUpon>Preguntas5toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas6toGrado.resx">
+      <DependentUpon>Preguntas6toGrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Preguntas1erGrado.resx">
       <DependentUpon>Preguntas1erGrado.cs</DependentUpon>

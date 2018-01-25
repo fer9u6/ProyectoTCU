@@ -14,7 +14,7 @@ namespace ProyectoTCU
     {
         MenuPrincipal mp;
         Parejas3erGrado par;
-        Preguntas1erGrado preg;
+        Preguntas3erGrado preg;
 
         public Menu3erGrado()
         {
@@ -59,7 +59,7 @@ namespace ProyectoTCU
         private void button4_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            preg = new Preguntas1erGrado();
+            preg = new Preguntas3erGrado();
             preg.Show();
             this.Hide();
         }

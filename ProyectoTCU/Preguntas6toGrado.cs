@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Preguntas1erGrado : Form
+    public partial class Preguntas6toGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu6toGrado m6to;
 
         int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
@@ -20,37 +20,36 @@ namespace ProyectoTCU
 
         string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
-        //new string[]{ }
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{}, 0},
+            { new string[]{}, 1},
+            { new string[]{}, 2},
+            { new string[]{}, 3},
+            {new string[]{}, 4},
+            { new string[]{}, 5},
+            {new string[]{}, 6},
+            { new string[]{}, 7},
+            {new string[]{}, 8},
+            { new string[]{}, 9},
+            {new string[]{}, 10},
+            { new string[]{}, 11}
         };
 
         string[] quizAnswers = new string[] 
@@ -74,8 +73,8 @@ namespace ProyectoTCU
             {
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
-                m1er = new Menu1erGrado();
-                m1er.Show();
+                m6to = new Menu6toGrado();
+                m6to.Show();
                 this.Hide();
                 return;
             }
@@ -103,7 +102,7 @@ namespace ProyectoTCU
             labelNext.Visible = false;
         }
 
-        public Preguntas1erGrado()
+        public Preguntas6toGrado()
         {
             InitializeComponent();
             asignarPregYResp();
@@ -173,8 +172,8 @@ namespace ProyectoTCU
         private void labelReturn_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m6to = new Menu6toGrado();
+            m6to.Show();
             this.Hide();
         }
     }

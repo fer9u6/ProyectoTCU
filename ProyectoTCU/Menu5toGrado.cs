@@ -13,8 +13,8 @@ namespace ProyectoTCU
     public partial class Menu5toGrado : Form
     {
         MenuPrincipal mp;
-        Parejas1erGrado par;
-        Preguntas1erGrado preg;
+        Parejas5toGrado par;
+        Preguntas5toGrado preg;
 
         public Menu5toGrado()
         {
@@ -51,7 +51,7 @@ namespace ProyectoTCU
         private void button3_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            par = new Parejas1erGrado();
+            par = new Parejas5toGrado();
             par.Show();
             this.Hide();
         }
@@ -59,7 +59,7 @@ namespace ProyectoTCU
         private void button4_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            preg = new Preguntas1erGrado();
+            preg = new Preguntas5toGrado();
             preg.Show();
             this.Hide();
         }

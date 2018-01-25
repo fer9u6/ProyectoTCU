@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTCU
 {
-    partial class Preguntas1erGrado
+    partial class Preguntas4toGrado
     {
         /// <summary>
         /// Required designer variable.

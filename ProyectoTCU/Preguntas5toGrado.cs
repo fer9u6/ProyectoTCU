@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
-    public partial class Preguntas1erGrado : Form
+    public partial class Preguntas5toGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu5toGrado m5to;
 
         int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
@@ -20,45 +20,39 @@ namespace ProyectoTCU
 
         string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            "This is a proper way of inviting someone to an event:",
+            "The friends you have by only exchanging messages between one another are called:",
+            "At listening other people opinions, you should always:",
+            "This is a proper way of declining an invitation:",
+            "A geothermal plant uses the power of ______________ to produce electricity.",
+            "Wind power is used by ______________ to produce electricity",
+            "In the event of an electric storm, you should:",
+            "A ______________ uses the power of the water to produce electricity.",
+            "In the event of an earthquake, you should:",
+            "In the event of an indoors fire, you should:"
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
-        //new string[]{ }
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{"Can you like to go to...", "I'd love to go to...", "Would you like to go to...", "Can you bring drinks to..."}, 0},
+            { new string[]{"pen-pals", "little friends", "message buddies", "correspondence comrades"}, 1},
+            { new string[]{"Smile without listening", "Think they are wrong", "Be respectful", "Don't care"}, 2},
+            { new string[]{"I'm sorry but I have other plans", "I don't like you", "Of course I'm gonna go", "Who are you?"}, 3},
+            {new string[]{"wind", "water", "smoke", "heat"}, 4},
+            { new string[]{"solar panels", "windmills", "hydro power plants", "cars"}, 5},
+            {new string[]{"Stay indoors", "Put yourself under a table", "Close your eyes", "Use metallic objects"}, 6},
+            { new string[]{"river", "solar panel", "windmill", "hydro power plant"}, 7},
+            {new string[]{"Use metallic objects", "Run", "Go out to an open space", "Lean on the ground"}, 8},
+            { new string[]{"Lean on the ground", "Hide in the closet", "Take big breaths", "Put yourself under a table"}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "Would you like to go to...", "pen-pals", "Be respectful",
+            "I'm sorry but I have other plans", "heat", "windmills",
+            "Stay indoors", "hydro power plant", "Go out to an open space", "Lean on the ground"
         };
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
@@ -74,8 +68,8 @@ namespace ProyectoTCU
             {
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
-                m1er = new Menu1erGrado();
-                m1er.Show();
+                m5to = new Menu5toGrado();
+                m5to.Show();
                 this.Hide();
                 return;
             }
@@ -103,7 +97,7 @@ namespace ProyectoTCU
             labelNext.Visible = false;
         }
 
-        public Preguntas1erGrado()
+        public Preguntas5toGrado()
         {
             InitializeComponent();
             asignarPregYResp();
@@ -173,8 +167,8 @@ namespace ProyectoTCU
         private void labelReturn_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m5to = new Menu5toGrado();
+            m5to.Show();
             this.Hide();
         }
     }
