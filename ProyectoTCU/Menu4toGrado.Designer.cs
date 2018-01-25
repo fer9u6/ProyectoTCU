@@ -36,26 +36,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.backB = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // backB
-            // 
-            this.backB.BackColor = System.Drawing.Color.White;
-            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
-            this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backB.Location = new System.Drawing.Point(45, 49);
-            this.backB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.backB.Name = "backB";
-            this.backB.Size = new System.Drawing.Size(105, 92);
-            this.backB.TabIndex = 7;
-            this.backB.UseVisualStyleBackColor = false;
-            this.backB.Click += new System.EventHandler(this.backB_Click);
-            this.backB.MouseLeave += new System.EventHandler(this.backB_MouseLeave);
-            this.backB.MouseHover += new System.EventHandler(this.backB_MouseHover);
             // 
             // label1
             // 
@@ -138,40 +121,9 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(56, 279);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(209, 43);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Socializing 2\r\n\r\n";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // backB
-            // 
-            this.backB.BackColor = System.Drawing.Color.White;
-            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
-            this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backB.Location = new System.Drawing.Point(30, 32);
-            this.backB.Name = "backB";
-            this.backB.Size = new System.Drawing.Size(70, 60);
-            this.backB.TabIndex = 7;
-            this.backB.UseVisualStyleBackColor = false;
-            this.backB.Click += new System.EventHandler(this.backB_Click);
-            this.backB.MouseLeave += new System.EventHandler(this.backB_MouseLeave);
-            this.backB.MouseHover += new System.EventHandler(this.backB_MouseHover);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(604, 229);
+            this.button5.Location = new System.Drawing.Point(604, 323);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(314, 68);
@@ -187,7 +139,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(604, 325);
+            this.button6.Location = new System.Drawing.Point(604, 423);
             this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(314, 66);
@@ -196,12 +148,46 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // backB
+            // 
+            this.backB.BackColor = System.Drawing.Color.White;
+            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
+            this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backB.Location = new System.Drawing.Point(30, 32);
+            this.backB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backB.Name = "backB";
+            this.backB.Size = new System.Drawing.Size(70, 60);
+            this.backB.TabIndex = 7;
+            this.backB.UseVisualStyleBackColor = false;
+            this.backB.Click += new System.EventHandler(this.backB_Click);
+            this.backB.MouseLeave += new System.EventHandler(this.backB_MouseLeave);
+            this.backB.MouseHover += new System.EventHandler(this.backB_MouseHover);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(604, 229);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(314, 66);
+            this.button7.TabIndex = 12;
+            this.button7.Text = "Socializing 2";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Menu4toGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(999, 655);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -228,5 +214,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

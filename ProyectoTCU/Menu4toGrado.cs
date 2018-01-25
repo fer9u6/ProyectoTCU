@@ -57,12 +57,14 @@ namespace ProyectoTCU
            
         }
 
+        /*
         private void button5_Click(object sender, EventArgs e)
         {
             socializingOrdenar so = new socializingOrdenar();
             this.Hide();
             so.Show();
         }
+        */
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -78,6 +80,7 @@ namespace ProyectoTCU
             d.Show();
         }
 
+        
         private void button5_Click(object sender, EventArgs e)
         {
             InitializeComponent();
@@ -85,6 +88,7 @@ namespace ProyectoTCU
             par.Show();
             this.Hide();
         }
+        
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -92,6 +96,13 @@ namespace ProyectoTCU
             preg = new Preguntas4toGrado();
             preg.Show();
             this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            socializingOrdenar so = new socializingOrdenar();
+            this.Hide();
+            so.Show();
         }
     }
 }
