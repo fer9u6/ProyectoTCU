@@ -39,7 +39,7 @@ namespace ProyectoTCU
         {
             { new string[]{"20", "2", "8", "4"}, 0},
             { new string[]{"sweets", "carrots", "potatoes", "fish"}, 1},
-            { new string[]{"green beans / apples", "lettuce / chicken", "carrots / broccoli", "bread and watermelon"}, 2},
+            { new string[]{"green beans / apples", "lettuce / chicken", "carrots / broccoli", "bread / watermelon"}, 2},
             { new string[]{"4", "24", "8", "6"}, 3},
             {new string[]{"Potatoes / yucca", "Sweet potatoes / oranges", "Chicken / pizza", "Bananas / pineapples"}, 4},
             { new string[]{"7", "3", "2", "1"}, 5},
