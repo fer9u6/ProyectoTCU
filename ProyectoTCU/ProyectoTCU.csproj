@@ -45,6 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu2doGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu2doGrado.Designer.cs">
+      <DependentUpon>Menu2doGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu3erGrado.Designer.cs">
+      <DependentUpon>Menu3erGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu5toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu5toGrado.Designer.cs">
+      <DependentUpon>Menu5toGrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu6toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu6toGrado.Designer.cs">
+      <DependentUpon>Menu6toGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu1erGrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +86,12 @@
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMsgBox.Designer.cs">
+      <DependentUpon>MyMsgBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Parejas5toGrado.cs">
       <SubType>Form</SubType>
@@ -107,6 +137,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Menu2doGrado.resx">
+      <DependentUpon>Menu2doGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu3erGrado.resx">
+      <DependentUpon>Menu3erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu5toGrado.resx">
+      <DependentUpon>Menu5toGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu6toGrado.resx">
+      <DependentUpon>Menu6toGrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu1erGrado.resx">
       <DependentUpon>Menu1erGrado.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMsgBox.resx">
+      <DependentUpon>MyMsgBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Parejas5toGrado.resx">
       <DependentUpon>Parejas5toGrado.cs</DependentUpon>

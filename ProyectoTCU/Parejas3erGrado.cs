@@ -12,7 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Parejas3erGrado : Form
     {
-        Menu1erGrado m1grado;
+        Menu3erGrado m3grado;
 
         // firstClicked points to the first Label control 
         // that the player clicks, but it will be null 
@@ -49,8 +49,8 @@ namespace ProyectoTCU
         {
             {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
             {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
-            {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
-            {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
+            {"table", 8}, {"bed", 9}, {"oven", 10}, {"shower", 11},
+            {"toilet", 12}, {"refrigerator", 13}, {"television", 14},
             {"bookshelf", 15 }
         };
 
@@ -72,8 +72,8 @@ namespace ProyectoTCU
             {
                 {"kitchen", 0}, {"bathroom", 1}, {"living room", 2}, {"bedroom", 3},
                 {"garage", 4}, {"yard", 5}, {"armchair", 6}, {"chair", 7},
-                {"table", 8}, {"bed", 9}, {"oven", 10}, {"television", 11},
-                {"toilet", 12}, {"refrigerator", 13}, {"granddaugther", 14},
+                {"table", 8}, {"bed", 9}, {"oven", 10}, {"shower", 11},
+                {"toilet", 12}, {"refrigerator", 13}, {"television", 14},
                 {"bookshelf", 15 }
             };
 
@@ -255,10 +255,10 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
-            MessageBox.Show("You matched all the icons!", "Congratulations");
+            MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
-            m1grado = new Menu1erGrado();
-            m1grado.Show();
+            m3grado = new Menu3erGrado();
+            m3grado.Show();
             this.Hide();
             //Close();
         }

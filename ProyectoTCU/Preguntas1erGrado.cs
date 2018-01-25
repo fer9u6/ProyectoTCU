@@ -14,7 +14,7 @@ namespace ProyectoTCU
     {
         Menu1erGrado m1er;
 
-        //int score = 0; //La verdad no quiero hacerlo con puntos
+        int score = 0;
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
@@ -68,7 +68,8 @@ namespace ProyectoTCU
 
             KeyValuePair<string[], int> pair;
 
-            labelQuant.Text = (i+1).ToString() + " / " + questions.Length.ToString();
+            labelQuant.Text = (i+1).ToString() + " / " + questions.Length.ToString() +
+                "                  Score:" + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
 
@@ -105,7 +106,7 @@ namespace ProyectoTCU
         private void labelAnswer1_Click(object sender, EventArgs e)
         {
             sameBackColor();
-            labelAnswer1.BackColor = Color.Yellow;
+            labelAnswer1.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer1.Text;
             labelNext.Visible = true;
 
@@ -114,7 +115,7 @@ namespace ProyectoTCU
         private void labelAnswer2_Click(object sender, EventArgs e)
         {
             sameBackColor();
-            labelAnswer2.BackColor = Color.Yellow;
+            labelAnswer2.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer2.Text;
             labelNext.Visible = true;
         }
@@ -122,7 +123,7 @@ namespace ProyectoTCU
         private void labelAnswer3_Click(object sender, EventArgs e)
         {
             sameBackColor();
-            labelAnswer3.BackColor = Color.Yellow;
+            labelAnswer3.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer3.Text;
             labelNext.Visible = true;
         }
@@ -130,7 +131,7 @@ namespace ProyectoTCU
         private void labelAnswer4_Click(object sender, EventArgs e)
         {
             sameBackColor();
-            labelAnswer4.BackColor = Color.Yellow;
+            labelAnswer4.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer4.Text;
             labelNext.Visible = true;
         }
@@ -140,13 +141,15 @@ namespace ProyectoTCU
         {
             if (verResp.Equals(quizAnswers[i])) //REVISAR
             {
-                MessageBox.Show("Correct!");
+                //MessageBox.Show("Correct!");
+                MyMsgBox.Show("CORRECT!", ":)", "OK");
+                score++;
                 asignarPregYResp();
             }
 
-            else
+            else 
             {
-                MessageBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i]);
+                MyMsgBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i], ":(", "OK");
                 asignarPregYResp();
 
             }

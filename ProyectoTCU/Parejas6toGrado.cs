@@ -12,7 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Parejas6toGrado : Form
     {
-        Menu1erGrado m1grado;
+        Menu6toGrado m6grado;
 
         // firstClicked points to the first Label control 
         // that the player clicks, but it will be null 
@@ -248,10 +248,10 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
-            MessageBox.Show("You matched all the icons!", "Congratulations");
+            MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
-            m1grado = new Menu1erGrado();
-            m1grado.Show();
+            m6grado = new Menu6toGrado();
+            m6grado.Show();
             this.Hide();
             //Close();
         }

@@ -12,7 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Parejas5toGrado : Form
     {
-        Menu1erGrado m1grado;
+        Menu5toGrado m5grado;
 
         // firstClicked points to the first Label control 
         // that the player clicks, but it will be null 
@@ -39,16 +39,16 @@ namespace ProyectoTCU
 
         static Dictionary<string, int> pairsNaturalSpanishReal = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
+            {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
+            {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
             {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
             {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
         };
 
         static Dictionary<string, int> pairsNaturalEnglishReal = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
+            {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
+            {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
             {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
             {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
         };
@@ -254,10 +254,10 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
-            MessageBox.Show("You matched all the icons!", "Congratulations");
+            MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
-            m1grado = new Menu1erGrado();
-            m1grado.Show();
+            m5grado = new Menu5toGrado();
+            m5grado.Show();
             this.Hide();
             //Close();
         }
