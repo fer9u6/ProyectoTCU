@@ -13,6 +13,7 @@ namespace ProyectoTCU
     public partial class Menu1erGrado : Form
     {
         MenuPrincipal mp;
+        Classroom c;
         public Menu1erGrado()
         {
             InitializeComponent();
@@ -25,7 +26,9 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            c = new Classroom();
+            this.Hide();
+            c.Show();
         }
 
         private void backB_MouseHover(object sender, EventArgs e)
