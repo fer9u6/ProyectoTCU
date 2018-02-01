@@ -45,11 +45,17 @@ namespace ProyectoTCU
             labels.Add(label9);
             labels.Add(label10);
 
+            //importante el espacio al final
             frases.Add("Hi Gina, how is it going? ");
             frases.Add("Hello Ms Jonhson, How are you? ");
-            frases.Add("Hi, nice to meet you ");
+            frases.Add("Nice to meet you ");
             frases.Add("Nice to meet you too ");
             frases.Add("Bye, see you later ");
+            frases.Add("Hi there, this is my fiend Luke ");
+            frases.Add("Hi, my name is Elizabeth ");
+            frases.Add("What's his name? ");
+            frases.Add("Hello, i'm Joe ");
+            frases.Add("Hello, how are you? ");
 
             intentos = 0;
             fallos = 0;

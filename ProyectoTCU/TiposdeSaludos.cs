@@ -45,16 +45,15 @@ namespace ProyectoTCU
             timeGreetings.Add("Good Morning");
             timeGreetings.Add("Good Night");
             timeGreetings.Add("Good Evening");
-            formalGreetings.Add("Hello, How are you?");
-            formalGreetings.Add("How are you?");
-            formalGreetings.Add("Hello, Ms Richards/Mr Richards");
+            formalGreetings.Add("Hello, how are you?");
+            formalGreetings.Add("Hello! Ms Richards/Mr Richards");
             rformalGreetings.Add("Fine thank you. And you?");
             rformalGreetings.Add("Very well, thank you. And you?");
             informalGreetings.Add("Hi, how are you?");
             informalGreetings.Add("Hi, how is it going?");
             informalGreetings.Add("Hey , what's new?");
             informalGreetings.Add("Hi there, What's up?");
-            rinformalGreetings.Add("Hi, I'am good. How are you?");
+            rinformalGreetings.Add("Hi, I am good. How are you?");
             rinformalGreetings.Add("Hi! , great. And you?");
             rinformalGreetings.Add("I am doing all right. And you?");
             byeGreetings.Add("Bye");
@@ -123,6 +122,8 @@ namespace ProyectoTCU
             }
             pictureBox1.Image = imageList1.Images[imagenA];
             imostradas.Add(imagenA);
+
+            //opciones de respuestas
             int op1 = rn.Next(0, formalGreetings.Count);
             int op2 = rn.Next(0, rinformalGreetings.Count);
             int op3 = rn.Next(0, rformalGreetings.Count);
@@ -167,8 +168,8 @@ namespace ProyectoTCU
             if (l.Contains(respuesta)) { resultado = true; }
             if (imagenA <5) { //saludo de tiempo
                 if (imagenA < 3)
-                { if (respuesta != "Good Night" || respuesta != "Good Evening") {
-                        resultado = false;
+                { if (respuesta == "Good Night" || respuesta == "Good Evening") {
+                        resultado = true;
                     }
                 }
                 if (imagenA == 3 && respuesta != "Good Morning") { resultado = false; }

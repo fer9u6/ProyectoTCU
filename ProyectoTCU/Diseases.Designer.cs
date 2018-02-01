@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Diseases));
             this.backB = new System.Windows.Forms.Button();
             this.o4 = new System.Windows.Forms.Button();
@@ -35,7 +36,10 @@
             this.o2 = new System.Windows.Forms.Button();
             this.o1 = new System.Windows.Forms.Button();
             this.playButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.imageListEnfermedades = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // backB
@@ -58,11 +62,12 @@
             this.o4.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o4.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o4.Location = new System.Drawing.Point(388, 372);
+            this.o4.Location = new System.Drawing.Point(442, 371);
             this.o4.Name = "o4";
             this.o4.Size = new System.Drawing.Size(270, 40);
             this.o4.TabIndex = 14;
             this.o4.UseVisualStyleBackColor = false;
+            this.o4.Click += new System.EventHandler(this.o1_Click);
             // 
             // o3
             // 
@@ -70,11 +75,12 @@
             this.o3.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o3.Location = new System.Drawing.Point(388, 316);
+            this.o3.Location = new System.Drawing.Point(442, 315);
             this.o3.Name = "o3";
             this.o3.Size = new System.Drawing.Size(270, 39);
             this.o3.TabIndex = 13;
             this.o3.UseVisualStyleBackColor = false;
+            this.o3.Click += new System.EventHandler(this.o1_Click);
             // 
             // o2
             // 
@@ -82,11 +88,12 @@
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o2.Location = new System.Drawing.Point(78, 372);
+            this.o2.Location = new System.Drawing.Point(132, 371);
             this.o2.Name = "o2";
             this.o2.Size = new System.Drawing.Size(270, 40);
             this.o2.TabIndex = 12;
             this.o2.UseVisualStyleBackColor = false;
+            this.o2.Click += new System.EventHandler(this.o1_Click);
             // 
             // o1
             // 
@@ -94,11 +101,12 @@
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o1.Location = new System.Drawing.Point(78, 316);
+            this.o1.Location = new System.Drawing.Point(132, 315);
             this.o1.Name = "o1";
             this.o1.Size = new System.Drawing.Size(270, 39);
             this.o1.TabIndex = 11;
             this.o1.UseVisualStyleBackColor = false;
+            this.o1.Click += new System.EventHandler(this.o1_Click);
             // 
             // playButton
             // 
@@ -106,7 +114,7 @@
             this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playButton.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(327, 20);
+            this.playButton.Location = new System.Drawing.Point(22, 150);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(85, 52);
             this.playButton.TabIndex = 15;
@@ -114,24 +122,52 @@
             this.playButton.UseVisualStyleBackColor = false;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
-            // label1
+            // imageListEnfermedades
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(155, 108);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 22);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.imageListEnfermedades.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListEnfermedades.ImageStream")));
+            this.imageListEnfermedades.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListEnfermedades.Images.SetKeyName(0, "fever - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(1, "toothache - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(2, "cough - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(3, "chiken pox - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(4, "stomachache - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(5, "sore throat - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(6, "sunburn.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(7, "headache - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(8, "back-pain - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(9, "bloody nose - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(10, "broken arm - Copy.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(11, "bruise.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(12, "cut.jpg");
+            this.imageListEnfermedades.Images.SetKeyName(13, "insectbite - Copy.jpg");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(232, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(333, 224);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(25, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 24);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "level 2";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Diseases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(743, 451);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.o4);
             this.Controls.Add(this.o3);
@@ -140,8 +176,8 @@
             this.Controls.Add(this.backB);
             this.Name = "Diseases";
             this.Text = "Diseases";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -153,6 +189,8 @@
         private System.Windows.Forms.Button o2;
         private System.Windows.Forms.Button o1;
         private System.Windows.Forms.Button playButton;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ImageList imageListEnfermedades;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

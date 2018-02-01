@@ -67,7 +67,7 @@
             // panel1
             // 
             this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Location = new System.Drawing.Point(46, 181);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 92);
