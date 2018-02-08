@@ -66,6 +66,12 @@
     <Compile Include="Diseases2.Designer.cs">
       <DependentUpon>Diseases2.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListenPlaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListenPlaces.Designer.cs">
+      <DependentUpon>ListenPlaces.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu2doGrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,12 @@
     <Compile Include="Preguntas1erGrado.Designer.cs">
       <DependentUpon>Preguntas1erGrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrepositionsCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrepositionsCity.Designer.cs">
+      <DependentUpon>PrepositionsCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -252,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diseases2.resx">
       <DependentUpon>Diseases2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListenPlaces.resx">
+      <DependentUpon>ListenPlaces.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemoryMatch.resx">
       <DependentUpon>MemoryMatch.cs</DependentUpon>
@@ -318,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Preguntas1erGrado.resx">
       <DependentUpon>Preguntas1erGrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrepositionsCity.resx">
+      <DependentUpon>PrepositionsCity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -465,6 +483,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Audios\books.mp3" />
+    <None Include="Resources\audio-volume.png" />
+    <None Include="Resources\149136.png" />
+    <None Include="Resources\1-512.png" />
+    <None Include="Resources\across from.jpg" />
+    <None Include="Resources\across_from_audio.wav" />
     <Content Include="Resources\backpack.png" />
     <None Include="Resources\notebook.wav" />
     <None Include="Resources\backpack.wav" />
@@ -476,10 +499,74 @@
     <None Include="Resources\next_to_the_desk.wav" />
     <None Include="Resources\book.wav" />
     <None Include="Resources\city.png" />
+    <None Include="Resources\bank.jpg" />
+    <None Include="Resources\book store.jpg" />
+    <None Include="Resources\church.jpg" />
+    <None Include="Resources\fire-department.jpg" />
+    <None Include="Resources\movie-theater.jpg" />
+    <None Include="Resources\gym.jpg" />
+    <None Include="Resources\hospital.jpg" />
+    <None Include="Resources\mall.jpg" />
+    <None Include="Resources\Park.png" />
+    <None Include="Resources\park_audio.wav" />
+    <None Include="Resources\bakery_audio.wav" />
+    <None Include="Resources\book_store_audio.wav" />
+    <None Include="Resources\bus_stop_audio.wav" />
+    <None Include="Resources\drug_store_audio.wav" />
+    <None Include="Resources\fire_station_audio.wav" />
+    <None Include="Resources\hardware_store_audio.wav" />
+    <None Include="Resources\mall_audio.wav" />
+    <None Include="Resources\movie_theater_audio.wav" />
+    <None Include="Resources\museum_audio.wav" />
+    <None Include="Resources\church_audio.wav" />
+    <None Include="Resources\gym_audio.wav" />
+    <None Include="Resources\hospital_audio.wav" />
+    <None Include="Resources\bank_audio.wav" />
+    <None Include="Resources\Button-Next-icon - Copy.png" />
+    <None Include="Resources\Hospital.png" />
+    <None Include="Resources\drugstore.jpg" />
+    <None Include="Resources\hardware-store.jpg" />
+    <None Include="Resources\bus station.png" />
+    <None Include="Resources\bakery.jpg" />
+    <None Include="Resources\behind.png" />
+    <None Include="Resources\between.jpg" />
+    <None Include="Resources\far from.jpg" />
+    <None Include="Resources\in front of.png" />
+    <None Include="Resources\near.jpg" />
+    <None Include="Resources\next to.jpg" />
+    <None Include="Resources\on the corner.jpg" />
+    <None Include="Resources\behind_audio.wav" />
+    <None Include="Resources\between_audio.wav" />
+    <None Include="Resources\far_from_audio.wav" />
+    <None Include="Resources\in_front_of_audio.wav" />
+    <None Include="Resources\near_audio.wav" />
+    <None Include="Resources\next_to_audio.wav" />
+    <None Include="Resources\on_the_corner_audio.wav" />
+    <None Include="Resources\city - Copy.png" />
+    <None Include="Resources\city - Copy1.png" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
     <Content Include="Resources\pen_silver.png" />
+    <None Include="Resources\speaker %282%29.png" />
+    <None Include="Resources\speaker %283%29.png" />
+    <None Include="Resources\speaker %283%291.png" />
+    <None Include="Resources\speaker %2810%29.png" />
+    <None Include="Resources\speaker r %283%29.png" />
+    <None Include="Resources\petshop.jpg" />
+    <None Include="Resources\police-station.png" />
+    <None Include="Resources\restaurant-i.jpg" />
+    <None Include="Resources\stadium.png" />
+    <None Include="Resources\supermarket.jpg" />
+    <None Include="Resources\pet_shop_audio.wav" />
+    <None Include="Resources\police_station_audio.wav" />
+    <None Include="Resources\restaurant_audio.wav" />
+    <None Include="Resources\school_audio.wav" />
+    <None Include="Resources\stadium_audio.wav" />
+    <None Include="Resources\supermarket_audio.wav" />
+    <None Include="Resources\police-station.jpg" />
+    <None Include="Resources\simple map.png" />
+    <None Include="Resources\super goal1.jpg" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

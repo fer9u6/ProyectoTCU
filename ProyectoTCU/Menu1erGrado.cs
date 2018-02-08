@@ -17,6 +17,7 @@ namespace ProyectoTCU
         Neighborhood nei;
         Parejas1erGrado par;
         Preguntas1erGrado preg;
+        ListenPlaces lp;
 
         public Menu1erGrado()
         {
@@ -25,9 +26,10 @@ namespace ProyectoTCU
 
         private void button2_Click(object sender, EventArgs e)
         {
-            nei = new Neighborhood();
+           // nei = new Neighborhood();
+            lp = new ListenPlaces();
             this.Hide();
-            nei.Show();
+            lp.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
