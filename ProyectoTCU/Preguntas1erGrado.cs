@@ -18,20 +18,20 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "Which one is a proper response to \n'Hello, how are you?'",
-            "I feel sad when:",
-            "When greeting someone new, you should always ______________",
-            "I feel happy when ______________",
-            "I feel scared when ______________",
-            "I feel angry when ______________",
-            "I feel surprised when ______________",
-            "My father's sister is my ______________",
-            "The mother of my brother is my ______________",
-            "The father of my cousin is my ______________",
-            "The son of my sister is my ______________",
-            "The father of my grandchild is my ______________"
+            " ",
+            "The kid is ________.",
+            " ",
+            "The kid is ________.",
+            "The kid is ________.",
+            "The kid is ________.",
+            "The kid is ________.",
+            "This is your ________.",
+            "This is your ________.",
+            "This is your ________.",
+            "This is your ________.",
+            "This is your ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
@@ -39,27 +39,28 @@ namespace ProyectoTCU
         //new string[]{ }
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"I want ice cream", "Fine, thank you", "I'm 7 years old", "I am, thank you"}, 0},
-            { new string[]{"I go to sleep", "I get my favorite food", "I get good grades at school", "I don't get what I want"}, 1},
-            { new string[]{"make eye contact", "look at the floor", "keep your hands in your pockets", "laugh at them"}, 2},
-            { new string[]{"I get my favorite food", "I fall to the ground", "Someone makes fun of me", "I can't sleep at night"}, 3},
-            {new string[]{"I am with my friends", "I eat dessert", "I watch TV", "I confront something unknown"}, 4},
-            { new string[]{"I sleep", "I'm taking a shower", "Someone makes fun of me", "It rains"}, 5},
-            {new string[]{"I lost something", "Something happens that I didn't expected", "I go to school", "I run to the bus"}, 6},
-            { new string[]{"Nephew", "Sister", "Aunt", "Grandmother"}, 7},
-            {new string[]{"Mother", "Aunt", "Grandfather", "Niece"}, 8},
-            { new string[]{"Father", "Brother", "Uncle", "Niece"}, 9},
-            {new string[]{"Nephew", "Cousin", "Mother", "Brother"}, 10},
-            { new string[]{"Grandfather", "Cousin", "Son", "Uncle"}, 11}
+            { new string[]{"Hello.", "Pencil.", "Cake.", "Foot." }, 0},
+            { new string[]{"embarrassed.", "angry.", "scared.", "sad."}, 1},
+            { new string[]{"Red.", "Bottle.", "Good bye.", "Circle."}, 2},
+            { new string[]{"happy.", "surprised.", "scared.", "angry."}, 3},
+            {new string[]{"angry.", "scared.", "surprised.", "sad."}, 4},
+            { new string[]{"surprised.", "happy.", "sad.", "angry."}, 5},
+            {new string[]{"surprised.", "scared.", "sad.", "happy."}, 6},
+            { new string[]{"grandfather.", "uncle.", "mother.", "sister."}, 7},
+            {new string[]{"grandmother.", "mother.", "father.", "aunt."}, 8},
+            { new string[]{"uncle.", "father.", "sister.", "grandmother."}, 9},
+            {new string[]{"aunt.", "father.", "grandfather.", "mother."}, 10},
+            { new string[]{ "grandfather.", "mother.", "sister.", "father." }, 11}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "Hello.", "sad.", "Good bye.", "happy.", "scared.",
+            "angry.", "surprised.", "mother.", "grandmother.",
+            "father.", "grandfather.", "sister."
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -86,7 +87,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im; 
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };
@@ -99,6 +101,13 @@ namespace ProyectoTCU
             numbers = numbers.Where(w => w != numbers[cant]).ToArray();
             labelAnswer4.Text = pair.Key[numbers[cant = rand.Next(0, numbers.Length)]];
             //numbers = numbers.Where(w => w != numbers[cant]).ToArray();
+
+            /*
+            Image ima = Image.FromFile("image.png"); // read in image
+            ilabel.Size = new Size(i.Width, i.Height); //set label to correct size
+            ilabel.Image = i; // put image on label
+            this.Controls.Add(ilabel); // add label to container (a form, for instance)
+            */
 
             labelNext.Visible = false;
         }

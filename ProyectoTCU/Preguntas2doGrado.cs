@@ -18,18 +18,18 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "It is recommended to drink ____ glasses of water a day.",
-            "It is specially not recommended to eat ______________ at night.",
-            "You should eat as much vegetables, such as __________ and __________ as you can.",
-            "It is recommended to sleep at least ____ hours a day. ",
-            "______________ and ______________ have a lot of carbohydrates.",
-            "You should exercise at least ____ times a week",
-            "______________ and ______________ are considered junk food.",
-            "It is best to eat fruits ______________ to burn the natural sugars that come with them",
-            "At restaurants you should avoid meals that are ______________.",
-            "______________ and ______________ are considered healthy food."
+            "Drink ___ glasses of water a day.",
+            "Don't eat ________ at night.",
+            "Eat vegetables, like ________ and ________.",
+            "Sleep ___ hours a day.",
+            "________ to stay healthy.",
+            "Exercise at least ____ times a week.",
+            "________ and ________ are junk food.",
+            "Eat fruit ________.",
+            "________ food is bad for you.",
+            "________ and ________ are healthy food."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
@@ -39,21 +39,23 @@ namespace ProyectoTCU
         {
             { new string[]{"20", "2", "8", "4"}, 0},
             { new string[]{"sweets", "carrots", "potatoes", "fish"}, 1},
-            { new string[]{"green beans / apples", "lettuce / chicken", "carrots / broccoli", "bread / watermelon"}, 2},
+            { new string[]{"green beans / apples.", "lettuce / chicken.", "carrots / broccoli.", "bread / watermelon."}, 2},
             { new string[]{"4", "24", "8", "6"}, 3},
-            {new string[]{"Potatoes / yucca", "Sweet potatoes / oranges", "Chicken / pizza", "Bananas / pineapples"}, 4},
-            { new string[]{"7", "3", "2", "1"}, 5},
-            {new string[]{"pizza / fried chicken", "chocolates / carrots", "bread / rice", "tomatoes / cookies"}, 6},
-            { new string[]{"in the afternoon", "at night", "at noon", "in the morning"}, 7},
-            {new string[]{"green", "hot", "cooked on grill", "fried"}, 8},
+            {new string[]{"Look at the sun", "Eat junk food", "Wash your hands", "Drink cola"}, 4},
+            { new string[]{"7", "3", "2", "10"}, 5},
+            {new string[]{"Pizza / fried chicken", "Chocolates / carrots", "Bread / rice", "Tomatoes / cookies"}, 6},
+            { new string[]{"in the afternoon.", "at night.", "at noon.", "in the morning."}, 7},
+            {new string[]{"Green", "Hot", "Cooked on grill", "Fried"}, 8},
             { new string[]{"Fried fish / lettuce", "Celery / tomato", "Chicken / mayonnaise", "Cucumber / caramel"}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "8", "sweets", "carrots / broccoli", "8", "Potatoes / yucca",
-            "3", "pizza / fried chicken", "in the morning", "fried", "Celery / tomato"
+            "8", "sweets", "carrots / broccoli.", "8", "Wash your hands",
+            "3", "Pizza / fried chicken", "in the morning.", "Fried", "Celery / tomato"
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -80,7 +82,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };

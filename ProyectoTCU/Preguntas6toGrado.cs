@@ -18,47 +18,44 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "When you need to borrow a phone, you should ask:",
+            "You should know how to speak English because ________.",
+            "When you look for someone at the phone that is not available, you should say:",
+            "When you need to go to the bathroom, you should ask:",
+            "If you ask for someone at the phone, you should ask:",
+            "________ are really important for tourism in Costa Rica.",
+            "After going to the bathroom, you should always:",
+            "A popular Costa Rican dish is ________.",
+            "You shouldn't ________ while you are eating.",
+            "Costa Rican and British people like to watch ________ on T.V."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{}, 0},
-            { new string[]{}, 1},
-            { new string[]{}, 2},
-            { new string[]{}, 3},
-            {new string[]{}, 4},
-            { new string[]{}, 5},
-            {new string[]{}, 6},
-            { new string[]{}, 7},
-            {new string[]{}, 8},
-            { new string[]{}, 9},
-            {new string[]{}, 10},
-            { new string[]{}, 11}
+            { new string[]{"How are you?", "Can I use your phone?", "Who are you?", "Can I go to the bathroom?"}, 0},
+            { new string[]{"you can confuse people.", "it is important to get a job.", "you get to know new jokes.", "you can talk with your dog."}, 1},
+            { new string[]{"Tell him/her to run away.", "Tell him/her to call me back.", "I don't like you.", "Tell him/her that I don't know"}, 2},
+            { new string[]{"May I go to the classroom?", "How old are you?", "Where am I?", "May I go to the bathroom?"}, 3},
+            {new string[]{"May I speak to...?", "What?", "Who are you?", "What time is it?"}, 4},
+            { new string[]{"Beaches", "Plantations", "Fast food chains", "Dogs"}, 5},
+            {new string[]{"Raise your hand.", "Use your phone.", "Call an ambulance.", "Wash your hands."}, 6},
+            { new string[]{"beans.", "gallo pinto.", "fried chicken.", "potato."}, 7},
+            {new string[]{"use a spoon", "smile", "use your phone", "think"}, 8},
+            { new string[]{"airplanes", "baseball games", "football games", "skating"}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Fine, thank you", "I don't get what I want", "make eye contact",
-            "I get my favorite food", "I confront something unknown", "Someone makes fun of me",
-            "Something happens that I didn't expected", "Aunt", "Mother",
-            "Uncle", "Nephew", "Son"
+            "Can I use your phone?", "it is important to get a job.", "Tell him/her to call me back.",
+            "May I go to the bathroom?", "May I speak to...?", "Beaches",
+            "Wash your hands.", "gallo pinto.", "use your phone", "football games"
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -85,7 +82,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };
