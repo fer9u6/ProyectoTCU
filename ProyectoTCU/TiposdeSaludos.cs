@@ -129,10 +129,25 @@ namespace ProyectoTCU
             int op3 = rn.Next(0, rformalGreetings.Count);
             int op4 = rn.Next(0, informalGreetings.Count);
             int op5 = rn.Next(0, byeGreetings.Count);
-
            
             o2.Text = rinformalGreetings[op2];
-            
+
+            List<String> l = respuestas[imagenA];
+            if (l == formalGreetings || l == rformalGreetings)
+            {
+                labelpista.Text = "Formal";
+            }
+            else
+            {
+                if (l == informalGreetings || l == rinformalGreetings)
+                {
+                    labelpista.Text = "Informal";
+                }
+                else {
+                    labelpista.Text = ". . .";
+                }
+            }
+
             if (imagenA <= 4)//saludos tiempo
             {
                 if (imagenA < 3)
@@ -165,15 +180,15 @@ namespace ProyectoTCU
             contador++;
            List<String> l=  respuestas[imagenA];
             bool resultado = false;
-            if (l.Contains(respuesta)) { resultado = true; }
+            if (l.Contains(respuesta)&&l!=timeGreetings) { resultado = true; }
             if (imagenA <5) { //saludo de tiempo
                 if (imagenA < 3)
                 { if (respuesta == "Good Night" || respuesta == "Good Evening") {
                         resultado = true;
                     }
                 }
-                if (imagenA == 3 && respuesta != "Good Morning") { resultado = false; }
-                if (imagenA == 4 && respuesta != "Good Afternoon") { resultado = false; }
+                if (imagenA == 3 && respuesta == "Good Morning") { resultado = true; }
+                if (imagenA == 4 && respuesta == "Good Afternoon") { resultado = true; }
             }
 
             if (resultado == true)
@@ -257,6 +272,16 @@ namespace ProyectoTCU
                 respuesta = o3.Text;
                 validar();
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -40,18 +40,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.backB = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.playButton = new System.Windows.Forms.Button();
-            this.testLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.backB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AllowDrop = true;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LawnGreen;
+            this.label1.BackColor = System.Drawing.Color.GreenYellow;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(46, 342);
@@ -67,7 +65,8 @@
             // panel1
             // 
             this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(46, 181);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 92);
@@ -76,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.LawnGreen;
+            this.label2.BackColor = System.Drawing.Color.GreenYellow;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(196, 342);
@@ -91,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.LawnGreen;
+            this.label3.BackColor = System.Drawing.Color.GreenYellow;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(332, 342);
@@ -106,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.LawnGreen;
+            this.label4.BackColor = System.Drawing.Color.GreenYellow;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(478, 342);
@@ -121,7 +120,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.LawnGreen;
+            this.label5.BackColor = System.Drawing.Color.GreenYellow;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(631, 342);
@@ -136,7 +135,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.LawnGreen;
+            this.label6.BackColor = System.Drawing.Color.GreenYellow;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(29, 401);
@@ -151,7 +150,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.LawnGreen;
+            this.label7.BackColor = System.Drawing.Color.GreenYellow;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(150, 401);
@@ -166,7 +165,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.LawnGreen;
+            this.label8.BackColor = System.Drawing.Color.GreenYellow;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(316, 401);
@@ -181,7 +180,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.LawnGreen;
+            this.label9.BackColor = System.Drawing.Color.GreenYellow;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(469, 401);
@@ -197,7 +196,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.LawnGreen;
+            this.label10.BackColor = System.Drawing.Color.GreenYellow;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(605, 401);
@@ -208,6 +207,33 @@
             this.label10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             this.label10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
             this.label10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
+            // 
+            // playButton
+            // 
+            this.playButton.BackColor = System.Drawing.Color.Yellow;
+            this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playButton.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playButton.Location = new System.Drawing.Point(316, 23);
+            this.playButton.Name = "playButton";
+            this.playButton.Size = new System.Drawing.Size(110, 42);
+            this.playButton.TabIndex = 11;
+            this.playButton.Text = "Play!";
+            this.playButton.UseVisualStyleBackColor = false;
+            this.playButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::ProyectoTCU.Properties.Resources.success64;
+            this.button1.Location = new System.Drawing.Point(660, 74);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 76);
+            this.button1.TabIndex = 12;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // backB
             // 
@@ -223,49 +249,14 @@
             this.backB.UseVisualStyleBackColor = false;
             this.backB.Click += new System.EventHandler(this.backB_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(676, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // playButton
-            // 
-            this.playButton.BackColor = System.Drawing.Color.Yellow;
-            this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playButton.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(316, 12);
-            this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(110, 42);
-            this.playButton.TabIndex = 11;
-            this.playButton.Text = "Play!";
-            this.playButton.UseVisualStyleBackColor = false;
-            this.playButton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // testLabel
-            // 
-            this.testLabel.AutoSize = true;
-            this.testLabel.Location = new System.Drawing.Point(239, 77);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(41, 13);
-            this.testLabel.TabIndex = 12;
-            this.testLabel.Text = "label11";
-            // 
             // socializingOrdenar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(770, 474);
-            this.Controls.Add(this.testLabel);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.playButton);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.backB);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -281,7 +272,6 @@
             this.Name = "socializingOrdenar";
             this.Text = "socializingOrdenar";
             this.Load += new System.EventHandler(this.socializingOrdenar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,8 +291,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button backB;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button playButton;
-        private System.Windows.Forms.Label testLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -13,6 +13,7 @@ namespace ProyectoTCU
     public partial class Neighborhood : Form
     {
         Menu1erGrado m1;
+        MenuNeighborhood mn;
         Dictionary<String, String> preguntasRespuestas;
         int contador;
         int actual;
@@ -43,9 +44,9 @@ namespace ProyectoTCU
 
         private void backB_Click(object sender, EventArgs e)
         {
-            m1 = new Menu1erGrado();
+            mn = new MenuNeighborhood();
             this.Hide();
-            m1.Show();
+            mn.Show();
         }
 
         private void mostrarPregunta() {

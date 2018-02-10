@@ -42,9 +42,9 @@ namespace ProyectoTCU
             recomendaciones.Add("Toothache","Go to the dentist.");
             recomendaciones.Add("Sore throat","Drink lemon tea.");
             recomendaciones.Add("Chiken pox","Go to the doctor.");
-            recomendaciones.Add("Stomachache","Drink peppermint tea.");
+            recomendaciones.Add("Stomachache", "Do not eat junk food.");
             recomendaciones.Add("Sunburn","Keep your skin hydrated.");
-            recomendaciones.Add("Fever","Take an ibuprofen.");
+            recomendaciones.Add("Fever","Take a pill.");
             recomendaciones.Add("Headache","Take a rest.");
             // recomendaciones.Add("Take a rest.", "Headache");
 
@@ -56,7 +56,7 @@ namespace ProyectoTCU
         public void mostrar()
         {
             Random rn = new Random();
-            
+
             if (contadorRecomendaciones <= 7)
             {
                 eActual = rn.Next(0, 8);
@@ -67,15 +67,21 @@ namespace ProyectoTCU
                 usadas.Add(eActual);
                 label1.Text = enfermedades[eActual];
 
+                //respuesta incorrecta 
+                int resIncorrecta =rn.Next(0, 8);
+                while (resIncorrecta == eActual) {
+                    resIncorrecta = rn.Next(0, 8);
+                }
+
                 int r = rn.Next(0, 2);
                 if (r == 0)
                 {
                     o1.Text = recomendaciones[enfermedades[eActual]];
-                    o3.Text = recomendaciones[enfermedades[rn.Next(0, 8)]];
+                    o3.Text = recomendaciones[enfermedades[resIncorrecta]];
                 }
                 else {
                     o3.Text = recomendaciones[enfermedades[eActual]];
-                    o1.Text = recomendaciones[enfermedades[rn.Next(0, 8)]];
+                    o1.Text = recomendaciones[enfermedades[resIncorrecta]];
                 }
 
             }

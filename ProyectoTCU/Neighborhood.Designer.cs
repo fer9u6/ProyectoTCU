@@ -66,7 +66,7 @@
             this.labelquestion.AutoSize = true;
             this.labelquestion.Font = new System.Drawing.Font("Open Sans Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelquestion.ForeColor = System.Drawing.Color.DarkBlue;
-            this.labelquestion.Location = new System.Drawing.Point(437, 491);
+            this.labelquestion.Location = new System.Drawing.Point(242, 498);
             this.labelquestion.Name = "labelquestion";
             this.labelquestion.Size = new System.Drawing.Size(86, 33);
             this.labelquestion.TabIndex = 6;

@@ -60,6 +60,11 @@ namespace ProyectoTCU
             intentos = 0;
             fallos = 0;
 
+            foreach (Label l in labels)
+            {
+                l.Text = "     ";
+            }
+
         }
 
         private void backB_Click(object sender, EventArgs e)
@@ -171,15 +176,15 @@ namespace ProyectoTCU
             Random rn = new Random();
             fraseA = rn.Next(0, frases.Count); // frase a mostrar
 
-            //while(frasesUsadas.Contains(fraseA)) {
-            //    fraseA = rn.Next(0, frases.Count);
-            //}
+            while(frasesUsadas.Contains(fraseA)) {
+                fraseA = rn.Next(0, frases.Count);
+            }
             frasesUsadas.Add(fraseA);
-            testLabel.Text = frases[fraseA];
+            //testLabel.Text = frases[fraseA];   para mostrar la frase
 
             char espacio =' ';
             String[] partes = frases[fraseA].Split(espacio);
-            int num = partes.Length;
+            int num = partes.Length;   
             List<int> labesUsadas = new List<int>();
             for(int i = 0; i < num; i++)
             {
@@ -189,6 +194,16 @@ namespace ProyectoTCU
                 }
                 labesUsadas.Add(lb);
                 labels[lb].Text = partes[i];// se le asigna a un label una parte de la frase
+            }
+
+            foreach (Label l in labels) {
+                if (l.Text == "     " || l.Text == "")
+                {
+                    l.Visible = false;
+                }
+                else {
+                    l.Visible = true;
+                }
             }
 
 

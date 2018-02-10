@@ -83,6 +83,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _635826e955db6aa {
+            get {
+                object obj = ResourceManager.GetObject("635826e955db6aa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap across_from {
             get {
                 object obj = ResourceManager.GetObject("across_from", resourceCulture);
@@ -105,6 +115,36 @@ namespace ProyectoTCU.Properties {
         internal static System.Drawing.Bitmap audio_volume {
             get {
                 object obj = ResourceManager.GetObject("audio-volume", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow {
+            get {
+                object obj = ResourceManager.GetObject("back-arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow__1_ {
+            get {
+                object obj = ResourceManager.GetObject("back-arrow (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_arrow__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("back-arrow (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -187,6 +227,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap behind1 {
+            get {
+                object obj = ResourceManager.GetObject("behind1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap between {
             get {
                 object obj = ResourceManager.GetObject("between", resourceCulture);
@@ -215,10 +265,49 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap between1 {
+            get {
+                object obj = ResourceManager.GetObject("between1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blackboard_clipart_8 {
+            get {
+                object obj = ResourceManager.GetObject("blackboard-clipart-8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_scissors_ {
             get {
                 object obj = ResourceManager.GetObject("blue-scissors-", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap board {
+            get {
+                object obj = ResourceManager.GetObject("board", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream board_audio {
+            get {
+                return ResourceManager.GetStream("board_audio", resourceCulture);
             }
         }
         
@@ -254,6 +343,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_case {
+            get {
+                object obj = ResourceManager.GetObject("book case", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book_store {
             get {
                 object obj = ResourceManager.GetObject("book_store", resourceCulture);
@@ -277,6 +376,15 @@ namespace ProyectoTCU.Properties {
             get {
                 object obj = ResourceManager.GetObject("bookcafe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream bookcase_audio {
+            get {
+                return ResourceManager.GetStream("bookcase_audio", resourceCulture);
             }
         }
         
@@ -351,6 +459,35 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chair {
+            get {
+                object obj = ResourceManager.GetObject("chair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream chair_audio {
+            get {
+                return ResourceManager.GetStream("chair_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chapter_3_section_2_edit {
+            get {
+                object obj = ResourceManager.GetObject("chapter_3_section_2_edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap church {
             get {
                 object obj = ResourceManager.GetObject("church", resourceCulture);
@@ -408,6 +545,26 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap classroom___Copy1 {
+            get {
+                object obj = ResourceManager.GetObject("classroom - Copy1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipart_crayons_1862 {
+            get {
+                object obj = ResourceManager.GetObject("clipart-crayons-1862", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream color_pencils_audio {
@@ -449,6 +606,46 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap colorparedpisoclassroom1 {
+            get {
+                object obj = ResourceManager.GetObject("colorparedpisoclassroom1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorparedpisoclassroom2 {
+            get {
+                object obj = ResourceManager.GetObject("colorparedpisoclassroom2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorparedpisoclassroom3 {
+            get {
+                object obj = ResourceManager.GetObject("colorparedpisoclassroom3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorparedpisoclassroom4 {
+            get {
+                object obj = ResourceManager.GetObject("colorparedpisoclassroom4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap colorpencils {
             get {
                 object obj = ResourceManager.GetObject("colorpencils", resourceCulture);
@@ -482,6 +679,35 @@ namespace ProyectoTCU.Properties {
         internal static System.Drawing.Bitmap crayons {
             get {
                 object obj = ResourceManager.GetObject("crayons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream crayons_audio {
+            get {
+                return ResourceManager.GetStream("crayons_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cute_cartoon_pencil_04_vector_material_19863 {
+            get {
+                object obj = ResourceManager.GetObject("Cute-cartoon-pencil-04-vector-material-19863", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga__1_ {
+            get {
+                object obj = ResourceManager.GetObject("descarga (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -721,6 +947,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap idea {
+            get {
+                object obj = ResourceManager.GetObject("idea", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap in_front_of {
             get {
                 object obj = ResourceManager.GetObject("in_front_of", resourceCulture);
@@ -743,6 +979,16 @@ namespace ProyectoTCU.Properties {
         internal static System.IO.UnmanagedMemoryStream in_front_of_the_board_audio {
             get {
                 return ResourceManager.GetStream("in_front_of_the_board_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap infrontof {
+            get {
+                object obj = ResourceManager.GetObject("infrontof", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -971,11 +1217,40 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nextto {
+            get {
+                object obj = ResourceManager.GetObject("nextto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream notebook_audio {
             get {
                 return ResourceManager.GetStream("notebook_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap on {
+            get {
+                object obj = ResourceManager.GetObject("on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream on_audio {
+            get {
+                return ResourceManager.GetStream("on_audio", resourceCulture);
             }
         }
         
@@ -1180,6 +1455,25 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rule {
+            get {
+                object obj = ResourceManager.GetObject("rule", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream rule_audio {
+            get {
+                return ResourceManager.GetStream("rule_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream school_audio {
@@ -1328,6 +1622,26 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap success {
+            get {
+                object obj = ResourceManager.GetObject("success", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap success64 {
+            get {
+                object obj = ResourceManager.GetObject("success64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap super_goal1 {
             get {
                 object obj = ResourceManager.GetObject("super goal1", resourceCulture);
@@ -1355,11 +1669,69 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap table {
+            get {
+                object obj = ResourceManager.GetObject("table", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream table_audio {
+            get {
+                return ResourceManager.GetStream("table_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap under {
+            get {
+                object obj = ResourceManager.GetObject("under", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream under_audio {
+            get {
+                return ResourceManager.GetStream("under_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream under_the_table {
             get {
                 return ResourceManager.GetStream("under_the_table", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitledboard {
+            get {
+                object obj = ResourceManager.GetObject("Untitledboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitledboard1 {
+            get {
+                object obj = ResourceManager.GetObject("Untitledboard1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

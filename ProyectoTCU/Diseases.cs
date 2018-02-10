@@ -72,27 +72,23 @@ namespace ProyectoTCU
                 imagenActual = key;
                 pictureBox1.Image = imageListEnfermedades.Images[key];
                 //opciones
-
-                //List<int>botonesUsados;
-                //botonesUsados = new List<int>();
-                //int indiceBotones = 0;
-                //for (int i = 0; i < botones.Count; i++)
-                //{
-                //    indiceBotones= rn.Next(0, botones.Count);
-                //    while (botonesUsados.Contains(indiceBotones))
-                //    {
-                //        indiceBotones =rn.Next(0, botones.Count);
-                //    }
-                //    botonesUsados.Add(indiceBotones);
-                //}
-                //for (int i = 0; i < botones.Count-1; i++) {
-                //    //botones[botonesUsados[i]].Text = 
-                //    }
-                o1.Text = enfermedades[rn.Next(0, enfermedades.Count)];//cualquier string 
-                o2.Text = enfermedades[rn.Next(0, enfermedades.Count)];//cualquier string 
-                o3.Text = enfermedades[rn.Next(0, enfermedades.Count)];//cualquier string 
-                o4.Text = enfermedades[rn.Next(0, enfermedades.Count)];//cualquier string 
-                botones[rn.Next(0, botones.Count)].Text = enfermedades[key];
+                //para que no se repitan se hace una lista provicional llamada opciones
+                List<int> opciones;
+                opciones = new List<int>();
+                int o = rn.Next(0, enfermedades.Count);
+                for (int i = 0; i < 4; i++)
+                {
+                    while (opciones.Contains(o) || o == key)
+                    {
+                        o = rn.Next(0, enfermedades.Count);
+                    }
+                    opciones.Add(o);
+                }
+                o1.Text = enfermedades[opciones[0]];//cualquier string 
+                o2.Text = enfermedades[opciones[1]];//cualquier string 
+                o3.Text = enfermedades[opciones[2]];//cualquier string 
+                o4.Text = enfermedades[opciones[3]];//cualquier string 
+                botones[rn.Next(0, botones.Count)].Text = enfermedades[key]; //el string elegido
             }
             else
             {

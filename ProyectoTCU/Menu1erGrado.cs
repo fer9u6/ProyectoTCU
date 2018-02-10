@@ -18,6 +18,9 @@ namespace ProyectoTCU
         Parejas1erGrado par;
         Preguntas1erGrado preg;
         ListenPlaces lp;
+        ClassroomVocabulary cv;
+        MenuClassroom mc;
+        MenuNeighborhood mn;
 
         public Menu1erGrado()
         {
@@ -26,17 +29,18 @@ namespace ProyectoTCU
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // nei = new Neighborhood();
-            lp = new ListenPlaces();
+            mn = new MenuNeighborhood();
             this.Hide();
-            lp.Show();
+            mn.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            c = new Classroom();
+            // c = new Classroom();
+            cv = new ClassroomVocabulary();
+            mc = new MenuClassroom();
             this.Hide();
-            c.Show();
+            mc.Show();
         }
 
         private void backB_MouseHover(object sender, EventArgs e)

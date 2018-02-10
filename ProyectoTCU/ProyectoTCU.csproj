@@ -60,6 +60,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassroomVocabulary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassroomVocabulary.Designer.cs">
+      <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuClassroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuClassroom.Designer.cs">
+      <DependentUpon>MenuClassroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuNeighborhood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuNeighborhood.Designer.cs">
+      <DependentUpon>MenuNeighborhood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuSocializing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuSocializing.Designer.cs">
+      <DependentUpon>MenuSocializing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prepositions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prepositions.Designer.cs">
+      <DependentUpon>Prepositions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diseases2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +288,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="classroom2.resx">
       <DependentUpon>classroom2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassroomVocabulary.resx">
+      <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuClassroom.resx">
+      <DependentUpon>MenuClassroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuNeighborhood.resx">
+      <DependentUpon>MenuNeighborhood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuSocializing.resx">
+      <DependentUpon>MenuSocializing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prepositions.resx">
+      <DependentUpon>Prepositions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diseases.resx">
       <DependentUpon>Diseases.cs</DependentUpon>
@@ -488,6 +533,10 @@
     <None Include="Resources\1-512.png" />
     <None Include="Resources\across from.jpg" />
     <None Include="Resources\across_from_audio.wav" />
+    <None Include="Resources\back-arrow %281%29.png" />
+    <None Include="Resources\back-arrow.png" />
+    <None Include="Resources\back-arrow %281%291.png" />
+    <None Include="Resources\635826e955db6aa.jpg" />
     <Content Include="Resources\backpack.png" />
     <None Include="Resources\notebook.wav" />
     <None Include="Resources\backpack.wav" />
@@ -544,6 +593,30 @@
     <None Include="Resources\on_the_corner_audio.wav" />
     <None Include="Resources\city - Copy.png" />
     <None Include="Resources\city - Copy1.png" />
+    <None Include="Resources\idea.png" />
+    <None Include="Resources\book case.jpg" />
+    <None Include="Resources\board.png" />
+    <None Include="Resources\chair.jpg" />
+    <None Include="Resources\on.jpg" />
+    <None Include="Resources\nextto.jpg" />
+    <None Include="Resources\between1.jpg" />
+    <None Include="Resources\infrontof.jpg" />
+    <None Include="Resources\behind.jpg" />
+    <None Include="Resources\board_audio.wav" />
+    <None Include="Resources\bookcase_audio.wav" />
+    <None Include="Resources\on_audio.wav" />
+    <None Include="Resources\chair_audio.wav" />
+    <None Include="Resources\crayons_audio.wav" />
+    <None Include="Resources\blackboard-clipart-8.jpg" />
+    <None Include="Resources\Cute-cartoon-pencil-04-vector-material-19863.jpg" />
+    <None Include="Resources\chapter_3_section_2_edit.jpg" />
+    <None Include="Resources\clipart-crayons-1862.png" />
+    <None Include="Resources\classroom - Copy1.jpg" />
+    <None Include="Resources\colorparedpisoclassroom1.jpg" />
+    <None Include="Resources\colorparedpisoclassroom2.jpg" />
+    <None Include="Resources\colorparedpisoclassroom3.jpg" />
+    <None Include="Resources\colorparedpisoclassroom4.jpg" />
+    <None Include="Resources\descarga %281%29.png" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -567,6 +640,16 @@
     <None Include="Resources\police-station.jpg" />
     <None Include="Resources\simple map.png" />
     <None Include="Resources\super goal1.jpg" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\success64.png" />
+    <None Include="Resources\rule.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\under.jpg" />
+    <None Include="Resources\rule_audio.wav" />
+    <None Include="Resources\table_audio.wav" />
+    <None Include="Resources\under_audio.wav" />
+    <None Include="Resources\Untitledboard.png" />
+    <None Include="Resources\Untitledboard1.png" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

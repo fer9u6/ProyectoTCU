@@ -16,6 +16,7 @@ namespace ProyectoTCU
         Menu1erGrado m1;
         PrepositionsCity pc;
         Neighborhood nei;
+        MenuNeighborhood mn;
         Dictionary<Image,String> places;
         Dictionary<Image, SoundPlayer> placesaudio;
         List<int> usadas;
@@ -88,8 +89,9 @@ namespace ProyectoTCU
                 label2.Text = places[pictureBox1.Image];
             }
             else {
-                MessageBox.Show("Lets learn about prepositions");
-                goPrepositions();
+
+                usadas.Clear();
+                
             }
         }
 
@@ -98,17 +100,12 @@ namespace ProyectoTCU
 
         }
 
-        private void goPrepositions() {
-            pc = new PrepositionsCity();
-            this.Hide();
-            pc.Show();
-        }
-
+       
         private void backB_Click(object sender, EventArgs e)
         {
-            m1 = new Menu1erGrado();
+            mn = new MenuNeighborhood();
             this.Hide();
-            m1.Show();
+            mn.Show();
         }
 
         private void audio_Button_Click(object sender, EventArgs e)

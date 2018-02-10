@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Classroom));
-            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pictureboxpared = new System.Windows.Forms.PictureBox();
             this.pictureBox4peque = new System.Windows.Forms.PictureBox();
             this.pictureBox3g = new System.Windows.Forms.PictureBox();
@@ -37,7 +37,7 @@
             this.pictureBox1g = new System.Windows.Forms.PictureBox();
             this.mainPB = new System.Windows.Forms.PictureBox();
             this.backB = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.audio_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpared)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4peque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3g)).BeginInit();
@@ -46,16 +46,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainPB)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // button2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(16, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 57);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Sound";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(24, 217);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(61, 39);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "level 2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureboxpared
             // 
@@ -137,24 +139,28 @@
             this.backB.UseVisualStyleBackColor = false;
             this.backB.Click += new System.EventHandler(this.backB_Click);
             // 
-            // button2
+            // audio_Button
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(20, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(61, 39);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "level 2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.audio_Button.BackColor = System.Drawing.Color.Lime;
+            this.audio_Button.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.audio_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.audio_Button.ForeColor = System.Drawing.Color.Yellow;
+            this.audio_Button.Image = global::ProyectoTCU.Properties.Resources.speaker__10_;
+            this.audio_Button.Location = new System.Drawing.Point(24, 126);
+            this.audio_Button.Name = "audio_Button";
+            this.audio_Button.Size = new System.Drawing.Size(61, 56);
+            this.audio_Button.TabIndex = 13;
+            this.audio_Button.UseVisualStyleBackColor = false;
+            this.audio_Button.Click += new System.EventHandler(this.button1_Click);
             // 
             // Classroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(786, 489);
+            this.Controls.Add(this.audio_Button);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureboxpared);
             this.Controls.Add(this.pictureBox4peque);
             this.Controls.Add(this.pictureBox3g);
@@ -164,6 +170,7 @@
             this.Controls.Add(this.backB);
             this.Name = "Classroom";
             this.Text = "Classroom";
+            this.Load += new System.EventHandler(this.Classroom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpared)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4peque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3g)).EndInit();
@@ -183,7 +190,7 @@
         private System.Windows.Forms.PictureBox pictureBox3g;
         private System.Windows.Forms.PictureBox pictureBox4peque;
         private System.Windows.Forms.PictureBox pictureboxpared;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button audio_Button;
     }
 }

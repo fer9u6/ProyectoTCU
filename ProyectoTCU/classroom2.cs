@@ -19,7 +19,7 @@ namespace ProyectoTCU
         List<Bitmap> imagenesUsadas;
         List<int> iAsignadas; // indices de la lista de objetos que fueron asignados para una ronda 
         List<Bitmap> imagenesObjetos;
-        List<int> ordenpBox;//bulshit
+        List<int> ordenpBox;
         SortedList<int,SoundPlayer> sAsignados;// sonidos asignados para una ronda(indice de sonido de objeto,sonido de preposicion)
         Dictionary<PictureBox,SoundPlayer> parejas; //sonidos de preposicion asociados a un picturebox
         List<PictureBox> pboxList;
@@ -50,6 +50,8 @@ namespace ProyectoTCU
             Bitmap backpack = (Bitmap)Properties.Resources.backpack;
             Bitmap notebook = (Bitmap)Properties.Resources.yellow_notebook;
             Bitmap pen = (Bitmap)Properties.Resources.pen_silver;
+            Bitmap rule = (Bitmap)Properties.Resources.rule;
+            Bitmap crayons = (Bitmap)Properties.Resources.clipart_crayons_1862;
 
             pboxList.Add(pictureBoxon);
             pboxList.Add(pictureBoxondesk);
@@ -57,6 +59,7 @@ namespace ProyectoTCU
             pboxList.Add(pictureBoxbetween);
             pboxList.Add(pictureBoxinfrontofb);
             pboxList.Add(pictureBoxunder);
+            pboxList.Add(pictureBinfrontoftrue);
             
 
 
@@ -72,12 +75,15 @@ namespace ProyectoTCU
             imagenesObjetos.Add(backpack);
             imagenesObjetos.Add(pen);
             imagenesObjetos.Add(notebook);
+            imagenesObjetos.Add(rule);
+            imagenesObjetos.Add(crayons);
 
             SoundPlayer onthedeskaudio = new SoundPlayer(Properties.Resources.on_the_desk_audio);
             SoundPlayer onthetableaudio = new SoundPlayer(Properties.Resources.on_the_table_audio);
             SoundPlayer nexttoaudio = new SoundPlayer(Properties.Resources.next_to_the_desk_audio);
             SoundPlayer betweenaudio = new SoundPlayer(Properties.Resources.between_the_b_and_t_audio);
             SoundPlayer behindaudio = new SoundPlayer(Properties.Resources.behind_the_chair_audio);
+            SoundPlayer infrontofaudio = new SoundPlayer(Properties.Resources.in_front_of_the_board_audio);
             SoundPlayer underaudio = new SoundPlayer(Properties.Resources.under_the_table);
             SoundPlayer booksaudio = new SoundPlayer(Properties.Resources.books_audio);
             SoundPlayer redbookaudio = new SoundPlayer(Properties.Resources.red_book_audio);
@@ -91,6 +97,8 @@ namespace ProyectoTCU
             SoundPlayer penaudio = new SoundPlayer(Properties.Resources.pen_audio);
             SoundPlayer notebookaudio = new SoundPlayer(Properties.Resources.notebook_audio);
             SoundPlayer bookaudio = new SoundPlayer(Properties.Resources.book_audio);
+            SoundPlayer ruleaudio = new SoundPlayer(Properties.Resources.rule_audio);
+            SoundPlayer crayonsaudio = new SoundPlayer(Properties.Resources.crayons_audio);
 
 
             //preposiciones
@@ -100,6 +108,7 @@ namespace ProyectoTCU
             parejas.Add(pictureBoxbetween, betweenaudio);
             parejas.Add(pictureBoxinfrontofb, behindaudio);
             parejas.Add(pictureBoxunder, underaudio);
+            parejas.Add(pictureBinfrontoftrue,infrontofaudio);
 
             imagenesYsonidos.Add(books, booksaudio);
             imagenesYsonidos.Add(bs, scissorsaudio);
@@ -113,6 +122,8 @@ namespace ProyectoTCU
             imagenesYsonidos.Add(backpack, bacpackaudio);
             imagenesYsonidos.Add(pen, penaudio);
             imagenesYsonidos.Add(notebook, notebookaudio);
+            imagenesYsonidos.Add(rule,ruleaudio);
+            imagenesYsonidos.Add(crayons, crayonsaudio);
 
             asignar();
         }
@@ -129,7 +140,7 @@ namespace ProyectoTCU
             Random rn = new Random();
             //se elige un sonido
             int imagenN;
-            int limite = 5;
+            int limite = 6;
             for (int i = 0; i <= limite; i++)
             {
                 imagenN = rn.Next(0, imagenesObjetos.Count);
@@ -148,6 +159,7 @@ namespace ProyectoTCU
             pictureBoxon.Image = imagenesObjetos[iAsignadas[3]];
             pictureBoxondesk.Image = imagenesObjetos[iAsignadas[4]];
             pictureBoxunder.Image = imagenesObjetos[iAsignadas[5]];
+            pictureBinfrontoftrue.Image = imagenesObjetos[iAsignadas[6]];
             //orden de los sonidos
             //el sonido del objeto se obtiene de del dicionario imagenesYsonidos, se envia el indice de la lista de imagenesObjetos
             sAsignados.Add(iAsignadas[0],parejas[pictureBoxbetween]);
@@ -155,12 +167,13 @@ namespace ProyectoTCU
             sAsignados.Add(iAsignadas[2], parejas[pictureBoxbetween]);
             sAsignados.Add(iAsignadas[3], parejas[pictureBoxbetween]);
             sAsignados.Add(iAsignadas[4], parejas[pictureBoxbetween]);
+            sAsignados.Add(iAsignadas[5], parejas[pictureBoxbetween]);
             //(imagenesYsonidos[imagenesObjetos[iAsignadas[0]]])
 
             //orden picture box
-           int pb= rn.Next(0,pboxList.Count);
+            int pb= rn.Next(0,pboxList.Count);
             List<int> lista = new List<int>();
-            for (int i = 0; i <= 5; i++)
+            for (int i = 0; i <= 6; i++)
             {
                 while (lista.Contains(pb))
                 {
@@ -212,7 +225,7 @@ namespace ProyectoTCU
             {
                 MessageBox.Show("Correct answer");
                 boxActual++;
-                if (boxActual == 6) // ya se acabo la ronda
+                if (boxActual == 7) // ya se acabo la ronda
                 {
                     rondas++;
                     boxActual = 0;

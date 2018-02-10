@@ -59,7 +59,7 @@ namespace ProyectoTCU
             contenedores.Add(pictureBox15);
             contenedores.Add(pictureBox16);
 
-
+            asignar();
         }
 
         private void backB_Click(object sender, EventArgs e)
@@ -71,9 +71,7 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            play = true;
-            button1.Visible = false;
-            asignar();
+            
         }
 
         private void asignar()

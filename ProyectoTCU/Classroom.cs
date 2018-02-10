@@ -17,6 +17,7 @@ namespace ProyectoTCU
     {
         Menu1erGrado m1;
         classroom2 c2;
+        MenuClassroom mc;
         int pared,contador,sonidoActual,rondas;
         Dictionary<int, SoundPlayer> sonidos;
         Dictionary<int, Image> parejas;
@@ -86,9 +87,9 @@ namespace ProyectoTCU
 
         private void backB_Click(object sender, EventArgs e)
         {
-            m1 = new Menu1erGrado();
+            mc = new MenuClassroom();
             this.Hide();
-            m1.Show();
+            mc.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -145,6 +146,11 @@ namespace ProyectoTCU
             classroom2 c2 = new classroom2();
             this.Hide();
             c2.Show();
+
+        }
+
+        private void Classroom_Load(object sender, EventArgs e)
+        {
 
         }
 

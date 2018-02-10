@@ -15,6 +15,7 @@ namespace ProyectoTCU
     {
         ListenPlaces lp;
         Neighborhood nei;
+        MenuNeighborhood mn;
         Dictionary<Image, String> imagenPrepo;
         Dictionary<Image, SoundPlayer> imagenSonido;
         int contador;
@@ -44,7 +45,7 @@ namespace ProyectoTCU
 
             contador = 0;
             mostrar();
-            buttonplay.Visible = false;
+            
             
         }
 
@@ -59,7 +60,7 @@ namespace ProyectoTCU
             else {
                 MessageBox.Show("You are ready to play");
                 contador = 0;
-                buttonplay.Visible = true;
+               
             }
 
         }
@@ -70,9 +71,9 @@ namespace ProyectoTCU
 
         private void backB_Click(object sender, EventArgs e)
         {
-            lp = new ListenPlaces();
+            mn= new MenuNeighborhood();
             this.Hide();
-            lp.Show();
+            mn.Show();
         }
 
         private void audio_Button_Click(object sender, EventArgs e)
