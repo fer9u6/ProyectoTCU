@@ -44,14 +44,14 @@ namespace ProyectoTCU
             { new string[]{"living room.", "bedroom.", "kitchen.", "bathroom."}, 5},
             { new string[]{"bedroom.", "living room.", "bathroom.", "courtyard."}, 6},
             { new string[]{"bedroom.", "courtyard.", "kitchen.", "bathroom."}, 7},
-            { new string[]{"bathroom.", "living room.", "courtyard.", "bedroom."}, 8},
+            { new string[]{"bathroom.", "dining room.", "courtyard.", "bedroom."}, 8},
             { new string[]{"kitchen.", "bathroom.", "living room.", "bedroom."}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
             "brush my teeth", "introduce yourself.", "The school", "put on my pajamas",
-            "shake hands.", "bathroom.", "living room.", "bedroom.", "living room.", "kitchen."
+            "shake hands.", "bathroom.", "living room.", "bedroom.", "dining room.", "kitchen."
         };
 
         Image[] images = new Image[questions.Length];
@@ -81,7 +81,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };

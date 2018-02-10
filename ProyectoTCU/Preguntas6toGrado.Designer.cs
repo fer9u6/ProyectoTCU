@@ -170,18 +170,16 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "primGrad1.jpg");
-            this.imageList1.Images.SetKeyName(1, "primGrad2.jpg");
-            this.imageList1.Images.SetKeyName(2, "primGrad3.jpg");
-            this.imageList1.Images.SetKeyName(3, "primGrad4.jpg");
-            this.imageList1.Images.SetKeyName(4, "primGrad5.jpg");
-            this.imageList1.Images.SetKeyName(5, "primGrad6.jpg");
-            this.imageList1.Images.SetKeyName(6, "primGrad7.jpg");
-            this.imageList1.Images.SetKeyName(7, "primGrad8.jpg");
-            this.imageList1.Images.SetKeyName(8, "primGrad9.jpg");
-            this.imageList1.Images.SetKeyName(9, "primGrad10.jpg");
-            this.imageList1.Images.SetKeyName(10, "primGrad11.jpg");
-            this.imageList1.Images.SetKeyName(11, "primGrad12.jpg");
+            this.imageList1.Images.SetKeyName(0, "sexGra1.JPG");
+            this.imageList1.Images.SetKeyName(1, "sexGra2.JPG");
+            this.imageList1.Images.SetKeyName(2, "sexGra3.jpg");
+            this.imageList1.Images.SetKeyName(3, "sexGra4.jpg");
+            this.imageList1.Images.SetKeyName(4, "sexGra5.jpg");
+            this.imageList1.Images.SetKeyName(5, "sexGra6.jpg");
+            this.imageList1.Images.SetKeyName(6, "sexGra7.jpg");
+            this.imageList1.Images.SetKeyName(7, "sexGra8.jpg");
+            this.imageList1.Images.SetKeyName(8, "sexGra9.jpg");
+            this.imageList1.Images.SetKeyName(9, "sexGra10.JPG");
             // 
             // Preguntas6toGrado
             // 
