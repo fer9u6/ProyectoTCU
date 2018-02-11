@@ -38,7 +38,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelsituation = new System.Windows.Forms.Label();
             this.imageListEnfermedades = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // playButton
@@ -111,7 +113,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(166, 119);
+            this.panel1.Location = new System.Drawing.Point(150, 119);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(457, 83);
             this.panel1.TabIndex = 24;
@@ -145,12 +147,22 @@
             this.imageListEnfermedades.Images.SetKeyName(12, "cut.jpg");
             this.imageListEnfermedades.Images.SetKeyName(13, "insectbite - Copy.jpg");
             // 
+            // pictureBoxRespuesta
+            // 
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(628, 137);
+            this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
+            this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);
+            this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxRespuesta.TabIndex = 26;
+            this.pictureBoxRespuesta.TabStop = false;
+            // 
             // Diseases2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(740, 415);
+            this.ClientSize = new System.Drawing.Size(771, 415);
+            this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.labelsituation);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.playButton);
@@ -161,6 +173,7 @@
             this.Text = "Diseases2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelsituation;
         private System.Windows.Forms.ImageList imageListEnfermedades;
+        private System.Windows.Forms.PictureBox pictureBoxRespuesta;
     }
 }

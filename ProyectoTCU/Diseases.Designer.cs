@@ -39,7 +39,9 @@
             this.imageListEnfermedades = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // backB
@@ -160,12 +162,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBoxRespuesta
+            // 
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(602, 206);
+            this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
+            this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);
+            this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxRespuesta.TabIndex = 18;
+            this.pictureBoxRespuesta.TabStop = false;
+            // 
             // Diseases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(743, 451);
+            this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.playButton);
@@ -177,6 +189,7 @@
             this.Name = "Diseases";
             this.Text = "Diseases";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +205,6 @@
         private System.Windows.Forms.ImageList imageListEnfermedades;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBoxRespuesta;
     }
 }

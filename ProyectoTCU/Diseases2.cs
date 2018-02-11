@@ -16,11 +16,14 @@ namespace ProyectoTCU
         Dictionary<int, String> enfermedades;
         Dictionary<String, String> recomendaciones;
         List<int> usadas;
-        int eActual,contadorRecomendaciones;
+        Mensaje mensaje;
+        controlSonidos sonidos;
+        int eActual,contadorRecomendaciones,fallos;
         bool play;
         public Diseases2()
         {
             InitializeComponent();
+            sonidos = new controlSonidos();
             enfermedades = new Dictionary<int, string>();
             enfermedades.Add(0, "Fever");
             enfermedades.Add(1, "Toothache");
@@ -46,18 +49,20 @@ namespace ProyectoTCU
             recomendaciones.Add("Sunburn","Keep your skin hydrated.");
             recomendaciones.Add("Fever","Take a pill.");
             recomendaciones.Add("Headache","Take a rest.");
-            // recomendaciones.Add("Take a rest.", "Headache");
-
+           
             play = false;
+            fallos = 0;
             contadorRecomendaciones = 0;
             usadas = new List<int>();
+            mensaje = new Mensaje();
         }
 
         public void mostrar()
         {
             Random rn = new Random();
+            pictureBoxRespuesta.Image = null;
 
-            if (contadorRecomendaciones <= 7)
+            if (contadorRecomendaciones <= 7 && fallos <3)
             {
                 eActual = rn.Next(0, 8);
                 while (usadas.Contains(eActual))
@@ -86,13 +91,23 @@ namespace ProyectoTCU
 
             }
             else {
+                if (fallos < 3)
+                {
+                    mensaje.winMesaje();
+                    sonidos.sonidoGanar();
+                    
+                }
+                else {
+                    mensaje.looseMesaje();
+                    sonidos.sonidoPerder();
+                }
                 contadorRecomendaciones = 0;
-                MessageBox.Show("Game over :)");
                 usadas.Clear();
                 play = false;
                 o1.Text = "";
                 o3.Text = "";
                 playButton.Visible = true;
+                fallos = 0;
             }
 
 
@@ -127,15 +142,26 @@ namespace ProyectoTCU
             {
                 if (b.Text == recomendaciones[enfermedades[eActual]])
                 {
-                    MessageBox.Show("Correct answer");
-                    contadorRecomendaciones++;
-                    mostrar();
+                    pictureBoxRespuesta.Image = Properties.Resources.check;
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
                 }
                 else {
-                    MessageBox.Show("Bad answer");
+                    pictureBoxRespuesta.Image = Properties.Resources.equis;
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
+                    fallos++;
                 }
+                contadorRecomendaciones++;
+                mostrar();
 
             }
+        }
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(1000);
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)

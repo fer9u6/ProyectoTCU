@@ -12,13 +12,15 @@ namespace ProyectoTCU
 {
     public partial class Menu4toGrado : Form
     {
+        
         MenuPrincipal mp;
         SocializingTraining st;
-        socializingOrdenar so;
+        //socializingOrdenar so;
         MemoryMatch mm;
         Diseases d;
         Parejas4toGrado par;
         Preguntas4toGrado preg;
+        EscogerSaludos es;
 
         public Menu4toGrado()
         {
@@ -51,9 +53,9 @@ namespace ProyectoTCU
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TiposdeSaludos ts = new TiposdeSaludos();
+            es = new EscogerSaludos();
             this.Hide();
-            ts.Show();
+            es.Show();
            
         }
 

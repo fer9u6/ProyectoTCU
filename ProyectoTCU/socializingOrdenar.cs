@@ -14,17 +14,18 @@ namespace ProyectoTCU
     {
         Menu4toGrado m4;
         bool isDragging;
-        int ypanel,fraseA, intentos, fallos,xlabel,ylabel,panelSize;
+        int ypanel, fraseA, intentos, fallos, xlabel, ylabel, panelSize;
         List<Label> labels;
         List<int> frasesUsadas;
         List<String> frases;
-       
-        
+        Mensaje mensaje;
+        controlSonidos sonidos;
+
 
         public socializingOrdenar()
         {
             InitializeComponent();
-            ypanel =panel1.Location.Y;
+            ypanel = panel1.Location.Y;
             panelSize = panel1.Size.Height;
 
             xlabel = label1.Location.X;  // incremento de 150
@@ -33,7 +34,8 @@ namespace ProyectoTCU
             labels = new List<Label>();
             frases = new List<string>();
             frasesUsadas = new List<int>();
-            
+            sonidos = new controlSonidos();
+
             labels.Add(label1);
             labels.Add(label2);
             labels.Add(label3);
@@ -47,7 +49,7 @@ namespace ProyectoTCU
 
             //importante el espacio al final
             frases.Add("Hi Gina, how is it going? ");
-            frases.Add("Hello Ms Jonhson, How are you? ");
+            frases.Add("Hello Ms Jonhson, how are you? ");
             frases.Add("Nice to meet you ");
             frases.Add("Nice to meet you too ");
             frases.Add("Bye, see you later ");
@@ -56,9 +58,10 @@ namespace ProyectoTCU
             frases.Add("What's his name? ");
             frases.Add("Hello, i'm Joe ");
             frases.Add("Hello, how are you? ");
-
+         
             intentos = 0;
             fallos = 0;
+            mensaje = new Mensaje();
 
             foreach (Label l in labels)
             {
@@ -69,7 +72,7 @@ namespace ProyectoTCU
 
         private void backB_Click(object sender, EventArgs e)
         {
-             m4 = new Menu4toGrado();
+            m4 = new Menu4toGrado();
             this.Hide();
             m4.Show();
         }
@@ -77,7 +80,7 @@ namespace ProyectoTCU
         private void label1_DragDrop(object sender, DragEventArgs e)
         {
 
-             
+
         }
 
         private void label1_MouseMove(object sender, MouseEventArgs e)
@@ -96,18 +99,18 @@ namespace ProyectoTCU
 
         private void validar()
         {
-            String respuesta="";
+            String respuesta = "";
             String res = "";
-            SortedList<int,Label>labelsres = new SortedList<int,Label>();
+            SortedList<int, Label> labelsres = new SortedList<int, Label>();
             foreach (Label l in labels) {
                 if (l.Location.Y == (ypanel + 50)) { // si fueron elegidas como respuestas
                     int coord = l.Location.X;
-                    labelsres.Add(coord,l);
-                    
+                    labelsres.Add(coord, l);
+
                 }
             }
 
-            foreach (KeyValuePair<int,Label> p in labelsres) {
+            foreach (KeyValuePair<int, Label> p in labelsres) {
                 Label var = p.Value;
                 respuesta += var.Text;
                 respuesta += " ";
@@ -115,28 +118,66 @@ namespace ProyectoTCU
 
             if (respuesta.Equals(frases[fraseA]))
             {
-                res = "Correct answer";
-
+                //correcta
+                pictureBoxRespuesta.Image = Properties.Resources.check;
+               Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+               taskA.Wait();
+               
+               
             }
             else {
-                res = "bad answer";
+                //mala
+                pictureBoxRespuesta.Image = Properties.Resources.equis;
+               Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+                
+
                 fallos += 1;
             }
-            MessageBox.Show(res, "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //notificacion de buena o mala respuesta
+            
             intentos += 1;
 
-            if (intentos < 10 && fallos <= 3)
+            if (intentos < 10 && fallos < 3)
             {
                 mostrar();
             }
             else {
-                res = "Game Over";
-                MessageBox.Show(res, "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                fallos = 0;
-                intentos = 0;
-                playButton.Visible = true;
+                if (fallos >= 3)
+                {
+                    mensaje.looseMesaje();
+                    sonidos.sonidoPerder();
+                    
+                }
+                else {
+                    mensaje.winMesaje();
+                    sonidos.sonidoGanar();
+                }
+
+                
+                finalizarPartida();
+
             }
 
+
+        }
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(1000);
+  
+        }
+
+        private void finalizarPartida() {
+            fallos = 0;
+            intentos = 0;
+            frasesUsadas.Clear();
+            playButton.Visible = true;
+
+            foreach (Label l in labels)
+            {
+                l.Text = "     ";
+            }
 
         }
 
@@ -172,7 +213,7 @@ namespace ProyectoTCU
 
         private void mostrar() {
             ordenar();
-
+            pictureBoxRespuesta.Image = null;
             Random rn = new Random();
             fraseA = rn.Next(0, frases.Count); // frase a mostrar
 
@@ -180,7 +221,6 @@ namespace ProyectoTCU
                 fraseA = rn.Next(0, frases.Count);
             }
             frasesUsadas.Add(fraseA);
-            //testLabel.Text = frases[fraseA];   para mostrar la frase
 
             char espacio =' ';
             String[] partes = frases[fraseA].Split(espacio);

@@ -66,6 +66,19 @@
     <Compile Include="ClassroomVocabulary.Designer.cs">
       <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
     </Compile>
+    <Compile Include="controlSonidos.cs" />
+    <Compile Include="EscogerSaludo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscogerSaludo.Designer.cs">
+      <DependentUpon>EscogerSaludo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje.Designer.cs">
+      <DependentUpon>Mensaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuClassroom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,12 +290,6 @@
     <Compile Include="SocializingTraining.Designer.cs">
       <DependentUpon>SocializingTraining.cs</DependentUpon>
     </Compile>
-    <Compile Include="TiposdeSaludos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TiposdeSaludos.Designer.cs">
-      <DependentUpon>TiposdeSaludos.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Classroom.resx">
       <DependentUpon>Classroom.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +298,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClassroomVocabulary.resx">
       <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscogerSaludo.resx">
+      <DependentUpon>EscogerSaludo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje.resx">
+      <DependentUpon>Mensaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuClassroom.resx">
       <DependentUpon>MenuClassroom.cs</DependentUpon>
@@ -392,9 +405,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SocializingTraining.resx">
       <DependentUpon>SocializingTraining.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TiposdeSaludos.resx">
-      <DependentUpon>TiposdeSaludos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -617,6 +627,10 @@
     <None Include="Resources\colorparedpisoclassroom3.jpg" />
     <None Include="Resources\colorparedpisoclassroom4.jpg" />
     <None Include="Resources\descarga %281%29.png" />
+    <None Include="Resources\joyful.png" />
+    <None Include="Resources\equis.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\ganarjuego_audio.wav" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -650,6 +664,8 @@
     <None Include="Resources\under_audio.wav" />
     <None Include="Resources\Untitledboard.png" />
     <None Include="Resources\Untitledboard1.png" />
+    <None Include="Resources\sad.png" />
+    <None Include="Resources\perderjuego_audio.wav" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

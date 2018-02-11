@@ -163,8 +163,14 @@
   <data name="on_the_corner_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\on_the_corner_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="table_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\table_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="descarga (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movie_theater_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movie_theater_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -211,6 +217,9 @@
   <data name="supermarket_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\supermarket_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="xbakery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="drugstore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\drugstore.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,6 +231,9 @@
   </data>
   <data name="classroom - Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\classroom - Copy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\equis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="colorparedpisoclassroom3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colorparedpisoclassroom3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,9 +313,6 @@
   <data name="intestino grueso" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intestino grueso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sharpener" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sharpener.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bank.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -312,6 +321,9 @@
   </data>
   <data name="between" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\between.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="intestino delgado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intestino delgado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cerebro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerebro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -394,8 +406,8 @@
   <data name="rule" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="intestino delgado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intestino delgado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="joyful" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\joyful.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large intestine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large intestine1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -517,8 +529,8 @@
   <data name="police_station_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\police_station_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="xbakery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Park.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mesasinlibros" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mesasinlibros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -628,11 +640,11 @@
   <data name="intestino grueso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intestino grueso1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Park.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sharpener" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sharpener.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eraser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -646,7 +658,13 @@
   <data name="scissors_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scissors.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="descarga (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganarjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ganarjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="perderjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\perderjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

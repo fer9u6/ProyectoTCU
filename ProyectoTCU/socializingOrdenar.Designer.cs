@@ -43,6 +43,8 @@
             this.playButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.backB = new System.Windows.Forms.Button();
+            this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +69,7 @@
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(46, 181);
+            this.panel1.Location = new System.Drawing.Point(46, 211);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 92);
             this.panel1.TabIndex = 1;
@@ -249,12 +251,22 @@
             this.backB.UseVisualStyleBackColor = false;
             this.backB.Click += new System.EventHandler(this.backB_Click);
             // 
+            // pictureBoxRespuesta
+            // 
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(329, 116);
+            this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
+            this.pictureBoxRespuesta.Size = new System.Drawing.Size(97, 71);
+            this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxRespuesta.TabIndex = 0;
+            this.pictureBoxRespuesta.TabStop = false;
+            // 
             // socializingOrdenar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(770, 474);
+            this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.backB);
@@ -272,6 +284,7 @@
             this.Name = "socializingOrdenar";
             this.Text = "socializingOrdenar";
             this.Load += new System.EventHandler(this.socializingOrdenar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +306,6 @@
         private System.Windows.Forms.Button backB;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBoxRespuesta;
     }
 }

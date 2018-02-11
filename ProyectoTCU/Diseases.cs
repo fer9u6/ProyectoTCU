@@ -14,9 +14,11 @@ namespace ProyectoTCU
     {
         Menu4toGrado m4;
         Diseases2 d2;
+        controlSonidos sonidos;
+        Mensaje mensaje;
         Dictionary<int,String> enfermedades;
         List<int> keysUsadas;
-        int contador,imagenActual;
+        int contador,imagenActual,fallos;
         List<Button> botones;
         bool play;
        
@@ -24,10 +26,12 @@ namespace ProyectoTCU
         {
             InitializeComponent();
             enfermedades = new Dictionary<int, string>();
+            sonidos = new controlSonidos();
             keysUsadas = new List<int>();
             botones = new List<Button>();
             contador = 0;
-
+            fallos = 0;
+            mensaje = new Mensaje();
             botones.Add(o1);
             botones.Add(o2);
             botones.Add(o3);
@@ -61,7 +65,8 @@ namespace ProyectoTCU
         {
             Random rn = new Random();
             int key = 0;
-            if (contador < enfermedades.Count)
+            pictureBoxRespuesta.Image = null;
+            if (contador < enfermedades.Count && fallos <3)
             {
                key = rn.Next(0, imageListEnfermedades.Images.Count);
                 while (keysUsadas.Contains(key)) {
@@ -92,20 +97,33 @@ namespace ProyectoTCU
             }
             else
             {
-                MessageBox.Show("Game over :)");
-                playButton.Visible = true;
-                contador = 0;
-                foreach (Button b in botones) {
-                    b.Text = "";
+                //MessageBox.Show("Game over :)");
+                if (fallos < 3)
+                {
+
+                    mensaje.winMesaje();
+                    sonidos.sonidoGanar();
                 }
-                play = false;
-                keysUsadas.Clear();
+                else {
+
+                    mensaje.looseMesaje();
+                    sonidos.sonidoGanar();
+                }
+                finalizarPartida();
             }
-           
+       
+        }
 
-
-
-
+        private void finalizarPartida() {
+            playButton.Visible = true;
+            contador = 0;
+            foreach (Button b in botones)
+            {
+                b.Text = "";
+            }
+            play = false;
+            keysUsadas.Clear();
+            fallos = 0;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -132,17 +150,32 @@ namespace ProyectoTCU
             if (play == true)
             {
                 Button b = sender as Button;
+                contador++;
                 if (b.Text == enfermedades[imagenActual])
                 {
-                    MessageBox.Show("Correct Answer");
-                    contador++;
-                    asignar();
+                    //MessageBox.Show("Correct Answer");
+                    pictureBoxRespuesta.Image = Properties.Resources.check;
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
                 }
                 else
                 {
-                    MessageBox.Show("Bad Answer");
+                    //MessageBox.Show("Bad Answer");
+                    fallos++;
+                    pictureBoxRespuesta.Image = Properties.Resources.equis;
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
+
                 }
+                asignar();
             }
         }
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(1000);
+
+        }
+
     }
 }
