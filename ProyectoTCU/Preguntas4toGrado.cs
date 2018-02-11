@@ -18,44 +18,46 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "A formal way of answer a greeting is:",
-            "When someone is being rude at you, you should ______________.",
-            "Complete the greeting: 'Hello, ______________?'",
-            "An informal way of answer a greeting is:",
-            "Complete the farewell: 'I got to go. ______________!'",
-            "The organs that keep pumping air through the body are the ______________.",
-            "If you are exposed to a cold weather and rain, it is possible you'll get ______________.",
-            "Watching a screen for extended periods of time can give you ______________.",
-            "The organ that keeps pumping blood through the body is the:",
-            "You should drink plenty of water, so your body can ______________.",
-            "Being under the sun for long periods of time without protection can give you ______________."
+            "A formal answer is:",
+            "When someone is being rude at you, you should ________.",
+            "Complete the sentence: 'Hello, ________?'",
+            "An informal answer is:",
+            "Complete: 'Bye. ________!'",
+            "The organs that keep pumping air through the body are the ________.",
+            "If you are in a cold and rainy weather, you'll get ________.",
+            "Watching TV for a long time can cause you ________.",
+            "The organ that keeps pumping blood through the body is the ________.",
+            "Drink a lot of water, so your body can ________.",
+            "Being under the sun for long periods of time without protection can cause you ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"What up?", "Hi", "Pleased to meet you", "See you later"}, 0},
-            { new string[]{"be rude at them", "stop talking to them ever again", "get angry", "be polite anyway"}, 1},
-            { new string[]{"how are you doing", "hi", "can you leave", "my name is"}, 2},
-            { new string[]{"See ya!", "How are you doing?", "Hello", "How do you do?"}, 3},
-            {new string[]{"Hello", "Where's the classroom", "See you later", "How are you"}, 4},
-            { new string[]{"pancreas", "lungs", "eyes", "liver"}, 5},
-            {new string[]{"good luck", "a migraine", "a cold", "a stomachache"}, 6},
-            { new string[]{"eye pain", "a sore throat", "an infection", "sugar loss"}, 7},
-            {new string[]{"stomach", "liver", "heart", "brain"}, 8},
-            { new string[]{"breath", "keep itself clean", "run faster", "grow nails"}, 9},
-            {new string[]{"a rash", "a cold", "skin burns", "a stomachache"}, 10}
+            { new string[]{"What up?", "Hi.", "Pleased to meet you.", "See you later."}, 0},
+            { new string[]{"be rude at them.", "stop talking to them ever again.", "get angry.", "be polite anyways."}, 1},
+            { new string[]{"how are you doing?", "hi!", "can you leave?", "my name is Sophie."}, 2},
+            { new string[]{"See ya!", "How are you doing?", "Hello.", "How do you do?"}, 3},
+            {new string[]{"Hello!", "Where's the classroom?", "See you later!", "Wow!"}, 4},
+            { new string[]{"Kidneys.", "Lungs.", "Eyes.", "Fingers."}, 5},
+            {new string[]{"good luck.", "a migraine.", "a cold.", "a stomachache."}, 6},
+            { new string[]{"eye pain.", "a sore throat.", "an infection.", "sugar loss."}, 7},
+            {new string[]{"stomach.", "liver.", "heart.", "brain."}, 8},
+            { new string[]{"breath.", "keep itself clean.", "run faster.", "make the nails grow."}, 9},
+            {new string[]{"a rash.", "a cold.", "skin burns.", "a stomachache."}, 10}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Pleased to meet you", "be polite anyway", "how are you doing",
-            "Hello", "See you later", "lungs", "a cold", "eye pain", "heart",
-            "keep itself clean", "skin burns"
+            "Pleased to meet you.", "be polite anyways.", "how are you doing?",
+            "Hello.", "See you later!", "Lungs.", "a cold.", "eye pain.", "heart.",
+            "keep itself clean.", "skin burns."
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -82,7 +84,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };

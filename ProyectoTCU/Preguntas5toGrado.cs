@@ -18,42 +18,47 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "This is a proper way of inviting someone to an event:",
-            "The friends you have by only exchanging messages between one another are called:",
-            "At listening other people opinions, you should always:",
+            "A polite way of inviting someone to an event is:",
+            "A polite way of answering an invitation is:",
+            "When listening at other people’s opinions, you should always:",
             "This is a proper way of declining an invitation:",
-            "A geothermal plant uses the power of ______________ to produce electricity.",
-            "Wind power is used by ______________ to produce electricity",
-            "In the event of an electric storm, you should:",
-            "A ______________ uses the power of the water to produce electricity.",
-            "In the event of an earthquake, you should:",
-            "In the event of an indoors fire, you should:"
+            "A way to fight deforestation is to ________.",
+            "A way of saving electricity is to ________.",
+            "________ pollute the environment.",
+            "________ pollutes the rivers.",
+            "A good way to save water is ________.",
+            "Throwing ________ at plants pollutes them.",
+            "________ poisons the environment."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
 
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
-            { new string[]{"Can you like to go to...", "I'd love to go to...", "Would you like to go to...", "Can you bring drinks to..."}, 0},
-            { new string[]{"pen-pals", "little friends", "message buddies", "correspondence comrades"}, 1},
-            { new string[]{"Smile without listening", "Think they are wrong", "Be respectful", "Don't care"}, 2},
-            { new string[]{"I'm sorry but I have other plans", "I don't like you", "Of course I'm gonna go", "Who are you?"}, 3},
-            {new string[]{"wind", "water", "smoke", "heat"}, 4},
-            { new string[]{"solar panels", "windmills", "hydro power plants", "cars"}, 5},
-            {new string[]{"Stay indoors", "Put yourself under a table", "Close your eyes", "Use metallic objects"}, 6},
-            { new string[]{"river", "solar panel", "windmill", "hydro power plant"}, 7},
-            {new string[]{"Use metallic objects", "Run", "Go out to an open space", "Lean on the ground"}, 8},
-            { new string[]{"Lean on the ground", "Hide in the closet", "Take big breaths", "Put yourself under a table"}, 9}
+            { new string[]{"Do you know how to get to...", "I'd love to go to...", "Would you like to go to...", "Can you bring drinks to..."}, 0},
+            { new string[]{"How are you?", "See you later.", "Yes, I would like to go.", "Maaaybe..."}, 1},
+            { new string[]{"Smile without listening.", "Think they are wrong.", "Be respectful.", "Clap your hands."}, 2},
+            { new string[]{"I’m sorry. I need to study tonight.", "I don't like you.", "Of course I'm gonna go.", "Who are you?"}, 3},
+            {new string[]{"wash the dishes.", "plant a tree.", "cut down trees.", "listen to loud music."}, 4},
+            { new string[]{"watch TV.", "don't smoke.", "turn off the lights.", "burn the forest."}, 5},
+            {new string[]{"Factories.", "Puppies.", "Trees.", "Cellphones."}, 6},
+            { new string[]{"Eating burgers", "Throwing the thrash into the river", "Running fast", "Throwing rocks into the river"}, 7},
+            {new string[]{"going to the swimming pool.", "not letting the sink open.", "watching TV.", "turning off the lights."}, 8},
+            { new string[]{"fish.", "water.", "cheese.", "chemicals."}, 9},
+            { new string[]{"Making a barbecue", "Fishing", "Swimming", "Burning trash"}, 10},
         };
 
         string[] quizAnswers = new string[] 
         {
-            "Would you like to go to...", "pen-pals", "Be respectful",
-            "I'm sorry but I have other plans", "heat", "windmills",
-            "Stay indoors", "hydro power plant", "Go out to an open space", "Lean on the ground"
+            "Would you like to go to...", "Yes, I would like to go.", "Be respectful.",
+            "I’m sorry. I need to study tonight.", "plant a tree.", "turn off the lights.",
+            "Factories.", "Throwing the thrash into the river", "not letting the sink open.",
+            "chemicals.", "Burning trash"
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -80,7 +85,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };

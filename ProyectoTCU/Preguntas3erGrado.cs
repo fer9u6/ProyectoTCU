@@ -18,18 +18,18 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
-        string[] questions = new string[]
+        static string[] questions = new string[]
         {
-            "In the morning I take a shower, eat breakfast, ______________, and go to school.",
-            "When meeting new people you should ______________",
-            "__________ is a good place to meet new people:",
-            "At night, I eat dinner, ______________, brush my teeth and go to sleep.",
-            "When meeting someone new it is recommended to:",
-            "I brush my teeth in the ______________.",
-            "You can find the armchairs in the ______________.",
-            "I sleep in the ______________.",
-            "I eat dinner in the ______________.",
-            "The refrigerator and the oven can be found in the ______________."
+            "In the morning I take a shower, eat breakfast, ________, and go to school.",
+            "When meeting new people, you ________.",
+            "________ is a good place to meet new people:",
+            "At night I eat dinner, ________, brush my teeth, and go to sleep.",
+            "When meeting someone new, ________.",
+            "I brush my teeth in the ________.",
+            "You can find the armchairs in the ________.",
+            "I sleep in the ________.",
+            "I eat dinner in the ________.",
+            "The refrigerator and the oven can be found in the ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
@@ -37,22 +37,24 @@ namespace ProyectoTCU
         Dictionary<string[], int> allAnswers = new Dictionary<string[], int>()
         {
             { new string[]{"brush my teeth", "go to sleep", "take a shower", "eat dinner"}, 0},
-            { new string[]{"introduce yourself", "put your hands up", "avoid eye contact", "babble"}, 1},
-            { new string[]{"A family reunion", "The school", "Your house", "A party"}, 2},
+            { new string[]{"introduce yourself.", "put your hands up.", "avoid eye contact.", "laugh."}, 1},
+            { new string[]{"A friend's house", "The school", "My house", "My grandma's house"}, 2},
             { new string[]{"go to sleep", "eat breakfast", "put on my pajamas", "go to school"}, 3},
-            {new string[]{"make an angry face", "shake hands", "be impolite", "sound disinterested"}, 4},
-            { new string[]{"living room", "bedroom", "kitchen", "bathroom"}, 5},
-            {new string[]{"bedroom", "living room", "bathroom", "courtyard"}, 6},
-            { new string[]{"bedroom", "courtyard", "kitchen", "bathroom"}, 7},
-            {new string[]{"bathroom", "living room", "courtyard", "bedroom"}, 8},
-            { new string[]{"kitchen", "bathroom", "living room", "bedroom"}, 9}
+            { new string[]{"make an angry face.", "shake hands.", "be impolite.", "leave."}, 4},
+            { new string[]{"living room.", "bedroom.", "kitchen.", "bathroom."}, 5},
+            { new string[]{"bedroom.", "living room.", "bathroom.", "courtyard."}, 6},
+            { new string[]{"bedroom.", "courtyard.", "kitchen.", "bathroom."}, 7},
+            { new string[]{"bathroom.", "dining room.", "courtyard.", "bedroom."}, 8},
+            { new string[]{"kitchen.", "bathroom.", "living room.", "bedroom."}, 9}
         };
 
         string[] quizAnswers = new string[] 
         {
-            "brush my teeth", "introduce yourself", "A party", "put on my pajamas",
-            "shake hands", "bathroom", "living room", "bedroom", "living room", "kitchen"
+            "brush my teeth", "introduce yourself.", "The school", "put on my pajamas",
+            "shake hands.", "bathroom.", "living room.", "bedroom.", "dining room.", "kitchen."
         };
+
+        Image[] images = new Image[questions.Length];
 
         //Que esto ocurra siempre que el juego inicie y cuando se confirme que una respuesta es correcta
         private void asignarPregYResp()
@@ -79,7 +81,8 @@ namespace ProyectoTCU
                 "                  Score: " + score + " / " + questions.Length.ToString();
 
             labelQuestion.Text = questions[i];
-
+            Image im = imageList1.Images[i]; //La imagen de la lista de imagenes
+            labelQuestion.Image = im;
             int cant;
             Random rand = new Random();
             numbers = new int[4] { 0, 1, 2, 3 };

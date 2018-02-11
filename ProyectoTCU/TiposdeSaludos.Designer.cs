@@ -47,14 +47,40 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(59, 51);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.Greetings_01;
+            this.pictureBox1.Location = new System.Drawing.Point(189, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(450, 262);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(184, 22);
+            this.label1.Location = new System.Drawing.Point(276, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 26);
+            this.label1.Size = new System.Drawing.Size(622, 33);
             this.label1.TabIndex = 4;
             this.label1.Text = "Choose the correct option for each situation\r\n";
             // 
@@ -64,9 +90,9 @@
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o1.Location = new System.Drawing.Point(146, 401);
+            this.o1.Location = new System.Drawing.Point(142, 352);
             this.o1.Name = "o1";
-            this.o1.Size = new System.Drawing.Size(270, 39);
+            this.o1.Size = new System.Drawing.Size(405, 60);
             this.o1.TabIndex = 5;
             this.o1.UseVisualStyleBackColor = false;
             this.o1.Click += new System.EventHandler(this.o1_Click);
@@ -77,9 +103,9 @@
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o2.Location = new System.Drawing.Point(146, 457);
+            this.o2.Location = new System.Drawing.Point(142, 408);
             this.o2.Name = "o2";
-            this.o2.Size = new System.Drawing.Size(270, 40);
+            this.o2.Size = new System.Drawing.Size(405, 62);
             this.o2.TabIndex = 6;
             this.o2.UseVisualStyleBackColor = false;
             this.o2.Click += new System.EventHandler(this.button3_Click);
@@ -90,9 +116,9 @@
             this.o3.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o3.Location = new System.Drawing.Point(456, 401);
+            this.o3.Location = new System.Drawing.Point(452, 352);
             this.o3.Name = "o3";
-            this.o3.Size = new System.Drawing.Size(270, 39);
+            this.o3.Size = new System.Drawing.Size(405, 60);
             this.o3.TabIndex = 7;
             this.o3.UseVisualStyleBackColor = false;
             this.o3.Click += new System.EventHandler(this.o3_Click);
@@ -103,9 +129,9 @@
             this.o4.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o4.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o4.Location = new System.Drawing.Point(456, 457);
+            this.o4.Location = new System.Drawing.Point(452, 408);
             this.o4.Name = "o4";
-            this.o4.Size = new System.Drawing.Size(270, 40);
+            this.o4.Size = new System.Drawing.Size(405, 62);
             this.o4.TabIndex = 8;
             this.o4.UseVisualStyleBackColor = false;
             this.o4.Click += new System.EventHandler(this.button5_Click);
@@ -115,10 +141,11 @@
             this.playButton.BackColor = System.Drawing.Color.Chartreuse;
             this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playButton.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(42, 256);
+            this.playButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playButton.Location = new System.Drawing.Point(63, 394);
+            this.playButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(85, 67);
+            this.playButton.Size = new System.Drawing.Size(128, 103);
             this.playButton.TabIndex = 11;
             this.playButton.Text = "Play!";
             this.playButton.UseVisualStyleBackColor = false;
@@ -209,11 +236,10 @@
             // 
             // TiposdeSaludos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(833, 532);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(774, 469);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.o4);
             this.Controls.Add(this.o3);
@@ -222,6 +248,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TiposdeSaludos";
             this.Text = "TiposdeSaludos";
             this.Load += new System.EventHandler(this.TiposdeSaludos_Load);
