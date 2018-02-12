@@ -59,7 +59,7 @@ namespace ProyectoTCU
             pboxList.Add(pictureBoxbetween);
             pboxList.Add(pictureBoxinfrontofb);
             pboxList.Add(pictureBoxunder);
-            pboxList.Add(pictureBinfrontoftrue);
+            pboxList.Add(pictureBbehind);
             
 
 
@@ -102,13 +102,14 @@ namespace ProyectoTCU
 
 
             //preposiciones
-            parejas.Add(pictureBoxondesk, onthedeskaudio);
+           
             parejas.Add( pictureBoxon, onthetableaudio);
+            parejas.Add(pictureBoxondesk, onthedeskaudio);
             parejas.Add(pictureBoxnextto, nexttoaudio);
             parejas.Add(pictureBoxbetween, betweenaudio);
-            parejas.Add(pictureBoxinfrontofb, behindaudio);
+            parejas.Add(pictureBbehind, behindaudio);
             parejas.Add(pictureBoxunder, underaudio);
-            parejas.Add(pictureBinfrontoftrue,infrontofaudio);
+            parejas.Add(pictureBoxinfrontofb, infrontofaudio);
 
             imagenesYsonidos.Add(books, booksaudio);
             imagenesYsonidos.Add(bs, scissorsaudio);
@@ -154,12 +155,12 @@ namespace ProyectoTCU
             //imagenes se sacan de la lista de imagenes imagenesObjetos 
             //asigna imagenes a los diferentes picture box
             pictureBoxbetween.Image = imagenesObjetos[iAsignadas[0]];
-            pictureBoxinfrontofb.Image = imagenesObjetos[iAsignadas[1]];
+            pictureBbehind.Image = imagenesObjetos[iAsignadas[1]];
             pictureBoxnextto.Image = imagenesObjetos[iAsignadas[2]];
             pictureBoxon.Image = imagenesObjetos[iAsignadas[3]];
             pictureBoxondesk.Image = imagenesObjetos[iAsignadas[4]];
             pictureBoxunder.Image = imagenesObjetos[iAsignadas[5]];
-            pictureBinfrontoftrue.Image = imagenesObjetos[iAsignadas[6]];
+            pictureBoxinfrontofb.Image = imagenesObjetos[iAsignadas[6]];
             //orden de los sonidos
             //el sonido del objeto se obtiene de del dicionario imagenesYsonidos, se envia el indice de la lista de imagenesObjetos
             sAsignados.Add(iAsignadas[0],parejas[pictureBoxbetween]);

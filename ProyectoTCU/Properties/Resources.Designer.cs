@@ -567,6 +567,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap classroom___Copy2 {
+            get {
+                object obj = ResourceManager.GetObject("classroom - Copy2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clipart_crayons_1862 {
             get {
                 object obj = ResourceManager.GetObject("clipart-crayons-1862", resourceCulture);
@@ -679,6 +689,16 @@ namespace ProyectoTCU.Properties {
         internal static System.Drawing.Bitmap colorpisoclassroom {
             get {
                 object obj = ResourceManager.GetObject("colorpisoclassroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorpisoclassroom1 {
+            get {
+                object obj = ResourceManager.GetObject("colorpisoclassroom1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1024,6 +1044,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Intestines {
+            get {
+                object obj = ResourceManager.GetObject("Intestines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap intestino_delgado {
             get {
                 object obj = ResourceManager.GetObject("intestino delgado", resourceCulture);
@@ -1047,6 +1077,16 @@ namespace ProyectoTCU.Properties {
         internal static System.Drawing.Bitmap intestino_grueso1 {
             get {
                 object obj = ResourceManager.GetObject("intestino grueso1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intestinos {
+            get {
+                object obj = ResourceManager.GetObject("intestinos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

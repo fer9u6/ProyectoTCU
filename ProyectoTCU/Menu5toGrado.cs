@@ -15,6 +15,7 @@ namespace ProyectoTCU
         MenuPrincipal mp;
         Parejas5toGrado par;
         Preguntas5toGrado preg;
+        funcionesOrganos fo;
 
         public Menu5toGrado()
         {
@@ -28,7 +29,10 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            //functions of human organs
+            fo = new funcionesOrganos();
+            this.Hide();
+            fo.Show();
         }
 
         private void backB_MouseHover(object sender, EventArgs e)
