@@ -21,10 +21,12 @@ namespace ProyectoTCU
         Parejas4toGrado par;
         Preguntas4toGrado preg;
         EscogerSaludos es;
+        Mensaje msj;
 
         public Menu4toGrado()
         {
             InitializeComponent();
+            msj = new Mensaje();
         }
 
         private void backB_Click(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace ProyectoTCU
             es = new EscogerSaludos();
             this.Hide();
             es.Show();
+            msj.neutralMensaje("Look at the picture and choose\nthe correct option according to\n the situation.");
            
         }
 
@@ -73,6 +76,7 @@ namespace ProyectoTCU
             mm = new MemoryMatch();
             this.Hide();
             mm.Show();
+            msj.neutralMensaje("Match all the cards.\nClick any two cards and \ntry remember it position.");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,6 +84,7 @@ namespace ProyectoTCU
             d = new Diseases();
             this.Hide();
             d.Show();
+            msj.neutralMensaje("Look at the picture and choose\nthe correct option according to\n the situation.");
         }
 
         
@@ -105,6 +110,7 @@ namespace ProyectoTCU
             socializingOrdenar so = new socializingOrdenar();
             this.Hide();
             so.Show();
+            msj.neutralMensaje("Drag the words that make\n a correct sentence.");
         }
     }
 }

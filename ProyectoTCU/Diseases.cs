@@ -107,7 +107,7 @@ namespace ProyectoTCU
                 else {
 
                     mensaje.looseMesaje();
-                    sonidos.sonidoGanar();
+                    sonidos.sonidoPerder();
                 }
                 finalizarPartida();
             }

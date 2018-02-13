@@ -16,10 +16,11 @@ namespace ProyectoTCU
         Prepositions p;
         Classroom c;
         Menu1erGrado m1;
-
+        Mensaje mensaje;
         public MenuClassroom()
         {
-            InitializeComponent();
+          InitializeComponent();
+            mensaje = new Mensaje();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace ProyectoTCU
             c = new Classroom();
             this.Hide();
             c.Show();
+            mensaje.neutralMensaje("Listen the sound and click \non the right object.");
         }
 
         private void backB_Click(object sender, EventArgs e)

@@ -19,9 +19,9 @@ namespace ProyectoTCU
 
         public void looseMesaje() {
             panel1.BackColor = Color.Red;
-            pictureBox1.Image = Properties.Resources.sad;
+            pictureBox1.Image = Properties.Resources.sceptic;
             label1.ForeColor = Color.Red;
-            label1.Text = "You loose!";
+            label1.Text = "Try again";
             panel1.Visible = true;
             pictureBox1.Visible = true;
             this.Text = "Game over";

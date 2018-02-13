@@ -42,6 +42,8 @@ namespace ProyectoTCU
             nei = new Neighborhood();
             this.Hide();
             nei.Show();
+            Mensaje mensaje = new Mensaje();
+            mensaje.neutralMensaje("Look at the map and choose \nthe right option");
         }
 
         private void backB_Click(object sender, EventArgs e)

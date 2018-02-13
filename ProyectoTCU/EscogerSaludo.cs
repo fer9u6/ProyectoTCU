@@ -83,7 +83,7 @@ namespace ProyectoTCU
             respuestas.Add(18, byeGreetings);
             respuestas.Add(19, byeGreetings);
 
-            instrucciones();
+            
 
         }
 
@@ -92,9 +92,7 @@ namespace ProyectoTCU
 
         }
 
-        public void instrucciones() {
-            mensaje.neutralMensaje("Choose the correct option \n according to the situation");
-        }
+
         public void mostrarInicio()
         {
             const string message =
@@ -201,9 +199,7 @@ namespace ProyectoTCU
 
             if (resultado == true)
             {
-                //const string message = "correct answer";
-                //const string caption = "";
-                //MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // "correct answer";
                 pictureBoxRespuesta.Image = Properties.Resources.check;
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
@@ -211,10 +207,7 @@ namespace ProyectoTCU
             }
             else
             {
-                //const string message =
                 //"fail";
-                //const string caption = "";
-                //MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();

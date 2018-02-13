@@ -1006,6 +1006,16 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagenInstruccion {
+            get {
+                object obj = ResourceManager.GetObject("imagenInstruccion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap in_front_of {
             get {
                 object obj = ResourceManager.GetObject("in_front_of", resourceCulture);
@@ -1567,6 +1577,16 @@ namespace ProyectoTCU.Properties {
         internal static System.Drawing.Bitmap sad {
             get {
                 object obj = ResourceManager.GetObject("sad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sceptic {
+            get {
+                object obj = ResourceManager.GetObject("sceptic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

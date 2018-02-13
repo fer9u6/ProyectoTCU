@@ -54,11 +54,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(44, 70);
+            this.label1.Location = new System.Drawing.Point(44, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 45);
+            this.label1.Size = new System.Drawing.Size(206, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "You loose!";
+            this.label1.Text = "Try again!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
@@ -72,7 +72,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.sad;
+            this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.sceptic;
             this.pictureBox1.Location = new System.Drawing.Point(16, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(82, 76);

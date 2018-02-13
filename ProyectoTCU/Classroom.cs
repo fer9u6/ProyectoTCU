@@ -23,6 +23,7 @@ namespace ProyectoTCU
         Dictionary<int, Image> parejas;
         List<int> usados;
         List<int> sonidosAsignados;
+        Mensaje mensaje;
         
         
         
@@ -37,6 +38,7 @@ namespace ProyectoTCU
             pared = 0;
             contador = 0;
             rondas = 1;
+            mensaje = new Mensaje();
 
             //se declaran todos los sonidos
             SoundPlayer books = new SoundPlayer(Properties.Resources.books_audio);
@@ -151,7 +153,7 @@ namespace ProyectoTCU
 
         private void Classroom_Load(object sender, EventArgs e)
         {
-
+           // mensaje.neutralMensaje("Listen the sound and click on the right object");
         }
 
         private void asignar() {
@@ -221,6 +223,7 @@ namespace ProyectoTCU
             c2 = new classroom2();
             this.Hide();
             c2.Show();
+            mensaje.neutralMensaje("Listen the sound and click on the right object.");
 
         }
 
