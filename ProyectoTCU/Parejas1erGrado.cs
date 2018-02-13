@@ -13,6 +13,8 @@ namespace ProyectoTCU
     public partial class Parejas1erGrado : Form
     {
 
+        controlSonidos sonidos = new controlSonidos();
+
         Menu1erGrado m1grado;
 
         // firstClicked points to the first Label control 
@@ -152,7 +154,10 @@ namespace ProyectoTCU
                 //Si la imagen es del mismo color del fondo ya se encontró
                 //Se ignora el click
                 if (clickedLabel.ForeColor == clickedLabel.BackColor)
+                {
                     return;
+                }
+                    
 
                 // If firstClicked is null, this is the first icon 
                 // in the pair that the player clicked,
@@ -163,6 +168,7 @@ namespace ProyectoTCU
                 //Se le asigna el label que el usuario clickeó, cambia de color y se retorna
                 if (firstClicked == null)
                 {
+                    sonidos.sonidoOpcion();
                     firstClicked = clickedLabel;
                     firstClicked.ForeColor = Color.Yellow;
 
@@ -171,9 +177,10 @@ namespace ProyectoTCU
 
                 //Si se llega hasta acá, firstClick no es null y le toca a secondClicked
                 //Se le asigna el label que el usuario clickeó y cambia de color
-
+                sonidos.sonidoOpcion();
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Yellow;
+
 
                 // If the player clicked two matching icons, keep them 
                 // black and reset firstClicked and secondClicked 
@@ -188,6 +195,7 @@ namespace ProyectoTCU
                 {
                     if (pairsFamilySpanishReal[firstClicked.Text] == pairsFamilyEnglishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -203,6 +211,7 @@ namespace ProyectoTCU
                 {
                     if (pairsFamilyEnglishReal[firstClicked.Text] == pairsFamilySpanishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -258,6 +267,7 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
+            sonidos.sonidoTerminarBien();
             MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
             m1grado = new Menu1erGrado();

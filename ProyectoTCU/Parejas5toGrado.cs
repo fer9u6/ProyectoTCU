@@ -12,6 +12,8 @@ namespace ProyectoTCU
 {
     public partial class Parejas5toGrado : Form
     {
+        controlSonidos sonidos = new controlSonidos();
+
         Menu5toGrado m5grado;
 
         // firstClicked points to the first Label control 
@@ -39,18 +41,18 @@ namespace ProyectoTCU
 
         static Dictionary<string, int> pairsNaturalSpanishReal = new Dictionary<string, int>()
         {
-            {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
-            {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"deforestación", 0}, {"electricidad", 1}, {"contaminación", 2}, {"basura", 3},
+            {"humo", 4}, {"reforestación", 5}, {"sol", 6}, {"árbol", 7},
+            {"bosque", 8}, {"químicos", 9}, {"plástico", 10}, {"incendio", 11},
+            {"reciclaje", 12}, {"río", 13}, {"aire", 14}, {"ozono", 15}
         };
 
         static Dictionary<string, int> pairsNaturalEnglishReal = new Dictionary<string, int>()
         {
-            {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
-            {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"deforestation", 0}, {"electricity", 1}, {"contamination", 2}, {"trash", 3},
+            {"smoke", 4}, {"reforestation", 5}, {"sun", 6}, {"tree", 7},
+            {"forest", 8}, {"chemicals", 9}, {"plastic", 10}, {"fire", 11},
+            {"recycling", 12}, {"river", 13}, {"air", 14}, {"ozone", 15}
         };
 
         int[] numbers = new int[pairsNaturalSpanishReal.Count];
@@ -62,18 +64,18 @@ namespace ProyectoTCU
         {
             pairsNaturalSpanish = new Dictionary<string, int>()
             {
-                {"inundación", 0}, {"terremoto", 1}, {"incendio", 2}, {"tornado", 3},
-                {"hidroeléctrica", 4}, {"molino", 5}, {"panel solar", 6}, {"tía", 7},
-                {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-                {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+                {"deforestación", 0}, {"electricidad", 1}, {"contaminación", 2}, {"basura", 3},
+                {"humo", 4}, {"reforestación", 5}, {"sol", 6}, {"árbol", 7},
+                {"bosque", 8}, {"químicos", 9}, {"plástico", 10}, {"incendio", 11},
+                {"reciclaje", 12}, {"río", 13}, {"aire", 14}, {"ozono", 15}
             };
 
             pairsNaturalEnglish = new Dictionary<string, int>()
             {
-                {"flood", 0}, {"earthquake", 1}, {"fire", 2}, {"tornado", 3},
-                {"grandpa", 4}, {"windmill", 5}, {"uncle", 6}, {"aunt", 7},
-                {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-                {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+                {"deforestation", 0}, {"electricity", 1}, {"contamination", 2}, {"trash", 3},
+                {"smoke", 4}, {"reforestation", 5}, {"sun", 6}, {"tree", 7},
+                {"forest", 8}, {"chemicals", 9}, {"plastic", 10}, {"fire", 11},
+                {"recycling", 12}, {"river", 13}, {"air", 14}, {"ozone", 15}
             };
 
             // The TableLayoutPanel has 16 labels,
@@ -159,6 +161,7 @@ namespace ProyectoTCU
                 //Se le asigna el label que el usuario clickeó, cambia de color y se retorna
                 if (firstClicked == null)
                 {
+                    sonidos.sonidoOpcion();
                     firstClicked = clickedLabel;
                     firstClicked.ForeColor = Color.Yellow;
 
@@ -168,6 +171,7 @@ namespace ProyectoTCU
                 //Si se llega hasta acá, firstClick no es null y le toca a secondClicked
                 //Se le asigna el label que el usuario clickeó y cambia de color
 
+                sonidos.sonidoOpcion();
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Yellow;
 
@@ -184,6 +188,7 @@ namespace ProyectoTCU
                 {
                     if (pairsNaturalSpanishReal[firstClicked.Text] == pairsNaturalEnglishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -199,6 +204,7 @@ namespace ProyectoTCU
                 {
                     if (pairsNaturalEnglishReal[firstClicked.Text] == pairsNaturalSpanishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -254,6 +260,7 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
+            sonidos.sonidoTerminarBien();
             MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
             m5grado = new Menu5toGrado();

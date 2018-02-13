@@ -12,6 +12,8 @@ namespace ProyectoTCU
 {
     public partial class Parejas4toGrado : Form
     {
+        controlSonidos sonidos = new controlSonidos();
+
         Menu4toGrado m4grado;
 
         // firstClicked points to the first Label control 
@@ -153,6 +155,7 @@ namespace ProyectoTCU
                 //Se le asigna el label que el usuario clickeó, cambia de color y se retorna
                 if (firstClicked == null)
                 {
+                    sonidos.sonidoOpcion();
                     firstClicked = clickedLabel;
                     firstClicked.ForeColor = Color.Yellow;
 
@@ -162,6 +165,7 @@ namespace ProyectoTCU
                 //Si se llega hasta acá, firstClick no es null y le toca a secondClicked
                 //Se le asigna el label que el usuario clickeó y cambia de color
 
+                sonidos.sonidoOpcion();
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Yellow;
 
@@ -178,6 +182,7 @@ namespace ProyectoTCU
                 {
                     if (pairsOrgansSpanishReal[firstClicked.Text] == pairsOrgansEnglishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -193,6 +198,7 @@ namespace ProyectoTCU
                 {
                     if (pairsOrgansEnglishReal[firstClicked.Text] == pairsOrgansSpanishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -248,6 +254,7 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
+            sonidos.sonidoTerminarBien();
             MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
             m4grado = new Menu4toGrado();

@@ -129,6 +129,7 @@ namespace ProyectoTCU
 
         private void labelAnswer1_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer1.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer1.Text;
@@ -138,6 +139,7 @@ namespace ProyectoTCU
 
         private void labelAnswer2_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer2.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer2.Text;
@@ -146,6 +148,7 @@ namespace ProyectoTCU
 
         private void labelAnswer3_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer3.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer3.Text;
@@ -154,6 +157,7 @@ namespace ProyectoTCU
 
         private void labelAnswer4_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer4.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer4.Text;
