@@ -52,7 +52,7 @@
             // 
             // tableLayoutPanel1erGrado
             // 
-            this.tableLayoutPanel1erGrado.BackColor = System.Drawing.Color.Turquoise;
+            this.tableLayoutPanel1erGrado.BackColor = System.Drawing.Color.LimeGreen;
             this.tableLayoutPanel1erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
             this.tableLayoutPanel1erGrado.ColumnCount = 4;
             this.tableLayoutPanel1erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));

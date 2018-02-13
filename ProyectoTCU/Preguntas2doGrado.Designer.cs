@@ -48,12 +48,13 @@
             this.tableLayoutPanel1.SetColumnSpan(this.labelQuestion, 2);
             this.labelQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelQuestion.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuestion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelQuestion.Location = new System.Drawing.Point(5, 78);
             this.labelQuestion.Name = "labelQuestion";
             this.labelQuestion.Size = new System.Drawing.Size(1284, 374);
             this.labelQuestion.TabIndex = 0;
             this.labelQuestion.Text = "c";
-            this.labelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelAnswer3
             // 
@@ -81,7 +82,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Ivory;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.BlueViolet;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));

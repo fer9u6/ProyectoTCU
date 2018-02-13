@@ -37,6 +37,76 @@ namespace ProyectoTCU
             }
         }
 
+        public void sonidoGanarSebastian()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.correctSound);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
+        public void sonidoPerderSebastian()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.wrongSound);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
+        public void sonidoTerminarBien()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.fireworkSound);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
+        public void sonidoTerminar()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.crackerSound);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
+        public void sonidoOpcion()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.popSound);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
 
     }
    

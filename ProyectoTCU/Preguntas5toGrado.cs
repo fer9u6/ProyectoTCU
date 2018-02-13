@@ -18,19 +18,21 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
+        controlSonidos sonidos = new controlSonidos();
+
         static string[] questions = new string[]
         {
             "A polite way of inviting someone to an event is:",
             "A polite way of answering an invitation is:",
-            "When listening at other people’s opinions, you should always:",
+            "When listening at other people’s opinions,\n                         you should always:",
             "This is a proper way of declining an invitation:",
             "A way to fight deforestation is to ________.",
-            "A way of saving electricity is to ________.",
-            "________ pollute the environment.",
-            "________ pollutes the rivers.",
-            "A good way to save water is ________.",
-            "Throwing ________ at plants pollutes them.",
-            "________ poisons the environment."
+            "        A way of saving electricity is to ________.",
+            "              ________ pollute the environment.",
+            "              ________ pollutes the rivers.",
+            "       A good way to save water is ________.",
+            "       Throwing ________ at plants pollutes them.",
+            "       ________ poisons the environment."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
@@ -71,6 +73,14 @@ namespace ProyectoTCU
             }
             else
             {
+                if (score > 6)
+                {
+                    sonidos.sonidoTerminarBien();
+                }
+                else
+                {
+                    sonidos.sonidoTerminar();
+                }
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
                 m5to = new Menu5toGrado();
@@ -119,6 +129,7 @@ namespace ProyectoTCU
 
         private void labelAnswer1_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer1.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer1.Text;
@@ -128,6 +139,7 @@ namespace ProyectoTCU
 
         private void labelAnswer2_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer2.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer2.Text;
@@ -136,6 +148,7 @@ namespace ProyectoTCU
 
         private void labelAnswer3_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer3.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer3.Text;
@@ -144,6 +157,7 @@ namespace ProyectoTCU
 
         private void labelAnswer4_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer4.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer4.Text;
@@ -155,7 +169,7 @@ namespace ProyectoTCU
         {
             if (verResp.Equals(quizAnswers[i])) //REVISAR
             {
-                //MessageBox.Show("Correct!");
+                sonidos.sonidoGanarSebastian();
                 MyMsgBox.Show("CORRECT!", ":)", "OK");
                 score++;
                 asignarPregYResp();
@@ -163,6 +177,7 @@ namespace ProyectoTCU
 
             else 
             {
+                sonidos.sonidoPerderSebastian();
                 MyMsgBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i], ":(", "OK");
                 asignarPregYResp();
 

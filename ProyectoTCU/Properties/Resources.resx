@@ -121,6 +121,24 @@
   <data name="park_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\park_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="correctSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correctSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wrongSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrongSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bellSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bellSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="popSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fireworkSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireworkSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="crackerSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crackerSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Cute-cartoon-pencil-04-vector-material-19863" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cute-cartoon-pencil-04-vector-material-19863.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

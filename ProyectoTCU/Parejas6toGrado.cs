@@ -12,6 +12,8 @@ namespace ProyectoTCU
 {
     public partial class Parejas6toGrado : Form
     {
+        controlSonidos sonidos = new controlSonidos();
+
         Menu6toGrado m6grado;
 
         // firstClicked points to the first Label control 
@@ -34,34 +36,34 @@ namespace ProyectoTCU
 
         Dictionary<string, int> pairsCRSpanish = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"gallo pinto", 0}, {"tamal", 1}, {"playa", 2}, {"carreta", 3},
+            {"británico", 4}, {"francés", 5}, {"italiano", 6}, {"europeo", 7},
+            {"flora", 8}, {"fauna", 9}, {"café", 10}, {"banano", 11},
+            {"bandera", 12}, {"estadounidense", 13}, {"canadiense", 14}
         };
 
         Dictionary<string, int> pairsCREnglish = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"gallo pinto", 0}, {"tamale", 1}, {"beach", 2}, {"cart", 3},
+            {"british", 4}, {"french", 5}, {"italian", 6}, {"european", 7},
+            {"flora", 8}, {"fauna", 9}, {"coffee", 10}, {"banana", 11},
+            {"flag", 12}, {"american", 13}, {"canadian", 14}
         };
 
         Dictionary<string, int> pairsCRSpanishReal = new Dictionary<string, int>()
         {
-            {"padre", 0}, {"madre", 1}, {"hermano", 2}, {"hermana", 3},
-            {"abuelo", 4}, {"abuela", 5}, {"tio", 6}, {"tía", 7},
-            {"hijo", 8}, {"hija", 9}, {"mascota", 10}, {"sobrino", 11},
-            {"sobrina", 12}, {"nieto", 13}, {"nieta", 14}
+            {"gallo pinto", 0}, {"tamal", 1}, {"playa", 2}, {"carreta", 3},
+            {"británico", 4}, {"francés", 5}, {"italiano", 6}, {"europeo", 7},
+            {"flora", 8}, {"fauna", 9}, {"café", 10}, {"banano", 11},
+            {"bandera", 12}, {"estadounidense", 13}, {"canadiense", 14}
         };
 
         Dictionary<string, int> pairsCREnglishReal = new Dictionary<string, int>()
         {
-            {"father", 0}, {"mother", 1}, {"brother", 2}, {"sister", 3},
-            {"grandpa", 4}, {"grandma", 5}, {"uncle", 6}, {"aunt", 7},
-            {"son", 8}, {"daughter", 9}, {"pet", 10}, {"nephew", 11},
-            {"niece", 12}, {"grandson", 13}, {"granddaugther", 14}
+            {"gallo pinto", 0}, {"tamale", 1}, {"beach", 2}, {"cart", 3},
+            {"british", 4}, {"french", 5}, {"italian", 6}, {"european", 7},
+            {"flora", 8}, {"fauna", 9}, {"coffee", 10}, {"banana", 11},
+            {"flag", 12}, {"american", 13}, {"canadian", 14}
         };
 
 
@@ -153,6 +155,7 @@ namespace ProyectoTCU
                 //Se le asigna el label que el usuario clickeó, cambia de color y se retorna
                 if (firstClicked == null)
                 {
+                    sonidos.sonidoOpcion();
                     firstClicked = clickedLabel;
                     firstClicked.ForeColor = Color.Yellow;
 
@@ -162,6 +165,7 @@ namespace ProyectoTCU
                 //Si se llega hasta acá, firstClick no es null y le toca a secondClicked
                 //Se le asigna el label que el usuario clickeó y cambia de color
 
+                sonidos.sonidoOpcion();
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Yellow;
 
@@ -178,6 +182,7 @@ namespace ProyectoTCU
                 {
                     if (pairsCRSpanishReal[firstClicked.Text] == pairsCREnglishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -193,6 +198,7 @@ namespace ProyectoTCU
                 {
                     if (pairsCREnglishReal[firstClicked.Text] == pairsCRSpanishReal[secondClicked.Text])
                     {
+                        sonidos.sonidoGanarSebastian();
                         firstClicked.ForeColor = firstClicked.BackColor;
                         secondClicked.ForeColor = firstClicked.BackColor;
                         //Verificar si ya se ganó el juego
@@ -248,6 +254,7 @@ namespace ProyectoTCU
             // If the loop didn’t return, it didn't find
             // any unmatched icons
             // That means the user won. Show a message and close the form
+            sonidos.sonidoTerminarBien();
             MyMsgBox.Show("YOU MATCHED ALL THE WORDS!", ":)", "OK");
             InitializeComponent();
             m6grado = new Menu6toGrado();

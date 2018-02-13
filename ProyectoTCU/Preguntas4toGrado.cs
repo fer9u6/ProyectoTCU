@@ -18,19 +18,21 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
+        controlSonidos sonidos = new controlSonidos();
+
         static string[] questions = new string[]
         {
-            "A formal answer is:",
-            "When someone is being rude at you, you should ________.",
-            "Complete the sentence: 'Hello, ________?'",
-            "An informal answer is:",
-            "Complete: 'Bye. ________!'",
-            "The organs that keep pumping air through the body are the ________.",
-            "If you are in a cold and rainy weather, you'll get ________.",
-            "Watching TV for a long time can cause you ________.",
-            "The organ that keeps pumping blood through the body is the ________.",
+            "                         A formal answer is:",
+            "When someone is being rude at you\n             you should ________.",
+            "             Complete the sentence: 'Hello, ________?'",
+            "                         An informal answer is:",
+            "                         Complete: 'Bye. ________!'",
+            "The organs that keep pumping air\nthrough the body are the ________.",
+            "If you are in a cold and rainy weather,\n             you'll get ________.",
+            "Watching TV for a long time\ncan cause you ________.",
+            "The organ that keeps pumping blood\nthrough the body is the ________.",
             "Drink a lot of water, so your body can ________.",
-            "Being under the sun for long periods of time without protection can cause you ________."
+            "Being under the sun for long periods of time\nwithout protection can cause you ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
@@ -70,6 +72,14 @@ namespace ProyectoTCU
             }
             else
             {
+                if (score > 6)
+                {
+                    sonidos.sonidoTerminarBien();
+                }
+                else
+                {
+                    sonidos.sonidoTerminar();
+                }
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
                 m4to = new Menu4toGrado();
@@ -118,6 +128,7 @@ namespace ProyectoTCU
 
         private void labelAnswer1_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer1.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer1.Text;
@@ -127,6 +138,7 @@ namespace ProyectoTCU
 
         private void labelAnswer2_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer2.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer2.Text;
@@ -135,6 +147,7 @@ namespace ProyectoTCU
 
         private void labelAnswer3_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer3.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer3.Text;
@@ -143,6 +156,7 @@ namespace ProyectoTCU
 
         private void labelAnswer4_Click(object sender, EventArgs e)
         {
+            sonidos.sonidoOpcion();
             sameBackColor();
             labelAnswer4.BackColor = Color.LightSteelBlue;
             verResp = labelAnswer4.Text;
@@ -154,7 +168,7 @@ namespace ProyectoTCU
         {
             if (verResp.Equals(quizAnswers[i])) //REVISAR
             {
-                //MessageBox.Show("Correct!");
+                sonidos.sonidoGanarSebastian();
                 MyMsgBox.Show("CORRECT!", ":)", "OK");
                 score++;
                 asignarPregYResp();
@@ -162,6 +176,7 @@ namespace ProyectoTCU
 
             else 
             {
+                sonidos.sonidoPerderSebastian();
                 MyMsgBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i], ":(", "OK");
                 asignarPregYResp();
 
