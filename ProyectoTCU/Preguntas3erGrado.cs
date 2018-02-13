@@ -18,6 +18,8 @@ namespace ProyectoTCU
         int i = -1; //La cantidad de preguntas hechas hasta el momento
         string verResp = ""; //Aquí se va a guardar la respuesta cuando se quiera verificar 
 
+        controlSonidos sonidos = new controlSonidos();
+
         static string[] questions = new string[]
         {
             "In the morning I take a shower, eat breakfast, ________, and go to school.",
@@ -67,6 +69,14 @@ namespace ProyectoTCU
             }
             else
             {
+                if (score > 6)
+                {
+                    sonidos.sonidoTerminarBien();
+                }
+                else
+                {
+                    sonidos.sonidoTerminar();
+                }
                 MyMsgBox.Show("FINISH!\nFinal score: " + +score + " / " + questions.Length.ToString(), "", "OK");
                 InitializeComponent();
                 m3er = new Menu3erGrado();
@@ -151,7 +161,7 @@ namespace ProyectoTCU
         {
             if (verResp.Equals(quizAnswers[i])) //REVISAR
             {
-                //MessageBox.Show("Correct!");
+                sonidos.sonidoGanarSebastian();
                 MyMsgBox.Show("CORRECT!", ":)", "OK");
                 score++;
                 asignarPregYResp();
@@ -159,6 +169,7 @@ namespace ProyectoTCU
 
             else 
             {
+                sonidos.sonidoPerderSebastian();
                 MyMsgBox.Show("Incorrect...\nCorrect answer: " + quizAnswers[i], ":(", "OK");
                 asignarPregYResp();
 

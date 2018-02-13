@@ -645,6 +645,10 @@
     <None Include="Resources\intestinos.jpg" />
     <None Include="Resources\colorpisoclassroom1.jpg" />
     <None Include="Resources\classroom - Copy2.jpg" />
+    <Content Include="Resources\bellSound.wav" />
+    <Content Include="Resources\correctSound.wav" />
+    <Content Include="Resources\crackerSound.wav" />
+    <Content Include="Resources\fireworkSound.wav" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -680,6 +684,8 @@
     <None Include="Resources\Untitledboard1.png" />
     <None Include="Resources\sad.png" />
     <None Include="Resources\perderjuego_audio.wav" />
+    <Content Include="Resources\popSound.wav" />
+    <Content Include="Resources\wrongSound.wav" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />
