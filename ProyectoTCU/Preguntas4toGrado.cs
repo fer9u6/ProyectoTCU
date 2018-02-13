@@ -22,17 +22,17 @@ namespace ProyectoTCU
 
         static string[] questions = new string[]
         {
-            "A formal answer is:",
-            "When someone is being rude at you, you should ________.",
-            "Complete the sentence: 'Hello, ________?'",
-            "An informal answer is:",
-            "Complete: 'Bye. ________!'",
-            "The organs that keep pumping air through the body are the ________.",
-            "If you are in a cold and rainy weather, you'll get ________.",
-            "Watching TV for a long time can cause you ________.",
-            "The organ that keeps pumping blood through the body is the ________.",
+            "                         A formal answer is:",
+            "When someone is being rude at you\n             you should ________.",
+            "             Complete the sentence: 'Hello, ________?'",
+            "                         An informal answer is:",
+            "                         Complete: 'Bye. ________!'",
+            "The organs that keep pumping air\nthrough the body are the ________.",
+            "If you are in a cold and rainy weather,\n             you'll get ________.",
+            "Watching TV for a long time\ncan cause you ________.",
+            "The organ that keeps pumping blood\nthrough the body is the ________.",
             "Drink a lot of water, so your body can ________.",
-            "Being under the sun for long periods of time without protection can cause you ________."
+            "Being under the sun for long periods of time\nwithout protection can cause you ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar

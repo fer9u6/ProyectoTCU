@@ -22,16 +22,16 @@ namespace ProyectoTCU
 
         static string[] questions = new string[]
         {
-            "When you need to borrow a phone, you should ask:",
-            "You should know how to speak English because ________.",
-            "When you look for someone at the phone that is not available, you should say:",
-            "When you need to go to the bathroom, you should ask:",
-            "If you ask for someone at the phone, you should ask:",
-            "________ are really important for tourism in Costa Rica.",
+            "When you need to borrow a phone,\n            you should ask:",
+            "You should know how to speak\nEnglish because ________.",
+            "When you look for someone at the phone\nthat is not available, you should say:",
+            "When you need to go to the\nbathroom, you should ask:",
+            "If you ask for someone at the phone,\n            you should ask:",
+            "________ are really important for\ntourism in Costa Rica.",
             "After going to the bathroom, you should always:",
             "A popular Costa Rican dish is ________.",
             "You shouldn't ________ while you are eating.",
-            "Costa Rican and British people like to watch ________ on T.V."
+            "Costa Rican and British people\nlike to watch ________ on T.V."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar

@@ -22,16 +22,16 @@ namespace ProyectoTCU
 
         static string[] questions = new string[]
         {
-            "In the morning I take a shower, eat breakfast, ________, and go to school.",
+            "             In the morning I take a shower,\neat breakfast, ________, and go to school.",
             "When meeting new people, you ________.",
             "________ is a good place to meet new people:",
-            "At night I eat dinner, ________, brush my teeth, and go to sleep.",
+            "At night I eat dinner, ________, brush my teeth,\nand go to sleep.",
             "When meeting someone new, ________.",
-            "I brush my teeth in the ________.",
+            "             I brush my teeth in the ________.",
             "You can find the armchairs in the ________.",
-            "I sleep in the ________.",
-            "I eat dinner in the ________.",
-            "The refrigerator and the oven can be found in the ________."
+            "                         I sleep in the ________.",
+            "                         I eat dinner in the ________.",
+            "The refrigerator and the oven can be found\n                         in the ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar

@@ -24,15 +24,15 @@ namespace ProyectoTCU
         {
             "A polite way of inviting someone to an event is:",
             "A polite way of answering an invitation is:",
-            "When listening at other people’s opinions, you should always:",
+            "When listening at other people’s opinions,\n                         you should always:",
             "This is a proper way of declining an invitation:",
             "A way to fight deforestation is to ________.",
-            "A way of saving electricity is to ________.",
-            "________ pollute the environment.",
-            "________ pollutes the rivers.",
-            "A good way to save water is ________.",
-            "Throwing ________ at plants pollutes them.",
-            "________ poisons the environment."
+            "        A way of saving electricity is to ________.",
+            "              ________ pollute the environment.",
+            "              ________ pollutes the rivers.",
+            "       A good way to save water is ________.",
+            "       Throwing ________ at plants pollutes them.",
+            "       ________ poisons the environment."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar

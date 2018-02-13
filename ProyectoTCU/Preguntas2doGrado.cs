@@ -22,15 +22,15 @@ namespace ProyectoTCU
 
         static string[] questions = new string[]
         {
-            "Drink ___ glasses of water a day.",
-            "Don't eat ________ at night.",
+            "                         Drink ___ glasses of water a day.",
+            "                         Don't eat ________ at night.",
             "Eat vegetables, like ________ and ________.",
-            "Sleep ___ hours a day.",
-            "________ to stay healthy.",
-            "Exercise at least ____ times a week.",
-            "________ and ________ are junk food.",
-            "Eat fruit ________.",
-            "________ food is bad for you.",
+            "                         Sleep ___ hours a day.",
+            "                         ________ to stay healthy.",
+            "           Exercise at least ____ times a week.",
+            "           ________ and ________ are junk food.",
+            "                         Eat fruit ________.",
+            "                         ________ food is bad for you.",
             "________ and ________ are healthy food."
         };
 

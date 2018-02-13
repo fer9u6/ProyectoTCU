@@ -22,18 +22,18 @@ namespace ProyectoTCU
 
         static string[] questions = new string[]
         {
-            " ",
-            "The kid is ________.",
-            " ",
-            "The kid is ________.",
-            "The kid is ________.",
-            "The kid is ________.",
-            "The kid is ________.",
-            "This is your ________.",
-            "This is your ________.",
-            "This is your ________.",
-            "This is your ________.",
-            "This is your ________."
+            "                         Say to this kid:",
+            "                         The kid is ________.",
+            "                         Say to this kid:",
+            "                         The kid is ________.",
+            "                         The kid is ________.",
+            "                         The kid is ________.",
+            "                         The kid is ________.",
+            "                         This is your ________.",
+            "                         This is your ________.",
+            "                         This is your ________.",
+            "                         This is your ________.",
+            "                         This is your ________."
         };
 
         int[] numbers = new int[4] { 1, 2, 3, 4 }; //Para que la posicion de las respuestas sea al azar
