@@ -88,7 +88,8 @@ namespace ProyectoTCU
                     o3.Text = recomendaciones[enfermedades[eActual]];
                     o1.Text = recomendaciones[enfermedades[resIncorrecta]];
                 }
-
+                //mostrar imagen de enfermedad
+                pictureBox1.Image = imageListEnfermedades.Images[eActual];
             }
             else {
                 if (fallos < 3)

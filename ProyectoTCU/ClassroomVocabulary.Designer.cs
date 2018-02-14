@@ -520,8 +520,9 @@
             this.Controls.Add(this.backB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelinstruction);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClassroomVocabulary";
-            this.Text = "ClassroomVocabulary";
+            this.Text = "TCU-501 UCR";
             this.Load += new System.EventHandler(this.ClassroomVocabulary_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

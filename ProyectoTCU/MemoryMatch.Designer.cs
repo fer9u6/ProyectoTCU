@@ -311,8 +311,9 @@
             this.ClientSize = new System.Drawing.Size(769, 562);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.backB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MemoryMatch";
-            this.Text = "MemoryMatch";
+            this.Text = "TCU-501 UCR";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();

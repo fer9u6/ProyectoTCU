@@ -281,8 +281,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "socializingOrdenar";
-            this.Text = "socializingOrdenar";
+            this.Text = "TCU-501 UCR";
             this.Load += new System.EventHandler(this.socializingOrdenar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);

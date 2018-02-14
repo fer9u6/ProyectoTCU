@@ -186,8 +186,9 @@
             this.Controls.Add(this.o2);
             this.Controls.Add(this.o1);
             this.Controls.Add(this.backB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Diseases";
-            this.Text = "Diseases";
+            this.Text = "TCU-501 UCR";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);

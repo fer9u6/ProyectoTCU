@@ -187,8 +187,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu4toGrado";
-            this.Text = "Fourth Grade";
+            this.Text = "TCU-501 UCR";
             this.ResumeLayout(false);
             this.PerformLayout();
 

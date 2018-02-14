@@ -168,8 +168,9 @@
             this.Controls.Add(this.pictureBox1g);
             this.Controls.Add(this.mainPB);
             this.Controls.Add(this.backB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Classroom";
-            this.Text = "Classroom";
+            this.Text = "TCU-501 UCR";
             this.Load += new System.EventHandler(this.Classroom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpared)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4peque)).EndInit();

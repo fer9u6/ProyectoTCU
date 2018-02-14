@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListenPlaces));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.backB = new System.Windows.Forms.Button();
@@ -122,8 +123,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.audio_Button);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListenPlaces";
-            this.Text = "ListenPlaces";
+            this.Text = "TCU-501 UCR";
             this.Load += new System.EventHandler(this.ListenPlaces_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_next)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

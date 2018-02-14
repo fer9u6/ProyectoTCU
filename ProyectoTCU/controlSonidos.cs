@@ -25,7 +25,7 @@ namespace ProyectoTCU
 
         public void sonidoPerder()
         {
-            SoundPlayer s = new SoundPlayer(Properties.Resources.perderjuego_audio);
+            SoundPlayer s = new SoundPlayer(Properties.Resources.errorperder_audio);
             try
             {
                 s.Play();

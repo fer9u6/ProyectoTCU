@@ -107,8 +107,9 @@
             this.Controls.Add(this.pictureBox_next);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.audio_Button);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PrepositionsCity";
-            this.Text = "PrepositionsCity";
+            this.Text = "TCU-501 UCR";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_next)).EndInit();
             this.ResumeLayout(false);

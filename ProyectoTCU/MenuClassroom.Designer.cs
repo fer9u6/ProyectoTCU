@@ -99,8 +99,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonMoreV);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuClassroom";
-            this.Text = "MenuClassroom";
+            this.Text = "TCU-501 UCR";
             this.ResumeLayout(false);
 
         }

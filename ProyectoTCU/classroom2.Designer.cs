@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(classroom2));
             this.button1 = new System.Windows.Forms.Button();
             this.backB = new System.Windows.Forms.Button();
             this.pictureBbehind = new System.Windows.Forms.PictureBox();
@@ -65,6 +66,7 @@
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backB.Image = global::ProyectoTCU.Properties.Resources.back_arrow__1_;
             this.backB.Location = new System.Drawing.Point(12, 12);
             this.backB.Name = "backB";
             this.backB.Size = new System.Drawing.Size(70, 60);
@@ -168,6 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(922, 598);
             this.Controls.Add(this.pictureBbehind);
             this.Controls.Add(this.pictureBoxnextto);
@@ -179,8 +182,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.backB);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "classroom2";
-            this.Text = "classroom2";
+            this.Text = "TCU-501 UCR";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBbehind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxnextto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxinfrontofb)).EndInit();
