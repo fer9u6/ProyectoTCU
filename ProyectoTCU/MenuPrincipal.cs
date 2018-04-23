@@ -22,6 +22,8 @@ namespace ProyectoTCU
 
         public MenuPrincipal()
         {
+            //FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

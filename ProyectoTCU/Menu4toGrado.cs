@@ -25,6 +25,7 @@ namespace ProyectoTCU
 
         public Menu4toGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             msj = new Mensaje();
         }

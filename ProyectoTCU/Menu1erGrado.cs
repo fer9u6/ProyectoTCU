@@ -24,6 +24,7 @@ namespace ProyectoTCU
 
         public Menu1erGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

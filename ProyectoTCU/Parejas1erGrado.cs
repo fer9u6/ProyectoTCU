@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoTCU
 {
+
     public partial class Parejas1erGrado : Form
     {
 
@@ -122,6 +123,8 @@ namespace ProyectoTCU
 
         public Parejas1erGrado()
         {
+            WindowState = FormWindowState.Maximized;
+
             InitializeComponent();
 
             AssignIconsToSquares();

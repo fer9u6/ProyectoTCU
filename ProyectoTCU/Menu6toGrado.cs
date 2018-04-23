@@ -18,6 +18,7 @@ namespace ProyectoTCU
 
         public Menu6toGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

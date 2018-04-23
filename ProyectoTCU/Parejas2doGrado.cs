@@ -117,6 +117,8 @@ namespace ProyectoTCU
 
         public Parejas2doGrado()
         {
+            WindowState = FormWindowState.Maximized;
+
             InitializeComponent();
 
             AssignIconsToSquares();
