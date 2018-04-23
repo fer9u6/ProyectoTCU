@@ -159,5 +159,15 @@ namespace ProyectoTCU
         {
             button7.Size = new Size(75, 28);
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
