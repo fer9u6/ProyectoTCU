@@ -180,8 +180,6 @@
             this.button7.Text = "Exit";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
-            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
             // 
             // label1
             // 

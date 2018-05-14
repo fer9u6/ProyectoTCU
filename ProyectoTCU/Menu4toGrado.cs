@@ -28,6 +28,7 @@ namespace ProyectoTCU
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
             msj = new Mensaje();
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void backB_Click(object sender, EventArgs e)

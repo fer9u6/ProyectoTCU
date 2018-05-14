@@ -100,7 +100,6 @@ namespace ProyectoTCU
         private void validar()
         {
             String respuesta = "";
-            String res = "";
             SortedList<int, Label> labelsres = new SortedList<int, Label>();
             foreach (Label l in labels) {
                 if (l.Location.Y == (ypanel + 50)) { // si fueron elegidas como respuestas

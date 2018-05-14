@@ -123,6 +123,8 @@ namespace ProyectoTCU
 
             InitializeComponent();
 
+            this.Closed += (s, ev) => Application.Exit();
+
             AssignIconsToSquares();
         }
 
@@ -270,6 +272,14 @@ namespace ProyectoTCU
             m3grado.Show();
             this.Hide();
             //Close();
+        }
+
+        private void buttonReturn_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m3grado = new Menu3erGrado();
+            m3grado.Show();
+            this.Hide();
         }
     }
 }

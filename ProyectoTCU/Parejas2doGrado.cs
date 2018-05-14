@@ -121,6 +121,8 @@ namespace ProyectoTCU
 
             InitializeComponent();
 
+            this.Closed += (s, ev) => Application.Exit();
+
             AssignIconsToSquares();
         }
 
@@ -268,6 +270,19 @@ namespace ProyectoTCU
             m2grado.Show();
             this.Hide();
             return;
+        }
+
+        private void tableLayoutPanel2doGrado_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m2grado = new Menu2doGrado();
+            m2grado.Show();
+            this.Hide();
         }
     }
 }
