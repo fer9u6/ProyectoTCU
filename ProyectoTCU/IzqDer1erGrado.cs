@@ -29,12 +29,25 @@ namespace ProyectoTCU
             "hello", "bye",
             "pencil", "paper", "notebook", "scissors", "sharpener",
             "cake", "chicken", "pizza", "carrot", "onion", "lettuce",
-            "foot", "hand", "head", "finger", "eyes", "ears", "nose", "hair",
+            "foot", "hand", "head", "fingers", "eyes", "ears", "nose", "hair",
             "happy", "surprised", "embarrassed", "angry", "scared", "sad",
             "red", "blue", "green", "yellow", "purple", "orange",
             "circle", "square", "triangle", 
             "grandfather", "father", "brother", "uncle",
             "grandmother", "mother", "sister", "aunt"
+        };
+
+        static string[] allWordsSpanish = new string[]
+        {
+            "hola", "adios",
+            "lapiz", "papel", "cuaderno", "tijeras", "tajador",
+            "pastel", "pollo", "pizza", "zanahoria", "cebolla", "lechuga",
+            "pie", "mano", "cabeza", "dedos", "ojos", "orejas", "nariz", "pelo",
+            "feliz", "sorprendido", "avergonzado", "enojado", "asustado", "triste",
+            "rojo", "azul", "verde", "amarillo", "morado", "anaranjado",
+            "circulo", "cuadrado", "triangulo",
+            "abuelo", "papá", "hermano", "tío",
+            "abuela", "mamá", "hermana", "tía"
         };
 
         static string alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -51,6 +64,7 @@ namespace ProyectoTCU
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
             this.Closed += (s, ev) => Application.Exit();
+            updateInfo();
             setValues();
             
         }
@@ -59,14 +73,17 @@ namespace ProyectoTCU
         {
             //Se elige una palabra al azar de la lista de palabras
             Random random = new Random();
-            int randomNumber = random.Next(0, 100);
-            word = allWords[random.Next(0, allWords.Length)];
+            int randomNumber = random.Next(0, allWords.Length);
+            word = allWords[randomNumber];
+
+            //Se presenta también la palabra en espanol
+            labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
 
             //Se definen las opciones posibles
             numLetra++;
             changeOptions();
 
-            //Se muestra la palabra
+            //Se muestra la palabra alterando el tableLaoutPanel
             int wordSize = word.Length;
             tableLayoutPanelLetters.Controls.Clear();
             tableLayoutPanelLetters.ColumnStyles.Clear();
@@ -85,8 +102,18 @@ namespace ProyectoTCU
             }
             for (int i = 0; i < wordSize; i++)
             {
-                //Si es la letra siguiente a completar, color azul
-                if (i == numLetra)
+                /*
+                string labelName = "label" + i;
+                Label labelNam = new Label()
+                {
+                    Text = System.Convert.ToString(word[i]),
+                    Font = new Font("Cooper Black", 40, FontStyle.Bold),
+                    Dock = System.Windows.Forms.DockStyle.Fill,
+                    ForeColor = System.Drawing.Color.Blue
+                }, i, 0);
+                */
+            //Si es la letra siguiente a completar, color azul
+            if (i == numLetra)
                 {
                     tableLayoutPanelLetters.Controls.Add(new Label()
                     {
@@ -134,7 +161,7 @@ namespace ProyectoTCU
                 different = true;
                 for (int i = 0; i < word.Length; i++)
                 {
-                    if (alphabet[randomNumber] == word[i]) //OUT OF BOUNDS
+                    if (alphabet[randomNumber] == word[i]) 
                     {
                         randomNumber = random.Next(0, alphabet.Length);
                         i = word.Length;
@@ -156,13 +183,17 @@ namespace ProyectoTCU
             }
         }
 
-        private void buttonIzq_Click(object sender, EventArgs e)
+        //Se actualiza el numero de palabras completadas y el numero de errores
+        private void updateInfo()
         {
             //Si es la letra que sigue para completar
             if (this.Text == System.Convert.ToString(word[numLetra]))
             {
-                numLetra++;
                 //Sonido de exito
+                sonidos.sonidoGanarSebastian();
+                //Pasa a la siguiente letra en la lista
+                numLetra++;
+                
                 //Cambiar color de la letra recien completada y de la que sigue si faltan
                 //Si ya se completó la palabra, score++ y se pone una palabra nueva
                 //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
@@ -173,6 +204,14 @@ namespace ProyectoTCU
                 //Sonido de fracaso
                 //mistakes++
             }
+
+            //El juego se gana completando 5 palabras
+            labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+        }
+
+        private void buttonIzq_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void buttonDer_Click(object sender, EventArgs e)

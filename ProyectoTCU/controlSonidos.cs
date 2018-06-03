@@ -37,6 +37,7 @@ namespace ProyectoTCU
             }
         }
 
+        //Cuando elige una opcion correcta
         public void sonidoGanarSebastian()
         {
             SoundPlayer s = new SoundPlayer(Properties.Resources.correctSound);
@@ -51,6 +52,7 @@ namespace ProyectoTCU
             }
         }
 
+        //Cuando elige una opcion incorrecta
         public void sonidoPerderSebastian()
         {
             SoundPlayer s = new SoundPlayer(Properties.Resources.wrongSound);
@@ -65,6 +67,7 @@ namespace ProyectoTCU
             }
         }
 
+        //Cundo gana con el puntaje mas alto
         public void sonidoTerminarBien()
         {
             SoundPlayer s = new SoundPlayer(Properties.Resources.fireworkSound);
@@ -79,6 +82,7 @@ namespace ProyectoTCU
             }
         }
 
+        //Cundo gana pero no con el puntaje mas alto
         public void sonidoTerminar()
         {
             SoundPlayer s = new SoundPlayer(Properties.Resources.crackerSound);
