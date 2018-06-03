@@ -23,8 +23,10 @@ namespace ProyectoTCU
         public MenuPrincipal()
         {
             //FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
+            //Para que la ventana aarezca del tamano de la pantalla
+            WindowState = FormWindowState.Maximized; 
             InitializeComponent();
+            //Para que la aplicación se cierre presionando la X de la esquina superior derecha
             this.Closed += (s, ev) => Application.Exit();
         }
 

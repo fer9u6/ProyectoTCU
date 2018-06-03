@@ -21,6 +21,7 @@ namespace ProyectoTCU
         ClassroomVocabulary cv;
         MenuClassroom mc;
         MenuNeighborhood mn;
+        IzqDer1erGrado izde;
 
         public Menu1erGrado()
         {
@@ -75,6 +76,14 @@ namespace ProyectoTCU
             InitializeComponent();
             preg = new Preguntas1erGrado();
             preg.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            izde = new IzqDer1erGrado();
+            izde.Show();
             this.Hide();
         }
     }

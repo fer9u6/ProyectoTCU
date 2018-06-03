@@ -189,5 +189,10 @@ namespace ProyectoTCU
             m6to.Show();
             this.Hide();
         }
+
+        private void labelQuestion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

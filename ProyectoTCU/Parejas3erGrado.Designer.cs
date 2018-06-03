@@ -55,7 +55,7 @@
             // tableLayoutPanel3erGrado
             // 
             this.tableLayoutPanel3erGrado.BackColor = System.Drawing.Color.DarkOrange;
-            this.tableLayoutPanel3erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.tableLayoutPanel3erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanel3erGrado.ColumnCount = 4;
             this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));

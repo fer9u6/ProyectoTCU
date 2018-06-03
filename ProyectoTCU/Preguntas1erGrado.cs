@@ -124,8 +124,10 @@ namespace ProyectoTCU
 
         public Preguntas1erGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             asignarPregYResp();
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void sameBackColor()
