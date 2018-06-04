@@ -64,8 +64,9 @@ namespace ProyectoTCU
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
             this.Closed += (s, ev) => Application.Exit();
-            updateInfo();
             setValues();
+            updateInfo();
+            
             
         }
 
@@ -193,8 +194,9 @@ namespace ProyectoTCU
                 sonidos.sonidoGanarSebastian();
                 //Pasa a la siguiente letra en la lista
                 numLetra++;
-                
+
                 //Cambiar color de la letra recien completada y de la que sigue si faltan
+                //tableLayoutPanelLetters.Controls.
                 //Si ya se completó la palabra, score++ y se pone una palabra nueva
                 //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
                 //Suena como muchas cosas, podria ser una funcion aparte
