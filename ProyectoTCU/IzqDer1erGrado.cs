@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
 
 namespace ProyectoTCU
 {
@@ -16,22 +17,26 @@ namespace ProyectoTCU
 
         controlSonidos sonidos = new controlSonidos();
 
+        //Para los sonidos de las letras (espero) y palabras
+        private SpeechSynthesizer synthesizer = new SpeechSynthesizer();
         int numLetra; //La posicion en la palabra de la letra que sigue de completar
         int score = 0;
         int mistakes = 0;
         string word;
+        //En esta lista se guardan las palabras que se hayan usado para no repetirlas
+        List<string> used = new List<string>();
 
         static string[] allWords = new string[]
         {
-            "hello", "bye",
-            "pencil", "paper", "notebook", "scissors", "sharpener",
-            "cake", "chicken", "pizza", "carrot", "onion", "lettuce",
-            "foot", "hand", "head", "fingers", "eyes", "ears", "nose", "hair",
-            "happy", "surprised", "embarrassed", "angry", "scared", "sad",
-            "red", "blue", "green", "yellow", "purple", "orange",
-            "circle", "square", "triangle", 
-            "grandfather", "father", "brother", "uncle",
-            "grandmother", "mother", "sister", "aunt"
+            "hello", "bye", //2
+            "pencil", "paper", "notebook", "scissors", "sharpener", //7
+            "cake", "chicken", "pizza", "carrot", "onion", "lettuce", //13
+            "foot", "hand", "head", "fingers", "eyes", "ears", "nose", "hair", //21
+            "happy", "surprised", "embarrassed", "angry", "scared", "sad", //27
+            "red", "blue", "green", "yellow", "purple", "orange", //33
+            "circle", "square", "triangle", //36
+            "grandfather", "father", "brother", //39
+            "grandmother", "mother", "sister", //42
         };
 
         static string[] allWordsSpanish = new string[]
@@ -43,8 +48,8 @@ namespace ProyectoTCU
             "feliz", "sorprendido", "avergonzado", "enojado", "asustado", "triste",
             "rojo", "azul", "verde", "amarillo", "morado", "anaranjado",
             "circulo", "cuadrado", "triangulo",
-            "abuelo", "papá", "hermano", "tío",
-            "abuela", "mamá", "hermana", "tía"
+            "abuelo", "papá", "hermano",
+            "abuela", "mamá", "hermana"
         };
 
         static string alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -54,9 +59,12 @@ namespace ProyectoTCU
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
             this.Closed += (s, ev) => Application.Exit();
+            synthesizer.Volume = 100;   // 0...100
+            synthesizer.Rate = -7;     //-10...10 
             setValues();
+            setValues();
+            //Reload components
             labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
-            //updateInfo(); //Creo que no se ocupa aca
         }
 
         private void setValues()
@@ -65,12 +73,25 @@ namespace ProyectoTCU
             numLetra = 0;
             mistakes = 0;
             word = "";
+            //windowWidth = labelInSpanish.Width;
 
+            Random random;
+            int randomNumber = 0;
             //Se elige una palabra al azar de la lista de palabras
-            Random random = new Random();
-            int randomNumber = random.Next(0, allWords.Length);
-            word = allWords[randomNumber];
+            //siempre y cuando no se haya usado antes
+            while (word == "" || used.Contains(word))
+            {
+                random = new Random();
+                randomNumber = random.Next(0, allWords.Length);
+                word = allWords[randomNumber];
+            }
 
+            //Se guarda la palabra seleccionada en la lista de palabras usadas
+            used.Add(word);
+
+            //Se agrega la imagen adecuada
+            Image im = imageList1.Images[randomNumber];
+            labelInSpanish.Image = im;
             //Se presenta también la palabra en espanol
             labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
 
@@ -84,9 +105,9 @@ namespace ProyectoTCU
             tableLayoutPanelLetters.RowStyles.Clear();
             tableLayoutPanelLetters.ColumnCount = wordSize;
             tableLayoutPanelLetters.RowCount = 1;
-            tableLayoutPanelLetters.Width = this.Width;
-            tableLayoutPanelLetters.Padding = new System.Windows.Forms.Padding(40, 0, 40, 0); //REVISAR
-            tableLayoutPanelLetters.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanelLetters.Width = this.Width; // + this.Width/3
+            tableLayoutPanelLetters.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0); //REVISAR
+            tableLayoutPanelLetters.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
             //Se divide 100 entre el numero de letras en la palabra para los porcentajes
             int percentage = 100 / wordSize;
             //Se establecen las columnas
@@ -102,6 +123,7 @@ namespace ProyectoTCU
                     tableLayoutPanelLetters.Controls.Add(new Label()
                     {
                         Text = System.Convert.ToString(word[i]),
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Font = new Font("Cooper Black", 40, FontStyle.Bold),
                         Dock = System.Windows.Forms.DockStyle.Fill,
                         ForeColor = System.Drawing.Color.Blue
@@ -113,6 +135,7 @@ namespace ProyectoTCU
                     tableLayoutPanelLetters.Controls.Add(new Label()
                     {
                         Text = System.Convert.ToString(word[i]),
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Font = new Font("Cooper Black", 40, FontStyle.Bold),
                         Dock = System.Windows.Forms.DockStyle.Fill,
                         ForeColor = System.Drawing.Color.Green
@@ -124,6 +147,7 @@ namespace ProyectoTCU
                     tableLayoutPanelLetters.Controls.Add(new Label()
                     {
                         Text = System.Convert.ToString(word[i]),
+                        TextAlign = ContentAlignment.MiddleCenter,
                         Font = new Font("Cooper Black", 40, FontStyle.Bold),
                         Dock = System.Windows.Forms.DockStyle.Fill,
                         ForeColor = System.Drawing.Color.Black
@@ -138,28 +162,25 @@ namespace ProyectoTCU
             Random random = new Random();
             int randomNumber = random.Next(0, alphabet.Length);
             Boolean different = false;
-            different = true;
             //Se asegura que la opcion equivocada no se encuentre 
             //en la totalidad de la palabra para evitar confusiones
+            //y que las dos opciones no sean iguales
             while (!different)
             {
-                
-                for (int i = 0; i < word.Length; i++)
+                if (word.Contains(alphabet[randomNumber]) || word[numLetra] == alphabet[randomNumber])
                 {
-                    if (alphabet[randomNumber] == word[i]) 
-                    {
-                        randomNumber = random.Next(0, alphabet.Length);
-                        i = word.Length;
-                        different = false;
-                    }
+                    randomNumber = random.Next(0, alphabet.Length);
                 }
-
+                else
+                {
+                    different = true;
+                }
             }
             
             if (randomNumber % 2 == 0) //Si es par, que la respuesta correcta sea la de la izquierda
             {
                 buttonIzq.Text = System.Convert.ToString(word[numLetra]);
-                buttonDer.Text = System.Convert.ToString(alphabet[randomNumber]); //FALTA
+                buttonDer.Text = System.Convert.ToString(alphabet[randomNumber]);
             }
             else //Sino, que la respuesta correcta sea la de la derecha
             {
@@ -175,8 +196,10 @@ namespace ProyectoTCU
             //Si es la letra que sigue para completar (opcion correcta)
             if (letter == System.Convert.ToString(word[numLetra]))
             {
-                //Sonido de exito
-                sonidos.sonidoGanarSebastian();
+                //Sonido de exito (quitarlo?)
+                //sonidos.sonidoGanarSebastian();
+                //Sonido de la letra
+                synthesizer.Speak(letter);
                 //Pasa a la siguiente letra en la lista
                 numLetra++;
 
@@ -185,6 +208,24 @@ namespace ProyectoTCU
                 if (numLetra == wordSize)
                 {
                     score++;
+
+                    synthesizer.Speak(word);
+                    //System.Threading.Thread.Sleep(500);
+
+                    //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
+                    if (score == 5)
+                    {
+                        labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+                        sonidos.sonidoTerminarBien();
+
+                        MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
+                        InitializeComponent();
+                        m1er = new Menu1erGrado();
+                        m1er.Show();
+                        this.Hide();
+                        return;
+                    }
+
                     setValues();
                 }
                 else
@@ -219,18 +260,6 @@ namespace ProyectoTCU
                         }
                     }
                     changeOptionsInButtons();
-                }
-                //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
-                if (score == 5)
-                {
-                    labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
-                    sonidos.sonidoTerminarBien();
-
-                    MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
-                    InitializeComponent();
-                    m1er = new Menu1erGrado();
-                    m1er.Show();
-                    this.Hide();
                 }
             }
             else
