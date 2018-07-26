@@ -39,6 +39,8 @@
             this.pictureBoxunder = new System.Windows.Forms.PictureBox();
             this.pictureBoxon = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelAnswer = new System.Windows.Forms.Label();
+            this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBbehind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxnextto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxinfrontofb)).BeginInit();
@@ -47,12 +49,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxunder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(17, 99);
+            this.button1.Location = new System.Drawing.Point(26, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 57);
             this.button1.TabIndex = 12;
@@ -67,7 +70,7 @@
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backB.Image = global::ProyectoTCU.Properties.Resources.back_arrow__1_;
-            this.backB.Location = new System.Drawing.Point(12, 12);
+            this.backB.Location = new System.Drawing.Point(21, 12);
             this.backB.Name = "backB";
             this.backB.Size = new System.Drawing.Size(70, 60);
             this.backB.TabIndex = 5;
@@ -77,7 +80,7 @@
             // pictureBbehind
             // 
             this.pictureBbehind.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorpisoclassroom1;
-            this.pictureBbehind.Location = new System.Drawing.Point(706, 313);
+            this.pictureBbehind.Location = new System.Drawing.Point(873, 313);
             this.pictureBbehind.Name = "pictureBbehind";
             this.pictureBbehind.Size = new System.Drawing.Size(66, 54);
             this.pictureBbehind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,7 +91,7 @@
             // pictureBoxnextto
             // 
             this.pictureBoxnextto.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorpisoclassroom;
-            this.pictureBoxnextto.Location = new System.Drawing.Point(102, 472);
+            this.pictureBoxnextto.Location = new System.Drawing.Point(269, 472);
             this.pictureBoxnextto.Name = "pictureBoxnextto";
             this.pictureBoxnextto.Size = new System.Drawing.Size(70, 65);
             this.pictureBoxnextto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,7 +102,7 @@
             // pictureBoxinfrontofb
             // 
             this.pictureBoxinfrontofb.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorpisoclassroom;
-            this.pictureBoxinfrontofb.Location = new System.Drawing.Point(333, 315);
+            this.pictureBoxinfrontofb.Location = new System.Drawing.Point(500, 315);
             this.pictureBoxinfrontofb.Name = "pictureBoxinfrontofb";
             this.pictureBoxinfrontofb.Size = new System.Drawing.Size(71, 52);
             this.pictureBoxinfrontofb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,7 +114,7 @@
             // 
             this.pictureBoxbetween.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorparedpisoclassroom;
             this.pictureBoxbetween.Image = global::ProyectoTCU.Properties.Resources.pen;
-            this.pictureBoxbetween.Location = new System.Drawing.Point(474, 278);
+            this.pictureBoxbetween.Location = new System.Drawing.Point(641, 278);
             this.pictureBoxbetween.Name = "pictureBoxbetween";
             this.pictureBoxbetween.Size = new System.Drawing.Size(54, 56);
             this.pictureBoxbetween.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +126,7 @@
             // 
             this.pictureBoxondesk.BackgroundImage = global::ProyectoTCU.Properties.Resources.colordesk;
             this.pictureBoxondesk.Image = global::ProyectoTCU.Properties.Resources.Book;
-            this.pictureBoxondesk.Location = new System.Drawing.Point(756, 503);
+            this.pictureBoxondesk.Location = new System.Drawing.Point(923, 503);
             this.pictureBoxondesk.Name = "pictureBoxondesk";
             this.pictureBoxondesk.Size = new System.Drawing.Size(83, 67);
             this.pictureBoxondesk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,7 +138,7 @@
             // 
             this.pictureBoxunder.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorparedpisoclassroom;
             this.pictureBoxunder.Image = global::ProyectoTCU.Properties.Resources.colorparedpisoclassroom;
-            this.pictureBoxunder.Location = new System.Drawing.Point(593, 278);
+            this.pictureBoxunder.Location = new System.Drawing.Point(760, 278);
             this.pictureBoxunder.Name = "pictureBoxunder";
             this.pictureBoxunder.Size = new System.Drawing.Size(73, 46);
             this.pictureBoxunder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,7 +150,7 @@
             // 
             this.pictureBoxon.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorparedclasssroom;
             this.pictureBoxon.Image = global::ProyectoTCU.Properties.Resources.colorpencils;
-            this.pictureBoxon.Location = new System.Drawing.Point(593, 184);
+            this.pictureBoxon.Location = new System.Drawing.Point(760, 184);
             this.pictureBoxon.Name = "pictureBoxon";
             this.pictureBoxon.Size = new System.Drawing.Size(62, 55);
             this.pictureBoxon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,19 +162,40 @@
             // 
             this.pictureBox1.BackgroundImage = global::ProyectoTCU.Properties.Resources.colorparedpisoclassroom;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.classroom___Copy2;
-            this.pictureBox1.Location = new System.Drawing.Point(88, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(255, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(822, 546);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // labelAnswer
+            // 
+            this.labelAnswer.AutoSize = true;
+            this.labelAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnswer.Location = new System.Drawing.Point(45, 278);
+            this.labelAnswer.Name = "labelAnswer";
+            this.labelAnswer.Size = new System.Drawing.Size(76, 25);
+            this.labelAnswer.TabIndex = 20;
+            this.labelAnswer.Text = "label1";
+            // 
+            // pictureBoxRespuesta
+            // 
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(41, 351);
+            this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
+            this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);
+            this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxRespuesta.TabIndex = 21;
+            this.pictureBoxRespuesta.TabStop = false;
+            // 
             // classroom2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(922, 598);
+            this.ClientSize = new System.Drawing.Size(1089, 598);
+            this.Controls.Add(this.pictureBoxRespuesta);
+            this.Controls.Add(this.labelAnswer);
             this.Controls.Add(this.pictureBbehind);
             this.Controls.Add(this.pictureBoxnextto);
             this.Controls.Add(this.pictureBoxinfrontofb);
@@ -185,6 +209,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "classroom2";
             this.Text = "TCU-501 UCR";
+            this.Load += new System.EventHandler(this.classroom2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBbehind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxnextto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxinfrontofb)).EndInit();
@@ -193,7 +218,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxunder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -209,5 +236,7 @@
         private System.Windows.Forms.PictureBox pictureBoxinfrontofb;
         private System.Windows.Forms.PictureBox pictureBoxnextto;
         private System.Windows.Forms.PictureBox pictureBbehind;
+        private System.Windows.Forms.Label labelAnswer;
+        private System.Windows.Forms.PictureBox pictureBoxRespuesta;
     }
 }

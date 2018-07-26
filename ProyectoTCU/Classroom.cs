@@ -20,25 +20,31 @@ namespace ProyectoTCU
         MenuClassroom mc;
         int pared,contador,sonidoActual,rondas;
         Dictionary<int, SoundPlayer> sonidos;
+        Dictionary<int, String> palabras;
         Dictionary<int, Image> parejas;
         List<int> usados;
         List<int> sonidosAsignados;
         Mensaje mensaje;
-        
-        
-        
-        
+        controlSonidos csonidos;
+
+
+
+
         public Classroom()
         {
             InitializeComponent();
             sonidos = new Dictionary<int, SoundPlayer>();
             usados = new List<int>();
             parejas = new Dictionary<int, Image>();
+            palabras = new Dictionary<int, String>();
             sonidosAsignados = new List<int>(); //sonidos sonidosAsignados
+            mensaje = new Mensaje();
+            csonidos = new controlSonidos();
             pared = 0;
             contador = 0;
             rondas = 1;
             mensaje = new Mensaje();
+            labelAnswer.Text = " ";
 
             //se declaran todos los sonidos
             SoundPlayer books = new SoundPlayer(Properties.Resources.books_audio);
@@ -60,7 +66,18 @@ namespace ProyectoTCU
            Bitmap ibluescissors = (Bitmap)Properties.Resources.blue_scissors_;
             Bitmap isharpener = (Bitmap)Properties.Resources.sharpener;
             Bitmap iglue = (Bitmap)Properties.Resources.glue;
-            //Bitmap i = (Bitmap)Properties.Resources.;
+
+            //por imagenes , palabras y sonidos tienen el mismo numero
+            //se asignan numeros a las palabras
+
+            palabras.Add(0, "Books");
+            palabras.Add(1, "Red Book");
+            palabras.Add(2, "Color pencils");
+            palabras.Add(3, "Scissors");
+            palabras.Add(4, "Sherpener");
+            palabras.Add(5, "Pencil");
+            palabras.Add(6, "Glue");
+            palabras.Add(7, "Eraser");
 
             //se asignan numeros a los audios
             sonidos.Add(0, books);
@@ -101,20 +118,29 @@ namespace ProyectoTCU
             Image i = actual.Image;
             if (i == parejas[sonidoActual])
             {
-                MessageBox.Show("Correct answer");
+                //MessageBox.Show("Correct answer");
+                labelAnswer.Text = palabras[sonidoActual];
+                pictureBoxRespuesta.Image = Properties.Resources.check;
+                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+                pictureBoxRespuesta.Image = null;
+                labelAnswer.Text = " ";
                 contador++;
                 if (contador == 5) // ya se acabo la ronda
                 {
                     rondas++;
                     contador = 0;
-                    //sonidosAsignados.RemoveAt(4);
-                    //sonidosAsignados.RemoveAt(3);
                     sonidosAsignados.Clear();
                     if (rondas == 3)
                     {
-                        MessageBox.Show("Congratulations!! Play the next level");
+                        //MessageBox.Show("Congratulations!! Play the next level");
+                        mensaje.winMesaje();
+                        csonidos.sonidoGanar();
                         siguienteNivel();
-                    }else
+
+
+                    }
+                    else
                     {
                         asignar();
                     }
@@ -122,13 +148,30 @@ namespace ProyectoTCU
                 else { sonidoActual = sonidosAsignados[contador]; }
             }
             else {
-                MessageBox.Show("Bad answer");
+                //MessageBox.Show("Bad answer");
+                pictureBoxRespuesta.Image = Properties.Resources.equis;
+                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+                labelAnswer.Text = " ";
+                pictureBoxRespuesta.Image = null;
+               
             }
 
         }
 
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(2000);
+
+        }
+
+
+
+        /**
+         * Se asigna la imagen de la pared,  se asigna aparte por las caracteristicas de la imagen
+         **/
         private void asignarPared() {
-            //asignar pared , se asigna aparte por las caracteristicas de la imagen
             if (pared == 6)
             {
                 pictureboxpared.Image = parejas[0];  //0 , 6
@@ -222,8 +265,19 @@ namespace ProyectoTCU
         private void siguienteNivel() {
             c2 = new classroom2();
             this.Hide();
-            c2.Show();
-            mensaje.neutralMensaje("Listen the sound and click on the right object.");
+            if (mensaje.getState() == false)
+            {
+                c2.Show();
+                mensaje.neutralMensaje("Listen the sound and click on the right object.");
+            }
+            else {
+                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+
+                c2.Show();
+                mensaje.neutralMensaje("Listen the sound and click on the right object.");
+            }
+
 
         }
 

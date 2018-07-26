@@ -15,7 +15,10 @@ namespace ProyectoTCU
     {
         Classroom cla;
         int boxActual,rondas;
+        Mensaje mensaje;
+        controlSonidos sonidos;
         Dictionary<Bitmap, SoundPlayer> imagenesYsonidos;
+        Dictionary<Bitmap, String> palabras;
         List<Bitmap> imagenesUsadas;
         List<int> iAsignadas; // indices de la lista de objetos que fueron asignados para una ronda 
         List<Bitmap> imagenesObjetos;
@@ -37,6 +40,10 @@ namespace ProyectoTCU
             sAsignados = new SortedList<int, SoundPlayer>();
             pboxList = new List<PictureBox>();
             ordenpBox = new List<int>();
+            palabras = new Dictionary<Bitmap, string>();
+            mensaje = new Mensaje();
+            sonidos = new controlSonidos();
+            labelAnswer.Text = " ";
 
             Bitmap bs = (Bitmap)Properties.Resources.blue_scissors_;
             Bitmap book = (Bitmap)Properties.Resources.Book;
@@ -125,6 +132,22 @@ namespace ProyectoTCU
             imagenesYsonidos.Add(notebook, notebookaudio);
             imagenesYsonidos.Add(rule,ruleaudio);
             imagenesYsonidos.Add(crayons, crayonsaudio);
+
+            palabras.Add(books,"Books");
+            palabras.Add(bs,"Scissors");
+            palabras.Add(book,"Book");
+            palabras.Add(pencil,"Pencil");
+            palabras.Add(redbook,"Red book");
+            palabras.Add(glue,"Glue");
+            palabras.Add(eraser,"Eraser");
+            palabras.Add(sharp,"Sharpener");
+            palabras.Add(colorpencils,"Color pencils");
+            palabras.Add(backpack,"Backpack");
+            palabras.Add(pen,"Pen");
+            palabras.Add(notebook,"Notebook");
+            palabras.Add(rule,"Rule");
+            palabras.Add(crayons,"Crayons");
+
 
             asignar();
         }
@@ -218,13 +241,24 @@ namespace ProyectoTCU
             System.Threading.Thread.Sleep(1000);
         }
 
+        private void classroom2_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureBoxon_Click(object sender, EventArgs e)
         {
             //metodo que comprueba respuesta corresta
             PictureBox actual = sender as PictureBox;
             if (pboxList[boxActual]==actual)
             {
-                MessageBox.Show("Correct answer");
+                //MessageBox.Show("Correct answer");
+                labelAnswer.Text = palabras[((Bitmap)actual.Image)];
+                pictureBoxRespuesta.Image = Properties.Resources.check;
+                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+                pictureBoxRespuesta.Image = null;
+                labelAnswer.Text = " ";
                 boxActual++;
                 if (boxActual == 7) // ya se acabo la ronda
                 {
@@ -235,8 +269,9 @@ namespace ProyectoTCU
                     iAsignadas.Clear();
                     if (rondas == 3)
                     {
-                        MessageBox.Show("Congratulations!! Play the next level");
-                        //siguienteNivel();
+                        //MessageBox.Show("Congratulations!! Play the next level");
+                        mensaje.winMesaje();
+                        sonidos.sonidoGanar();
                     }
                     else
                     {
@@ -247,8 +282,20 @@ namespace ProyectoTCU
             }
             else
             {
-                MessageBox.Show("Bad answer");
+                //MessageBox.Show("Bad answer");
+                pictureBoxRespuesta.Image = Properties.Resources.equis;
+                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                taskA.Wait();
+                labelAnswer.Text = " ";
+                pictureBoxRespuesta.Image = null;
             }
+        }
+
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(2000);
+
         }
     }
 }
