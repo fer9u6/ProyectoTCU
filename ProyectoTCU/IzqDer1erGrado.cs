@@ -60,7 +60,7 @@ namespace ProyectoTCU
             InitializeComponent();
             this.Closed += (s, ev) => Application.Exit();
             synthesizer.Volume = 100;   // 0...100
-            synthesizer.Rate = -7;     //-10...10 
+            synthesizer.Rate = -5;     //-10...10 
             setValues();
             setValues();
             //Reload components
