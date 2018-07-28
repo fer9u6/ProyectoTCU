@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ProyectoTCU
 {
@@ -20,6 +21,7 @@ namespace ProyectoTCU
         List<String> rinformalGreetings;
         List<String> informalGreetings;
         List<String> byeGreetings;
+        Dictionary<String, SoundPlayer> frasesYsonidos;
         controlSonidos sonidos;
         Menu4toGrado m4;
         Mensaje mensaje;
@@ -42,6 +44,7 @@ namespace ProyectoTCU
             rformalGreetings = new List<string>();
             rinformalGreetings = new List<string>();
             byeGreetings = new List<string>();
+            frasesYsonidos = new Dictionary<string, SoundPlayer>();
             respuestas = new Dictionary<int, List<String>>();
             mensaje = new Mensaje();
 
@@ -62,6 +65,28 @@ namespace ProyectoTCU
             rinformalGreetings.Add("I am doing all right. And you?");
             byeGreetings.Add("Bye");
             byeGreetings.Add("See you later");
+
+            frasesYsonidos.Add("Good Afternoon",new SoundPlayer (Properties.Resources.goodafternoon));
+            frasesYsonidos.Add("Good Morning", new SoundPlayer(Properties.Resources.goodmorning));
+            frasesYsonidos.Add("Good Night", new SoundPlayer(Properties.Resources.goodnight));
+            frasesYsonidos.Add("Good Evening", new SoundPlayer(Properties.Resources.goodevening));
+            frasesYsonidos.Add("Hello, how are you?", new SoundPlayer(Properties.Resources.Hello_howareyou));
+            frasesYsonidos.Add("Hello! Ms Richards/Mr Richards", new SoundPlayer(Properties.Resources.hello));
+            frasesYsonidos.Add("Fine thank you. And you?", new SoundPlayer(Properties.Resources.finethankyouandyou));
+            frasesYsonidos.Add("Very well, thank you. And you?", new SoundPlayer(Properties.Resources.vwerywell_thankyou));
+            frasesYsonidos.Add("Hi, how are you?", new SoundPlayer(Properties.Resources.hihowareyou));
+            frasesYsonidos.Add("Hi, how is it going?", new SoundPlayer(Properties.Resources.hi_howisitgoing));
+            frasesYsonidos.Add("Hey , what's new?", new SoundPlayer(Properties.Resources.heywhatsnew));
+            frasesYsonidos.Add("Hi there, What's up?", new SoundPlayer(Properties.Resources.Hitherewhatsup));
+            frasesYsonidos.Add("Hi, I am good.How are you? ", new SoundPlayer(Properties.Resources.hiimgooghowareyou));
+            frasesYsonidos.Add("Hi! , great. And you?", new SoundPlayer(Properties.Resources.higreatandyou));
+            frasesYsonidos.Add("I am doing all right. And you?", new SoundPlayer(Properties.Resources.imdoingallrightandyou));
+            frasesYsonidos.Add("Bye", new SoundPlayer(Properties.Resources.bye));
+            frasesYsonidos.Add("See you later", new SoundPlayer(Properties.Resources.seeyoulater));
+
+
+
+
             respuestas.Add(0, timeGreetings);
             respuestas.Add(1, timeGreetings);
             respuestas.Add(2, timeGreetings);
@@ -201,6 +226,7 @@ namespace ProyectoTCU
             {
                 // "correct answer";
                 pictureBoxRespuesta.Image = Properties.Resources.check;
+                playAnswer(respuesta);
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
 
@@ -209,6 +235,7 @@ namespace ProyectoTCU
             {
                 //"fail";
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
+                sonidos.sonidoPerderSebastian();
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
 
@@ -247,7 +274,7 @@ namespace ProyectoTCU
 
         private void imagenRespuesta()
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(2000);
 
         }
 
@@ -336,6 +363,21 @@ namespace ProyectoTCU
             Menu4toGrado mp = new Menu4toGrado();
             mp.Show();
             this.Hide();
+        }
+
+
+        private void playAnswer(String a) {
+            try
+            {
+                frasesYsonidos[a].Play();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+
         }
     }
 }

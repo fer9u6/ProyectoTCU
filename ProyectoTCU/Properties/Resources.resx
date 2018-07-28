@@ -706,4 +706,58 @@
   <data name="errorperder_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\errorperder_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bye.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="correctding_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correctding_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="finethankyouandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finethankyouandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goodafternoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodafternoon.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goodevening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodevening.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goodmorning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodmorning.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="goodnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goodnight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hello" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hello.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hello_howareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hello,howareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heywhatsnew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heywhatsnew.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="higreatandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\higreatandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hihowareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hihowareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hiimgooghowareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hiimgooghowareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hitherewhatsup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hitherewhatsup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hi_howisitgoing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hi,howisitgoing.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="imdoingallrightandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imdoingallrightandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="seeyoulater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seeyoulater.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="vwerywell_thankyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vwerywell,thankyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

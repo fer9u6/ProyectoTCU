@@ -34,13 +34,15 @@
             this.labelquestion = new System.Windows.Forms.Label();
             this.o1 = new System.Windows.Forms.Button();
             this.o2 = new System.Windows.Forms.Button();
+            this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.city___Copy1;
-            this.pictureBox1.Location = new System.Drawing.Point(108, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(153, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(740, 437);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,6 +73,7 @@
             this.labelquestion.Size = new System.Drawing.Size(86, 33);
             this.labelquestion.TabIndex = 6;
             this.labelquestion.Text = "label1";
+            this.labelquestion.Click += new System.EventHandler(this.labelquestion_Click);
             // 
             // o1
             // 
@@ -78,7 +81,7 @@
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o1.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o1.Location = new System.Drawing.Point(85, 574);
+            this.o1.Location = new System.Drawing.Point(153, 609);
             this.o1.Name = "o1";
             this.o1.Size = new System.Drawing.Size(365, 51);
             this.o1.TabIndex = 7;
@@ -92,7 +95,7 @@
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o2.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o2.Location = new System.Drawing.Point(520, 574);
+            this.o2.Location = new System.Drawing.Point(587, 607);
             this.o2.Name = "o2";
             this.o2.Size = new System.Drawing.Size(365, 53);
             this.o2.TabIndex = 8;
@@ -100,12 +103,22 @@
             this.o2.UseVisualStyleBackColor = false;
             this.o2.Click += new System.EventHandler(this.o1_Click);
             // 
+            // pictureBoxRespuesta
+            // 
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(587, 498);
+            this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
+            this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);
+            this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxRespuesta.TabIndex = 21;
+            this.pictureBoxRespuesta.TabStop = false;
+            // 
             // Neighborhood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(913, 669);
+            this.ClientSize = new System.Drawing.Size(991, 702);
+            this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.o2);
             this.Controls.Add(this.o1);
             this.Controls.Add(this.labelquestion);
@@ -114,7 +127,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Neighborhood";
             this.Text = "TCU-501 UCR";
+            this.Load += new System.EventHandler(this.Neighborhood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +142,6 @@
         private System.Windows.Forms.Label labelquestion;
         private System.Windows.Forms.Button o1;
         private System.Windows.Forms.Button o2;
+        private System.Windows.Forms.PictureBox pictureBoxRespuesta;
     }
 }

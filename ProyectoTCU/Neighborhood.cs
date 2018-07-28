@@ -17,12 +17,16 @@ namespace ProyectoTCU
         Dictionary<String, String> preguntasRespuestas;
         int contador;
         int actual;
+        Mensaje mensaje;
+        controlSonidos sonidos;
         List<int> usadas;
         public Neighborhood()
         {
             InitializeComponent();
             preguntasRespuestas = new Dictionary<string, string>();
             usadas = new List<int>();
+            mensaje = new Mensaje();
+            sonidos = new controlSonidos();
 
             preguntasRespuestas.Add("Where is the park?","Between the fire station and the bakery.");
             preguntasRespuestas.Add("Where is the restaurant?","Behind the supermarket.");
@@ -74,7 +78,9 @@ namespace ProyectoTCU
                 }
             }
             else {
-                MessageBox.Show("Game over :)");
+                //MessageBox.Show("Game over :)");
+                mensaje.winMesaje();
+                sonidos.sonidoGanar();
                 contador = 0;
                 o1.Text = "";
                 o2.Text = "";
@@ -90,15 +96,41 @@ namespace ProyectoTCU
                 Button b = sender as Button;
                 if (b.Text == preguntasRespuestas[preguntasRespuestas.ElementAt(actual).Key])
                 {
-                    MessageBox.Show("correct answer");
+                    // MessageBox.Show("correct answer");
+                    pictureBoxRespuesta.Image = Properties.Resources.check;
+                    sonidos.sonidoOpcionCorrecta();
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
+                    pictureBoxRespuesta.Image = null;
                     contador++;
                     mostrarPregunta();
                 }
                 else
                 {
-                    MessageBox.Show("bad answer");
+                    // MessageBox.Show("bad answer");
+                    pictureBoxRespuesta.Image = Properties.Resources.equis;
+                    sonidos.sonidoPerderSebastian();
+                    Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
+                    taskA.Wait();
+                    pictureBoxRespuesta.Image = null;
                 }
             }
+        }
+
+        private void imagenRespuesta()
+        {
+            System.Threading.Thread.Sleep(2000);
+
+        }
+
+        private void Neighborhood_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelquestion_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

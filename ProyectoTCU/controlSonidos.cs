@@ -111,6 +111,21 @@ namespace ProyectoTCU
             }
         }
 
+        //ding
+        public void sonidoOpcionCorrecta()
+        {
+            SoundPlayer s = new SoundPlayer(Properties.Resources.correctding_audio);
+            try
+            {
+                s.Play();
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
+            }
+        }
+
 
     }
    
