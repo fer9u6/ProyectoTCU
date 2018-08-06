@@ -121,6 +121,9 @@
   <data name="park_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\park_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  
+  
+  
   <data name="correctSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\correctSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -139,6 +142,9 @@
   <data name="crackerSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crackerSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  
+  <!--
+  
   <data name="Cute-cartoon-pencil-04-vector-material-19863" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cute-cartoon-pencil-04-vector-material-19863.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -424,9 +430,11 @@
   <data name="behind1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\behind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  -->
   <data name="ganarjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ganarjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <!--
   <data name="across_from" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\across from.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -703,15 +711,19 @@
   <data name="imagenInstruccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imagenInstruccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  -->
   <data name="errorperder_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\errorperder_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <!--
   <data name="bye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bye.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  
   <data name="correctding_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\correctding_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  
   <data name="finethankyouandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\finethankyouandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -760,4 +772,7 @@
   <data name="vwerywell_thankyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vwerywell,thankyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  
+  -->
+
 </root>

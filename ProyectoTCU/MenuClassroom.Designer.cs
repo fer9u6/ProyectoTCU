@@ -93,7 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.BackgroundImage = global::ProyectoTCU.Properties.Resources.Untitledboard1;
+            //this.BackgroundImage = global::ProyectoTCU.Properties.Resources.Untitledboard1;
             this.ClientSize = new System.Drawing.Size(633, 382);
             this.Controls.Add(this.backB);
             this.Controls.Add(this.button2);

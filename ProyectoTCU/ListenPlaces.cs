@@ -13,6 +13,7 @@ namespace ProyectoTCU
 {
     public partial class ListenPlaces : Form
     {
+        /*
         Menu1erGrado m1;
         PrepositionsCity pc;
         Neighborhood nei;
@@ -143,5 +144,7 @@ namespace ProyectoTCU
         {
 
         }
+
+        */
     }
 }

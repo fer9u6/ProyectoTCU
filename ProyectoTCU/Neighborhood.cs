@@ -12,6 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Neighborhood : Form
     {
+        /*
         Menu1erGrado m1;
         MenuNeighborhood mn;
         Dictionary<String, String> preguntasRespuestas;
@@ -132,5 +133,6 @@ namespace ProyectoTCU
         {
 
         }
+        */
     }
 }

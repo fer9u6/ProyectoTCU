@@ -12,6 +12,7 @@ namespace ProyectoTCU
 {
     public partial class socializingOrdenar : Form
     {
+        /*
         Menu4toGrado m4;
         bool isDragging;
         int ypanel, fraseA, intentos, fallos, xlabel, ylabel, panelSize;
@@ -302,5 +303,6 @@ namespace ProyectoTCU
         {
             isDragging = true;
         }
+        */
     }
 }

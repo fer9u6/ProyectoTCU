@@ -2,6 +2,7 @@
 {
     partial class Classroom
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -233,5 +234,7 @@
         private System.Windows.Forms.Label answerLabel;
         private System.Windows.Forms.Label labelAnswer;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
+
+        */
     }
 }

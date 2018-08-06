@@ -2,6 +2,7 @@
 {
     partial class Prepositions
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -187,5 +188,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelinstruction;
         private System.Windows.Forms.Button backB;
+        */
     }
 }

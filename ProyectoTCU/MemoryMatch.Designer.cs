@@ -2,6 +2,7 @@
 {
     partial class MemoryMatch
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -356,5 +357,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ImageList imageList1;
+        */
     }
 }

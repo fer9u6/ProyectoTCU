@@ -12,6 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Diseases2 : Form
     {
+        /*
         Diseases d1;
         Dictionary<int, String> enfermedades;
         Dictionary<String, String> recomendaciones;
@@ -172,5 +173,6 @@ namespace ProyectoTCU
 
 
         }
+        */
     }
 }

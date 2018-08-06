@@ -2,6 +2,7 @@
 {
     partial class MenuSocializing
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -111,5 +112,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button backB;
+        */
     }
 }

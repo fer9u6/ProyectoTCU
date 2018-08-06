@@ -12,6 +12,7 @@ namespace ProyectoTCU
 {
     public partial class Prepositions : Form
     {
+        /*
         MenuClassroom mc;
 
         public Prepositions()
@@ -123,5 +124,6 @@ namespace ProyectoTCU
             this.Hide();
             mc.Show();
         }
+        */
     }
 }

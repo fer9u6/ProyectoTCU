@@ -2,6 +2,7 @@
 {
     partial class socializingOrdenar
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -308,5 +309,6 @@
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
+        */
     }
 }

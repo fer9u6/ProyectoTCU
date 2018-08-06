@@ -12,6 +12,8 @@ namespace ProyectoTCU
 {
     public partial class Mensaje : Form
     {
+        /*
+
         bool active;
         public Mensaje()
         {
@@ -62,6 +64,7 @@ namespace ProyectoTCU
         /**
          * Devuelve el estado active que indica si este form esta show o hide en pantalla.
          **/
+         /*
         public bool getState() {
             return active;
         }
@@ -76,5 +79,6 @@ namespace ProyectoTCU
             active = false;
             this.Hide();
         }
+        */
     }
 }

@@ -2,6 +2,7 @@
 {
     partial class PrepositionsCity
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -124,5 +125,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button audio_Button;
         private System.Windows.Forms.PictureBox pictureBox1;
+        */
     }
 }

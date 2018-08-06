@@ -15,6 +15,8 @@ namespace ProyectoTCU
 {
     public partial class Classroom : Form
     {
+        /*
+
         Menu1erGrado m1;
         classroom2 c2;
         MenuClassroom mc;
@@ -46,6 +48,8 @@ namespace ProyectoTCU
             mensaje = new Mensaje();
             labelAnswer.Text = " ";
 
+            
+
             //se declaran todos los sonidos
             SoundPlayer books = new SoundPlayer(Properties.Resources.books_audio);
             SoundPlayer redbook = new SoundPlayer(Properties.Resources.red_book_audio);
@@ -67,6 +71,8 @@ namespace ProyectoTCU
             Bitmap isharpener = (Bitmap)Properties.Resources.sharpener;
             Bitmap iglue = (Bitmap)Properties.Resources.glue;
 
+            
+
             //por imagenes , palabras y sonidos tienen el mismo numero
             //se asignan numeros a las palabras
 
@@ -78,6 +84,8 @@ namespace ProyectoTCU
             palabras.Add(5, "Pencil");
             palabras.Add(6, "Glue");
             palabras.Add(7, "Eraser");
+
+            
 
             //se asignan numeros a los audios
             sonidos.Add(0, books);
@@ -101,6 +109,7 @@ namespace ProyectoTCU
             parejas.Add(7,ieraser);
 
             asignar();
+            
 
         }
 
@@ -111,6 +120,7 @@ namespace ProyectoTCU
             mc.Show();
         }
 
+        /*
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             // picturebox para todos
@@ -158,6 +168,7 @@ namespace ProyectoTCU
             }
 
         }
+        
 
 
         private void imagenRespuesta()
@@ -171,6 +182,8 @@ namespace ProyectoTCU
         /**
          * Se asigna la imagen de la pared,  se asigna aparte por las caracteristicas de la imagen
          **/
+
+            /*
         private void asignarPared() {
             if (pared == 6)
             {
@@ -293,6 +306,7 @@ namespace ProyectoTCU
            }
         }
 
+        */
 
     }
 }

@@ -2,6 +2,7 @@
 {
     partial class funcionesOrganos
     {
+        /*
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -332,5 +333,6 @@
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
         private System.Windows.Forms.Button backB;
         private System.Windows.Forms.Button playButton;
+        */
     }
 }
