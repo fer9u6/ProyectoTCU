@@ -760,4 +760,46 @@
   <data name="vwerywell_thankyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vwerywell,thankyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="backache_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backache_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bloodynose_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bloodynose_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="brokenarm_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brokenarm_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bruise_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bruise_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chickenpox_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chickenpox_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cough_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cough_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cut_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cut_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fever_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fever_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="headache_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\headache_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="insectbite_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insectbite_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sorethroat_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sorethroat_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stomachache_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stomachache_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sunburn_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sunburn_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="toothache_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toothache_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ProyectoTCU
 {
@@ -17,6 +18,7 @@ namespace ProyectoTCU
         controlSonidos sonidos;
         Mensaje mensaje;
         Dictionary<int,String> enfermedades;
+        Dictionary<int, SoundPlayer> enfermedades_audios;
         List<int> keysUsadas;
         int contador,imagenActual,fallos;
         List<Button> botones;
@@ -26,6 +28,7 @@ namespace ProyectoTCU
         {
             InitializeComponent();
             enfermedades = new Dictionary<int, string>();
+            enfermedades_audios = new Dictionary<int, SoundPlayer>();
             sonidos = new controlSonidos();
             keysUsadas = new List<int>();
             botones = new List<Button>();
@@ -40,7 +43,7 @@ namespace ProyectoTCU
             enfermedades.Add(0,"Fever");
             enfermedades.Add(1, "Toothache");
             enfermedades.Add(2, "Cough");
-            enfermedades.Add(3, "Chiken pox");
+            enfermedades.Add(3, "Chicken pox");
             enfermedades.Add(4, "Stomachache");
             enfermedades.Add(5, "Sore throat");
             enfermedades.Add(6, "Sunburn");
@@ -51,6 +54,22 @@ namespace ProyectoTCU
             enfermedades.Add(11, "Bruise");
             enfermedades.Add(12, "Cut");
             enfermedades.Add(13,"Insect bite");
+
+            enfermedades_audios.Add(0, new SoundPlayer(Properties.Resources.fever_audio));
+            enfermedades_audios.Add(1, new SoundPlayer(Properties.Resources.toothache_audio));
+            enfermedades_audios.Add(2, new SoundPlayer(Properties.Resources.cough_audio));
+            enfermedades_audios.Add(3, new SoundPlayer(Properties.Resources.chickenpox_audio));
+            enfermedades_audios.Add(4, new SoundPlayer(Properties.Resources.stomachache_audio));
+            enfermedades_audios.Add(5, new SoundPlayer(Properties.Resources.sorethroat_audio));
+            enfermedades_audios.Add(6, new SoundPlayer(Properties.Resources.sunburn_audio));
+            enfermedades_audios.Add(7, new SoundPlayer(Properties.Resources.headache_audio));
+            enfermedades_audios.Add(8, new SoundPlayer(Properties.Resources.backache_audio));
+            enfermedades_audios.Add(9, new SoundPlayer(Properties.Resources.bloodynose_audio));
+            enfermedades_audios.Add(10, new SoundPlayer(Properties.Resources.brokenarm_audio));
+            enfermedades_audios.Add(11, new SoundPlayer(Properties.Resources.bruise_audio));
+            enfermedades_audios.Add(12, new SoundPlayer(Properties.Resources.cut_audio));
+            enfermedades_audios.Add(13, new SoundPlayer(Properties.Resources.insectbite_audio));
+
 
         }
 
@@ -154,6 +173,14 @@ namespace ProyectoTCU
                 if (b.Text == enfermedades[imagenActual])
                 {
                     //MessageBox.Show("Correct Answer");
+                    try
+                    {
+                        enfermedades_audios[imagenActual].Play();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error " + ex.Message);
+                    }
                     pictureBoxRespuesta.Image = Properties.Resources.check;
                     Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                     taskA.Wait();
@@ -162,6 +189,7 @@ namespace ProyectoTCU
                 {
                     //MessageBox.Show("Bad Answer");
                     fallos++;
+                    sonidos.sonidoPerderSebastian();
                     pictureBoxRespuesta.Image = Properties.Resources.equis;
                     Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                     taskA.Wait();

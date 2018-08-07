@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ProyectoTCU
 {
@@ -14,6 +15,7 @@ namespace ProyectoTCU
     {
         Diseases d1;
         Dictionary<int, String> enfermedades;
+        Dictionary<int, SoundPlayer>enfermedades_audios;
         Dictionary<String, String> recomendaciones;
         List<int> usadas;
         Mensaje mensaje;
@@ -25,6 +27,7 @@ namespace ProyectoTCU
             InitializeComponent();
             sonidos = new controlSonidos();
             enfermedades = new Dictionary<int, string>();
+            enfermedades_audios = new Dictionary<int, SoundPlayer>();
             enfermedades.Add(0, "Fever");
             enfermedades.Add(1, "Toothache");
             enfermedades.Add(2, "Cough");
@@ -39,6 +42,21 @@ namespace ProyectoTCU
             enfermedades.Add(11, "Bruise");
             enfermedades.Add(12, "Cut");
             enfermedades.Add(13, "Insect bite");
+
+            enfermedades_audios.Add(0, new SoundPlayer(Properties.Resources.fever_audio));
+            enfermedades_audios.Add(1, new SoundPlayer(Properties.Resources.toothache_audio));
+            enfermedades_audios.Add(2, new SoundPlayer(Properties.Resources.cough_audio));
+            enfermedades_audios.Add(3, new SoundPlayer(Properties.Resources.chickenpox_audio));
+            enfermedades_audios.Add(4, new SoundPlayer(Properties.Resources.stomachache_audio));
+            enfermedades_audios.Add(5, new SoundPlayer(Properties.Resources.sorethroat_audio));
+            enfermedades_audios.Add(6, new SoundPlayer(Properties.Resources.sunburn_audio));
+            enfermedades_audios.Add(7, new SoundPlayer(Properties.Resources.headache_audio));
+            enfermedades_audios.Add(8, new SoundPlayer(Properties.Resources.backache_audio));
+            enfermedades_audios.Add(9, new SoundPlayer(Properties.Resources.bloodynose_audio));
+            enfermedades_audios.Add(10, new SoundPlayer(Properties.Resources.brokenarm_audio));
+            enfermedades_audios.Add(11, new SoundPlayer(Properties.Resources.bruise_audio));
+            enfermedades_audios.Add(12, new SoundPlayer(Properties.Resources.cut_audio));
+            enfermedades_audios.Add(13, new SoundPlayer(Properties.Resources.insectbite_audio));
 
             recomendaciones = new Dictionary<string, string>();
             recomendaciones.Add("Cough", "Take cough syrup.");
@@ -71,6 +89,14 @@ namespace ProyectoTCU
                 }
                 usadas.Add(eActual);
                 label1.Text = enfermedades[eActual];
+                try
+                {
+                    enfermedades_audios[eActual].Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error " + ex.Message);
+                }
 
                 //respuesta incorrecta 
                 int resIncorrecta =rn.Next(0, 8);

@@ -566,6 +566,7 @@
     <None Include="Resources\back-arrow.png" />
     <None Include="Resources\back-arrow %281%291.png" />
     <None Include="Resources\635826e955db6aa.jpg" />
+    <None Include="Resources\backache_audio.wav" />
     <Content Include="Resources\backpack.png" />
     <None Include="Resources\notebook.wav" />
     <None Include="Resources\backpack.wav" />
@@ -673,6 +674,15 @@
     <None Include="Resources\hiimgooghowareyou.wav" />
     <None Include="Resources\Hitherewhatsup.wav" />
     <None Include="Resources\imdoingallrightandyou.wav" />
+    <None Include="Resources\bloodynose_audio.wav" />
+    <None Include="Resources\brokenarm_audio.wav" />
+    <None Include="Resources\bruise_audio.wav" />
+    <None Include="Resources\chickenpox_audio.wav" />
+    <None Include="Resources\cough_audio.wav" />
+    <None Include="Resources\cut_audio.wav" />
+    <None Include="Resources\fever_audio.wav" />
+    <None Include="Resources\headache_audio.wav" />
+    <None Include="Resources\insectbite_audio.wav" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -711,6 +721,10 @@
     <None Include="Resources\sceptic.png" />
     <None Include="Resources\vwerywell,thankyou.wav" />
     <None Include="Resources\seeyoulater.wav" />
+    <None Include="Resources\sorethroat_audio.wav" />
+    <None Include="Resources\stomachache_audio.wav" />
+    <None Include="Resources\sunburn_audio.wav" />
+    <None Include="Resources\toothache_audio.wav" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />
