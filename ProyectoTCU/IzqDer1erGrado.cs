@@ -126,7 +126,8 @@ namespace ProyectoTCU
                         TextAlign = ContentAlignment.MiddleCenter,
                         Font = new Font("Cooper Black", 40, FontStyle.Bold),
                         Dock = System.Windows.Forms.DockStyle.Fill,
-                        ForeColor = System.Drawing.Color.Blue
+                        BackColor = System.Drawing.Color.Blue 
+                        //ForeColor = System.Drawing.Color.Blue
                     }, i, 0);
                 }
                 //Si la letra ya fue completada, color verde
@@ -138,7 +139,8 @@ namespace ProyectoTCU
                         TextAlign = ContentAlignment.MiddleCenter,
                         Font = new Font("Cooper Black", 40, FontStyle.Bold),
                         Dock = System.Windows.Forms.DockStyle.Fill,
-                        ForeColor = System.Drawing.Color.Green
+                        BackColor = System.Drawing.Color.Green,
+                        //ForeColor = System.Drawing.Color.Green
                     }, i, 0);
                 }
                 //Si la letra falta de completar pero no es la siguiente, negra
@@ -241,14 +243,16 @@ namespace ProyectoTCU
                             if (i == numLetra)
                             {
                                 label.Text = System.Convert.ToString(word[i]);
-                                label.ForeColor = System.Drawing.Color.Blue;
+                                label.BackColor = System.Drawing.Color.Blue;
+                                //label.ForeColor = System.Drawing.Color.Blue;
 
                             }
                             //Si la letra ya fue completada, color verde
                             else if (i < numLetra)
                             {
                                 label.Text = System.Convert.ToString(word[i]);
-                                label.ForeColor = System.Drawing.Color.Green;
+                                label.BackColor = System.Drawing.Color.Green;
+                                //label.ForeColor = System.Drawing.Color.Green;
                             }
                             //Si la letra falta de completar pero no es la siguiente, negra 
                             //(CREO QUE ESTA NO SE OCUPA)
