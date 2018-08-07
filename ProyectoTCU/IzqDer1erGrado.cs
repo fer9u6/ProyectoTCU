@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
+using System.Threading;
 
 namespace ProyectoTCU
 {
@@ -16,6 +17,8 @@ namespace ProyectoTCU
         Menu1erGrado m1er;
 
         controlSonidos sonidos = new controlSonidos();
+
+        delegate void StringArgReturningVoidDelegate(string text);
 
         //Para los sonidos de las letras (espero) y palabras
         private SpeechSynthesizer synthesizer = new SpeechSynthesizer();
@@ -161,6 +164,8 @@ namespace ProyectoTCU
         //Usa la palabra que se busca completar y la letra que sigue de elegir
         private void changeOptionsInButtons()
         {
+            //ACA?
+
             Random random = new Random();
             int randomNumber = random.Next(0, alphabet.Length);
             Boolean different = false;
@@ -193,98 +198,116 @@ namespace ProyectoTCU
 
         //Se actualiza el numero de palabras completadas, el numero de errores, 
         //los colores de las letras y se verifica si se completó la palabra
-        private void updateInfo(String letter)
+        private void updateInfo(Object letterObject)
         {
-            //Si es la letra que sigue para completar (opcion correcta)
-            if (letter == System.Convert.ToString(word[numLetra]))
+
+            if (this.buttonIzq.InvokeRequired)
             {
-                //Sonido de exito (quitarlo?)
-                //sonidos.sonidoGanarSebastian();
-                //Sonido de la letra
-                synthesizer.Speak(letter);
-                //Pasa a la siguiente letra en la lista
-                numLetra++;
-
-                int wordSize = word.Length;
-                //Si ya se completó la palabra
-                if (numLetra == wordSize)
-                {
-                    score++;
-
-                    synthesizer.Speak(word);
-                    //System.Threading.Thread.Sleep(500);
-
-                    //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
-                    if (score == 5)
-                    {
-                        labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
-                        sonidos.sonidoTerminarBien();
-
-                        MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
-                        InitializeComponent();
-                        m1er = new Menu1erGrado();
-                        m1er.Show();
-                        this.Hide();
-                        return;
-                    }
-
-                    setValues();
-                }
-                else
-                {
-                    Control label;
-                    //Cambiar color de la letra recien completada y de la que sigue si faltan
-                    for (int i = 0; i < wordSize; i++)
-                    {
-                        label = tableLayoutPanelLetters.GetControlFromPosition(i, 0);
-                        if (label is Label)
-                        {
-                            //Si es la letra siguiente a completar, color azul
-                            if (i == numLetra)
-                            {
-                                label.Text = System.Convert.ToString(word[i]);
-                                label.BackColor = System.Drawing.Color.Blue;
-                                //label.ForeColor = System.Drawing.Color.Blue;
-
-                            }
-                            //Si la letra ya fue completada, color verde
-                            else if (i < numLetra)
-                            {
-                                label.Text = System.Convert.ToString(word[i]);
-                                label.BackColor = System.Drawing.Color.Green;
-                                //label.ForeColor = System.Drawing.Color.Green;
-                            }
-                            //Si la letra falta de completar pero no es la siguiente, negra 
-                            //(CREO QUE ESTA NO SE OCUPA)
-                            else
-                            {
-                                label.Text = System.Convert.ToString(word[i]);
-                                label.ForeColor = System.Drawing.Color.Black;
-                            }
-                        }
-                    }
-                    changeOptionsInButtons();
-                }
+                StringArgReturningVoidDelegate d = new StringArgReturningVoidDelegate(updateInfo);
+                this.Invoke(d, new object[] { letterObject });
             }
             else
             {
-                //Sonido de fracaso
-                sonidos.sonidoPerderSebastian();
-                mistakes++;
-            }
+                String letter = letterObject.ToString();
 
-            //El juego se gana completando 5 palabras
-            labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+                //Si es la letra que sigue para completar (opcion correcta)
+
+                if (letter == System.Convert.ToString(word[numLetra]))
+                {
+                    //Sonido de exito (quitarlo?)
+                    //sonidos.sonidoGanarSebastian();
+                    //Sonido de la letra
+                    synthesizer.Speak(letter);
+                    //Pasa a la siguiente letra en la lista
+                    numLetra++;
+
+                    int wordSize = word.Length;
+                    //Si ya se completó la palabra
+                    if (numLetra == wordSize)
+                    {
+                        score++;
+
+                        synthesizer.Speak(word);
+                        //System.Threading.Thread.Sleep(500);
+
+                        //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
+                        if (score == 5)
+                        {
+                            labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+                            sonidos.sonidoTerminarBien();
+
+                            MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
+                            InitializeComponent();
+                            m1er = new Menu1erGrado();
+                            m1er.Show();
+                            this.Hide();
+                            return;
+                        }
+
+                        setValues();
+                    }
+                    else
+                    {
+                        Control label;
+                        //Cambiar color de la letra recien completada y de la que sigue si faltan
+                        for (int i = 0; i < wordSize; i++)
+                        {
+                            label = tableLayoutPanelLetters.GetControlFromPosition(i, 0);
+                            if (label is Label)
+                            {
+                                //Si es la letra siguiente a completar, color azul
+                                if (i == numLetra)
+                                {
+                                    label.Text = System.Convert.ToString(word[i]);
+                                    label.BackColor = System.Drawing.Color.Blue;
+                                    //label.ForeColor = System.Drawing.Color.Blue;
+
+                                }
+                                //Si la letra ya fue completada, color verde
+                                else if (i < numLetra)
+                                {
+                                    label.Text = System.Convert.ToString(word[i]);
+                                    label.BackColor = System.Drawing.Color.Green;
+                                    //label.ForeColor = System.Drawing.Color.Green;
+                                }
+                                //Si la letra falta de completar pero no es la siguiente, negra 
+                                //(CREO QUE ESTA NO SE OCUPA)
+                                else
+                                {
+                                    label.Text = System.Convert.ToString(word[i]);
+                                    label.ForeColor = System.Drawing.Color.Black;
+                                }
+                            }
+                        }
+                        changeOptionsInButtons();
+                    }
+                }
+                else
+                {
+                    //Sonido de fracaso
+                    sonidos.sonidoPerderSebastian();
+                    mistakes++;
+                }
+
+                //El juego se gana completando 5 palabras
+                labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+            }
         }
 
         private void buttonIzq_Click(object sender, EventArgs e)
         {
-            updateInfo(buttonIzq.Text);
+            ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
+            Thread t = new Thread(start);
+            t.Start(buttonIzq.Text);
+            //updateInfo(buttonIzq.Text);
         }
 
         private void buttonDer_Click(object sender, EventArgs e)
         {
-            updateInfo(buttonDer.Text);
+            ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
+            Thread t = new Thread(start);
+            t.Start(buttonDer.Text);
+            //updateInfo(buttonDer.Text);
         }
 
         private void buttonRet_Click(object sender, EventArgs e)
