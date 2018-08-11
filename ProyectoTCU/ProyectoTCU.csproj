@@ -683,6 +683,12 @@
     <None Include="Resources\fever_audio.wav" />
     <None Include="Resources\headache_audio.wav" />
     <None Include="Resources\insectbite_audio.wav" />
+    <None Include="Resources\brain_audio.wav" />
+    <None Include="Resources\heart_audio.wav" />
+    <None Include="Resources\kidneys_audio.wav" />
+    <None Include="Resources\large_intestine_audio.wav" />
+    <None Include="Resources\liver_audio.wav" />
+    <None Include="Resources\lungs_audio.wav" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -725,6 +731,8 @@
     <None Include="Resources\stomachache_audio.wav" />
     <None Include="Resources\sunburn_audio.wav" />
     <None Include="Resources\toothache_audio.wav" />
+    <None Include="Resources\small_intestine_audio.wav" />
+    <None Include="Resources\stomach_audio.wav" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

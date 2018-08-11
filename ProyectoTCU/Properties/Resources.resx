@@ -802,4 +802,28 @@
   <data name="toothache_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toothache_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="brain_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brain_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heart_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kidneys_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kidneys_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="large_intestine_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\large_intestine_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="liver_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liver_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lungs_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lungs_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="small_intestine_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\small_intestine_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stomach_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stomach_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

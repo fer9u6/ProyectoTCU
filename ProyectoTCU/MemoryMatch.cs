@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media; 
 
 namespace ProyectoTCU
 {
@@ -22,6 +23,7 @@ namespace ProyectoTCU
         Bitmap mem =(Bitmap) Properties.Resources.ResourceManager.GetObject("memory");
         Bitmap gray = (Bitmap)Properties.Resources.ResourceManager.GetObject("gray");
         Dictionary<PictureBox, int> asignaciones;// imagen a pictureBox
+        Dictionary<int, SoundPlayer> sonidos;
 
         public MemoryMatch()
         {
@@ -32,6 +34,7 @@ namespace ProyectoTCU
             asignaciones = new Dictionary<PictureBox, int>();
             imagenesUsadas = new List<int>();
             parejas = new Dictionary<int, int>();
+            sonidos = new Dictionary<int, SoundPlayer>();
             parejas.Add(0,1);
             parejas.Add(2,3);
             parejas.Add(4,5);
@@ -40,6 +43,16 @@ namespace ProyectoTCU
             parejas.Add(10,11);
             parejas.Add(12,13);
             parejas.Add(14,15);
+
+            sonidos.Add(0,new SoundPlayer(Properties.Resources.brain_audio));
+            sonidos.Add(2, new SoundPlayer(Properties.Resources.stomachache_audio));
+            sonidos.Add(4, new SoundPlayer(Properties.Resources.heart_audio));
+            sonidos.Add(6, new SoundPlayer(Properties.Resources.kidneys_audio));
+            sonidos.Add(9, new SoundPlayer(Properties.Resources.large_intestine_audio));
+            sonidos.Add(11, new SoundPlayer(Properties.Resources.liver_audio));
+            sonidos.Add(12, new SoundPlayer(Properties.Resources.lungs_audio));
+            sonidos.Add(14, new SoundPlayer(Properties.Resources.small_intestine_audio));
+
 
             contenedores = new List<PictureBox>();
             contenedores.Add(pictureBox1);
@@ -108,6 +121,24 @@ namespace ProyectoTCU
 
             if ( (key != -1) &&(parejas[key] == i2 || parejas[key] == i1))
             {
+                int organo;
+                //ver cual es la clave del diccionario 
+                if (sonidos.ContainsKey(i2))
+                {
+                    organo = i2;
+                }
+                else {
+                    organo = i1;
+                }
+                //reproducir audio
+                try
+                {
+                    sonidos[organo].Play();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error " + ex.Message);
+                }
                 aciertos += 1;
                 imagenA1.Image = gray;
                 imagenA2.Image = gray;

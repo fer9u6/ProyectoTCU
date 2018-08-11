@@ -447,6 +447,15 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream brain_audio {
+            get {
+                return ResourceManager.GetStream("brain_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream brokenarm_audio {
             get {
                 return ResourceManager.GetStream("brokenarm_audio", resourceCulture);
@@ -1136,6 +1145,15 @@ namespace ProyectoTCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream heart_audio {
+            get {
+                return ResourceManager.GetStream("heart_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream hello {
             get {
                 return ResourceManager.GetStream("hello", resourceCulture);
@@ -1401,12 +1419,30 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream kidneys_audio {
+            get {
+                return ResourceManager.GetStream("kidneys_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap large_intestine {
             get {
                 object obj = ResourceManager.GetObject("large intestine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream large_intestine_audio {
+            get {
+                return ResourceManager.GetStream("large_intestine_audio", resourceCulture);
             }
         }
         
@@ -1431,12 +1467,30 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream liver_audio {
+            get {
+                return ResourceManager.GetStream("liver_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Lungs {
             get {
                 object obj = ResourceManager.GetObject("Lungs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream lungs_audio {
+            get {
+                return ResourceManager.GetStream("lungs_audio", resourceCulture);
             }
         }
         
@@ -1946,6 +2000,15 @@ namespace ProyectoTCU.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream small_intestine_audio {
+            get {
+                return ResourceManager.GetStream("small_intestine_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap small_intestine1 {
@@ -2040,6 +2103,15 @@ namespace ProyectoTCU.Properties {
             get {
                 object obj = ResourceManager.GetObject("Stomach", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream stomach_audio {
+            get {
+                return ResourceManager.GetStream("stomach_audio", resourceCulture);
             }
         }
         
