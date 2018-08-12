@@ -47,6 +47,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.audio_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -195,7 +196,7 @@
             // 
             // pictureBoxRespuesta
             // 
-            this.pictureBoxRespuesta.Location = new System.Drawing.Point(620, 108);
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(697, 108);
             this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
             this.pictureBoxRespuesta.Size = new System.Drawing.Size(104, 81);
             this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -272,12 +273,27 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // audio_Button
+            // 
+            this.audio_Button.BackColor = System.Drawing.Color.Yellow;
+            this.audio_Button.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.audio_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.audio_Button.ForeColor = System.Drawing.Color.Yellow;
+            this.audio_Button.Image = global::ProyectoTCU.Properties.Resources.speaker__10_;
+            this.audio_Button.Location = new System.Drawing.Point(588, 108);
+            this.audio_Button.Name = "audio_Button";
+            this.audio_Button.Size = new System.Drawing.Size(61, 56);
+            this.audio_Button.TabIndex = 20;
+            this.audio_Button.UseVisualStyleBackColor = false;
+            this.audio_Button.Click += new System.EventHandler(this.audio_Button_Click);
+            // 
             // funcionesOrganos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(812, 603);
+            this.ClientSize = new System.Drawing.Size(854, 603);
+            this.Controls.Add(this.audio_Button);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.backB);
             this.Controls.Add(this.pictureBoxRespuesta);
@@ -332,5 +348,6 @@
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
         private System.Windows.Forms.Button backB;
         private System.Windows.Forms.Button playButton;
+        private System.Windows.Forms.Button audio_Button;
     }
 }

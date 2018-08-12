@@ -27,6 +27,7 @@ namespace ProyectoTCU
 
         public MemoryMatch()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             play = false;
             turno = false;

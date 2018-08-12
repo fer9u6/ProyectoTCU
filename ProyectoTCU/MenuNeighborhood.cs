@@ -20,6 +20,7 @@ namespace ProyectoTCU
 
         public MenuNeighborhood()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

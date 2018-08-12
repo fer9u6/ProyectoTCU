@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(classroom2));
-            this.button1 = new System.Windows.Forms.Button();
             this.backB = new System.Windows.Forms.Button();
             this.pictureBbehind = new System.Windows.Forms.PictureBox();
             this.pictureBoxnextto = new System.Windows.Forms.PictureBox();
@@ -41,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelAnswer = new System.Windows.Forms.Label();
             this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
+            this.audio_Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBbehind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxnextto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxinfrontofb)).BeginInit();
@@ -51,17 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(26, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 57);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Sound";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // backB
             // 
@@ -188,12 +177,27 @@
             this.pictureBoxRespuesta.TabIndex = 21;
             this.pictureBoxRespuesta.TabStop = false;
             // 
+            // audio_Button
+            // 
+            this.audio_Button.BackColor = System.Drawing.Color.Lime;
+            this.audio_Button.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.audio_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.audio_Button.ForeColor = System.Drawing.Color.Yellow;
+            this.audio_Button.Image = global::ProyectoTCU.Properties.Resources.speaker__10_;
+            this.audio_Button.Location = new System.Drawing.Point(30, 114);
+            this.audio_Button.Name = "audio_Button";
+            this.audio_Button.Size = new System.Drawing.Size(61, 56);
+            this.audio_Button.TabIndex = 22;
+            this.audio_Button.UseVisualStyleBackColor = false;
+            this.audio_Button.Click += new System.EventHandler(this.audio_Button_Click);
+            // 
             // classroom2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1089, 598);
+            this.Controls.Add(this.audio_Button);
             this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.labelAnswer);
             this.Controls.Add(this.pictureBbehind);
@@ -203,7 +207,6 @@
             this.Controls.Add(this.pictureBoxondesk);
             this.Controls.Add(this.pictureBoxunder);
             this.Controls.Add(this.pictureBoxon);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.backB);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -228,7 +231,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button backB;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBoxon;
         private System.Windows.Forms.PictureBox pictureBoxunder;
         private System.Windows.Forms.PictureBox pictureBoxondesk;
@@ -238,5 +240,6 @@
         private System.Windows.Forms.PictureBox pictureBbehind;
         private System.Windows.Forms.Label labelAnswer;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
+        private System.Windows.Forms.Button audio_Button;
     }
 }

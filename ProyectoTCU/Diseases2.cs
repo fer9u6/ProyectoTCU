@@ -24,6 +24,7 @@ namespace ProyectoTCU
         bool play;
         public Diseases2()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             sonidos = new controlSonidos();
             enfermedades = new Dictionary<int, string>();

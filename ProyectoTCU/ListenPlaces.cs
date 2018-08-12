@@ -25,6 +25,7 @@ namespace ProyectoTCU
 
         public ListenPlaces()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             places = new Dictionary<Image, String>();
             places.Add(Properties.Resources.xbakery,"Bakery");

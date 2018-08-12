@@ -18,6 +18,7 @@ namespace ProyectoTCU
         MenuClassroom mc;
         public ClassroomVocabulary()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
 
             Image bp = new Bitmap(Properties.Resources.backpack);

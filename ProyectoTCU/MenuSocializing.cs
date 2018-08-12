@@ -14,6 +14,7 @@ namespace ProyectoTCU
     {
         public MenuSocializing()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

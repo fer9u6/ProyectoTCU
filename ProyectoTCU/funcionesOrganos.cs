@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ProyectoTCU
 {
     public partial class funcionesOrganos : Form
     {
         Dictionary<String,String> parejas;
+        Dictionary<String, SoundPlayer> sonidos;
         List<int> iParejasUsadas;
         int fallos,iactual;
         Mensaje mensaje;
@@ -21,8 +23,10 @@ namespace ProyectoTCU
 
         public funcionesOrganos()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             parejas = new Dictionary<String, string>();
+            sonidos = new Dictionary<string, SoundPlayer>();
             parejas.Add("4", "It finishes the process of digesting food.\nIt absorbs water and salts.");
             parejas.Add("6", "It allows you to breathe.\nIt helps you to inhale and \nexhale the air.");
             parejas.Add("3","It cleans your blood.\nIt produces an important digestive liquid called bile.\nIt stores energy in the form of a sugar called glycogen.");
@@ -31,6 +35,14 @@ namespace ProyectoTCU
                 "It breaks down the food into a liquid mixture to slowly \nempty that liquid mixture into the small intestine.");
             parejas.Add("2","It sends blood around your body.\nThe blood provides the oxygen and nutrients it needs.\nIt also carries away waste. ");
             parejas.Add("5","It filters waste out of your blood.");
+
+            sonidos.Add("1", new SoundPlayer(Properties.Resources.itistheboss_audio));
+            sonidos.Add("2", new SoundPlayer(Properties.Resources.itsends_audio));
+            sonidos.Add("3", new SoundPlayer(Properties.Resources.itcleans_audio));
+            sonidos.Add("4", new SoundPlayer(Properties.Resources.itfinishes_audio));
+            sonidos.Add("5", new SoundPlayer(Properties.Resources.itfilters_audio));
+            sonidos.Add("6", new SoundPlayer(Properties.Resources.itallowsyou_audio));
+            sonidos.Add("7", new SoundPlayer(Properties.Resources.itstores_audio));
 
             fallos = 0;
             contador = 0;
@@ -82,6 +94,7 @@ namespace ProyectoTCU
             Button b = sender as Button;
             if (b.Text == parejas.ElementAt(iactual).Key)
             {
+                sonido.sonidoOpcionCorrecta();
                 pictureBoxRespuesta.Image = Properties.Resources.check;
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
@@ -89,6 +102,7 @@ namespace ProyectoTCU
             }
             else {
                 fallos++;
+                sonido.sonidoPerderSebastian();
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
@@ -115,6 +129,18 @@ namespace ProyectoTCU
             mostrar();
             playButton.Visible = false;
             
+        }
+
+        private void audio_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sonidos[parejas.ElementAt(iactual).Key].Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
