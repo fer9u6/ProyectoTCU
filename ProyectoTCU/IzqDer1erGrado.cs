@@ -20,7 +20,7 @@ namespace ProyectoTCU
 
         delegate void StringArgReturningVoidDelegate(string text);
 
-        //Para los sonidos de las letras (espero) y palabras
+        //Para los sonidos de las letras y palabras
         private SpeechSynthesizer synthesizer = new SpeechSynthesizer();
         int numLetra; //La posicion en la palabra de la letra que sigue de completar
         int score = 0;
@@ -39,7 +39,7 @@ namespace ProyectoTCU
             "red", "blue", "green", "yellow", "purple", "orange", //33
             "circle", "square", "triangle", //36
             "grandfather", "father", "brother", //39
-            "grandmother", "mother", "sister", //42
+            "grandmother", "mother", "sister" //42
         };
 
         static string[] allWordsSpanish = new string[]
@@ -67,7 +67,7 @@ namespace ProyectoTCU
             setValues();
             setValues();
             //Reload components
-            labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+            labelIn.Text = score + "/5 words completed            Mistakes: " + mistakes;
         }
 
         private void setValues()
@@ -94,7 +94,7 @@ namespace ProyectoTCU
 
             //Se agrega la imagen adecuada
             Image im = imageList1.Images[randomNumber];
-            labelInSpanish.Image = im;
+            labelImage.Image = im;
             //Se presenta también la palabra en espanol
             labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
 
@@ -164,8 +164,6 @@ namespace ProyectoTCU
         //Usa la palabra que se busca completar y la letra que sigue de elegir
         private void changeOptionsInButtons()
         {
-            //ACA?
-
             Random random = new Random();
             int randomNumber = random.Next(0, alphabet.Length);
             Boolean different = false;
@@ -233,7 +231,7 @@ namespace ProyectoTCU
                         //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
                         if (score == 5)
                         {
-                            labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+                            labelIn.Text = score + "/5 words completed            Mistakes: " + mistakes;
                             sonidos.sonidoTerminarBien();
 
                             MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
@@ -290,7 +288,7 @@ namespace ProyectoTCU
                 }
 
                 //El juego se gana completando 5 palabras
-                labelInfo.Text = score + "/5 words completed            Mistakes: " + mistakes;
+                labelIn.Text = score + "/5 words completed            Mistakes: " + mistakes;
             }
         }
 
@@ -318,6 +316,14 @@ namespace ProyectoTCU
             this.Hide();
         }
 
-        
+        private void IzqDer1erGrado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
