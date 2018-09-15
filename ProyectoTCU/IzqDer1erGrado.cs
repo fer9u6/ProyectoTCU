@@ -26,6 +26,7 @@ namespace ProyectoTCU
         int score = 0;
         int mistakes = 0;
         string word;
+        string wordSpanish = "null";
         //En esta lista se guardan las palabras que se hayan usado para no repetirlas
         List<string> used = new List<string>();
 
@@ -97,6 +98,9 @@ namespace ProyectoTCU
             labelImage.Image = im;
             //Se presenta también la palabra en espanol
             labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
+
+            //Se define la palabra en espanol para la mascota (no aplica en 1ero y 2do grado)
+            wordSpanish = allWordsSpanish[randomNumber];
 
             //Se definen las opciones posibles
             changeOptionsInButtons();
@@ -324,6 +328,11 @@ namespace ProyectoTCU
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void labelNarvi_Click(object sender, EventArgs e)
+        {
+            labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
         }
     }
 }

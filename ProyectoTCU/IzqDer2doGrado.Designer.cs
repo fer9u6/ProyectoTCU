@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTCU
 {
-    partial class IzqDer3erGrado
+    partial class IzqDer2doGrado
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer3erGrado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer2doGrado));
             this.tableLayoutPanelLetters = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,8 +44,6 @@
             this.labelNarvi = new System.Windows.Forms.Label();
             this.labelIn = new System.Windows.Forms.Label();
             this.labelInSpanish = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanelLetters.SuspendLayout();
             this.tableLayoutPanelButtons.SuspendLayout();
             this.tableLayoutPanelInfo.SuspendLayout();
@@ -98,7 +96,7 @@
             this.buttonIzq.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIzq.Location = new System.Drawing.Point(3, 3);
             this.buttonIzq.Name = "buttonIzq";
-            this.buttonIzq.Size = new System.Drawing.Size(89, 210);
+            this.buttonIzq.Size = new System.Drawing.Size(266, 210);
             this.buttonIzq.TabIndex = 1;
             this.buttonIzq.Text = "Izq";
             this.buttonIzq.UseVisualStyleBackColor = true;
@@ -108,9 +106,9 @@
             // 
             this.buttonDer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDer.Font = new System.Drawing.Font("Cooper Black", 48F);
-            this.buttonDer.Location = new System.Drawing.Point(200, 3);
+            this.buttonDer.Location = new System.Drawing.Point(411, 3);
             this.buttonDer.Name = "buttonDer";
-            this.buttonDer.Size = new System.Drawing.Size(89, 210);
+            this.buttonDer.Size = new System.Drawing.Size(267, 210);
             this.buttonDer.TabIndex = 2;
             this.buttonDer.Text = "Der";
             this.buttonDer.UseVisualStyleBackColor = true;
@@ -119,18 +117,12 @@
             // tableLayoutPanelButtons
             // 
             this.tableLayoutPanelButtons.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanelButtons.ColumnCount = 7;
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
+            this.tableLayoutPanelButtons.ColumnCount = 3;
+            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanelButtons.Controls.Add(this.buttonIzq, 0, 0);
             this.tableLayoutPanelButtons.Controls.Add(this.buttonDer, 2, 0);
-            this.tableLayoutPanelButtons.Controls.Add(this.button1, 4, 0);
-            this.tableLayoutPanelButtons.Controls.Add(this.button2, 6, 0);
             this.tableLayoutPanelButtons.Location = new System.Drawing.Point(315, 677);
             this.tableLayoutPanelButtons.Name = "tableLayoutPanelButtons";
             this.tableLayoutPanelButtons.RowCount = 1;
@@ -212,7 +204,6 @@
             this.labelHelp.AutoSize = true;
             this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelHelp.Image = ((System.Drawing.Image)(resources.GetObject("labelHelp.Image")));
             this.labelHelp.Location = new System.Drawing.Point(259, 154);
             this.labelHelp.Name = "labelHelp";
             this.labelHelp.Size = new System.Drawing.Size(250, 361);
@@ -248,6 +239,7 @@
             this.labelNarvi.Name = "labelNarvi";
             this.labelNarvi.Size = new System.Drawing.Size(250, 361);
             this.labelNarvi.TabIndex = 2;
+            this.labelNarvi.Click += new System.EventHandler(this.labelNarvi_Click);
             // 
             // labelIn
             // 
@@ -274,25 +266,7 @@
             this.labelInSpanish.Text = "In Spanish";
             this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(390, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(587, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // IzqDer3erGrado
+            // IzqDer2doGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -301,9 +275,9 @@
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);
             this.Controls.Add(this.tableLayoutPanelLetters);
-            this.Name = "IzqDer3erGrado";
-            this.Text = "IzqDer1erGrado";
-            this.Load += new System.EventHandler(this.IzqDer1erGrado_Load);
+            this.Name = "IzqDer2doGrado";
+            this.Text = "IzqDer2doGrado";
+            this.Load += new System.EventHandler(this.IzqDer2doGrado_Load);
             this.tableLayoutPanelLetters.ResumeLayout(false);
             this.tableLayoutPanelLetters.PerformLayout();
             this.tableLayoutPanelButtons.ResumeLayout(false);
@@ -330,7 +304,5 @@
         private System.Windows.Forms.Label labelIn;
         private System.Windows.Forms.Label labelHelp;
         private System.Windows.Forms.Label labelInSpanish;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }

@@ -12,9 +12,9 @@ using System.Threading;
 
 namespace ProyectoTCU
 {
-    public partial class IzqDer3erGrado : Form
+    public partial class IzqDer2doGrado : Form
     {
-        Menu1erGrado m1er;
+        Menu2doGrado m2do;
 
         controlSonidos sonidos = new controlSonidos();
 
@@ -26,38 +26,41 @@ namespace ProyectoTCU
         int score = 0;
         int mistakes = 0;
         string word;
+        string wordSpanish = "null";
         //En esta lista se guardan las palabras que se hayan usado para no repetirlas
         List<string> used = new List<string>();
 
         static string[] allWords = new string[]
         {
-            "hello", "bye", //2
-            "pencil", "paper", "notebook", "scissors", "sharpener", //7
-            "cake", "chicken", "pizza", "carrot", "onion", "lettuce", //13
-            "foot", "hand", "head", "fingers", "eyes", "ears", "nose", "hair", //21
-            "happy", "surprised", "embarrassed", "angry", "scared", "sad", //27
-            "red", "blue", "green", "yellow", "purple", "orange", //33
-            "circle", "square", "triangle", //36
-            "grandfather", "father", "brother", //39
-            "grandmother", "mother", "sister" //42
+            "water", "day", "night", "fruits", "vegetables",
+            "sleep", "sick", "healthy", "exercise", "junk food", //10
+            "sweets", "carrot", "potato", "fish", "green beans",
+            "apple", "lettuce", "chicken", "broccoli", "bread", //20
+            "watermelon", "eat", "bath", "drink", "pizza",
+            "chocolate", "rice", "tomato", "cookie", "afternoon", //30
+            "night", "noon", "morning", "cold", "hot",
+            "lettuce", "celery", "cucumber", "caramel", "strawberry", //40
+            "grape", "pear", "cabbage", "hamburger", "fries",
+            "chips", "spinach", "onion", "ice cream", "pop corn", "cookies" //51
         };
 
         static string[] allWordsSpanish = new string[]
         {
-            "hola", "adios",
-            "lapiz", "papel", "cuaderno", "tijeras", "tajador",
-            "pastel", "pollo", "pizza", "zanahoria", "cebolla", "lechuga",
-            "pie", "mano", "cabeza", "dedos", "ojos", "orejas", "nariz", "pelo",
-            "feliz", "sorprendido", "avergonzado", "enojado", "asustado", "triste",
-            "rojo", "azul", "verde", "amarillo", "morado", "anaranjado",
-            "circulo", "cuadrado", "triangulo",
-            "abuelo", "papá", "hermano",
-            "abuela", "mamá", "hermana"
+            "agua", "día", "noche", "frutas", "vegetales",
+            "dormir", "enfermo", "saludable", "ejercicio", "comida chatarra", //10
+            "dulces", "zanahoria", "papa", "pescado", "vainicas",
+            "manzana", "lechuga", "pollo", "brócoli", "pan", //20
+            "sandía", "comer", "baño", "beber", "pizza",
+            "chocolate", "arroz", "tomate", "galleta", "tarde", //30
+            "noche", "medio día", "mañana", "frío", "calor",
+            "lettuce", "celery", "cucumber", "caramel", "strawberry", //40
+            "grape", "pear", "cabbage", "hamburger", "fries",
+            "chips", "spinach", "onion", "ice cream", "pop corn", "cookies" //51
         };
 
         static string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-        public IzqDer3erGrado()
+        public IzqDer2doGrado()
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
@@ -97,6 +100,9 @@ namespace ProyectoTCU
             labelImage.Image = im;
             //Se presenta también la palabra en espanol
             labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
+
+            //Se define la palabra en espanol para la mascota (no aplica en 1ero y 2do grado)
+            wordSpanish = allWordsSpanish[randomNumber];
 
             //Se definen las opciones posibles
             changeOptionsInButtons();
@@ -236,8 +242,8 @@ namespace ProyectoTCU
 
                             MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
                             InitializeComponent();
-                            m1er = new Menu1erGrado();
-                            m1er.Show();
+                            m2do = new Menu2doGrado();
+                            m2do.Show();
                             this.Hide();
                             return;
                         }
@@ -311,12 +317,12 @@ namespace ProyectoTCU
         private void buttonRet_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m1er = new Menu1erGrado();
-            m1er.Show();
+            m2do = new Menu2doGrado();
+            m2do.Show();
             this.Hide();
         }
 
-        private void IzqDer1erGrado_Load(object sender, EventArgs e)
+        private void IzqDer2doGrado_Load(object sender, EventArgs e)
         {
 
         }
@@ -324,6 +330,11 @@ namespace ProyectoTCU
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void labelNarvi_Click(object sender, EventArgs e)
+        {
+            labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
         }
     }
 }

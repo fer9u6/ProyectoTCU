@@ -38,11 +38,11 @@
             this.tableLayoutPanelButtons = new System.Windows.Forms.TableLayoutPanel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanelInfo = new System.Windows.Forms.TableLayoutPanel();
+            this.labelHelp = new System.Windows.Forms.Label();
             this.buttonRet = new System.Windows.Forms.Button();
             this.labelImage = new System.Windows.Forms.Label();
             this.labelNarvi = new System.Windows.Forms.Label();
             this.labelIn = new System.Windows.Forms.Label();
-            this.labelHelp = new System.Windows.Forms.Label();
             this.labelInSpanish = new System.Windows.Forms.Label();
             this.tableLayoutPanelLetters.SuspendLayout();
             this.tableLayoutPanelButtons.SuspendLayout();
@@ -199,6 +199,18 @@
             this.tableLayoutPanelInfo.Size = new System.Drawing.Size(1282, 515);
             this.tableLayoutPanelInfo.TabIndex = 7;
             // 
+            // labelHelp
+            // 
+            this.labelHelp.AutoSize = true;
+            this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
+            this.labelHelp.Location = new System.Drawing.Point(259, 154);
+            this.labelHelp.Name = "labelHelp";
+            this.labelHelp.Size = new System.Drawing.Size(250, 361);
+            this.labelHelp.TabIndex = 7;
+            this.labelHelp.Text = "Esto sería un mensaje de ayuda";
+            this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // buttonRet
             // 
             this.buttonRet.Dock = System.Windows.Forms.DockStyle.Left;
@@ -227,6 +239,7 @@
             this.labelNarvi.Name = "labelNarvi";
             this.labelNarvi.Size = new System.Drawing.Size(250, 361);
             this.labelNarvi.TabIndex = 2;
+            this.labelNarvi.Click += new System.EventHandler(this.labelNarvi_Click);
             // 
             // labelIn
             // 
@@ -240,18 +253,6 @@
             this.labelIn.TabIndex = 3;
             this.labelIn.Text = "Info";
             this.labelIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelHelp
-            // 
-            this.labelHelp.AutoSize = true;
-            this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelHelp.Location = new System.Drawing.Point(259, 154);
-            this.labelHelp.Name = "labelHelp";
-            this.labelHelp.Size = new System.Drawing.Size(250, 361);
-            this.labelHelp.TabIndex = 7;
-            this.labelHelp.Text = "Esto sería un mensaje de ayuda";
-            this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelInSpanish
             // 
