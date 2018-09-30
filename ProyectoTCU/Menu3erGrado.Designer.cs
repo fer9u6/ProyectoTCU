@@ -65,10 +65,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Brown;
-            this.button3.Location = new System.Drawing.Point(4, 141);
+            this.button3.Location = new System.Drawing.Point(4, 115);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(255, 59);
+            this.button3.Size = new System.Drawing.Size(255, 45);
             this.button3.TabIndex = 4;
             this.button3.Text = "The house";
             this.button3.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Brown;
-            this.button4.Location = new System.Drawing.Point(530, 141);
+            this.button4.Location = new System.Drawing.Point(530, 115);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(256, 59);
+            this.button4.Size = new System.Drawing.Size(256, 45);
             this.button4.TabIndex = 5;
             this.button4.Text = "Trivia";
             this.button4.UseVisualStyleBackColor = false;
@@ -110,10 +110,12 @@
             this.tableLayoutPanel2.Controls.Add(this.button4, 2, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(120, 172);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(790, 205);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
@@ -129,7 +131,7 @@
             this.label2.Location = new System.Drawing.Point(4, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(782, 68);
+            this.label2.Size = new System.Drawing.Size(782, 55);
             this.label2.TabIndex = 2;
             this.label2.Text = "Choose the game";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

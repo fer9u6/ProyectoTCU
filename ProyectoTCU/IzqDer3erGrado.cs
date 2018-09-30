@@ -12,9 +12,9 @@ using System.Threading;
 
 namespace ProyectoTCU
 {
-    public partial class IzqDer2doGrado : Form
+    public partial class IzqDer3erGrado : Form
     {
-        Menu2doGrado m2do;
+        Menu3erGrado m3er;
 
         controlSonidos sonidos = new controlSonidos();
 
@@ -32,33 +32,27 @@ namespace ProyectoTCU
 
         static string[] allWords = new string[]
         {
-            "water", "day", "night", "fruits", "vegetables",
-            "sleep", "sick", "exercise", "junk food", "sweets", //10
-            "carrot", "potato", "fish", "green beans","apple",
-            "lettuce", "chicken", "broccoli", "bread", "watermelon", //20
-            "eat", "bath", "drink", "pizza", "chocolate",
-            "rice", "tomato", "cookie", "afternoon", "night", //30
-            "noon", "morning", "celery", "cucumber", "strawberry", 
-            "grape", "pear", "cabbage", "hamburger", "fries", //40
-            "spinach", "onion", "ice cream", "pop corn" //44
+            "shower", "breakfast", "lunch", "dinner", "school",
+            "people", "armchair", "refrigerator", "oven", "eat", //10
+            "sleep", "bath", "school", "living room", "bedroom",
+            "kitchen", "bathroom", "courtyard", "garage", "snack", //20
+            "desktop", "chair", "table", "bed", "furniture",
+            "bathtub", "toilet", "refrigerator", "television", "bookshelf" //30
         };
 
         static string[] allWordsSpanish = new string[]
         {
-            "agua", "día", "noche", "frutas", "vegetales",
-            "dormir", "enfermo", "ejercicio", "comida chatarra", "dulces", //10
-            "zanahoria", "papa", "pescado", "vainicas", "manzana",
-            "lechuga", "pollo", "brócoli", "pan", "sandía", //20
-            "comer", "baño", "tomar", "pizza", "chocolate",
-            "arroz", "tomate", "galleta", "tarde", "noche", //30
-            "medio día", "mañana", "apio", "pepino", "fresa",
-            "uva", "pera", "repollo", "hamburgesa", "papas fritas", //40
-            "espinaca", "cebolla", "helado", "palomitas" //44
+            "ducha", "desayuno", "almuerzo", "cena", "escuela", 
+            "gente", "sillón", "refrigerador", "horno", "comer", //10
+            "dormir", "baño", "escuela", "sala", "cuarto", 
+            "cocina", "baño", "patio", "garaje", "merienda", //20
+            "escritorio", "silla", "mesa", "cama", "mueble",
+            "tina", "inodoro", "refrigerador", "televisión", "librero" //30
         };
 
         static string alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-        public IzqDer2doGrado()
+        public IzqDer3erGrado()
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
@@ -245,8 +239,8 @@ namespace ProyectoTCU
 
                             MyMsgBox.Show("CONGRATULATIONS!\nYou completed all the words!", ":)", "OK");
                             InitializeComponent();
-                            m2do = new Menu2doGrado();
-                            m2do.Show();
+                            m3er = new Menu3erGrado();
+                            m3er.Show();
                             this.Hide();
                             return;
                         }
@@ -320,12 +314,12 @@ namespace ProyectoTCU
         private void buttonRet_Click(object sender, EventArgs e)
         {
             InitializeComponent();
-            m2do = new Menu2doGrado();
-            m2do.Show();
+            m3er = new Menu3erGrado();
+            m3er.Show();
             this.Hide();
         }
 
-        private void IzqDer2doGrado_Load(object sender, EventArgs e)
+        private void IzqDer3erGrado_Load(object sender, EventArgs e)
         {
 
         }

@@ -78,6 +78,12 @@
     <Compile Include="funcionesOrganos.Designer.cs">
       <DependentUpon>funcionesOrganos.cs</DependentUpon>
     </Compile>
+    <Compile Include="IzqDer3erGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzqDer3erGrado.Designer.cs">
+      <DependentUpon>IzqDer3erGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="IzqDer2doGrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="funcionesOrganos.resx">
       <DependentUpon>funcionesOrganos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzqDer3erGrado.resx">
+      <DependentUpon>IzqDer3erGrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IzqDer2doGrado.resx">
       <DependentUpon>IzqDer2doGrado.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTCU
 {
-    partial class IzqDer2doGrado
+    partial class IzqDer3erGrado
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer2doGrado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer3erGrado));
             this.tableLayoutPanelLetters = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -134,50 +134,48 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "sg1.jpg");
-            this.imageList1.Images.SetKeyName(1, "sg2.jpg");
-            this.imageList1.Images.SetKeyName(2, "sg3.jpg");
-            this.imageList1.Images.SetKeyName(3, "sg4.jpg");
-            this.imageList1.Images.SetKeyName(4, "sg5.jpg");
-            this.imageList1.Images.SetKeyName(5, "sg6.jpg");
-            this.imageList1.Images.SetKeyName(6, "sg7.jpg");
-            this.imageList1.Images.SetKeyName(7, "sg8.jpg");
-            this.imageList1.Images.SetKeyName(8, "sg9.jpg");
-            this.imageList1.Images.SetKeyName(9, "sg10.jpg");
-            this.imageList1.Images.SetKeyName(10, "sg11.jpg");
-            this.imageList1.Images.SetKeyName(11, "sg12.jpg");
-            this.imageList1.Images.SetKeyName(12, "sg13.jpg");
-            this.imageList1.Images.SetKeyName(13, "sg14.jpg");
-            this.imageList1.Images.SetKeyName(14, "sg15.jpg");
-            this.imageList1.Images.SetKeyName(15, "sg16.jpg");
-            this.imageList1.Images.SetKeyName(16, "sg17.jpg");
-            this.imageList1.Images.SetKeyName(17, "sg18.jpg");
-            this.imageList1.Images.SetKeyName(18, "sg19.jpg");
-            this.imageList1.Images.SetKeyName(19, "sg20.jpg");
-            this.imageList1.Images.SetKeyName(20, "sg21.jpg");
-            this.imageList1.Images.SetKeyName(21, "sg22.jpg");
-            this.imageList1.Images.SetKeyName(22, "sg23.jpg");
-            this.imageList1.Images.SetKeyName(23, "sg24.jpg");
-            this.imageList1.Images.SetKeyName(24, "sg25.jpg");
-            this.imageList1.Images.SetKeyName(25, "sg26.jpg");
-            this.imageList1.Images.SetKeyName(26, "sg27.jpg");
-            this.imageList1.Images.SetKeyName(27, "sg28.jpg");
-            this.imageList1.Images.SetKeyName(28, "sg29.jpg");
-            this.imageList1.Images.SetKeyName(29, "sg30.jpg");
-            this.imageList1.Images.SetKeyName(30, "sg31.jpg");
-            this.imageList1.Images.SetKeyName(31, "sg32.jpg");
-            this.imageList1.Images.SetKeyName(32, "sg33.jpg");
-            this.imageList1.Images.SetKeyName(33, "sg34.jpg");
-            this.imageList1.Images.SetKeyName(34, "sg35.jpg");
-            this.imageList1.Images.SetKeyName(35, "sg36.jpg");
-            this.imageList1.Images.SetKeyName(36, "sg37.jpg");
-            this.imageList1.Images.SetKeyName(37, "sg38.jpg");
-            this.imageList1.Images.SetKeyName(38, "sg39.jpg");
-            this.imageList1.Images.SetKeyName(39, "sg40.jpg");
-            this.imageList1.Images.SetKeyName(40, "sg41.jpg");
-            this.imageList1.Images.SetKeyName(41, "sg42.jpg");
-            this.imageList1.Images.SetKeyName(42, "sg43.jpg");
-            this.imageList1.Images.SetKeyName(43, "sg44.jpg");
+            this.imageList1.Images.SetKeyName(0, "primGrad1.jpg");
+            this.imageList1.Images.SetKeyName(1, "primGrad2.jpg");
+            this.imageList1.Images.SetKeyName(2, "primGrad3.jpg");
+            this.imageList1.Images.SetKeyName(3, "primGrad4.jpg");
+            this.imageList1.Images.SetKeyName(4, "primGrad5.jpg");
+            this.imageList1.Images.SetKeyName(5, "primGrad6.jpg");
+            this.imageList1.Images.SetKeyName(6, "primGrad7.jpg");
+            this.imageList1.Images.SetKeyName(7, "primGrad8.jpg");
+            this.imageList1.Images.SetKeyName(8, "primGrad9.jpg");
+            this.imageList1.Images.SetKeyName(9, "primGrad10.jpg");
+            this.imageList1.Images.SetKeyName(10, "primGrad11.jpg");
+            this.imageList1.Images.SetKeyName(11, "primGrad12.jpg");
+            this.imageList1.Images.SetKeyName(12, "primGrad13.jpg");
+            this.imageList1.Images.SetKeyName(13, "primGrad14.jpg");
+            this.imageList1.Images.SetKeyName(14, "primGrad15.jpg");
+            this.imageList1.Images.SetKeyName(15, "primGrad16.jpg");
+            this.imageList1.Images.SetKeyName(16, "primGrad17.jpg");
+            this.imageList1.Images.SetKeyName(17, "primGrad18.jpg");
+            this.imageList1.Images.SetKeyName(18, "primGrad19.jpg");
+            this.imageList1.Images.SetKeyName(19, "primGrad20.jpg");
+            this.imageList1.Images.SetKeyName(20, "primGrad21.jpg");
+            this.imageList1.Images.SetKeyName(21, "primGrad22.jpg");
+            this.imageList1.Images.SetKeyName(22, "primGrad23.jpg");
+            this.imageList1.Images.SetKeyName(23, "primGrad24.jpg");
+            this.imageList1.Images.SetKeyName(24, "primGrad25.jpg");
+            this.imageList1.Images.SetKeyName(25, "primGrad26.jpg");
+            this.imageList1.Images.SetKeyName(26, "primGrad27.jpg");
+            this.imageList1.Images.SetKeyName(27, "primGrad28.jpg");
+            this.imageList1.Images.SetKeyName(28, "primGrad29.jpg");
+            this.imageList1.Images.SetKeyName(29, "primGrad30.jpg");
+            this.imageList1.Images.SetKeyName(30, "primGrad31.jpg");
+            this.imageList1.Images.SetKeyName(31, "primGrad32.jpg");
+            this.imageList1.Images.SetKeyName(32, "primGrad33.jpg");
+            this.imageList1.Images.SetKeyName(33, "primGrad34.jpg");
+            this.imageList1.Images.SetKeyName(34, "primGrad35.jpg");
+            this.imageList1.Images.SetKeyName(35, "primGrad36.jpg");
+            this.imageList1.Images.SetKeyName(36, "primGrad37.jpg");
+            this.imageList1.Images.SetKeyName(37, "primGrad38.jpg");
+            this.imageList1.Images.SetKeyName(38, "primGrad39.jpg");
+            this.imageList1.Images.SetKeyName(39, "primGrad40.jpg");
+            this.imageList1.Images.SetKeyName(40, "primGrad41.jpg");
+            this.imageList1.Images.SetKeyName(41, "primGrad42.jpg");
             // 
             // tableLayoutPanelInfo
             // 
@@ -268,7 +266,7 @@
             this.labelInSpanish.Text = "In Spanish";
             this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // IzqDer2doGrado
+            // IzqDer3erGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -277,9 +275,9 @@
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);
             this.Controls.Add(this.tableLayoutPanelLetters);
-            this.Name = "IzqDer2doGrado";
-            this.Text = "IzqDer2doGrado";
-            this.Load += new System.EventHandler(this.IzqDer2doGrado_Load);
+            this.Name = "IzqDer3erGrado";
+            this.Text = "IzqDer3erGrado";
+            this.Load += new System.EventHandler(this.IzqDer3erGrado_Load);
             this.tableLayoutPanelLetters.ResumeLayout(false);
             this.tableLayoutPanelLetters.PerformLayout();
             this.tableLayoutPanelButtons.ResumeLayout(false);
