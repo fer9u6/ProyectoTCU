@@ -30,6 +30,9 @@ namespace ProyectoTCU
         //En esta lista se guardan las palabras que se hayan usado para no repetirlas
         List<string> used = new List<string>();
 
+        //Puede que se pueda usar un booleano para ver si ya se pidio un consejo
+        //Si se pide una segunda vez que se muestre la respuesta
+
         static string[] allWords = new string[]
         {
             "shower", "breakfast", "lunch", "dinner", "school",
@@ -59,6 +62,7 @@ namespace ProyectoTCU
             this.Closed += (s, ev) => Application.Exit();
             synthesizer.Volume = 100;   // 0...100
             synthesizer.Rate = -5;     //-10...10 
+            synthesizer.SelectVoiceByHints(VoiceGender.Female);
             setValues();
             setValues();
             //Reload components
@@ -71,6 +75,9 @@ namespace ProyectoTCU
             numLetra = 0;
             mistakes = 0;
             word = "";
+            //Modifica la imagen de Narvi
+            labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerechaHabla.png");
+            labelHelp.Text = " ";
             //windowWidth = labelInSpanish.Width;
 
             Random random;
@@ -90,8 +97,8 @@ namespace ProyectoTCU
             //Se agrega la imagen adecuada
             Image im = imageList1.Images[randomNumber];
             labelImage.Image = im;
-            //Se presenta también la palabra en espanol
-            labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
+            //Se presenta también la palabra en espanol (ESTA PARTE NO)
+            //labelInSpanish.Text = "In spanish: \n " + allWordsSpanish[randomNumber];
 
             //Se define la palabra en espanol para la mascota (no aplica en 1ero y 2do grado)
             wordSpanish = allWordsSpanish[randomNumber];

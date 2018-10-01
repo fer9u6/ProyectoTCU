@@ -43,7 +43,6 @@
             this.labelImage = new System.Windows.Forms.Label();
             this.labelNarvi = new System.Windows.Forms.Label();
             this.labelIn = new System.Windows.Forms.Label();
-            this.labelInSpanish = new System.Windows.Forms.Label();
             this.tableLayoutPanelLetters.SuspendLayout();
             this.tableLayoutPanelButtons.SuspendLayout();
             this.tableLayoutPanelInfo.SuspendLayout();
@@ -179,17 +178,15 @@
             // 
             // tableLayoutPanelInfo
             // 
-            this.tableLayoutPanelInfo.ColumnCount = 4;
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanelInfo.ColumnCount = 3;
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelInfo.Controls.Add(this.labelHelp, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.buttonRet, 0, 0);
             this.tableLayoutPanelInfo.Controls.Add(this.labelImage, 1, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelNarvi, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelIn, 1, 0);
-            this.tableLayoutPanelInfo.Controls.Add(this.labelInSpanish, 3, 1);
             this.tableLayoutPanelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanelInfo.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelInfo.Name = "tableLayoutPanelInfo";
@@ -204,9 +201,9 @@
             this.labelHelp.AutoSize = true;
             this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelHelp.Location = new System.Drawing.Point(259, 154);
+            this.labelHelp.Location = new System.Drawing.Point(323, 154);
             this.labelHelp.Name = "labelHelp";
-            this.labelHelp.Size = new System.Drawing.Size(250, 361);
+            this.labelHelp.Size = new System.Drawing.Size(314, 361);
             this.labelHelp.TabIndex = 7;
             this.labelHelp.Text = "Esto sería un mensaje de ayuda";
             this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -225,46 +222,36 @@
             // 
             this.labelImage.AutoSize = true;
             this.labelImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelImage.Location = new System.Drawing.Point(515, 154);
+            this.labelImage.Location = new System.Drawing.Point(643, 154);
             this.labelImage.Name = "labelImage";
-            this.labelImage.Size = new System.Drawing.Size(378, 361);
+            this.labelImage.Size = new System.Drawing.Size(636, 361);
             this.labelImage.TabIndex = 1;
             // 
             // labelNarvi
             // 
             this.labelNarvi.AutoSize = true;
             this.labelNarvi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNarvi.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNarvi.Image = ((System.Drawing.Image)(resources.GetObject("labelNarvi.Image")));
             this.labelNarvi.Location = new System.Drawing.Point(3, 154);
             this.labelNarvi.Name = "labelNarvi";
-            this.labelNarvi.Size = new System.Drawing.Size(250, 361);
+            this.labelNarvi.Size = new System.Drawing.Size(314, 361);
             this.labelNarvi.TabIndex = 2;
+            this.labelNarvi.Text = "Click For Help!";
             this.labelNarvi.Click += new System.EventHandler(this.labelNarvi_Click);
             // 
             // labelIn
             // 
             this.labelIn.AutoSize = true;
-            this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 3);
+            this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 2);
             this.labelIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIn.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelIn.Location = new System.Drawing.Point(259, 0);
+            this.labelIn.Location = new System.Drawing.Point(323, 0);
             this.labelIn.Name = "labelIn";
-            this.labelIn.Size = new System.Drawing.Size(1020, 154);
+            this.labelIn.Size = new System.Drawing.Size(956, 154);
             this.labelIn.TabIndex = 3;
             this.labelIn.Text = "Info";
             this.labelIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelInSpanish
-            // 
-            this.labelInSpanish.AutoSize = true;
-            this.labelInSpanish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInSpanish.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelInSpanish.Location = new System.Drawing.Point(899, 154);
-            this.labelInSpanish.Name = "labelInSpanish";
-            this.labelInSpanish.Size = new System.Drawing.Size(380, 361);
-            this.labelInSpanish.TabIndex = 8;
-            this.labelInSpanish.Text = "In Spanish";
-            this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IzqDer3erGrado
             // 
@@ -303,6 +290,5 @@
         private System.Windows.Forms.Label labelNarvi;
         private System.Windows.Forms.Label labelIn;
         private System.Windows.Forms.Label labelHelp;
-        private System.Windows.Forms.Label labelInSpanish;
     }
 }

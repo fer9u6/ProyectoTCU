@@ -15,6 +15,7 @@ namespace ProyectoTCU
         MenuPrincipal mp;
         Parejas3erGrado par;
         Preguntas3erGrado preg;
+        IzqDer3erGrado izde;
 
         public Menu3erGrado()
         {
@@ -63,6 +64,14 @@ namespace ProyectoTCU
             InitializeComponent();
             preg = new Preguntas3erGrado();
             preg.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            izde = new IzqDer3erGrado();
+            izde.Show();
             this.Hide();
         }
     }

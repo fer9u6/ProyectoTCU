@@ -222,6 +222,7 @@
             this.buttonRet.Size = new System.Drawing.Size(122, 148);
             this.buttonRet.TabIndex = 4;
             this.buttonRet.UseVisualStyleBackColor = true;
+            this.buttonRet.Click += new System.EventHandler(this.buttonRet_Click_1);
             // 
             // labelImage
             // 
