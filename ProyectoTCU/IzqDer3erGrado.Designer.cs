@@ -133,48 +133,37 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "primGrad1.jpg");
-            this.imageList1.Images.SetKeyName(1, "primGrad2.jpg");
-            this.imageList1.Images.SetKeyName(2, "primGrad3.jpg");
-            this.imageList1.Images.SetKeyName(3, "primGrad4.jpg");
-            this.imageList1.Images.SetKeyName(4, "primGrad5.jpg");
-            this.imageList1.Images.SetKeyName(5, "primGrad6.jpg");
-            this.imageList1.Images.SetKeyName(6, "primGrad7.jpg");
-            this.imageList1.Images.SetKeyName(7, "primGrad8.jpg");
-            this.imageList1.Images.SetKeyName(8, "primGrad9.jpg");
-            this.imageList1.Images.SetKeyName(9, "primGrad10.jpg");
-            this.imageList1.Images.SetKeyName(10, "primGrad11.jpg");
-            this.imageList1.Images.SetKeyName(11, "primGrad12.jpg");
-            this.imageList1.Images.SetKeyName(12, "primGrad13.jpg");
-            this.imageList1.Images.SetKeyName(13, "primGrad14.jpg");
-            this.imageList1.Images.SetKeyName(14, "primGrad15.jpg");
-            this.imageList1.Images.SetKeyName(15, "primGrad16.jpg");
-            this.imageList1.Images.SetKeyName(16, "primGrad17.jpg");
-            this.imageList1.Images.SetKeyName(17, "primGrad18.jpg");
-            this.imageList1.Images.SetKeyName(18, "primGrad19.jpg");
-            this.imageList1.Images.SetKeyName(19, "primGrad20.jpg");
-            this.imageList1.Images.SetKeyName(20, "primGrad21.jpg");
-            this.imageList1.Images.SetKeyName(21, "primGrad22.jpg");
-            this.imageList1.Images.SetKeyName(22, "primGrad23.jpg");
-            this.imageList1.Images.SetKeyName(23, "primGrad24.jpg");
-            this.imageList1.Images.SetKeyName(24, "primGrad25.jpg");
-            this.imageList1.Images.SetKeyName(25, "primGrad26.jpg");
-            this.imageList1.Images.SetKeyName(26, "primGrad27.jpg");
-            this.imageList1.Images.SetKeyName(27, "primGrad28.jpg");
-            this.imageList1.Images.SetKeyName(28, "primGrad29.jpg");
-            this.imageList1.Images.SetKeyName(29, "primGrad30.jpg");
-            this.imageList1.Images.SetKeyName(30, "primGrad31.jpg");
-            this.imageList1.Images.SetKeyName(31, "primGrad32.jpg");
-            this.imageList1.Images.SetKeyName(32, "primGrad33.jpg");
-            this.imageList1.Images.SetKeyName(33, "primGrad34.jpg");
-            this.imageList1.Images.SetKeyName(34, "primGrad35.jpg");
-            this.imageList1.Images.SetKeyName(35, "primGrad36.jpg");
-            this.imageList1.Images.SetKeyName(36, "primGrad37.jpg");
-            this.imageList1.Images.SetKeyName(37, "primGrad38.jpg");
-            this.imageList1.Images.SetKeyName(38, "primGrad39.jpg");
-            this.imageList1.Images.SetKeyName(39, "primGrad40.jpg");
-            this.imageList1.Images.SetKeyName(40, "primGrad41.jpg");
-            this.imageList1.Images.SetKeyName(41, "primGrad42.jpg");
+            this.imageList1.Images.SetKeyName(0, "tg1.jpg");
+            this.imageList1.Images.SetKeyName(1, "tg2.jpg");
+            this.imageList1.Images.SetKeyName(2, "tg3.jpg");
+            this.imageList1.Images.SetKeyName(3, "tg4.jpg");
+            this.imageList1.Images.SetKeyName(4, "tg5.jpg");
+            this.imageList1.Images.SetKeyName(5, "tg6.jpg");
+            this.imageList1.Images.SetKeyName(6, "tg7.jpg");
+            this.imageList1.Images.SetKeyName(7, "tg8.jpg");
+            this.imageList1.Images.SetKeyName(8, "tg9.jpg");
+            this.imageList1.Images.SetKeyName(9, "tg10.jpg");
+            this.imageList1.Images.SetKeyName(10, "tg11.jpg");
+            this.imageList1.Images.SetKeyName(11, "tg12.jpg");
+            this.imageList1.Images.SetKeyName(12, "tg13.jpg");
+            this.imageList1.Images.SetKeyName(13, "tg14.jpg");
+            this.imageList1.Images.SetKeyName(14, "tg15.jpg");
+            this.imageList1.Images.SetKeyName(15, "tg16.jpg");
+            this.imageList1.Images.SetKeyName(16, "tg17.jpg");
+            this.imageList1.Images.SetKeyName(17, "tg18.jpg");
+            this.imageList1.Images.SetKeyName(18, "tg19.jpg");
+            this.imageList1.Images.SetKeyName(19, "tg20.jpg");
+            this.imageList1.Images.SetKeyName(20, "tg21.jpg");
+            this.imageList1.Images.SetKeyName(21, "tg22.jpg");
+            this.imageList1.Images.SetKeyName(22, "tg23.jpg");
+            this.imageList1.Images.SetKeyName(23, "tg24.jpg");
+            this.imageList1.Images.SetKeyName(24, "tg25.jpg");
+            this.imageList1.Images.SetKeyName(25, "tg26.jpg");
+            this.imageList1.Images.SetKeyName(26, "tg27.jpg");
+            this.imageList1.Images.SetKeyName(27, "tg28.jpg");
+            this.imageList1.Images.SetKeyName(28, "tg29.jpg");
+            this.imageList1.Images.SetKeyName(29, "tg30.jpg");
+            this.imageList1.Images.SetKeyName(30, "tg31.jpg");
             // 
             // tableLayoutPanelInfo
             // 
@@ -217,6 +206,7 @@
             this.buttonRet.Size = new System.Drawing.Size(122, 148);
             this.buttonRet.TabIndex = 4;
             this.buttonRet.UseVisualStyleBackColor = true;
+            this.buttonRet.Click += new System.EventHandler(this.buttonRet_Click_1);
             // 
             // labelImage
             // 

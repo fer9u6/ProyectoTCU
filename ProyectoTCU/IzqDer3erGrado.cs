@@ -27,6 +27,8 @@ namespace ProyectoTCU
         int mistakes = 0;
         string word;
         string wordSpanish = "null";
+        int help = 0; //Para medir cuantas veces el usuario ha pedido ayuda
+        List<int> showedL = new List<int>(); //Para ver qué posiciones NO se deben completar
         //En esta lista se guardan las palabras que se hayan usado para no repetirlas
         List<string> used = new List<string>();
 
@@ -37,20 +39,20 @@ namespace ProyectoTCU
         {
             "shower", "breakfast", "lunch", "dinner", "school",
             "people", "armchair", "refrigerator", "oven", "eat", //10
-            "sleep", "bath", "school", "living room", "bedroom",
-            "kitchen", "bathroom", "courtyard", "garage", "snack", //20
-            "desktop", "chair", "table", "bed", "furniture",
-            "bathtub", "toilet", "refrigerator", "television", "bookshelf" //30
+            "sleep", "sink", "drawer", "living room", "bedroom",
+            "kitchen", "bathroom", "dinning room", "courtyard", "garage", //20
+            "pillow", "phone", "chair", "table", "bed",
+            "bathtub", "toilet", "book", "television", "bookshelf", "desk" //31
         };
 
         static string[] allWordsSpanish = new string[]
         {
             "ducha", "desayuno", "almuerzo", "cena", "escuela", 
             "gente", "sillón", "refrigerador", "horno", "comer", //10
-            "dormir", "baño", "escuela", "sala", "cuarto", 
-            "cocina", "baño", "patio", "garaje", "merienda", //20
-            "escritorio", "silla", "mesa", "cama", "mueble",
-            "tina", "inodoro", "refrigerador", "televisión", "librero" //30
+            "dormir", "lavatorio", "cajones", "sala", "cuarto", 
+            "cocina", "baño", "comedor", "patio", "garaje", //20
+            "almohada", "teléfono", "silla", "mesa", "cama",
+            "tina", "inodoro", "libro", "televisión", "librero", "escritorio" //31
         };
 
         static string alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -64,7 +66,7 @@ namespace ProyectoTCU
             synthesizer.Rate = -5;     //-10...10 
             synthesizer.SelectVoiceByHints(VoiceGender.Female);
             setValues();
-            setValues();
+            //setValues();
             //Reload components
             labelIn.Text = score + "/5 words completed            Mistakes: " + mistakes;
         }
@@ -75,10 +77,12 @@ namespace ProyectoTCU
             numLetra = 0;
             mistakes = 0;
             word = "";
+            help = 0;
             //Modifica la imagen de Narvi
-            labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerechaHabla.png");
+            labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerecha.png");
             labelHelp.Text = " ";
             //windowWidth = labelInSpanish.Width;
+            showedL.Clear();
 
             Random random;
             int randomNumber = 0;
@@ -103,8 +107,6 @@ namespace ProyectoTCU
             //Se define la palabra en espanol para la mascota (no aplica en 1ero y 2do grado)
             wordSpanish = allWordsSpanish[randomNumber];
 
-            //Se definen las opciones posibles
-            changeOptionsInButtons();
 
             int wordSize = word.Length;
             //Se muestra la palabra alterando el tableLayoutPanel
@@ -123,10 +125,46 @@ namespace ProyectoTCU
             {
                 tableLayoutPanelLetters.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, percentage)); //33F
             }
+            //Para 3er y 4to grado solo se van a mostrar algunas letras de la palabra a completar
+            //Si la palabra es de 5 letras o menos solo se mestra una letra
+            //Si es mayor a 5 letras y menor a 10 solo dos
+            //Si es mayor a 15 solo tres
+            int showLetters = 0; //La cantidad de letras que se van a mostrar
+            if (wordSize <= 5)
+            {
+                showLetters = 1;
+            }
+            else if (wordSize > 5 && wordSize <= 10)
+            {
+                showLetters = 2;
+            }
+            else
+            {
+                showLetters = 3;
+            }
+            Random randomL = new Random();
+            int randomNumberL = 0;
+            for (int j = 0; j < showLetters; j++)
+            {
+                randomNumberL = randomL.Next(0, wordSize);
+                //Se guardan las posiciones que se van a mostrar en la palabra
+                while (showedL.Contains(randomNumberL)) 
+                {
+                    randomNumberL = randomL.Next(0, wordSize);
+                }
+                showedL.Add(randomNumberL);
+            }
+            //OJO: Hacer que numLetra sea la primera que NO este en la lista de mostrarse
+            while (showedL.Contains(numLetra))
+            {
+                numLetra++;
+            }
+            //Se definen las opciones posibles
+            changeOptionsInButtons();
             for (int i = 0; i < wordSize; i++)
             {
-                //Si la "letra" NO es un espacio
-                if(word[i] != ' ')
+                //Solo mostrar la letra si esta en la lista de posiciones a mostrar
+                if (showedL.Contains(i))
                 {
                     //Si es la letra siguiente a completar, color azul
                     if (i == numLetra)
@@ -167,6 +205,49 @@ namespace ProyectoTCU
                         }, i, 0);
                     }
                 }
+                //Sino que se muestre como un espcio vacio indicando que se debe completar la letra
+                else if (word[i] != ' ')
+                {
+                    //Si es la letra siguiente a completar, color azul
+                    if (i == numLetra)
+                    {
+                        tableLayoutPanelLetters.Controls.Add(new Label()
+                        {
+                            Text = System.Convert.ToString(" "),
+                            TextAlign = ContentAlignment.MiddleCenter,
+                            Font = new Font("Cooper Black", 40, FontStyle.Bold),
+                            Dock = System.Windows.Forms.DockStyle.Fill,
+                            BackColor = System.Drawing.Color.Blue
+                            //ForeColor = System.Drawing.Color.Blue
+                        }, i, 0);
+                    }
+                    //Si la letra ya fue completada, color verde
+                    else if (i < numLetra)
+                    {
+                        tableLayoutPanelLetters.Controls.Add(new Label()
+                        {
+                            Text = System.Convert.ToString(" "),
+                            TextAlign = ContentAlignment.MiddleCenter,
+                            Font = new Font("Cooper Black", 40, FontStyle.Bold),
+                            Dock = System.Windows.Forms.DockStyle.Fill,
+                            BackColor = System.Drawing.Color.Green,
+                            //ForeColor = System.Drawing.Color.Green
+                        }, i, 0);
+                    }
+                    //Si la letra falta de completar pero no es la siguiente, negra
+                    else
+                    {
+                        tableLayoutPanelLetters.Controls.Add(new Label()
+                        {
+                            Text = System.Convert.ToString(" "),
+                            TextAlign = ContentAlignment.MiddleCenter,
+                            Font = new Font("Cooper Black", 40, FontStyle.Bold),
+                            Dock = System.Windows.Forms.DockStyle.Fill,
+                            ForeColor = System.Drawing.Color.Black
+                        }, i, 0);
+                    }
+                }
+                
                 
             }
         }
@@ -208,7 +289,6 @@ namespace ProyectoTCU
         //los colores de las letras y se verifica si se completó la palabra
         private void updateInfo(Object letterObject)
         {
-
             if (this.buttonIzq.InvokeRequired)
             {
                 StringArgReturningVoidDelegate d = new StringArgReturningVoidDelegate(updateInfo);
@@ -219,17 +299,64 @@ namespace ProyectoTCU
                 String letter = letterObject.ToString();
 
                 //Si es la letra que sigue para completar (opcion correcta)
+                //Y NO esta en la lista de las que no se deben mostrar
 
                 if (letter == System.Convert.ToString(word[numLetra]))
                 {
                     //Sonido de exito (quitarlo?)
                     //sonidos.sonidoGanarSebastian();
                     //Sonido de la letra
-                    synthesizer.Speak(letter);
+                    //LO COMENTE SOLO PARA HACER PRUEBAS
+                    //synthesizer.Speak(letter);
+                    //OJO:ACA HACER PRUEBA CON MP3
+
                     //Pasa a la siguiente letra en la lista
                     numLetra++;
+                    //Para que numLetra sea la siguiente que NO este en la lista de mostrarse
+                    while (showedL.Contains(numLetra))
+                    {
+                        numLetra++;
+                    }
 
                     int wordSize = word.Length;
+                    Control label;
+                    //Cambiar color de la letra recien completada y de la que sigue si faltan
+                    for (int i = 0; i < wordSize; i++)
+                    {
+                        label = tableLayoutPanelLetters.GetControlFromPosition(i, 0);
+                        if (label is Label)
+                        {
+                            //Si es la letra siguiente a completar, color azul
+                            if (i == numLetra)
+                            {
+                                label.Text = System.Convert.ToString(" ");
+                                label.BackColor = System.Drawing.Color.Blue;
+                                if (showedL.Contains(i))
+                                {
+                                    label.Text = System.Convert.ToString(word[i]);
+                                }
+
+                            }
+                            //Si la letra ya fue completada, color verde
+                            else if (i < numLetra)
+                            {
+                                label.Text = System.Convert.ToString(word[i]);
+                                label.BackColor = System.Drawing.Color.Green;
+                            }
+                            //Si la letra falta de completar pero no es la siguiente, negra 
+                            //(CREO QUE ESTA NO SE OCUPA)
+                            else
+                            {
+                                label.Text = System.Convert.ToString(" ");
+                                label.ForeColor = System.Drawing.Color.Black;
+                                if (showedL.Contains(i))
+                                {
+                                    label.Text = System.Convert.ToString(word[i]);
+                                }
+                            }
+                        }
+                    }
+                    
                     //Si ya se completó la palabra
                     if (numLetra == wordSize)
                     {
@@ -254,41 +381,8 @@ namespace ProyectoTCU
 
                         setValues();
                     }
-                    else
-                    {
-                        Control label;
-                        //Cambiar color de la letra recien completada y de la que sigue si faltan
-                        for (int i = 0; i < wordSize; i++)
-                        {
-                            label = tableLayoutPanelLetters.GetControlFromPosition(i, 0);
-                            if (label is Label)
-                            {
-                                //Si es la letra siguiente a completar, color azul
-                                if (i == numLetra)
-                                {
-                                    label.Text = System.Convert.ToString(word[i]);
-                                    label.BackColor = System.Drawing.Color.Blue;
-                                    //label.ForeColor = System.Drawing.Color.Blue;
+                    changeOptionsInButtons();
 
-                                }
-                                //Si la letra ya fue completada, color verde
-                                else if (i < numLetra)
-                                {
-                                    label.Text = System.Convert.ToString(word[i]);
-                                    label.BackColor = System.Drawing.Color.Green;
-                                    //label.ForeColor = System.Drawing.Color.Green;
-                                }
-                                //Si la letra falta de completar pero no es la siguiente, negra 
-                                //(CREO QUE ESTA NO SE OCUPA)
-                                else
-                                {
-                                    label.Text = System.Convert.ToString(word[i]);
-                                    label.ForeColor = System.Drawing.Color.Black;
-                                }
-                            }
-                        }
-                        changeOptionsInButtons();
-                    }
                 }
                 else
                 {
@@ -338,7 +432,29 @@ namespace ProyectoTCU
 
         private void labelNarvi_Click(object sender, EventArgs e)
         {
-            labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
+            //Es la primera vez que se pide ayuda
+            if (help == 0)
+            {
+                labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerechaExito.png");
+                labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
+                labelNarvi.Text = "Click again\nfor answer";
+                help++;
+            }
+            //Es la segunda vez que se pide ayuda
+            else if (help == 1)
+            {
+                labelHelp.Text = "La palabra en inglés es: " + "'" + word + "'";
+                labelNarvi.Text = "";
+                help++;
+            }
+        }
+
+        private void buttonRet_Click_1(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m3er = new Menu3erGrado();
+            m3er.Show();
+            this.Hide();
         }
     }
 }
