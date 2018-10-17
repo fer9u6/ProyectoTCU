@@ -439,7 +439,7 @@ namespace ProyectoTCU
             {
                 labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerechaExito.png");
                 labelNarvi.Text = "Click again\nfor answer";
-                //labelHelp.Visible = true;
+                labelHelp.Visible = true;
                 labelHelp.Text = "La palabra en\nespañol es:\n" + "'" + wordSpanish + "'";
                 help++;
             }
