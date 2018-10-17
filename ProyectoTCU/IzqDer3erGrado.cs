@@ -80,6 +80,8 @@ namespace ProyectoTCU
             help = 0;
             //Modifica la imagen de Narvi
             labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerecha.png");
+            //Esconde el mensaje de ayuda
+            labelHelp.Visible = false;
             labelHelp.Text = " ";
             //windowWidth = labelInSpanish.Width;
             showedL.Clear();
@@ -436,14 +438,15 @@ namespace ProyectoTCU
             if (help == 0)
             {
                 labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerechaExito.png");
-                labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
                 labelNarvi.Text = "Click again\nfor answer";
+                //labelHelp.Visible = true;
+                labelHelp.Text = "La palabra en\nespañol es:\n" + "'" + wordSpanish + "'";
                 help++;
             }
             //Es la segunda vez que se pide ayuda
             else if (help == 1)
             {
-                labelHelp.Text = "La palabra en inglés es: " + "'" + word + "'";
+                labelHelp.Text = "La palabra en\ninglés es:\n " + "'" + word + "'";
                 labelNarvi.Text = "";
                 help++;
             }

@@ -190,6 +190,7 @@
             this.labelHelp.AutoSize = true;
             this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
+            this.labelHelp.Image = ((System.Drawing.Image)(resources.GetObject("labelHelp.Image")));
             this.labelHelp.Location = new System.Drawing.Point(323, 154);
             this.labelHelp.Name = "labelHelp";
             this.labelHelp.Size = new System.Drawing.Size(314, 361);
