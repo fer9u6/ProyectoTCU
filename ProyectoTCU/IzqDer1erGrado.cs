@@ -334,5 +334,13 @@ namespace ProyectoTCU
         {
             labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
         }
+
+        private void buttonRet_Click_1(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            m1er = new Menu1erGrado();
+            m1er.Show();
+            this.Hide();
+        }
     }
 }
