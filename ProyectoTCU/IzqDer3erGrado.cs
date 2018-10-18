@@ -25,7 +25,7 @@ namespace ProyectoTCU
         int numLetra; //La posicion en la palabra de la letra que sigue de completar
         int score = 0;
         int mistakes = 0;
-        string word;
+        string word = "";
         string wordSpanish = "null";
         int help = 0; //Para medir cuantas veces el usuario ha pedido ayuda
         List<int> showedL = new List<int>(); //Para ver qué posiciones NO se deben completar
@@ -39,7 +39,7 @@ namespace ProyectoTCU
         {
             "shower", "breakfast", "lunch", "dinner", "school",
             "people", "armchair", "refrigerator", "oven", "eat", //10
-            "sleep", "sink", "draw er", "living room", "bedroom",
+            "sleep", "sink", "drawer", "living room", "bedroom",
             "kitchen", "bathroom", "dinning room", "courtyard", "garage", //20
             "pillow", "phone", "chair", "table", "bed",
             "bathtub", "toilet", "book", "television", "bookshelf", "desk" //31
@@ -73,6 +73,14 @@ namespace ProyectoTCU
 
         private void setValues()
         {
+            /*
+            //Si no es la primera vez que se pone la palabra, que se escuche la palabra pasada
+            if (word != "")
+            {
+                synthesizer.Speak(word);
+            }
+            */
+            
             //Se inicializan los valores globales
             numLetra = 0;
             mistakes = 0;
@@ -293,13 +301,16 @@ namespace ProyectoTCU
         //los colores de las letras y se verifica si se completó la palabra
         private void updateInfo(Object letterObject)
         {
+            /*
             if (this.buttonIzq.InvokeRequired)
             {
                 StringArgReturningVoidDelegate d = new StringArgReturningVoidDelegate(updateInfo);
                 this.Invoke(d, new object[] { letterObject });
             }
+            
             else
             {
+                */
                 String letter = letterObject.ToString();
 
                 //Si es la letra que sigue para completar (opcion correcta)
@@ -438,6 +449,12 @@ namespace ProyectoTCU
                             {
                                 label.Text = System.Convert.ToString(word[i]);
                                 label.BackColor = System.Drawing.Color.Green;
+                                /*
+                                if ((i - 1) == wordSize)
+                                {
+                                    synthesizer.Speak(word);
+                                }
+                                */
                             }
                             //Si la letra falta de completar pero no es la siguiente, negra 
                             //(CREO QUE ESTA NO SE OCUPA)
@@ -457,7 +474,8 @@ namespace ProyectoTCU
                     if (numLetra == wordSize)
                     {
                         score++;
-                        //System.Threading.Thread.Sleep(900);
+                        System.Threading.Thread.Sleep(900);
+                        //PROBLEMAS si se pone el synthesizer aquí
                         synthesizer.Speak(word);
                         
 
@@ -489,23 +507,23 @@ namespace ProyectoTCU
 
                 //El juego se gana completando 5 palabras
                 labelIn.Text = score + "/5 words completed            Mistakes: " + mistakes;
-            }
+            //}
         }
 
         private void buttonIzq_Click(object sender, EventArgs e)
         {
-            ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
-            Thread t = new Thread(start);
-            t.Start(buttonIzq.Text);
-            //updateInfo(buttonIzq.Text);
+            //ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
+            //Thread t = new Thread(start);
+            //t.Start(buttonIzq.Text);
+            updateInfo(buttonIzq.Text);
         }
 
         private void buttonDer_Click(object sender, EventArgs e)
         {
-            ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
-            Thread t = new Thread(start);
-            t.Start(buttonDer.Text);
-            //updateInfo(buttonDer.Text);
+            //ParameterizedThreadStart start = new ParameterizedThreadStart(updateInfo);
+            //Thread t = new Thread(start);
+            //t.Start(buttonDer.Text);
+            updateInfo(buttonDer.Text);
         }
 
         private void buttonRet_Click(object sender, EventArgs e)
