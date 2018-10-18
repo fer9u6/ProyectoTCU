@@ -38,12 +38,12 @@
             this.tableLayoutPanelButtons = new System.Windows.Forms.TableLayoutPanel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanelInfo = new System.Windows.Forms.TableLayoutPanel();
-            this.labelHelp = new System.Windows.Forms.Label();
+            this.labelInSpanish = new System.Windows.Forms.Label();
             this.buttonRet = new System.Windows.Forms.Button();
             this.labelImage = new System.Windows.Forms.Label();
             this.labelNarvi = new System.Windows.Forms.Label();
             this.labelIn = new System.Windows.Forms.Label();
-            this.labelInSpanish = new System.Windows.Forms.Label();
+            this.labelNotUsed = new System.Windows.Forms.Label();
             this.tableLayoutPanelLetters.SuspendLayout();
             this.tableLayoutPanelButtons.SuspendLayout();
             this.tableLayoutPanelInfo.SuspendLayout();
@@ -51,6 +51,7 @@
             // 
             // tableLayoutPanelLetters
             // 
+            this.tableLayoutPanelLetters.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelLetters.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanelLetters.ColumnCount = 2;
             this.tableLayoutPanelLetters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -117,6 +118,7 @@
             // tableLayoutPanelButtons
             // 
             this.tableLayoutPanelButtons.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableLayoutPanelButtons.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelButtons.ColumnCount = 3;
             this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -181,17 +183,18 @@
             // 
             // tableLayoutPanelInfo
             // 
+            this.tableLayoutPanelInfo.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelInfo.ColumnCount = 4;
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanelInfo.Controls.Add(this.labelHelp, 0, 1);
+            this.tableLayoutPanelInfo.Controls.Add(this.labelInSpanish, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.buttonRet, 0, 0);
             this.tableLayoutPanelInfo.Controls.Add(this.labelImage, 1, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelNarvi, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelIn, 1, 0);
-            this.tableLayoutPanelInfo.Controls.Add(this.labelInSpanish, 3, 1);
+            this.tableLayoutPanelInfo.Controls.Add(this.labelNotUsed, 3, 1);
             this.tableLayoutPanelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanelInfo.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelInfo.Name = "tableLayoutPanelInfo";
@@ -201,17 +204,18 @@
             this.tableLayoutPanelInfo.Size = new System.Drawing.Size(1282, 515);
             this.tableLayoutPanelInfo.TabIndex = 7;
             // 
-            // labelHelp
+            // labelInSpanish
             // 
-            this.labelHelp.AutoSize = true;
-            this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelHelp.Location = new System.Drawing.Point(259, 154);
-            this.labelHelp.Name = "labelHelp";
-            this.labelHelp.Size = new System.Drawing.Size(250, 361);
-            this.labelHelp.TabIndex = 7;
-            this.labelHelp.Text = "Esto sería un mensaje de ayuda";
-            this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelInSpanish.AutoSize = true;
+            this.labelInSpanish.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelInSpanish.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
+            this.labelInSpanish.Image = ((System.Drawing.Image)(resources.GetObject("labelInSpanish.Image")));
+            this.labelInSpanish.Location = new System.Drawing.Point(259, 154);
+            this.labelInSpanish.Name = "labelInSpanish";
+            this.labelInSpanish.Size = new System.Drawing.Size(250, 361);
+            this.labelInSpanish.TabIndex = 7;
+            this.labelInSpanish.Text = " Texto en ingles";
+            this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonRet
             // 
@@ -247,6 +251,7 @@
             // labelIn
             // 
             this.labelIn.AutoSize = true;
+            this.labelIn.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 3);
             this.labelIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIn.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
@@ -257,23 +262,25 @@
             this.labelIn.Text = "Info";
             this.labelIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelInSpanish
+            // labelNotUsed
             // 
-            this.labelInSpanish.AutoSize = true;
-            this.labelInSpanish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInSpanish.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelInSpanish.Location = new System.Drawing.Point(899, 154);
-            this.labelInSpanish.Name = "labelInSpanish";
-            this.labelInSpanish.Size = new System.Drawing.Size(380, 361);
-            this.labelInSpanish.TabIndex = 8;
-            this.labelInSpanish.Text = "In Spanish";
-            this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelNotUsed.AutoSize = true;
+            this.labelNotUsed.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNotUsed.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
+            this.labelNotUsed.Location = new System.Drawing.Point(899, 154);
+            this.labelNotUsed.Name = "labelNotUsed";
+            this.labelNotUsed.Size = new System.Drawing.Size(380, 361);
+            this.labelNotUsed.TabIndex = 8;
+            this.labelNotUsed.Text = " ";
+            this.labelNotUsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IzqDer2doGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 919);
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);
@@ -305,7 +312,7 @@
         private System.Windows.Forms.Label labelImage;
         private System.Windows.Forms.Label labelNarvi;
         private System.Windows.Forms.Label labelIn;
-        private System.Windows.Forms.Label labelHelp;
         private System.Windows.Forms.Label labelInSpanish;
+        private System.Windows.Forms.Label labelNotUsed;
     }
 }

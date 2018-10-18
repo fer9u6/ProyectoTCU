@@ -22,6 +22,7 @@ namespace ProyectoTCU
         Preguntas4toGrado preg;
         EscogerSaludos es;
         Mensaje msj;
+        IzqDer4toGrado izde;
 
         public Menu4toGrado()
         {
@@ -120,6 +121,14 @@ namespace ProyectoTCU
             so.Show();
             msj.neutralMensaje("Drag the words that make\n a correct sentence.");
             */
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            izde = new IzqDer4toGrado();
+            izde.Show();
+            this.Hide();
         }
     }
 }

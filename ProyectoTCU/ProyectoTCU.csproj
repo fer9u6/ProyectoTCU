@@ -78,6 +78,12 @@
     <Compile Include="funcionesOrganos.Designer.cs">
       <DependentUpon>funcionesOrganos.cs</DependentUpon>
     </Compile>
+    <Compile Include="IzqDer4toGrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IzqDer4toGrado.Designer.cs">
+      <DependentUpon>IzqDer4toGrado.cs</DependentUpon>
+    </Compile>
     <Compile Include="IzqDer3erGrado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +333,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="funcionesOrganos.resx">
       <DependentUpon>funcionesOrganos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IzqDer4toGrado.resx">
+      <DependentUpon>IzqDer4toGrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IzqDer3erGrado.resx">
       <DependentUpon>IzqDer3erGrado.cs</DependentUpon>
@@ -582,6 +591,74 @@
     <None Include="Resources\back-arrow.png" />
     <None Include="Resources\back-arrow %281%291.png" />
     <None Include="Resources\635826e955db6aa.jpg" />
+    <Content Include="Resources\A.mp3" />
+    <Content Include="Resources\AudioA.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioB.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioC.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioD.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioE.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioF.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioG.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioH.wav" />
+    <Content Include="Resources\AudioI.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioJ.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioK.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioL.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioM.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioN.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioO.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioP.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioQ.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioR.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioS.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioT.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioU.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioV.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\AudioW.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\backpack.png" />
     <None Include="Resources\notebook.wav" />
     <None Include="Resources\backpack.wav" />

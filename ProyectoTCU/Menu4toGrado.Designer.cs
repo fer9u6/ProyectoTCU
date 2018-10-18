@@ -39,6 +39,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -217,6 +218,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button7, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.button5, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.button6, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.button8, 2, 8);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(126, 97);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
@@ -250,6 +252,26 @@
             this.label2.Text = "Choose the game";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.PaleGreen;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button8.FlatAppearance.BorderSize = 2;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Green;
+            this.button8.Location = new System.Drawing.Point(483, 357);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(287, 34);
+            this.button8.TabIndex = 13;
+            this.button8.Text = "Fill The Word";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Menu4toGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -282,5 +304,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button8;
     }
 }

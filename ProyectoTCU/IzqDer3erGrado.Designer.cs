@@ -50,6 +50,7 @@
             // 
             // tableLayoutPanelLetters
             // 
+            this.tableLayoutPanelLetters.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelLetters.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanelLetters.ColumnCount = 2;
             this.tableLayoutPanelLetters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -116,6 +117,7 @@
             // tableLayoutPanelButtons
             // 
             this.tableLayoutPanelButtons.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.tableLayoutPanelButtons.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelButtons.ColumnCount = 3;
             this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -167,6 +169,7 @@
             // 
             // tableLayoutPanelInfo
             // 
+            this.tableLayoutPanelInfo.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanelInfo.ColumnCount = 3;
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -249,6 +252,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 919);
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);

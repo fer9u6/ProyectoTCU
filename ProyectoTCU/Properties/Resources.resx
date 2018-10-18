@@ -121,9 +121,6 @@
   <data name="park_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\park_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  
-  
-  
   <data name="correctSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\correctSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -142,637 +139,79 @@
   <data name="crackerSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crackerSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  
-  <!--
-  
-  <data name="Cute-cartoon-pencil-04-vector-material-19863" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cute-cartoon-pencil-04-vector-material-19863.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stadium_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stadium_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="speaker r (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker r (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pen_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bookcase_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bookcase_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="near_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\near_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="color_pencils_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\color_pencils.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="speaker (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book case" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book case.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pen_silver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\pen_silver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedpisoclassroom4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedpisoclassroom4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back-arrow (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back-arrow (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="city - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\city - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="under_the_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\under_the_table.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="on_the_corner_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on_the_corner_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="table_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\table_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="classroom - Copy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom - Copy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="descarga (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\descarga (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fire_station_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fire_station_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="movie_theater_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\movie_theater_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bus_station" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bus station.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mall_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mall_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="speaker (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="board_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\board_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Lungs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lungs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rule_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rule_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="stadium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stadium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="success64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\success64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="perderjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\perderjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="hueso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hueso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kidneys" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kidneys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restaurant_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restaurant_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="supermarket_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supermarket_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="drugstore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\drugstore.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="glue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\glue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classroom - Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom - Copy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="equis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\equis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedpisoclassroom3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedpisoclassroom3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="635826e955db6aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\635826e955db6aa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitledboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitledboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="restaurant_i" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restaurant-i.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blue-scissors-" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blue-scissors-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="149136" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\149136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="petshop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\petshop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="success" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sharpener" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sharpener.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="super goal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\super goal1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakery_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakery_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="far_from_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\far_from_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button-Next-icon - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button-Next-icon - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedpisoclassroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedpisoclassroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fire_department" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fire-department.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="crayons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crayons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back-arrow (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back-arrow (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="in_front_of" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\in front of.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pencil_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pencil.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="near" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\near.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="on_the_table_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on_the_table.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="mesasinlibros1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesasinlibros1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="behind_the_chair_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\behind_the_chair.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="intestino grueso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intestino grueso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bank.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorpencils" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorpencils.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="between" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\between.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="intestino delgado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intestino delgado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cerebro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerebro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Greetings-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Greetings-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="movie_theater" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\movie-theater.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedpisoclassroom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedpisoclassroom1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yellow_notebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\yellow notebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sharpener_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sharpener.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="estomago" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\estomago.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorpencilsreal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorpencilsreal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mesasinlibros3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesasinlibros3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blackboard-clipart-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blackboard-clipart-8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorpisoclassroom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorpisoclassroom1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="xhospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hospital.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="supermarket" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\supermarket.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="red_book_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\red_book.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chair_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chair_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="books_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\books.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="speaker (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker (3)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eraser_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eraser.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="far_from" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\far from.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mall.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="across_from_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\across_from_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heart.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notebook_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notebook.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="behind1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\behind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  -->
   <data name="ganarjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ganarjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <!--
-  <data name="across_from" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\across from.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="erasers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\erasers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="church" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\church.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rule" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joyful" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\joyful.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large intestine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large intestine1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="infrontof" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\infrontof.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="museum_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\museum_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chapter_3_section_2_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chapter_3_section_2_edit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chair" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chair.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mesasinlibros2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesasinlibros2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="speaker (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Higado1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Higado1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="city" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\city.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="under" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\under.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gym_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gym_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="school_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\school_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="crayons_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\crayons_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="between1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\between1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book_store" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book store.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="under_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\under_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="next_to_the_desk_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next_to_the_desk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pulmones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pulmones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="classroom - Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classroom - Copy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="in_front_of_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\in_front_of_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="intestinos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intestinos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="police_station" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\police-station.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clipart-crayons-1862" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clipart-crayons-1862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedpisoclassroom2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedpisoclassroom2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="small intestine1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small intestine1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Liver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Liver.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hospital.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Stomach" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stomach.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hardware_store" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hardware-store.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sceptic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sceptic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hardware_store_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hardware_store_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pet_shop_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pet_shop_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="audio-volume" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audio-volume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="in_front_of_the_board_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\in_front_of_the_board.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="behind_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\behind_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="brain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="simple map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\simple map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Intestines" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Intestines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="large intestine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\large intestine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="glue_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\glue.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="police_station_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\police_station_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="xbakery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mesasinlibros" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mesasinlibros.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next_to" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next to.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="city - Copy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\city - Copy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colorparedclasssroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorparedclasssroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gym.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Untitledboard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitledboard1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next_to_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next_to_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="nextto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nextto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redbook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="drug_store_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\drug_store_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="xpolice_station" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\police-station.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hospital_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hospital_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="on_the_corner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on the corner.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backpack_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backpack.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="pen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\pen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="colordesk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colordesk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="between_the_b_and_t_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\between_the_b_and_t.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="on_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="book_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="book_store_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book_store_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rinones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rinones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Higado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Higado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backpack" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\backpack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="books" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bookcafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bookcafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="behind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\behind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="church_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\church_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="idea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\idea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="board" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="small intestine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small intestine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="between_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\between_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="on_the_desk_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\on_the_desk.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bus_stop_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bus_stop_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="intestino grueso1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intestino grueso1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Park.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eraser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eraser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bank_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bank_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="colorpisoclassroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\colorpisoclassroom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="scissors_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scissors.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="imagenInstruccion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagenInstruccion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  -->
   <data name="errorperder_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\errorperder_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <!--
-  <data name="bye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bye.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioA.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  
-  <data name="correctding_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\correctding_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioB.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  
-  <data name="finethankyouandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\finethankyouandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioC.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="goodafternoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goodafternoon.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioD.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="goodevening" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goodevening.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioE.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="goodmorning" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goodmorning.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioF.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="goodnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goodnight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioG.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hello" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hello.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioH.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hello_howareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hello,howareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioI.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="heywhatsnew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heywhatsnew.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioJ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="higreatandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\higreatandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioK.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hihowareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hihowareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioL.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hiimgooghowareyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hiimgooghowareyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioM.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hitherewhatsup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hitherewhatsup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioN.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="hi_howisitgoing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hi,howisitgoing.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioO.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="imdoingallrightandyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imdoingallrightandyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioP.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="seeyoulater" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seeyoulater.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioQ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="vwerywell_thankyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vwerywell,thankyou.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="AudioR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioR.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  
-  -->
-
+  <data name="AudioS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioS.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AudioT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioT.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AudioU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioU.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AudioV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioV.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AudioW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioW.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

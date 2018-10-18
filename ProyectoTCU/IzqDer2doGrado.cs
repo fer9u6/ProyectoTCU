@@ -65,6 +65,7 @@ namespace ProyectoTCU
             this.Closed += (s, ev) => Application.Exit();
             synthesizer.Volume = 100;   // 0...100
             synthesizer.Rate = -5;     //-10...10 
+            synthesizer.SelectVoiceByHints(VoiceGender.Female);
             setValues();
             setValues();
             //Reload components
@@ -221,21 +222,116 @@ namespace ProyectoTCU
 
                 if (letter == System.Convert.ToString(word[numLetra]))
                 {
-                    //Sonido de exito (quitarlo?)
-                    //sonidos.sonidoGanarSebastian();
+                    //Si alguien logra decrubrir cómo usar:
+                    //synthesizer.Speak(letter);
+                    //sin que sea tan lento, mejor usar eso con todas las letras, que es más facil
+                    //pero por ahora sale suuuper lento y no es viable
+
                     //Sonido de la letra
-                    synthesizer.Speak(letter);
+                    switch (letter)
+                    {
+                        case "a":
+                            sonidos.AudioA();
+                            break;
+                        case "b":
+                            sonidos.AudioB();
+                            break;
+                        case "c":
+                            sonidos.AudioC();
+                            break;
+                        case "d":
+                            sonidos.AudioD();
+                            break;
+                        case "e":
+                            sonidos.AudioE();
+                            break;
+                        case "f":
+                            sonidos.AudioF();
+                            break;
+                        case "g":
+                            sonidos.AudioG();
+                            break;
+                        case "h":
+                            sonidos.AudioH();
+                            break;
+                        case "i":
+                            sonidos.AudioI();
+                            break;
+                        case "j":
+                            sonidos.AudioJ();
+                            break;
+                        case "k":
+                            sonidos.AudioK();
+                            break;
+                        case "l":
+                            sonidos.AudioL();
+                            break;
+                        case "m":
+                            sonidos.AudioM();
+                            break;
+                        case "n":
+                            sonidos.AudioN();
+                            break;
+                        case "o":
+                            sonidos.AudioO();
+                            break;
+                        case "p":
+                            sonidos.AudioP();
+                            break;
+                        case "q":
+                            sonidos.AudioQ();
+                            break;
+                        case "r":
+                            sonidos.AudioR();
+                            break;
+                        case "s":
+                            sonidos.AudioS();
+                            break;
+                        case "t":
+                            sonidos.AudioT();
+                            break;
+                        case "u":
+                            sonidos.AudioU();
+                            break;
+                        case "v":
+                            sonidos.AudioV();
+                            break;
+                        case "w":
+                            sonidos.AudioW();
+                            break;
+                        case "x":
+                            synthesizer.Speak("x");
+                            break;
+                        case "y":
+                            synthesizer.Speak("y");
+                            break;
+                        case "z":
+                            synthesizer.Speak("z");
+                            break;
+                        default:
+                            Console.WriteLine("Default case");
+                            break;
+                    }
+
                     //Pasa a la siguiente letra en la lista
                     numLetra++;
+
+                    //Para saltarse los espacios en blanco que puedan haber en una palabra
+                    if (word.Length > numLetra)
+                    {
+                        while (word[numLetra] == ' ')
+                        {
+                            numLetra++;
+                        }
+                    }
 
                     int wordSize = word.Length;
                     //Si ya se completó la palabra
                     if (numLetra == wordSize)
                     {
                         score++;
-
+                        System.Threading.Thread.Sleep(900);
                         synthesizer.Speak(word);
-                        //System.Threading.Thread.Sleep(500);
 
                         //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
                         if (score == 5)
@@ -337,7 +433,7 @@ namespace ProyectoTCU
 
         private void labelNarvi_Click(object sender, EventArgs e)
         {
-            labelHelp.Text = "La palabra en español es: " + "'" + wordSpanish + "'";
+            labelNotUsed.Text = " ";
         }
 
         private void buttonRet_Click_1(object sender, EventArgs e)

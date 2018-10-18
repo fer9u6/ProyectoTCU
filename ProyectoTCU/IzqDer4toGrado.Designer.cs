@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTCU
 {
-    partial class IzqDer1erGrado
+    partial class IzqDer4toGrado
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer1erGrado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzqDer4toGrado));
             this.tableLayoutPanelLetters = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +38,11 @@
             this.tableLayoutPanelButtons = new System.Windows.Forms.TableLayoutPanel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanelInfo = new System.Windows.Forms.TableLayoutPanel();
-            this.labelInSpanish = new System.Windows.Forms.Label();
+            this.labelHelp = new System.Windows.Forms.Label();
             this.buttonRet = new System.Windows.Forms.Button();
             this.labelImage = new System.Windows.Forms.Label();
             this.labelNarvi = new System.Windows.Forms.Label();
             this.labelIn = new System.Windows.Forms.Label();
-            this.labelNotUsed = new System.Windows.Forms.Label();
             this.tableLayoutPanelLetters.SuspendLayout();
             this.tableLayoutPanelButtons.SuspendLayout();
             this.tableLayoutPanelInfo.SuspendLayout();
@@ -69,7 +68,6 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(16, 3);
@@ -137,63 +135,50 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "primGrad1.jpg");
-            this.imageList1.Images.SetKeyName(1, "primGrad2.jpg");
-            this.imageList1.Images.SetKeyName(2, "primGrad3.jpg");
-            this.imageList1.Images.SetKeyName(3, "primGrad4.jpg");
-            this.imageList1.Images.SetKeyName(4, "primGrad5.jpg");
-            this.imageList1.Images.SetKeyName(5, "primGrad6.jpg");
-            this.imageList1.Images.SetKeyName(6, "primGrad7.jpg");
-            this.imageList1.Images.SetKeyName(7, "primGrad8.jpg");
-            this.imageList1.Images.SetKeyName(8, "primGrad9.jpg");
-            this.imageList1.Images.SetKeyName(9, "primGrad10.jpg");
-            this.imageList1.Images.SetKeyName(10, "primGrad11.jpg");
-            this.imageList1.Images.SetKeyName(11, "primGrad12.jpg");
-            this.imageList1.Images.SetKeyName(12, "primGrad13.jpg");
-            this.imageList1.Images.SetKeyName(13, "primGrad14.jpg");
-            this.imageList1.Images.SetKeyName(14, "primGrad15.jpg");
-            this.imageList1.Images.SetKeyName(15, "primGrad16.jpg");
-            this.imageList1.Images.SetKeyName(16, "primGrad17.jpg");
-            this.imageList1.Images.SetKeyName(17, "primGrad18.jpg");
-            this.imageList1.Images.SetKeyName(18, "primGrad19.jpg");
-            this.imageList1.Images.SetKeyName(19, "primGrad20.jpg");
-            this.imageList1.Images.SetKeyName(20, "primGrad21.jpg");
-            this.imageList1.Images.SetKeyName(21, "primGrad22.jpg");
-            this.imageList1.Images.SetKeyName(22, "primGrad23.jpg");
-            this.imageList1.Images.SetKeyName(23, "primGrad24.jpg");
-            this.imageList1.Images.SetKeyName(24, "primGrad25.jpg");
-            this.imageList1.Images.SetKeyName(25, "primGrad26.jpg");
-            this.imageList1.Images.SetKeyName(26, "primGrad27.jpg");
-            this.imageList1.Images.SetKeyName(27, "primGrad28.jpg");
-            this.imageList1.Images.SetKeyName(28, "primGrad29.jpg");
-            this.imageList1.Images.SetKeyName(29, "primGrad30.jpg");
-            this.imageList1.Images.SetKeyName(30, "primGrad31.jpg");
-            this.imageList1.Images.SetKeyName(31, "primGrad32.jpg");
-            this.imageList1.Images.SetKeyName(32, "primGrad33.jpg");
-            this.imageList1.Images.SetKeyName(33, "primGrad34.jpg");
-            this.imageList1.Images.SetKeyName(34, "primGrad35.jpg");
-            this.imageList1.Images.SetKeyName(35, "primGrad36.jpg");
-            this.imageList1.Images.SetKeyName(36, "primGrad37.jpg");
-            this.imageList1.Images.SetKeyName(37, "primGrad38.jpg");
-            this.imageList1.Images.SetKeyName(38, "primGrad39.jpg");
-            this.imageList1.Images.SetKeyName(39, "primGrad40.jpg");
-            this.imageList1.Images.SetKeyName(40, "primGrad41.jpg");
-            this.imageList1.Images.SetKeyName(41, "primGrad42.jpg");
+            this.imageList1.Images.SetKeyName(0, "cg1.jpg");
+            this.imageList1.Images.SetKeyName(1, "cg2.jpg");
+            this.imageList1.Images.SetKeyName(2, "cg3.jpg");
+            this.imageList1.Images.SetKeyName(3, "cg4.jpg");
+            this.imageList1.Images.SetKeyName(4, "cg5.jpg");
+            this.imageList1.Images.SetKeyName(5, "cg6.jpg");
+            this.imageList1.Images.SetKeyName(6, "cg7.jpg");
+            this.imageList1.Images.SetKeyName(7, "cg8.jpg");
+            this.imageList1.Images.SetKeyName(8, "cg9.jpg");
+            this.imageList1.Images.SetKeyName(9, "cg10.jpg");
+            this.imageList1.Images.SetKeyName(10, "cg11.jpg");
+            this.imageList1.Images.SetKeyName(11, "cg12.jpg");
+            this.imageList1.Images.SetKeyName(12, "cg13.jpg");
+            this.imageList1.Images.SetKeyName(13, "cg14.jpg");
+            this.imageList1.Images.SetKeyName(14, "cg15.jpg");
+            this.imageList1.Images.SetKeyName(15, "cg16.jpg");
+            this.imageList1.Images.SetKeyName(16, "cg17.jpg");
+            this.imageList1.Images.SetKeyName(17, "cg18.jpg");
+            this.imageList1.Images.SetKeyName(18, "cg19.jpg");
+            this.imageList1.Images.SetKeyName(19, "cg20.jpg");
+            this.imageList1.Images.SetKeyName(20, "cg21.jpg");
+            this.imageList1.Images.SetKeyName(21, "cg22.jpg");
+            this.imageList1.Images.SetKeyName(22, "cg23.jpg");
+            this.imageList1.Images.SetKeyName(23, "cg24.jpg");
+            this.imageList1.Images.SetKeyName(24, "cg25.jpg");
+            this.imageList1.Images.SetKeyName(25, "cg26.jpg");
+            this.imageList1.Images.SetKeyName(26, "cg27.jpg");
+            this.imageList1.Images.SetKeyName(27, "cg28.jpg");
+            this.imageList1.Images.SetKeyName(28, "cg29.jpg");
+            this.imageList1.Images.SetKeyName(29, "cg30.jpg");
+            this.imageList1.Images.SetKeyName(30, "cg31.jpg");
             // 
             // tableLayoutPanelInfo
             // 
             this.tableLayoutPanelInfo.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanelInfo.ColumnCount = 4;
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanelInfo.Controls.Add(this.labelInSpanish, 0, 1);
+            this.tableLayoutPanelInfo.ColumnCount = 3;
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanelInfo.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelInfo.Controls.Add(this.labelHelp, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.buttonRet, 0, 0);
             this.tableLayoutPanelInfo.Controls.Add(this.labelImage, 1, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelNarvi, 0, 1);
             this.tableLayoutPanelInfo.Controls.Add(this.labelIn, 1, 0);
-            this.tableLayoutPanelInfo.Controls.Add(this.labelNotUsed, 3, 1);
             this.tableLayoutPanelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanelInfo.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanelInfo.Name = "tableLayoutPanelInfo";
@@ -203,18 +188,18 @@
             this.tableLayoutPanelInfo.Size = new System.Drawing.Size(1282, 515);
             this.tableLayoutPanelInfo.TabIndex = 7;
             // 
-            // labelInSpanish
+            // labelHelp
             // 
-            this.labelInSpanish.AutoSize = true;
-            this.labelInSpanish.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelInSpanish.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelInSpanish.Image = ((System.Drawing.Image)(resources.GetObject("labelInSpanish.Image")));
-            this.labelInSpanish.Location = new System.Drawing.Point(259, 154);
-            this.labelInSpanish.Name = "labelInSpanish";
-            this.labelInSpanish.Size = new System.Drawing.Size(250, 361);
-            this.labelInSpanish.TabIndex = 7;
-            this.labelInSpanish.Text = "Texto en inglés";
-            this.labelInSpanish.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelHelp.AutoSize = true;
+            this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
+            this.labelHelp.Image = ((System.Drawing.Image)(resources.GetObject("labelHelp.Image")));
+            this.labelHelp.Location = new System.Drawing.Point(323, 154);
+            this.labelHelp.Name = "labelHelp";
+            this.labelHelp.Size = new System.Drawing.Size(314, 361);
+            this.labelHelp.TabIndex = 7;
+            this.labelHelp.Text = "Esto sería un mensaje de ayuda";
+            this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonRet
             // 
@@ -231,61 +216,51 @@
             // 
             this.labelImage.AutoSize = true;
             this.labelImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelImage.Location = new System.Drawing.Point(515, 154);
+            this.labelImage.Location = new System.Drawing.Point(643, 154);
             this.labelImage.Name = "labelImage";
-            this.labelImage.Size = new System.Drawing.Size(378, 361);
+            this.labelImage.Size = new System.Drawing.Size(636, 361);
             this.labelImage.TabIndex = 1;
             // 
             // labelNarvi
             // 
             this.labelNarvi.AutoSize = true;
             this.labelNarvi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelNarvi.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNarvi.Image = ((System.Drawing.Image)(resources.GetObject("labelNarvi.Image")));
             this.labelNarvi.Location = new System.Drawing.Point(3, 154);
             this.labelNarvi.Name = "labelNarvi";
-            this.labelNarvi.Size = new System.Drawing.Size(250, 361);
+            this.labelNarvi.Size = new System.Drawing.Size(314, 361);
             this.labelNarvi.TabIndex = 2;
+            this.labelNarvi.Text = "Click For Help!";
             this.labelNarvi.Click += new System.EventHandler(this.labelNarvi_Click);
             // 
             // labelIn
             // 
             this.labelIn.AutoSize = true;
-            this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 3);
+            this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 2);
             this.labelIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIn.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelIn.Location = new System.Drawing.Point(259, 0);
+            this.labelIn.Location = new System.Drawing.Point(323, 0);
             this.labelIn.Name = "labelIn";
-            this.labelIn.Size = new System.Drawing.Size(1020, 154);
+            this.labelIn.Size = new System.Drawing.Size(956, 154);
             this.labelIn.TabIndex = 3;
             this.labelIn.Text = "Info";
             this.labelIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelNotUsed
-            // 
-            this.labelNotUsed.AutoSize = true;
-            this.labelNotUsed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelNotUsed.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelNotUsed.Location = new System.Drawing.Point(899, 154);
-            this.labelNotUsed.Name = "labelNotUsed";
-            this.labelNotUsed.Size = new System.Drawing.Size(380, 361);
-            this.labelNotUsed.TabIndex = 8;
-            this.labelNotUsed.Text = " ";
-            this.labelNotUsed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // IzqDer1erGrado
+            // IzqDer4toGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackColor = System.Drawing.Color.LimeGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1282, 919);
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);
             this.Controls.Add(this.tableLayoutPanelLetters);
-            this.Name = "IzqDer1erGrado";
-            this.Text = "IzqDer1erGrado";
-            this.Load += new System.EventHandler(this.IzqDer1erGrado_Load);
+            this.Name = "IzqDer4toGrado";
+            this.Text = "IzqDer4toGrado";
+            this.Load += new System.EventHandler(this.IzqDer4toGrado_Load);
             this.tableLayoutPanelLetters.ResumeLayout(false);
             this.tableLayoutPanelLetters.PerformLayout();
             this.tableLayoutPanelButtons.ResumeLayout(false);
@@ -310,7 +285,6 @@
         private System.Windows.Forms.Label labelImage;
         private System.Windows.Forms.Label labelNarvi;
         private System.Windows.Forms.Label labelIn;
-        private System.Windows.Forms.Label labelInSpanish;
-        private System.Windows.Forms.Label labelNotUsed;
+        private System.Windows.Forms.Label labelHelp;
     }
 }

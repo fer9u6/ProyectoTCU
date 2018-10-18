@@ -39,7 +39,7 @@ namespace ProyectoTCU
         {
             "shower", "breakfast", "lunch", "dinner", "school",
             "people", "armchair", "refrigerator", "oven", "eat", //10
-            "sleep", "sink", "drawer", "living room", "bedroom",
+            "sleep", "sink", "draw er", "living room", "bedroom",
             "kitchen", "bathroom", "dinning room", "courtyard", "garage", //20
             "pillow", "phone", "chair", "table", "bed",
             "bathtub", "toilet", "book", "television", "bookshelf", "desk" //31
@@ -80,6 +80,8 @@ namespace ProyectoTCU
             help = 0;
             //Modifica la imagen de Narvi
             labelNarvi.Image = Image.FromFile(System.IO.Path.GetFullPath(@"..\..\") + "Resources\\imgSebastian\\Narvi\\narviDerecha.png");
+            //Modifica el texto de Narvi
+            labelNarvi.Text = "Click for help!";
             //Esconde el mensaje de ayuda
             labelHelp.Visible = false;
             labelHelp.Text = " ";
@@ -305,19 +307,111 @@ namespace ProyectoTCU
 
                 if (letter == System.Convert.ToString(word[numLetra]))
                 {
-                    //Sonido de exito (quitarlo?)
-                    //sonidos.sonidoGanarSebastian();
-                    //Sonido de la letra
-                    //LO COMENTE SOLO PARA HACER PRUEBAS
+                    //Si alguien logra decrubrir cómo usar:
                     //synthesizer.Speak(letter);
-                    //OJO:ACA HACER PRUEBA CON MP3
+                    //sin que sea tan lento, mejor usar eso con todas las letras, que es más facil
+                    //pero por ahora sale suuuper lento y no es viable
+
+                    //Sonido de la letra
+                    switch (letter)
+                    {
+                        case "a":
+                            sonidos.AudioA();
+                            break;
+                        case "b":
+                            sonidos.AudioB();
+                            break;
+                        case "c":
+                            sonidos.AudioC();
+                            break;
+                        case "d":
+                            sonidos.AudioD();
+                            break;
+                        case "e":
+                            sonidos.AudioE();
+                            break;
+                        case "f":
+                            sonidos.AudioF();
+                            break;
+                        case "g":
+                            sonidos.AudioG();
+                            break;
+                        case "h":
+                            sonidos.AudioH();
+                            break;
+                        case "i":
+                            sonidos.AudioI();
+                            break;
+                        case "j":
+                            sonidos.AudioJ();
+                            break;
+                        case "k":
+                            sonidos.AudioK();
+                            break;
+                        case "l":
+                            sonidos.AudioL();
+                            break;
+                        case "m":
+                            sonidos.AudioM();
+                            break;
+                        case "n":
+                            sonidos.AudioN();
+                            break;
+                        case "o":
+                            sonidos.AudioO();
+                            break;
+                        case "p":
+                            sonidos.AudioP();
+                            break;
+                        case "q":
+                            sonidos.AudioQ();
+                            break;
+                        case "r":
+                            sonidos.AudioR();
+                            break;
+                        case "s":
+                            sonidos.AudioS();
+                            break;
+                        case "t":
+                            sonidos.AudioT();
+                            break;
+                        case "u":
+                            sonidos.AudioU();
+                            break;
+                        case "v":
+                            sonidos.AudioV();
+                            break;
+                        case "w":
+                            sonidos.AudioW();
+                            break;
+                        case "x":
+                            synthesizer.Speak("x");
+                            break;
+                        case "y":
+                            synthesizer.Speak("y");
+                            break;
+                        case "z":
+                            synthesizer.Speak("z");
+                            break;
+                        default:
+                            Console.WriteLine("Default case");
+                            break;
+                    }
+                    
+
 
                     //Pasa a la siguiente letra en la lista
                     numLetra++;
-                    //Para que numLetra sea la siguiente que NO este en la lista de mostrarse
-                    while (showedL.Contains(numLetra))
+
+
+                    //Para saltarse los espacios en blanco que puedan haber en una palabra
+                    //Y no marcar las letras que ya se estan mostrando
+                    if (word.Length > numLetra)
                     {
-                        numLetra++;
+                        while (word.Length > numLetra && (word[numLetra] == ' ' || showedL.Contains(numLetra)) )
+                        {
+                            numLetra++;
+                        }
                     }
 
                     int wordSize = word.Length;
@@ -363,9 +457,9 @@ namespace ProyectoTCU
                     if (numLetra == wordSize)
                     {
                         score++;
-
+                        System.Threading.Thread.Sleep(900);
                         synthesizer.Speak(word);
-                        //System.Threading.Thread.Sleep(500);
+                        
 
                         //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
                         if (score == 5)
