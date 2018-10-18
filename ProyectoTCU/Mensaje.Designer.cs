@@ -2,7 +2,7 @@
 {
     partial class Mensaje
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -107,6 +107,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        */
+        
     }
 }

@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class funcionesOrganos : Form
     {
-        /*
+        
         Dictionary<String,String> parejas;
         Dictionary<String, SoundPlayer> sonidos;
         List<int> iParejasUsadas;
@@ -148,6 +148,6 @@ namespace ProyectoTCU
         {
 
         }
-        */
+        
     }
 }

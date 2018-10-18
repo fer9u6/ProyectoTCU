@@ -15,7 +15,6 @@ namespace ProyectoTCU
 {
     public partial class Classroom : Form
     {
-        /*
 
         Menu1erGrado m1;
         classroom2 c2;
@@ -121,7 +120,7 @@ namespace ProyectoTCU
             mc.Show();
         }
 
-        /*
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             // picturebox para todos
@@ -184,7 +183,7 @@ namespace ProyectoTCU
          * Se asigna la imagen de la pared,  se asigna aparte por las caracteristicas de la imagen
          **/
 
-            /*
+            
         private void asignarPared() {
             if (pared == 6)
             {
@@ -306,8 +305,6 @@ namespace ProyectoTCU
                 MessageBox.Show("Error "+ ex.Message);
            }
         }
-
-        */
 
     }
 }
