@@ -269,11 +269,7 @@ namespace ProyectoTCU
                 mostrar();
             }
             else {
-                // pictureBoxRespuesta.Image = null;
-                //pictureBox1.Image = null;
-                //button1Answer.Text = "  __  ";
-                //button2Answer.Text = "  __  ";
-                //labelQuestion.Text = "";    
+               
                 playButton.Show();
             }
         }
