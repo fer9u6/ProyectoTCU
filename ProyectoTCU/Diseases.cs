@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class Diseases : Form
     {
-        /*
+        
         Menu4toGrado m4;
         Diseases2 d2;
         controlSonidos sonidos;
@@ -211,7 +211,7 @@ namespace ProyectoTCU
             System.Threading.Thread.Sleep(1000);
 
         }
-        */
+        
 
     }
 }

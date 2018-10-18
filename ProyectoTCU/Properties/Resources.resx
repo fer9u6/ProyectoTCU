@@ -286,7 +286,6 @@
   <data name="crackerSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crackerSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-
   <data name="ganarjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ganarjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -466,9 +465,6 @@
   </data>
   <data name="four_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\four_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="errorperder_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\errorperder_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="duckO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duckO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -908,9 +904,6 @@
   <data name="hardware_store_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hardware_store_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ganarjuego_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ganarjuego_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="intestinos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intestinos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -1285,12 +1278,10 @@
   </data>
   <data name="kidneys" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kidneys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-
   </data>
   <data name="AudioC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AudioC.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-
   <data name="AudioD" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AudioD.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1425,5 +1416,8 @@
   </data>
   <data name="forestanimals1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forestanimals1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scissors_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scissors_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class classroom2 : Form
     {
-        /*
+        
         Classroom cla;
         int boxActual,rondas;
         Mensaje mensaje;
@@ -317,7 +317,7 @@ namespace ProyectoTCU
 
         }
 
-        */
+        
     }
 }
 

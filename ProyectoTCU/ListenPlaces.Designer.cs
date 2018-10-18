@@ -2,7 +2,7 @@
 {
     partial class ListenPlaces
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -143,6 +143,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox_next;
         private System.Windows.Forms.Button backB;
-        */
+        
     }
 }

@@ -57,12 +57,13 @@
             this.tableLayoutPanelLetters.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelLetters.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanelLetters.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanelLetters.Location = new System.Drawing.Point(3, 522);
+            this.tableLayoutPanelLetters.Location = new System.Drawing.Point(2, 339);
+            this.tableLayoutPanelLetters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanelLetters.Name = "tableLayoutPanelLetters";
-            this.tableLayoutPanelLetters.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.tableLayoutPanelLetters.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.tableLayoutPanelLetters.RowCount = 1;
             this.tableLayoutPanelLetters.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelLetters.Size = new System.Drawing.Size(1282, 104);
+            this.tableLayoutPanelLetters.Size = new System.Drawing.Size(855, 68);
             this.tableLayoutPanelLetters.TabIndex = 0;
             // 
             // label1
@@ -70,9 +71,10 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(16, 3);
+            this.label1.Location = new System.Drawing.Point(12, 3);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(620, 98);
+            this.label1.Size = new System.Drawing.Size(412, 62);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,9 +84,10 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(645, 3);
+            this.label2.Location = new System.Drawing.Point(431, 3);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(621, 98);
+            this.label2.Size = new System.Drawing.Size(412, 62);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -94,9 +97,10 @@
             this.buttonIzq.AutoSize = true;
             this.buttonIzq.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonIzq.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIzq.Location = new System.Drawing.Point(3, 3);
+            this.buttonIzq.Location = new System.Drawing.Point(2, 2);
+            this.buttonIzq.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonIzq.Name = "buttonIzq";
-            this.buttonIzq.Size = new System.Drawing.Size(266, 210);
+            this.buttonIzq.Size = new System.Drawing.Size(177, 136);
             this.buttonIzq.TabIndex = 1;
             this.buttonIzq.Text = "Izq";
             this.buttonIzq.UseVisualStyleBackColor = true;
@@ -106,9 +110,10 @@
             // 
             this.buttonDer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonDer.Font = new System.Drawing.Font("Cooper Black", 48F);
-            this.buttonDer.Location = new System.Drawing.Point(411, 3);
+            this.buttonDer.Location = new System.Drawing.Point(273, 2);
+            this.buttonDer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDer.Name = "buttonDer";
-            this.buttonDer.Size = new System.Drawing.Size(267, 210);
+            this.buttonDer.Size = new System.Drawing.Size(179, 136);
             this.buttonDer.TabIndex = 2;
             this.buttonDer.Text = "Der";
             this.buttonDer.UseVisualStyleBackColor = true;
@@ -124,11 +129,12 @@
             this.tableLayoutPanelButtons.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanelButtons.Controls.Add(this.buttonIzq, 0, 0);
             this.tableLayoutPanelButtons.Controls.Add(this.buttonDer, 2, 0);
-            this.tableLayoutPanelButtons.Location = new System.Drawing.Point(315, 677);
+            this.tableLayoutPanelButtons.Location = new System.Drawing.Point(210, 440);
+            this.tableLayoutPanelButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanelButtons.Name = "tableLayoutPanelButtons";
             this.tableLayoutPanelButtons.RowCount = 1;
             this.tableLayoutPanelButtons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelButtons.Size = new System.Drawing.Size(681, 216);
+            this.tableLayoutPanelButtons.Size = new System.Drawing.Size(454, 140);
             this.tableLayoutPanelButtons.TabIndex = 6;
             // 
             // imageList1
@@ -181,11 +187,12 @@
             this.tableLayoutPanelInfo.Controls.Add(this.labelIn, 1, 0);
             this.tableLayoutPanelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanelInfo.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanelInfo.Name = "tableLayoutPanelInfo";
             this.tableLayoutPanelInfo.RowCount = 2;
             this.tableLayoutPanelInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanelInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanelInfo.Size = new System.Drawing.Size(1282, 515);
+            this.tableLayoutPanelInfo.Size = new System.Drawing.Size(855, 335);
             this.tableLayoutPanelInfo.TabIndex = 7;
             // 
             // labelHelp
@@ -194,9 +201,10 @@
             this.labelHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelHelp.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
             this.labelHelp.Image = ((System.Drawing.Image)(resources.GetObject("labelHelp.Image")));
-            this.labelHelp.Location = new System.Drawing.Point(323, 154);
+            this.labelHelp.Location = new System.Drawing.Point(215, 100);
+            this.labelHelp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHelp.Name = "labelHelp";
-            this.labelHelp.Size = new System.Drawing.Size(314, 361);
+            this.labelHelp.Size = new System.Drawing.Size(209, 235);
             this.labelHelp.TabIndex = 7;
             this.labelHelp.Text = "Esto sería un mensaje de ayuda";
             this.labelHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,9 +213,10 @@
             // 
             this.buttonRet.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonRet.Image = ((System.Drawing.Image)(resources.GetObject("buttonRet.Image")));
-            this.buttonRet.Location = new System.Drawing.Point(3, 3);
+            this.buttonRet.Location = new System.Drawing.Point(2, 2);
+            this.buttonRet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonRet.Name = "buttonRet";
-            this.buttonRet.Size = new System.Drawing.Size(122, 148);
+            this.buttonRet.Size = new System.Drawing.Size(81, 96);
             this.buttonRet.TabIndex = 4;
             this.buttonRet.UseVisualStyleBackColor = true;
             this.buttonRet.Click += new System.EventHandler(this.buttonRet_Click_1);
@@ -216,9 +225,10 @@
             // 
             this.labelImage.AutoSize = true;
             this.labelImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelImage.Location = new System.Drawing.Point(643, 154);
+            this.labelImage.Location = new System.Drawing.Point(428, 100);
+            this.labelImage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelImage.Name = "labelImage";
-            this.labelImage.Size = new System.Drawing.Size(636, 361);
+            this.labelImage.Size = new System.Drawing.Size(425, 235);
             this.labelImage.TabIndex = 1;
             // 
             // labelNarvi
@@ -227,9 +237,10 @@
             this.labelNarvi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelNarvi.Font = new System.Drawing.Font("Arial Narrow", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNarvi.Image = ((System.Drawing.Image)(resources.GetObject("labelNarvi.Image")));
-            this.labelNarvi.Location = new System.Drawing.Point(3, 154);
+            this.labelNarvi.Location = new System.Drawing.Point(2, 100);
+            this.labelNarvi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNarvi.Name = "labelNarvi";
-            this.labelNarvi.Size = new System.Drawing.Size(314, 361);
+            this.labelNarvi.Size = new System.Drawing.Size(209, 235);
             this.labelNarvi.TabIndex = 2;
             this.labelNarvi.Text = "Click For Help!";
             this.labelNarvi.Click += new System.EventHandler(this.labelNarvi_Click);
@@ -240,24 +251,26 @@
             this.tableLayoutPanelInfo.SetColumnSpan(this.labelIn, 2);
             this.labelIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelIn.Font = new System.Drawing.Font("Arial Narrow", 22F, System.Drawing.FontStyle.Bold);
-            this.labelIn.Location = new System.Drawing.Point(323, 0);
+            this.labelIn.Location = new System.Drawing.Point(215, 0);
+            this.labelIn.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIn.Name = "labelIn";
-            this.labelIn.Size = new System.Drawing.Size(956, 154);
+            this.labelIn.Size = new System.Drawing.Size(638, 100);
             this.labelIn.TabIndex = 3;
             this.labelIn.Text = "Info";
             this.labelIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // IzqDer4toGrado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LimeGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1282, 919);
+            this.ClientSize = new System.Drawing.Size(855, 487);
             this.Controls.Add(this.tableLayoutPanelInfo);
             this.Controls.Add(this.tableLayoutPanelButtons);
             this.Controls.Add(this.tableLayoutPanelLetters);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "IzqDer4toGrado";
             this.Text = "IzqDer4toGrado";
             this.Load += new System.EventHandler(this.IzqDer4toGrado_Load);

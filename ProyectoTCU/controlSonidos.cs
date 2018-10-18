@@ -440,7 +440,7 @@ namespace ProyectoTCU
             }
         }
 
-        /*
+        
         //ding
         public void sonidoOpcionCorrecta()
         {
@@ -455,7 +455,7 @@ namespace ProyectoTCU
                 System.Windows.Forms.MessageBox.Show("Error " + ex.Message);
             }
         }
-        */
+        
 
 
     }

@@ -92,7 +92,9 @@
       <DependentUpon>colorsCards.cs</DependentUpon>
     </Compile>
     <Compile Include="controlSonidos.cs" />
-    <Compile Include="EscogerSaludo.cs" />
+    <Compile Include="EscogerSaludo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EscogerSaludo.Designer.cs">
       <DependentUpon>EscogerSaludo.cs</DependentUpon>
     </Compile>
@@ -1245,6 +1247,7 @@
     <None Include="Resources\tenapples.png" />
     <None Include="Resources\threeapples.jpg" />
     <None Include="Resources\twoapples.jpg" />
+    <None Include="Resources\scissors_audio.wav" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

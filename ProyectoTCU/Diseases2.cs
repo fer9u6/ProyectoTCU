@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class Diseases2 : Form
     {
-        /*
+        
         Diseases d1;
         Dictionary<int, String> enfermedades;
         Dictionary<int, SoundPlayer>enfermedades_audios;
@@ -200,6 +200,6 @@ namespace ProyectoTCU
 
 
         }
-        */
+        
     }
 }

@@ -2,7 +2,7 @@
 {
     partial class Diseases2
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -205,6 +205,6 @@
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ImageList imageListEnfermedades;
-        */
+        
     }
 }

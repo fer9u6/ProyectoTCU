@@ -4,7 +4,7 @@
     partial class classroom2
         
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -241,6 +241,6 @@
         private System.Windows.Forms.PictureBox pictureBbehind;
         private System.Windows.Forms.Label labelAnswer;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
-        */
+       
     }
 }

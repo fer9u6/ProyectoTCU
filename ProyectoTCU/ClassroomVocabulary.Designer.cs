@@ -3,7 +3,7 @@
     
     partial class ClassroomVocabulary
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -587,6 +587,6 @@
         private System.Windows.Forms.PictureBox pictureBoxtable;
         private System.Windows.Forms.PictureBox pictureBoxbookcase;
         private System.Windows.Forms.Button backB;
-        */
+        
     }
 }

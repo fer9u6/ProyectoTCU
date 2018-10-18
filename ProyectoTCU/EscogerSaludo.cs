@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
-/*
+
 namespace ProyectoTCU
 {
     public partial class EscogerSaludos : Form
@@ -384,4 +384,4 @@ namespace ProyectoTCU
     }
 }
 
-    */
+    

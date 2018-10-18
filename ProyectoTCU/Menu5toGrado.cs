@@ -31,14 +31,13 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*
             //functions of human organs
             fo = new funcionesOrganos();
             this.Hide();
             fo.Show();
             Mensaje ms = new Mensaje();
             ms.neutralMensaje("Associate the human organ with\n its respective function");
-            */
+            
         }
 
         private void backB_MouseHover(object sender, EventArgs e)

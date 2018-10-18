@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class PrepositionsCity : Form
     {
-        /*
+        
         ListenPlaces lp;
         Neighborhood nei;
         MenuNeighborhood mn;
@@ -102,6 +102,6 @@ namespace ProyectoTCU
             nei.Show();
         }
 
-        */
+        
     }
 }

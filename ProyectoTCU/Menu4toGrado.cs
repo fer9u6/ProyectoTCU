@@ -20,7 +20,6 @@ namespace ProyectoTCU
         Diseases d;
         Parejas4toGrado par;
         Preguntas4toGrado preg;
-        EscogerSaludos es;
         Mensaje msj;
         IzqDer4toGrado izde;
 
@@ -58,44 +57,44 @@ namespace ProyectoTCU
 
         private void button3_Click(object sender, EventArgs e)
         {
-            /*
-            es = new EscogerSaludos();
-            this.Hide();
+            
+            EscogerSaludos es = new EscogerSaludos();
             es.Show();
+            this.Hide();
             msj.neutralMensaje("Look at the picture and choose\nthe correct option according to\n the situation.");
-           */
+           
         }
 
-        /*
+       
         private void button5_Click(object sender, EventArgs e)
         {
             socializingOrdenar so = new socializingOrdenar();
             this.Hide();
             so.Show();
         }
-        */
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
-            /*
+           
             mm = new MemoryMatch();
             this.Hide();
             mm.Show();
             msj.neutralMensaje("Match all the cards.\nClick any two cards and \ntry remember it position.");
-            */
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*
+           
             d = new Diseases();
             this.Hide();
             d.Show();
             msj.neutralMensaje("Look at the picture and choose\nthe correct option according to\n the situation.");
-            */       
+           
         }
 
-        
+        /*
         private void button5_Click(object sender, EventArgs e)
         {
             InitializeComponent();
@@ -103,7 +102,7 @@ namespace ProyectoTCU
             par.Show();
             this.Hide();
         }
-        
+        */
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -115,12 +114,12 @@ namespace ProyectoTCU
 
         private void button7_Click(object sender, EventArgs e)
         {
-            /*
+            
             socializingOrdenar so = new socializingOrdenar();
             this.Hide();
             so.Show();
             msj.neutralMensaje("Drag the words that make\n a correct sentence.");
-            */
+           
         }
 
         private void button8_Click(object sender, EventArgs e)

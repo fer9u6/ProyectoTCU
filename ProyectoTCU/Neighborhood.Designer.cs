@@ -2,7 +2,7 @@
 {
     partial class Neighborhood
     {
-        /*
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -144,6 +144,6 @@
         private System.Windows.Forms.Button o1;
         private System.Windows.Forms.Button o2;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
-        */
+        
     }
 }

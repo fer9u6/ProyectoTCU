@@ -13,7 +13,7 @@ namespace ProyectoTCU
 {
     public partial class MemoryMatch : Form
     {
-        /*
+        
         Menu4toGrado m4;
         bool play,turno;
         int aciertos;
@@ -194,6 +194,6 @@ namespace ProyectoTCU
             imagenA2 = k;
             System.Threading.Thread.Sleep(2000);
         }
-        */
+        
     }
 }

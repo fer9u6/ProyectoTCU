@@ -13,7 +13,7 @@
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
 
-        /*
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,9 +22,9 @@
             }
             base.Dispose(disposing);
         }
-        */
+        
 
-        /*
+        
 
         #region Windows Form Designer generated code
 
@@ -251,6 +251,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
 
-        */
+      
     }
 }

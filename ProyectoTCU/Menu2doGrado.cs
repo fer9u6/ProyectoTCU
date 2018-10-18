@@ -82,5 +82,19 @@ namespace ProyectoTCU
             par.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Animals animals = new Animals();
+            animals.Show();
+            this.Hide();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Numbers n = new Numbers();
+            n.Show();
+            this.Hide();
+        }
     }
 }

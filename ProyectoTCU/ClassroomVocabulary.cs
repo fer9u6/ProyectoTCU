@@ -14,7 +14,7 @@ namespace ProyectoTCU
     public partial class ClassroomVocabulary : Form
     {
 
-        /*
+        
         Dictionary<Image, SoundPlayer> imagenSonido;
         Prepositions p;
         MenuClassroom mc;
@@ -104,6 +104,6 @@ namespace ProyectoTCU
             mc.Show();
         }
 
-        */
+        
     }
 }

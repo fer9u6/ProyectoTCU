@@ -40,7 +40,7 @@ namespace ProyectoTCU
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // c = new Classroom();
+            c = new Classroom();
             cv = new ClassroomVocabulary();
             mc = new MenuClassroom();
             this.Hide();

@@ -44,7 +44,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(309, 35);
+            this.label1.Location = new System.Drawing.Point(252, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 37);
             this.label1.TabIndex = 6;
@@ -54,7 +54,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.pictureBox2.Image = global::ProyectoTCU.Properties.Resources.speaker__2_1;
-            this.pictureBox2.Location = new System.Drawing.Point(482, 475);
+            this.pictureBox2.Location = new System.Drawing.Point(404, 476);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -68,7 +68,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(311, 475);
+            this.button2.Location = new System.Drawing.Point(233, 476);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(63, 46);
             this.button2.TabIndex = 9;
@@ -82,7 +82,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(383, 475);
+            this.button3.Location = new System.Drawing.Point(305, 476);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 46);
             this.button3.TabIndex = 8;
@@ -92,7 +92,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.farm;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(143, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(478, 319);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,12 +101,12 @@
             // 
             // backB
             // 
-            this.backB.BackColor = System.Drawing.Color.White;
+            this.backB.BackColor = System.Drawing.Color.LightCyan;
             this.backB.BackgroundImage = global::ProyectoTCU.Properties.Resources.back_arrow__1_;
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backB.Location = new System.Drawing.Point(12, 12);
+            this.backB.Location = new System.Drawing.Point(55, 12);
             this.backB.Name = "backB";
             this.backB.Size = new System.Drawing.Size(70, 60);
             this.backB.TabIndex = 4;
@@ -117,8 +117,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(831, 582);
+            this.BackColor = System.Drawing.Color.LightCyan;
+            this.ClientSize = new System.Drawing.Size(702, 582);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);

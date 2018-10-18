@@ -43,12 +43,12 @@ namespace ProyectoTCU
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*
+           
             c = new Classroom();
             this.Hide();
             c.Show();
             mensaje.neutralMensaje("Listen the sound and click \non the right object.");
-            */
+           
         }
 
         private void backB_Click(object sender, EventArgs e)
