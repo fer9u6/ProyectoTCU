@@ -165,6 +165,11 @@ namespace ProyectoTCU
             d2.Show();
         }
 
+        private void pictureBoxRespuesta_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void o1_Click(object sender, EventArgs e)
         {
             if (play == true)

@@ -15,6 +15,8 @@ namespace ProyectoTCU
         MenuPrincipal mp;
         Parejas2doGrado par;
         Preguntas2doGrado preg;
+        Animals animals;
+        Numbers numbers;
 
         public Menu2doGrado()
         {
@@ -69,6 +71,21 @@ namespace ProyectoTCU
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            animals = new Animals();
+            this.Hide();
+            animals.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //numbers
+            numbers = new Numbers();
+            this.Hide();
+            numbers.Show();
         }
     }
 }

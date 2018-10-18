@@ -22,6 +22,7 @@ namespace ProyectoTCU
         MenuClassroom mc;
         MenuNeighborhood mn;
         IzqDer1erGrado izde;
+        Colors colors;
 
         public Menu1erGrado()
         {
@@ -84,6 +85,14 @@ namespace ProyectoTCU
             InitializeComponent();
             izde = new IzqDer1erGrado();
             izde.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            colors = new Colors();
+            colors.Show();
             this.Hide();
         }
     }
