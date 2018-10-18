@@ -61,16 +61,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animals.Designer.cs">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalsFlashCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalsFlashCards.Designer.cs">
+      <DependentUpon>AnimalsFlashCards.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassroomVocabulary.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClassroomVocabulary.Designer.cs">
       <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Colors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colors.Designer.cs">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="colorsCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="colorsCards.Designer.cs">
+      <DependentUpon>colorsCards.cs</DependentUpon>
+    </Compile>
     <Compile Include="controlSonidos.cs" />
     <Compile Include="EscogerSaludo.cs" />
     <Compile Include="EscogerSaludo.Designer.cs">
       <DependentUpon>EscogerSaludo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalsQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalsQuestions.Designer.cs">
+      <DependentUpon>AnimalsQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCardsNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashCardsNumbers.Designer.cs">
+      <DependentUpon>FlashCardsNumbers.cs</DependentUpon>
     </Compile>
     <Compile Include="funcionesOrganos.cs">
       <SubType>Form</SubType>
@@ -102,6 +138,12 @@
     <Compile Include="IzqDer1erGrado.Designer.cs">
       <DependentUpon>IzqDer1erGrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="MathOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathOperations.Designer.cs">
+      <DependentUpon>MathOperations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +167,18 @@
     </Compile>
     <Compile Include="MenuSocializing.Designer.cs">
       <DependentUpon>MenuSocializing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayColors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayColors.Designer.cs">
+      <DependentUpon>PlayColors.cs</DependentUpon>
     </Compile>
     <Compile Include="Prepositions.cs">
       <SubType>Form</SubType>
@@ -319,6 +373,15 @@
     <Compile Include="SocializingTraining.Designer.cs">
       <DependentUpon>SocializingTraining.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Animals.resx">
+      <DependentUpon>Animals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalsFlashCards.resx">
+      <DependentUpon>AnimalsFlashCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalsQuestions.resx">
+      <DependentUpon>AnimalsQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Classroom.resx">
       <DependentUpon>Classroom.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,8 +391,17 @@
     <EmbeddedResource Include="ClassroomVocabulary.resx">
       <DependentUpon>ClassroomVocabulary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Colors.resx">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="colorsCards.resx">
+      <DependentUpon>colorsCards.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EscogerSaludo.resx">
       <DependentUpon>EscogerSaludo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlashCardsNumbers.resx">
+      <DependentUpon>FlashCardsNumbers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="funcionesOrganos.resx">
       <DependentUpon>funcionesOrganos.cs</DependentUpon>
@@ -346,6 +418,9 @@
     <EmbeddedResource Include="IzqDer1erGrado.resx">
       <DependentUpon>IzqDer1erGrado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MathOperations.resx">
+      <DependentUpon>MathOperations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mensaje.resx">
       <DependentUpon>Mensaje.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,6 +432,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuSocializing.resx">
       <DependentUpon>MenuSocializing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayColors.resx">
+      <DependentUpon>PlayColors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prepositions.resx">
       <DependentUpon>Prepositions.cs</DependentUpon>
@@ -582,6 +663,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Audios\books.mp3" />
+    <None Include="Resources\zebraO.jpg" />
+    <None Include="Resources\zebraaudio.wav" />
+    <None Include="Resources\zebra.jpg" />
+    <None Include="Resources\yellow_puffle_medium.png" />
+    <None Include="Resources\yellow_audio.wav" />
+    <None Include="Resources\yellowfc.png" />
     <None Include="Resources\audio-volume.png" />
     <None Include="Resources\149136.png" />
     <None Include="Resources\1-512.png" />
@@ -659,6 +746,9 @@
     <Content Include="Resources\AudioW.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\backache_audio.wav" />
+    <None Include="Resources\1491361.png" />
+    <None Include="Resources\arrow2.jpg" />
     <Content Include="Resources\backpack.png" />
     <None Include="Resources\notebook.wav" />
     <None Include="Resources\backpack.wav" />
@@ -929,6 +1019,128 @@
     <Content Include="Resources\imgSebastian\Preguntas\6toGrado\sexGra7.jpg" />
     <Content Include="Resources\imgSebastian\Preguntas\6toGrado\sexGra8.jpg" />
     <Content Include="Resources\imgSebastian\Preguntas\6toGrado\sexGra9.jpg" />
+    <None Include="Resources\bloodynose_audio.wav" />
+    <None Include="Resources\brokenarm_audio.wav" />
+    <None Include="Resources\bruise_audio.wav" />
+    <None Include="Resources\chickenpox_audio.wav" />
+    <None Include="Resources\cough_audio.wav" />
+    <None Include="Resources\cut_audio.wav" />
+    <None Include="Resources\fever_audio.wav" />
+    <None Include="Resources\headache_audio.wav" />
+    <None Include="Resources\insectbite_audio.wav" />
+    <None Include="Resources\brain_audio.wav" />
+    <None Include="Resources\heart_audio.wav" />
+    <None Include="Resources\kidneys_audio.wav" />
+    <None Include="Resources\large_intestine_audio.wav" />
+    <None Include="Resources\liver_audio.wav" />
+    <None Include="Resources\lungs_audio.wav" />
+    <None Include="Resources\itallowsyou_audio.wav" />
+    <None Include="Resources\itcleans_audio.wav" />
+    <None Include="Resources\itfinishes_audio.wav" />
+    <None Include="Resources\itistheboss_audio.wav" />
+    <None Include="Resources\itsends_audio.wav" />
+    <None Include="Resources\itstores_audio.wav" />
+    <None Include="Resources\itfilters_audio.wav" />
+    <None Include="Resources\blue-puffle_medium.png" />
+    <None Include="Resources\brown.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\blue.png" />
+    <None Include="Resources\brownfc.png" />
+    <None Include="Resources\grayfc.png" />
+    <None Include="Resources\greenfc.png" />
+    <None Include="Resources\orangefc.png" />
+    <None Include="Resources\black_audio.wav" />
+    <None Include="Resources\blue_audio.wav" />
+    <None Include="Resources\brown_audio.wav" />
+    <None Include="Resources\gray_audio.wav" />
+    <None Include="Resources\green_audio.wav" />
+    <None Include="Resources\orange_audio.wav" />
+    <None Include="Resources\colors.wav" />
+    <None Include="Resources\colors.png" />
+    <None Include="Resources\colorsfc.png" />
+    <None Include="Resources\blue_stool.png" />
+    <None Include="Resources\gray_stool.png" />
+    <None Include="Resources\blue_puffle.png" />
+    <None Include="Resources\bluestand.png" />
+    <None Include="Resources\brownstand.png" />
+    <None Include="Resources\graystandd.png" />
+    <None Include="Resources\gray_puffle.png" />
+    <None Include="Resources\green_puffle_medium.png" />
+    <None Include="Resources\orange_Puffle_medium.png" />
+    <None Include="Resources\brown_Puffle_medium.png" />
+    <None Include="Resources\chicken.jpg" />
+    <None Include="Resources\cow.jpg" />
+    <None Include="Resources\crocodile.jpg" />
+    <None Include="Resources\dog.jpg" />
+    <None Include="Resources\duck.jpg" />
+    <None Include="Resources\elephant.jpg" />
+    <None Include="Resources\farm.jpg" />
+    <None Include="Resources\giraffe.jpg" />
+    <None Include="Resources\goose.jpg" />
+    <None Include="Resources\hamster.jpg" />
+    <None Include="Resources\hippo.jpg" />
+    <None Include="Resources\horse.jpg" />
+    <None Include="Resources\Ice.jpg" />
+    <None Include="Resources\lion.jpg" />
+    <None Include="Resources\monkey.jpg" />
+    <None Include="Resources\ocean.jpg" />
+    <None Include="Resources\bear.jpg" />
+    <None Include="Resources\cat.jpg" />
+    <None Include="Resources\Forest.jpg" />
+    <None Include="Resources\bearaudio.wav" />
+    <None Include="Resources\cataudio.wav" />
+    <None Include="Resources\chickenaudio.wav" />
+    <None Include="Resources\cowaudio.wav" />
+    <None Include="Resources\crocodileaudio.wav" />
+    <None Include="Resources\dogaudio.wav" />
+    <None Include="Resources\duckaudio.wav" />
+    <None Include="Resources\elephantaudio.wav" />
+    <None Include="Resources\forestaudio.wav" />
+    <None Include="Resources\giraffeaudio.wav" />
+    <None Include="Resources\gooseaudio.wav" />
+    <None Include="Resources\hamsteraudio.wav" />
+    <None Include="Resources\hippoaudio.wav" />
+    <None Include="Resources\horseaudio.wav" />
+    <None Include="Resources\lionaudio.wav" />
+    <None Include="Resources\monkeyaudio.wav" />
+    <None Include="Resources\oceanaudio.wav" />
+    <None Include="Resources\deer.jpg" />
+    <None Include="Resources\deeraudio.wav" />
+    <None Include="Resources\farmaudio.wav" />
+    <None Include="Resources\bearO.jpg" />
+    <None Include="Resources\catO.jpg" />
+    <None Include="Resources\chickenO.jpg" />
+    <None Include="Resources\cowO.jpg" />
+    <None Include="Resources\crocodileO.jpg" />
+    <None Include="Resources\deerO.jpg" />
+    <None Include="Resources\dogO.jpg" />
+    <None Include="Resources\duckO.jpg" />
+    <None Include="Resources\elephantO.jpg" />
+    <None Include="Resources\giraffeO.jpg" />
+    <None Include="Resources\gooseO.jpg" />
+    <None Include="Resources\hamsterO.jpg" />
+    <None Include="Resources\hippoO.jpg" />
+    <None Include="Resources\horseO.jpg" />
+    <None Include="Resources\lionO.jpg" />
+    <None Include="Resources\monkeyO.jpg" />
+    <None Include="Resources\black_puffle.png" />
+    <None Include="Resources\eight.jpg" />
+    <None Include="Resources\five.jpg" />
+    <None Include="Resources\four.jpg" />
+    <None Include="Resources\nine.jpg" />
+    <None Include="Resources\one.jpg" />
+    <None Include="Resources\eight_audio.wav" />
+    <None Include="Resources\five_audio.wav" />
+    <None Include="Resources\four_audio.wav" />
+    <None Include="Resources\nine_audio.wav" />
+    <None Include="Resources\one_audio.wav" />
+    <None Include="Resources\eightapples.jpg" />
+    <None Include="Resources\fiveapples.jpg" />
+    <None Include="Resources\fourapples.jpg" />
+    <None Include="Resources\nineapples.jpg" />
+    <None Include="Resources\oneapples.jpg" />
+    <None Include="Resources\forestanimals.jpg" />
+    <None Include="Resources\forestanimals1.jpg" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -967,6 +1179,72 @@
     <None Include="Resources\sceptic.png" />
     <None Include="Resources\vwerywell,thankyou.wav" />
     <None Include="Resources\seeyoulater.wav" />
+    <None Include="Resources\sorethroat_audio.wav" />
+    <None Include="Resources\stomachache_audio.wav" />
+    <None Include="Resources\sunburn_audio.wav" />
+    <None Include="Resources\toothache_audio.wav" />
+    <None Include="Resources\small_intestine_audio.wav" />
+    <None Include="Resources\stomach_audio.wav" />
+    <None Include="Resources\speaker %282%291.png" />
+    <None Include="Resources\speaker %282%292.png" />
+    <None Include="Resources\pinkfc.png" />
+    <None Include="Resources\purplefc.png" />
+    <None Include="Resources\redfc.png" />
+    <None Include="Resources\whitefc.png" />
+    <None Include="Resources\pink_audio.wav" />
+    <None Include="Resources\purple_audio.wav" />
+    <None Include="Resources\red_audio.wav" />
+    <None Include="Resources\white_audio.wav" />
+    <None Include="Resources\white stool.png" />
+    <None Include="Resources\whitestand.png" />
+    <None Include="Resources\wood.jpg" />
+    <None Include="Resources\red_puffle_m.png" />
+    <None Include="Resources\purple-puffle_medium.png" />
+    <None Include="Resources\white_puffle_medium.png" />
+    <None Include="Resources\pink_puffle_medium.png" />
+    <None Include="Resources\pig.jpg" />
+    <None Include="Resources\rhino.jpg" />
+    <None Include="Resources\savannah.jpg" />
+    <None Include="Resources\sheep.jpg" />
+    <None Include="Resources\snake.jpg" />
+    <None Include="Resources\tiger.jpg" />
+    <None Include="Resources\tortoise.jpg" />
+    <None Include="Resources\wolf.jpg" />
+    <None Include="Resources\petsaudio.wav" />
+    <None Include="Resources\pigaudio.wav" />
+    <None Include="Resources\rhinoaudio.wav" />
+    <None Include="Resources\savannahaudio.wav" />
+    <None Include="Resources\sheepaudio.wav" />
+    <None Include="Resources\snakeaudio.wav" />
+    <None Include="Resources\tigeraudio.wav" />
+    <None Include="Resources\tortoiseaudio.wav" />
+    <None Include="Resources\wolfaudio.wav" />
+    <None Include="Resources\rabbit.jpg" />
+    <None Include="Resources\rabbitaudio.wav" />
+    <None Include="Resources\pets.jpg" />
+    <None Include="Resources\pigO.jpg" />
+    <None Include="Resources\rabbitO.jpg" />
+    <None Include="Resources\rhinoO.jpg" />
+    <None Include="Resources\sheepO.jpg" />
+    <None Include="Resources\snakeO.jpg" />
+    <None Include="Resources\tigerO.jpg" />
+    <None Include="Resources\tortoiseO.jpg" />
+    <None Include="Resources\wolfO.jpg" />
+    <None Include="Resources\three.jpg" />
+    <None Include="Resources\two.jpg" />
+    <None Include="Resources\seven.jpg" />
+    <None Include="Resources\six.jpg" />
+    <None Include="Resources\ten.jpg" />
+    <None Include="Resources\seven_audio.wav" />
+    <None Include="Resources\six_audio.wav" />
+    <None Include="Resources\ten_audio.wav" />
+    <None Include="Resources\three_audio.wav" />
+    <None Include="Resources\two_audio.wav" />
+    <None Include="Resources\sevenapples.jpg" />
+    <None Include="Resources\sixapples.jpg" />
+    <None Include="Resources\tenapples.png" />
+    <None Include="Resources\threeapples.jpg" />
+    <None Include="Resources\twoapples.jpg" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />

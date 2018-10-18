@@ -19,7 +19,8 @@ namespace ProyectoTCU
         Mensaje mensaje;
         public MenuClassroom()
         {
-          InitializeComponent();
+            WindowState = FormWindowState.Maximized;
+            InitializeComponent();
             mensaje = new Mensaje();
         }
 
@@ -55,6 +56,11 @@ namespace ProyectoTCU
             m1 = new Menu1erGrado();
             this.Hide();
             m1.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

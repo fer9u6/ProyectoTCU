@@ -171,6 +171,7 @@
             this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxRespuesta.TabIndex = 18;
             this.pictureBoxRespuesta.TabStop = false;
+            this.pictureBoxRespuesta.Click += new System.EventHandler(this.pictureBoxRespuesta_Click);
             // 
             // Diseases
             // 

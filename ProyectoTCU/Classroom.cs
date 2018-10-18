@@ -34,6 +34,7 @@ namespace ProyectoTCU
 
         public Classroom()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             sonidos = new Dictionary<int, SoundPlayer>();
             usados = new List<int>();

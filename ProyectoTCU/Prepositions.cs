@@ -17,6 +17,7 @@ namespace ProyectoTCU
 
         public Prepositions()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
         }
 

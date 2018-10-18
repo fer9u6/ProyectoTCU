@@ -25,6 +25,7 @@ namespace ProyectoTCU
 
         public socializingOrdenar()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             ypanel = panel1.Location.Y;
             panelSize = panel1.Size.Height;

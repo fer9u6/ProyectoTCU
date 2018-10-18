@@ -23,6 +23,7 @@ namespace ProyectoTCU
         List<int> usadas;
         public Neighborhood()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             preguntasRespuestas = new Dictionary<string, string>();
             usadas = new List<int>();

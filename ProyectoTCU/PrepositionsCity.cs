@@ -22,6 +22,7 @@ namespace ProyectoTCU
         int contador;
         public PrepositionsCity()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             imagenPrepo = new Dictionary<Image, string>();
             imagenPrepo.Add(Properties.Resources.across_from,"Across from");

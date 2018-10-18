@@ -32,6 +32,7 @@ namespace ProyectoTCU
 
         public EscogerSaludos()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             fallos = 0;
             contador = 0;

@@ -19,6 +19,7 @@ namespace ProyectoTCU
 
         public SocializingTraining()
         {
+
             InitializeComponent();
             imagenActual = 0;
         }

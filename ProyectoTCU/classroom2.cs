@@ -30,6 +30,7 @@ namespace ProyectoTCU
 
         public classroom2()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             boxActual = 0;
             rondas = 1;
@@ -292,6 +293,23 @@ namespace ProyectoTCU
             }
         }
 
+        private void audio_Button_Click(object sender, EventArgs e)
+        {
+            //sonido
+            PictureBox pb = pboxList[boxActual];
+            SoundPlayer soundP = parejas[pb];
+            Bitmap i = (Bitmap)pb.Image;
+            SoundPlayer soundO = imagenesYsonidos[i];
+            reproducirSonidoObjeto(soundO);
+            try
+            {
+                soundP.Play();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+        }
 
         private void imagenRespuesta()
         {
