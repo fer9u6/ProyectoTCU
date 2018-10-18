@@ -112,7 +112,9 @@ namespace ProyectoTCU
 
         public Preguntas2doGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             asignarPregYResp();
         }
 

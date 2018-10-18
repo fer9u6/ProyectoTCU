@@ -54,7 +54,7 @@
             // 
             // tableLayoutPanel3erGrado
             // 
-            this.tableLayoutPanel3erGrado.BackColor = System.Drawing.Color.DarkOrange;
+            this.tableLayoutPanel3erGrado.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel3erGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetDouble;
             this.tableLayoutPanel3erGrado.ColumnCount = 4;
             this.tableLayoutPanel3erGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -316,6 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1282, 749);
             this.Controls.Add(this.buttonReturn);
             this.Controls.Add(this.tableLayoutPanel3erGrado);

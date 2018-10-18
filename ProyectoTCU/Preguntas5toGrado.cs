@@ -115,7 +115,9 @@ namespace ProyectoTCU
 
         public Preguntas5toGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             asignarPregYResp();
         }
 

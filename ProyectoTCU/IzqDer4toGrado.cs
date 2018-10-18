@@ -454,14 +454,12 @@ namespace ProyectoTCU
                             }
                         }
                     }
-                    
                     //Si ya se completó la palabra
                     if (numLetra == wordSize)
                     {
                         score++;
-                        System.Threading.Thread.Sleep(900);
+                        //System.Threading.Thread.Sleep(900);
                         synthesizer.Speak(word);
-                        
 
                         //Si se completaron todas las palabras, popup de victoria y de vuelta al menu principal
                         if (score == 5)
@@ -476,7 +474,7 @@ namespace ProyectoTCU
                             this.Hide();
                             return;
                         }
-
+                        
                         setValues();
                     }
                     changeOptionsInButtons();

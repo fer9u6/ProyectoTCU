@@ -111,7 +111,9 @@ namespace ProyectoTCU
 
         public Preguntas3erGrado()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             asignarPregYResp();
         }
 

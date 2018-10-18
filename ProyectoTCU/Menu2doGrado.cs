@@ -67,16 +67,19 @@ namespace ProyectoTCU
             this.Hide();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             InitializeComponent();
             izde = new IzqDer2doGrado();
             izde.Show();
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            InitializeComponent();
+            par = new Parejas2doGrado();
+            par.Show();
             this.Hide();
         }
     }

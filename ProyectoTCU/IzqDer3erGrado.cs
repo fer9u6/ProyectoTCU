@@ -457,7 +457,7 @@ namespace ProyectoTCU
                     if (numLetra == wordSize)
                     {
                         score++;
-                        System.Threading.Thread.Sleep(900);
+                        //System.Threading.Thread.Sleep(900);
                         synthesizer.Speak(word);
                         
 

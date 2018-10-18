@@ -54,7 +54,7 @@
             // 
             // tableLayoutPanel5toGrado
             // 
-            this.tableLayoutPanel5toGrado.BackColor = System.Drawing.Color.BlueViolet;
+            this.tableLayoutPanel5toGrado.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel5toGrado.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
             this.tableLayoutPanel5toGrado.ColumnCount = 4;
             this.tableLayoutPanel5toGrado.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -316,6 +316,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1282, 749);
             this.Controls.Add(this.buttonReturn);
             this.Controls.Add(this.tableLayoutPanel5toGrado);
