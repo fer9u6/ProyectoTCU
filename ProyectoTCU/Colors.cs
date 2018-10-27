@@ -14,7 +14,7 @@ namespace ProyectoTCU
     {
         colorsCards fc;
         PlayColors pc;
-        Menu2doGrado m2;
+        Menu1erGrado m1;
 
         public Colors()
         {
@@ -49,9 +49,9 @@ namespace ProyectoTCU
 
         private void backB_Click(object sender, EventArgs e)
         {
-            m2 = new Menu2doGrado();
+            m1 = new Menu1erGrado();
             this.Hide();
-            m2.Show();
+            m1.Show();
         }
     }
 }

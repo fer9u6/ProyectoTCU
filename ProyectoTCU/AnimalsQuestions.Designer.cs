@@ -46,9 +46,9 @@
             this.labelQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQuestion.Location = new System.Drawing.Point(143, 272);
             this.labelQuestion.Name = "labelQuestion";
-            this.labelQuestion.Size = new System.Drawing.Size(60, 24);
+            this.labelQuestion.Size = new System.Drawing.Size(241, 24);
             this.labelQuestion.TabIndex = 0;
-            this.labelQuestion.Text = "label1";
+            this.labelQuestion.Text = "Choose the correct answer.";
             this.labelQuestion.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1Answer
