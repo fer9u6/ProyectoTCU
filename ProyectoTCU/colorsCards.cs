@@ -20,7 +20,9 @@ namespace ProyectoTCU
 
         public colorsCards()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             indice = 0;
             //inicializando los recursos
             SoundPlayer blue_a = new SoundPlayer(Properties.Resources.blue_audio);

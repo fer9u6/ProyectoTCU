@@ -42,6 +42,7 @@
             // 
             // labelQuestion
             // 
+            this.labelQuestion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelQuestion.AutoSize = true;
             this.labelQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQuestion.Location = new System.Drawing.Point(143, 272);
@@ -53,6 +54,7 @@
             // 
             // button1Answer
             // 
+            this.button1Answer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1Answer.BackColor = System.Drawing.Color.Gold;
             this.button1Answer.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button1Answer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -67,6 +69,7 @@
             // 
             // button2Answer
             // 
+            this.button2Answer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2Answer.BackColor = System.Drawing.Color.Gold;
             this.button2Answer.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button2Answer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -81,6 +84,7 @@
             // 
             // playButton
             // 
+            this.playButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.playButton.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,6 +99,7 @@
             // 
             // pictureBoxRespuesta
             // 
+            this.pictureBoxRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxRespuesta.Location = new System.Drawing.Point(531, 251);
             this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
             this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);
@@ -118,6 +123,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Location = new System.Drawing.Point(132, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(346, 210);

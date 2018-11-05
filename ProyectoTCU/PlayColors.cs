@@ -13,6 +13,7 @@ namespace ProyectoTCU
     public partial class PlayColors : Form
     {
         Colors c;
+        Mensaje mensaje;
         bool isDragging,play;
         int yposition, xpuffle, ypuffle,stoolSize;
         int colorActual,numRonda,numIntento;  //4 rondas en total  
@@ -35,7 +36,9 @@ namespace ProyectoTCU
 
         public PlayColors()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             yposition = pictureBoxstool1.Location.Y;  //posicion de los stands
             xstand1 = pictureBoxstool1.Location.X;
             xstand2 = pictureBoxstool2.Location.X;
@@ -43,6 +46,7 @@ namespace ProyectoTCU
             stoolSize = pictureBoxstool1.Size.Height;
             xpuffle = pictureBoxpuffle1.Location.X;  // incremento de
             ypuffle = pictureBoxpuffle1.Location.Y;  //incrmento 
+            mensaje = new Mensaje();
             sonidos = new Dictionary<string, SoundPlayer>();
             puffles = new Dictionary<Image,String>();
             puffles1 = new Dictionary<string, Image>();
@@ -60,6 +64,8 @@ namespace ProyectoTCU
             pictureBoxstool2.BackColor = Color.Black;
             pictureBoxstool3.BackColor = Color.Black;
           
+         
+
 
             //Estructuras
             sonidos.Add("blue", new SoundPlayer(Properties.Resources.blue_audio));
@@ -97,6 +103,7 @@ namespace ProyectoTCU
             puffles1.Add("purple",ipurple);
             puffles1.Add("brown",ibrown);
             puffles1.Add("pink",ipink);
+            puffles1.Add("saddlebrown", ibrown);
 
 
             puffles.Add(iblue,"blue");
@@ -122,6 +129,7 @@ namespace ProyectoTCU
             colores.Add(8,"purple");
             colores.Add(9,"green");
             colores.Add(10,"pink");
+            //colores.Add(11, "saddlebrown");
 
             standsColors.Add(Color.Blue, "blue");
             standsColors.Add(Color.Red, "red");
@@ -134,6 +142,7 @@ namespace ProyectoTCU
             standsColors.Add(Color.Gray, "gray");
             standsColors.Add(Color.Brown, "brown");
             standsColors.Add(Color.Pink, "pink");
+            standsColors.Add(Color.SaddleBrown, "brown");
 
 
 
@@ -178,10 +187,10 @@ namespace ProyectoTCU
                     break;
                 case 3:
                     pictureBoxpuffle1.Image = puffles1["pink"];
-                    pictureBoxpuffle2.Image = puffles1["brown"];
+                    pictureBoxpuffle2.Image = puffles1["saddlebrown"];
                     pictureBoxpuffle3.Image = puffles1["black"];
                     pictureBoxstool1.BackColor = Color.FromName("pink");
-                    pictureBoxstool2.BackColor = Color.FromName("brown");
+                    pictureBoxstool2.BackColor = Color.FromName("saddlebrown");
                     pictureBoxstool3.BackColor = Color.FromName("black");
                     usados.Add(1);
                     usados.Add(10);

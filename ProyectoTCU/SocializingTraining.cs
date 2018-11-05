@@ -19,9 +19,10 @@ namespace ProyectoTCU
 
         public SocializingTraining()
         {
-
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
             imagenActual = 0;
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void SocializingTraining_Load(object sender, EventArgs e)

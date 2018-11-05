@@ -71,6 +71,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.pictureBox16);
             this.panel1.Controls.Add(this.pictureBox15);
@@ -95,6 +96,7 @@
             // 
             // pictureBox16
             // 
+            this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox16.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox16.Location = new System.Drawing.Point(21, 384);
             this.pictureBox16.Name = "pictureBox16";
@@ -106,6 +108,7 @@
             // 
             // pictureBox15
             // 
+            this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox15.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox15.Location = new System.Drawing.Point(171, 384);
             this.pictureBox15.Name = "pictureBox15";
@@ -117,6 +120,7 @@
             // 
             // pictureBox14
             // 
+            this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox14.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox14.Location = new System.Drawing.Point(323, 384);
             this.pictureBox14.Name = "pictureBox14";
@@ -128,6 +132,7 @@
             // 
             // pictureBox13
             // 
+            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox13.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox13.Location = new System.Drawing.Point(470, 384);
             this.pictureBox13.Name = "pictureBox13";
@@ -139,6 +144,7 @@
             // 
             // pictureBox12
             // 
+            this.pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox12.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox12.Location = new System.Drawing.Point(470, 262);
             this.pictureBox12.Name = "pictureBox12";
@@ -150,6 +156,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox11.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox11.Location = new System.Drawing.Point(323, 262);
             this.pictureBox11.Name = "pictureBox11";
@@ -161,6 +168,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox10.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox10.Location = new System.Drawing.Point(21, 262);
             this.pictureBox10.Name = "pictureBox10";
@@ -172,6 +180,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox9.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox9.Location = new System.Drawing.Point(171, 262);
             this.pictureBox9.Name = "pictureBox9";
@@ -183,6 +192,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox8.Location = new System.Drawing.Point(470, 140);
             this.pictureBox8.Name = "pictureBox8";
@@ -194,6 +204,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox7.Location = new System.Drawing.Point(470, 18);
             this.pictureBox7.Name = "pictureBox7";
@@ -205,6 +216,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox6.Location = new System.Drawing.Point(323, 140);
             this.pictureBox6.Name = "pictureBox6";
@@ -216,6 +228,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox5.Location = new System.Drawing.Point(21, 140);
             this.pictureBox5.Name = "pictureBox5";
@@ -227,6 +240,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox4.Location = new System.Drawing.Point(171, 140);
             this.pictureBox4.Name = "pictureBox4";
@@ -238,6 +252,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox3.Location = new System.Drawing.Point(171, 18);
             this.pictureBox3.Name = "pictureBox3";
@@ -249,6 +264,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox2.Location = new System.Drawing.Point(323, 18);
             this.pictureBox2.Name = "pictureBox2";
@@ -260,6 +276,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.memory;
             this.pictureBox1.Location = new System.Drawing.Point(21, 18);
             this.pictureBox1.Name = "pictureBox1";

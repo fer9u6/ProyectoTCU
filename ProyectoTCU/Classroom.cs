@@ -35,6 +35,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             sonidos = new Dictionary<int, SoundPlayer>();
             usados = new List<int>();
             parejas = new Dictionary<int, Image>();

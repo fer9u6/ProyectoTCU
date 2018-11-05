@@ -19,6 +19,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

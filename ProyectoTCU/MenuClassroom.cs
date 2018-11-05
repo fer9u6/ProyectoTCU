@@ -21,6 +21,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             mensaje = new Mensaje();
         }
 

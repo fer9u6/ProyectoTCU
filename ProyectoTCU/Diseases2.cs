@@ -27,6 +27,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             sonidos = new controlSonidos();
             enfermedades = new Dictionary<int, string>();
             enfermedades_audios = new Dictionary<int, SoundPlayer>();

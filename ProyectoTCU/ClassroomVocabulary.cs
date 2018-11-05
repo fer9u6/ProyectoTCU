@@ -22,7 +22,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
-
+            this.Closed += (s, ev) => Application.Exit();
             Image bp = new Bitmap(Properties.Resources.backpack);
 
             imagenSonido = new Dictionary<Image, SoundPlayer>();

@@ -51,6 +51,7 @@
             // label1
             // 
             this.label1.AllowDrop = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.GreenYellow;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -68,6 +69,7 @@
             // panel1
             // 
             this.panel1.AllowDrop = true;
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(46, 211);
@@ -77,6 +79,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.GreenYellow;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -92,6 +95,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.GreenYellow;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -107,6 +111,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.GreenYellow;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -122,6 +127,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.GreenYellow;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -137,6 +143,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.GreenYellow;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -152,6 +159,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.GreenYellow;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -167,6 +175,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.GreenYellow;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -182,6 +191,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.GreenYellow;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -198,6 +208,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.GreenYellow;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -213,6 +224,7 @@
             // 
             // playButton
             // 
+            this.playButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.playButton.BackColor = System.Drawing.Color.Yellow;
             this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -227,6 +239,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -240,8 +253,8 @@
             // 
             // backB
             // 
-            this.backB.BackColor = System.Drawing.Color.White;
-            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
+            this.backB.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.backB.BackgroundImage = global::ProyectoTCU.Properties.Resources.back_arrow__1_;
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -254,6 +267,7 @@
             // 
             // pictureBoxRespuesta
             // 
+            this.pictureBoxRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxRespuesta.Location = new System.Drawing.Point(329, 116);
             this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
             this.pictureBoxRespuesta.Size = new System.Drawing.Size(97, 71);

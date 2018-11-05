@@ -32,6 +32,8 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
+
             boxActual = 0;
             rondas = 1;
             imagenesYsonidos = new Dictionary<Bitmap, SoundPlayer>(); // de objetos

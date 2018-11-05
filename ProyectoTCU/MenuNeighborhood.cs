@@ -21,6 +21,8 @@ namespace ProyectoTCU
         public MenuNeighborhood()
         {
             InitializeComponent();
+            WindowState = FormWindowState.Maximized;
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)

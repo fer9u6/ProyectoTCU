@@ -50,6 +50,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -64,6 +65,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox11.Image = global::ProyectoTCU.Properties.Resources.behind1;
             this.pictureBox11.Location = new System.Drawing.Point(442, 272);
             this.pictureBox11.Name = "pictureBox11";
@@ -75,6 +77,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Image = global::ProyectoTCU.Properties.Resources.under;
             this.pictureBox6.Location = new System.Drawing.Point(251, 42);
             this.pictureBox6.Name = "pictureBox6";
@@ -86,6 +89,7 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::ProyectoTCU.Properties.Resources.nextto;
             this.pictureBox5.Location = new System.Drawing.Point(66, 267);
             this.pictureBox5.Name = "pictureBox5";
@@ -97,6 +101,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::ProyectoTCU.Properties.Resources.between1;
             this.pictureBox4.Location = new System.Drawing.Point(442, 42);
             this.pictureBox4.Name = "pictureBox4";
@@ -108,6 +113,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::ProyectoTCU.Properties.Resources.infrontof;
             this.pictureBox2.Location = new System.Drawing.Point(264, 272);
             this.pictureBox2.Name = "pictureBox2";
@@ -119,6 +125,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.on;
             this.pictureBox1.Location = new System.Drawing.Point(66, 38);
             this.pictureBox1.Name = "pictureBox1";
@@ -130,6 +137,7 @@
             // 
             // labelinstruction
             // 
+            this.labelinstruction.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelinstruction.AutoSize = true;
             this.labelinstruction.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelinstruction.ForeColor = System.Drawing.Color.DarkViolet;

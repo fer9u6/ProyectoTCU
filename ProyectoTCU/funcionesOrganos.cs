@@ -26,6 +26,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             parejas = new Dictionary<String, string>();
             sonidos = new Dictionary<string, SoundPlayer>();
             parejas.Add("4", "It finishes the process of digesting food.\nIt absorbs water and salts.");

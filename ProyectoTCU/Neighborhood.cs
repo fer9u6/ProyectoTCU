@@ -25,6 +25,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             preguntasRespuestas = new Dictionary<string, string>();
             usadas = new List<int>();
             mensaje = new Mensaje();

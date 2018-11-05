@@ -28,6 +28,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             places = new Dictionary<Image, String>();
             places.Add(Properties.Resources.xbakery,"Bakery");
             places.Add(Properties.Resources.bank,"Bank");

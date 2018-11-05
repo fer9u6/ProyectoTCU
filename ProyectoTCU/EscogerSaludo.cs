@@ -34,6 +34,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             fallos = 0;
             contador = 0;
             play = false;

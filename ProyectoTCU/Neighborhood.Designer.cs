@@ -42,6 +42,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.city___Copy1;
             this.pictureBox1.Location = new System.Drawing.Point(153, 28);
             this.pictureBox1.Name = "pictureBox1";
@@ -66,6 +67,7 @@
             // 
             // labelquestion
             // 
+            this.labelquestion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelquestion.AutoSize = true;
             this.labelquestion.Font = new System.Drawing.Font("Open Sans Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelquestion.ForeColor = System.Drawing.Color.DarkBlue;
@@ -78,6 +80,7 @@
             // 
             // o1
             // 
+            this.o1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.o1.BackColor = System.Drawing.Color.Gold;
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,6 +95,7 @@
             // 
             // o2
             // 
+            this.o2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.o2.BackColor = System.Drawing.Color.Gold;
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -106,6 +110,7 @@
             // 
             // pictureBoxRespuesta
             // 
+            this.pictureBoxRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxRespuesta.Location = new System.Drawing.Point(587, 498);
             this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
             this.pictureBoxRespuesta.Size = new System.Drawing.Size(91, 65);

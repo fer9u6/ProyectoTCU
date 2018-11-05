@@ -19,7 +19,9 @@ namespace ProyectoTCU
 
         public Numbers()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -27,7 +27,9 @@ namespace ProyectoTCU
 
         public AnimalsFlashCards()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             farmAnimals = new Dictionary<int, Image>();
             petsAnimals = new Dictionary<int, Image>();
             forestAnimals = new Dictionary<int, Image>();

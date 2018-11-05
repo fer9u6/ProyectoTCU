@@ -27,6 +27,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             ypanel = panel1.Location.Y;
             panelSize = panel1.Size.Height;
 

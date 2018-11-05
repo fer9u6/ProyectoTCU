@@ -14,12 +14,15 @@ namespace ProyectoTCU
     {
         public MenuSocializing()
         {
-            //InitializeComponent();
+            InitializeComponent();
+            WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
+
+       
     }
 }

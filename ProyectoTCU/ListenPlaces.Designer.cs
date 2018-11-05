@@ -42,6 +42,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.SkyBlue;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,6 +56,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MediumBlue;
@@ -81,6 +83,7 @@
             // 
             // pictureBox_next
             // 
+            this.pictureBox_next.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_next.Image = global::ProyectoTCU.Properties.Resources.Button_Next_icon___Copy;
             this.pictureBox_next.Location = new System.Drawing.Point(59, 254);
             this.pictureBox_next.Name = "pictureBox_next";
@@ -92,6 +95,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Location = new System.Drawing.Point(212, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(376, 246);
@@ -101,6 +105,7 @@
             // 
             // audio_Button
             // 
+            this.audio_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.audio_Button.BackColor = System.Drawing.Color.Yellow;
             this.audio_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.audio_Button.ForeColor = System.Drawing.Color.Yellow;

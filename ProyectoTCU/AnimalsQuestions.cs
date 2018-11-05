@@ -29,7 +29,9 @@ namespace ProyectoTCU
 
         public AnimalsQuestions()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             used = new List<int>();
             sounds = new controlSonidos();
             farmAnimals = new Dictionary<int, Image>();

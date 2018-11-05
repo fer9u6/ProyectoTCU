@@ -24,6 +24,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             imagenPrepo = new Dictionary<Image, string>();
             imagenPrepo.Add(Properties.Resources.across_from,"Across from");
             imagenPrepo.Add(Properties.Resources.behind, "Behind ");

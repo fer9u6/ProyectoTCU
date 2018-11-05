@@ -53,6 +53,7 @@
             // 
             // labelNum1
             // 
+            this.labelNum1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNum1.AutoSize = true;
             this.labelNum1.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNum1.Location = new System.Drawing.Point(142, 182);
@@ -63,6 +64,7 @@
             // 
             // labelOp
             // 
+            this.labelOp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelOp.AutoSize = true;
             this.labelOp.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOp.Location = new System.Drawing.Point(267, 182);
@@ -73,6 +75,7 @@
             // 
             // labelNum2
             // 
+            this.labelNum2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNum2.AutoSize = true;
             this.labelNum2.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNum2.Location = new System.Drawing.Point(393, 182);
@@ -84,6 +87,7 @@
             // 
             // labelEqual
             // 
+            this.labelEqual.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEqual.AutoSize = true;
             this.labelEqual.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEqual.Location = new System.Drawing.Point(487, 182);
@@ -94,6 +98,7 @@
             // 
             // labelResp
             // 
+            this.labelResp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelResp.AutoSize = true;
             this.labelResp.BackColor = System.Drawing.Color.White;
             this.labelResp.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -106,6 +111,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -120,6 +126,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -134,6 +141,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -145,6 +153,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.arrow2;
             this.pictureBox1.Location = new System.Drawing.Point(578, 354);
             this.pictureBox1.Name = "pictureBox1";
@@ -155,6 +164,7 @@
             // 
             // pictureBoxCheck
             // 
+            this.pictureBoxCheck.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxCheck.Location = new System.Drawing.Point(714, 147);
             this.pictureBoxCheck.Name = "pictureBoxCheck";
             this.pictureBoxCheck.Size = new System.Drawing.Size(98, 75);
@@ -164,6 +174,7 @@
             // 
             // pictureBoxResp
             // 
+            this.pictureBoxResp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxResp.Location = new System.Drawing.Point(574, 235);
             this.pictureBoxResp.Name = "pictureBoxResp";
             this.pictureBoxResp.Size = new System.Drawing.Size(163, 113);
@@ -173,6 +184,7 @@
             // 
             // pictureBoxNum2
             // 
+            this.pictureBoxNum2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxNum2.Location = new System.Drawing.Point(319, 235);
             this.pictureBoxNum2.Name = "pictureBoxNum2";
             this.pictureBoxNum2.Size = new System.Drawing.Size(171, 113);
@@ -182,6 +194,7 @@
             // 
             // pictureBoxNum1
             // 
+            this.pictureBoxNum1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBoxNum1.Location = new System.Drawing.Point(83, 235);
             this.pictureBoxNum1.Name = "pictureBoxNum1";
             this.pictureBoxNum1.Size = new System.Drawing.Size(171, 113);
@@ -205,6 +218,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -24,7 +24,9 @@ namespace ProyectoTCU
 
         public MathOperations()
         {
+            WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            this.Closed += (s, ev) => Application.Exit();
             images = new Dictionary<int, Image>();
             sounds = new Dictionary<int, SoundPlayer>();
             nums1 = new List<int>();
