@@ -23,11 +23,13 @@ namespace ProyectoTCU
         MenuNeighborhood mn;
         IzqDer1erGrado izde;
         Colors colors;
+        Instructions instructions;
 
         public Menu1erGrado()
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            instructions = new Instructions();
             this.Closed += (s, ev) => Application.Exit();
         }
 

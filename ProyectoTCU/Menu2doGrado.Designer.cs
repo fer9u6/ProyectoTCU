@@ -33,10 +33,10 @@
             this.backB = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,7 +106,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button4, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(83, 64);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -117,6 +117,40 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(527, 212);
             this.tableLayoutPanel1.TabIndex = 7;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.button5.FlatAppearance.BorderSize = 2;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Gold;
+            this.button5.Location = new System.Drawing.Point(3, 171);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(194, 38);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Animals";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LemonChiffon;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Gold;
+            this.button2.Location = new System.Drawing.Point(203, 171);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 38);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Numbers";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -152,40 +186,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(203, 171);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 38);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Numbers";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LemonChiffon;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Cooper Black", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Gold;
-            this.button5.Location = new System.Drawing.Point(3, 171);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(194, 38);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Animals";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // Menu2doGrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +200,7 @@
             this.Location = new System.Drawing.Point(120, 172);
             this.Name = "Menu2doGrado";
             this.Text = "TCU-501 UCR";
+            this.Load += new System.EventHandler(this.Menu2doGrado_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

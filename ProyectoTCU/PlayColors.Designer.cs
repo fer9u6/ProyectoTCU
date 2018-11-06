@@ -252,6 +252,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PlayColors";
             this.Text = "TCU-501 UCR";
+            this.Load += new System.EventHandler(this.PlayColors_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxstool2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxpuffle1)).EndInit();

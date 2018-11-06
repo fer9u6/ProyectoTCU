@@ -96,5 +96,10 @@ namespace ProyectoTCU
             n.Show();
             this.Hide();
         }
+
+        private void Menu2doGrado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

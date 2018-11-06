@@ -32,7 +32,7 @@ namespace ProyectoTCU
             panelSize = panel1.Size.Height;
 
             xlabel = label1.Location.X;  // incremento de 150
-            ylabel = label1.Location.Y;  //incrmento 60
+            ylabel = label1.Location.Y +50;  //incrmento 60
 
             labels = new List<Label>();
             frases = new List<string>();
@@ -273,6 +273,11 @@ namespace ProyectoTCU
         private void label2_MouseUp(object sender, MouseEventArgs e)
         {
             isDragging = false;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)

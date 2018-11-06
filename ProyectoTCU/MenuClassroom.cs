@@ -48,8 +48,10 @@ namespace ProyectoTCU
             c = new Classroom();
             this.Hide();
             c.Show();
-            mensaje.neutralMensaje("Listen the sound and click \non the right object.");
-           
+            // mensaje.neutralMensaje("Listen the sound and click \non the right object.");
+            Instructions instructions = new Instructions();
+            instructions.classroom();
+            instructions.Show();
         }
 
         private void backB_Click(object sender, EventArgs e)

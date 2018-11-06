@@ -61,10 +61,7 @@ namespace ProyectoTCU
 
         }
 
-        public void pufflesInstrucctions() {
-
-        }
-
+        
         /**
          * Devuelve el estado active que indica si este form esta show o hide en pantalla.
          **/

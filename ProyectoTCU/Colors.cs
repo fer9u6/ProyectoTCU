@@ -15,11 +15,13 @@ namespace ProyectoTCU
         colorsCards fc;
         PlayColors pc;
         Menu1erGrado m1;
+        Instructions instructions;
 
         public Colors()
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            instructions = new Instructions();
             this.Closed += (s, ev) => Application.Exit();
         }
 
@@ -47,6 +49,8 @@ namespace ProyectoTCU
             pc = new PlayColors();
             this.Hide();
             pc.Show();
+            instructions.puffles();
+            instructions.Show();
         }
 
         private void backB_Click(object sender, EventArgs e)

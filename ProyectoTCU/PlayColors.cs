@@ -14,6 +14,7 @@ namespace ProyectoTCU
     {
         Colors c;
         Mensaje mensaje;
+        Instructions instructions;
         bool isDragging,play;
         int yposition, xpuffle, ypuffle,stoolSize;
         int colorActual,numRonda,numIntento;  //4 rondas en total  
@@ -38,6 +39,7 @@ namespace ProyectoTCU
         {
             WindowState = FormWindowState.Maximized;
             InitializeComponent();
+            instructions = new Instructions();
             this.Closed += (s, ev) => Application.Exit();
             yposition = pictureBoxstool1.Location.Y;  //posicion de los stands
             xstand1 = pictureBoxstool1.Location.X;
@@ -204,6 +206,11 @@ namespace ProyectoTCU
             pictureBoxpuffle2.Location = pp2;
             pictureBoxpuffle3.Location = pp3;
             elegirColor();
+        }
+
+        private void PlayColors_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void elegirColor()

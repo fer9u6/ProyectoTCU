@@ -36,8 +36,10 @@ namespace ProyectoTCU
             this.Hide();
             fo.Show();
             Mensaje ms = new Mensaje();
-            ms.neutralMensaje("Associate the human organ with\n its respective function");
-            
+            //ms.neutralMensaje("Associate the human organ with\n its respective function");
+            Instructions instructions = new Instructions();
+            instructions.organs();
+            instructions.Show();
         }
 
         private void backB_MouseHover(object sender, EventArgs e)

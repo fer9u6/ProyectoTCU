@@ -56,7 +56,7 @@
             this.label1.BackColor = System.Drawing.Color.GreenYellow;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 342);
+            this.label1.Location = new System.Drawing.Point(57, 448);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 28);
             this.label1.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(46, 211);
+            this.panel1.Location = new System.Drawing.Point(57, 317);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(689, 92);
             this.panel1.TabIndex = 1;
@@ -84,7 +84,7 @@
             this.label2.BackColor = System.Drawing.Color.GreenYellow;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(196, 342);
+            this.label2.Location = new System.Drawing.Point(207, 448);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 28);
             this.label2.TabIndex = 2;
@@ -100,7 +100,7 @@
             this.label3.BackColor = System.Drawing.Color.GreenYellow;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(332, 342);
+            this.label3.Location = new System.Drawing.Point(343, 448);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 28);
             this.label3.TabIndex = 3;
@@ -116,7 +116,7 @@
             this.label4.BackColor = System.Drawing.Color.GreenYellow;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(478, 342);
+            this.label4.Location = new System.Drawing.Point(489, 448);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 28);
             this.label4.TabIndex = 4;
@@ -132,7 +132,7 @@
             this.label5.BackColor = System.Drawing.Color.GreenYellow;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(631, 342);
+            this.label5.Location = new System.Drawing.Point(642, 448);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 28);
             this.label5.TabIndex = 5;
@@ -148,7 +148,7 @@
             this.label6.BackColor = System.Drawing.Color.GreenYellow;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(29, 401);
+            this.label6.Location = new System.Drawing.Point(42, 575);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 28);
             this.label6.TabIndex = 6;
@@ -164,11 +164,12 @@
             this.label7.BackColor = System.Drawing.Color.GreenYellow;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(150, 401);
+            this.label7.Location = new System.Drawing.Point(177, 596);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 28);
             this.label7.TabIndex = 7;
             this.label7.Text = "label7";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             this.label7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             this.label7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
             this.label7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label1_MouseUp);
@@ -180,7 +181,7 @@
             this.label8.BackColor = System.Drawing.Color.GreenYellow;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(316, 401);
+            this.label8.Location = new System.Drawing.Point(327, 507);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 28);
             this.label8.TabIndex = 3;
@@ -196,7 +197,7 @@
             this.label9.BackColor = System.Drawing.Color.GreenYellow;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(469, 401);
+            this.label9.Location = new System.Drawing.Point(480, 507);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 28);
             this.label9.TabIndex = 4;
@@ -213,7 +214,7 @@
             this.label10.BackColor = System.Drawing.Color.GreenYellow;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(605, 401);
+            this.label10.Location = new System.Drawing.Point(616, 507);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 28);
             this.label10.TabIndex = 5;
@@ -229,7 +230,7 @@
             this.playButton.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playButton.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(316, 23);
+            this.playButton.Location = new System.Drawing.Point(327, 129);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(110, 42);
             this.playButton.TabIndex = 11;
@@ -244,7 +245,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ProyectoTCU.Properties.Resources.success64;
-            this.button1.Location = new System.Drawing.Point(660, 74);
+            this.button1.Location = new System.Drawing.Point(671, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 76);
             this.button1.TabIndex = 12;
@@ -268,7 +269,7 @@
             // pictureBoxRespuesta
             // 
             this.pictureBoxRespuesta.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxRespuesta.Location = new System.Drawing.Point(329, 116);
+            this.pictureBoxRespuesta.Location = new System.Drawing.Point(340, 222);
             this.pictureBoxRespuesta.Name = "pictureBoxRespuesta";
             this.pictureBoxRespuesta.Size = new System.Drawing.Size(97, 71);
             this.pictureBoxRespuesta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -280,7 +281,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(770, 474);
+            this.ClientSize = new System.Drawing.Size(792, 687);
             this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.playButton);

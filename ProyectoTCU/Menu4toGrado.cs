@@ -80,8 +80,10 @@ namespace ProyectoTCU
             mm = new MemoryMatch();
             this.Hide();
             mm.Show();
-            msj.neutralMensaje("Match all the cards.\nClick any two cards and \ntry remember it position.");
-           
+            //msj.neutralMensaje("Match all the cards.\nClick any two cards and \ntry remember it position.");
+            Instructions instructions = new Instructions();
+            instructions.memory();
+            instructions.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

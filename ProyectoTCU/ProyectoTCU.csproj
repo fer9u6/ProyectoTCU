@@ -867,6 +867,8 @@
     <None Include="Resources\hiimgooghowareyou.wav" />
     <None Include="Resources\Hitherewhatsup.wav" />
     <None Include="Resources\imdoingallrightandyou.wav" />
+    <None Include="Resources\classroomInstruction.jpg" />
+    <None Include="Resources\dragwordsInstruction.jpg" />
     <Content Include="Resources\imgSebastian\ImagenesFondo\Fondo1Grado.jpg" />
     <Content Include="Resources\imgSebastian\ImagenesFondo\Fondo2Grado.jpg" />
     <Content Include="Resources\imgSebastian\ImagenesFondo\Fondo3Grado.jpg" />
@@ -1152,6 +1154,8 @@
     <None Include="Resources\oneapples.jpg" />
     <None Include="Resources\forestanimals.jpg" />
     <None Include="Resources\forestanimals1.jpg" />
+    <None Include="Resources\organsInstruction.jpg" />
+    <None Include="Resources\memoryInstructions.jpg" />
     <Content Include="Resources\pen.png" />
     <None Include="Resources\pen.wav" />
     <None Include="Resources\under_the_table.wav" />
@@ -1257,6 +1261,7 @@
     <None Include="Resources\threeapples.jpg" />
     <None Include="Resources\twoapples.jpg" />
     <None Include="Resources\scissors_audio.wav" />
+    <None Include="Resources\pufflesInstruction.jpg" />
     <Content Include="Resources\yellow notebook.png" />
     <None Include="Resources\colordesk.jpg" />
     <None Include="Resources\colorparedclasssroom.jpg" />
