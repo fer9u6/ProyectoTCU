@@ -50,6 +50,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.backB = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -89,7 +90,7 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(127, 12);
+            this.panel1.Location = new System.Drawing.Point(127, 53);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(630, 525);
             this.panel1.TabIndex = 11;
@@ -98,7 +99,7 @@
             // 
             this.pictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox16.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox16.Location = new System.Drawing.Point(21, 384);
+            this.pictureBox16.Location = new System.Drawing.Point(24, 383);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(131, 116);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +111,7 @@
             // 
             this.pictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox15.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox15.Location = new System.Drawing.Point(171, 384);
+            this.pictureBox15.Location = new System.Drawing.Point(174, 383);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(131, 116);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +123,7 @@
             // 
             this.pictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox14.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox14.Location = new System.Drawing.Point(323, 384);
+            this.pictureBox14.Location = new System.Drawing.Point(326, 383);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(131, 116);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +135,7 @@
             // 
             this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox13.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox13.Location = new System.Drawing.Point(470, 384);
+            this.pictureBox13.Location = new System.Drawing.Point(473, 383);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(131, 116);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,7 +147,7 @@
             // 
             this.pictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox12.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox12.Location = new System.Drawing.Point(470, 262);
+            this.pictureBox12.Location = new System.Drawing.Point(473, 261);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(131, 116);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +159,7 @@
             // 
             this.pictureBox11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox11.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox11.Location = new System.Drawing.Point(323, 262);
+            this.pictureBox11.Location = new System.Drawing.Point(326, 261);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(131, 116);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +171,7 @@
             // 
             this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox10.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox10.Location = new System.Drawing.Point(21, 262);
+            this.pictureBox10.Location = new System.Drawing.Point(24, 261);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(131, 116);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +183,7 @@
             // 
             this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox9.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox9.Location = new System.Drawing.Point(171, 262);
+            this.pictureBox9.Location = new System.Drawing.Point(174, 261);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(131, 116);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -194,7 +195,7 @@
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox8.Location = new System.Drawing.Point(470, 140);
+            this.pictureBox8.Location = new System.Drawing.Point(473, 139);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(131, 116);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +207,7 @@
             // 
             this.pictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox7.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox7.Location = new System.Drawing.Point(470, 18);
+            this.pictureBox7.Location = new System.Drawing.Point(473, 17);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(131, 116);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +219,7 @@
             // 
             this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox6.Location = new System.Drawing.Point(323, 140);
+            this.pictureBox6.Location = new System.Drawing.Point(326, 139);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(131, 116);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,7 +231,7 @@
             // 
             this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox5.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox5.Location = new System.Drawing.Point(21, 140);
+            this.pictureBox5.Location = new System.Drawing.Point(24, 139);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(131, 116);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -242,7 +243,7 @@
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox4.Location = new System.Drawing.Point(171, 140);
+            this.pictureBox4.Location = new System.Drawing.Point(174, 139);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(131, 116);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +255,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox3.Location = new System.Drawing.Point(171, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(174, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(131, 116);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -266,7 +267,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox2.Location = new System.Drawing.Point(323, 18);
+            this.pictureBox2.Location = new System.Drawing.Point(326, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(131, 116);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -278,7 +279,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::ProyectoTCU.Properties.Resources.memory;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -314,19 +315,36 @@
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.backB.Location = new System.Drawing.Point(12, 12);
+            this.backB.Location = new System.Drawing.Point(5, 12);
             this.backB.Name = "backB";
             this.backB.Size = new System.Drawing.Size(64, 55);
             this.backB.TabIndex = 10;
             this.backB.UseVisualStyleBackColor = false;
             this.backB.Click += new System.EventHandler(this.backB_Click);
             // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.DarkMagenta;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(803, 19);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 34);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "?";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // MemoryMatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(769, 562);
+            this.ClientSize = new System.Drawing.Size(865, 628);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.backB);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -374,6 +392,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ImageList imageList1;
-        
+        private System.Windows.Forms.Button button8;
     }
 }

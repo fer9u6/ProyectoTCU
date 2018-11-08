@@ -44,7 +44,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(455, 270);
+            this.button2.Location = new System.Drawing.Point(322, 273);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 44);
             this.button2.TabIndex = 5;
@@ -58,7 +58,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(511, 270);
+            this.button3.Location = new System.Drawing.Point(378, 273);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 44);
             this.button3.TabIndex = 4;

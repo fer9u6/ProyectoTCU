@@ -65,7 +65,7 @@
             this.o4.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o4.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o4.Location = new System.Drawing.Point(442, 371);
+            this.o4.Location = new System.Drawing.Point(442, 391);
             this.o4.Name = "o4";
             this.o4.Size = new System.Drawing.Size(270, 40);
             this.o4.TabIndex = 14;
@@ -78,7 +78,7 @@
             this.o3.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o3.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o3.Location = new System.Drawing.Point(442, 315);
+            this.o3.Location = new System.Drawing.Point(442, 335);
             this.o3.Name = "o3";
             this.o3.Size = new System.Drawing.Size(270, 39);
             this.o3.TabIndex = 13;
@@ -91,7 +91,7 @@
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o2.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o2.Location = new System.Drawing.Point(132, 371);
+            this.o2.Location = new System.Drawing.Point(132, 391);
             this.o2.Name = "o2";
             this.o2.Size = new System.Drawing.Size(270, 40);
             this.o2.TabIndex = 12;
@@ -104,7 +104,7 @@
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o1.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o1.Location = new System.Drawing.Point(132, 315);
+            this.o1.Location = new System.Drawing.Point(132, 335);
             this.o1.Name = "o1";
             this.o1.Size = new System.Drawing.Size(270, 39);
             this.o1.TabIndex = 11;
@@ -155,12 +155,16 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DarkTurquoise;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Open Sans Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(25, 233);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 24);
             this.button1.TabIndex = 17;
             this.button1.Text = "level 2";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBoxRespuesta
@@ -178,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(743, 451);
+            this.ClientSize = new System.Drawing.Size(743, 499);
             this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -209,6 +213,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
-        
     }
 }

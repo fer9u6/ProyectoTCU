@@ -48,6 +48,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.audio_Button = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -287,12 +288,29 @@
             this.audio_Button.UseVisualStyleBackColor = false;
             this.audio_Button.Click += new System.EventHandler(this.audio_Button_Click);
             // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.DarkMagenta;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(796, 12);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 34);
+            this.button8.TabIndex = 22;
+            this.button8.Text = "?";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            // 
             // funcionesOrganos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(854, 603);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.audio_Button);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.backB);
@@ -349,5 +367,6 @@
         private System.Windows.Forms.Button backB;
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button audio_Button;
+        private System.Windows.Forms.Button button8;
     }
 }

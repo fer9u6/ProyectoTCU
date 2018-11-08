@@ -61,8 +61,8 @@
             // 
             // backB
             // 
-            this.backB.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.backB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backB.BackgroundImage")));
+            this.backB.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.backB.BackgroundImage = global::ProyectoTCU.Properties.Resources.back_arrow__1_;
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -48,7 +48,7 @@ namespace ProyectoTCU
             rondas = 1;
             mensaje = new Mensaje();
             labelAnswer.Text = " ";
-
+           
             
 
             //se declaran todos los sonidos
@@ -132,6 +132,7 @@ namespace ProyectoTCU
                 //MessageBox.Show("Correct answer");
                 labelAnswer.Text = palabras[sonidoActual];
                 pictureBoxRespuesta.Image = Properties.Resources.check;
+                csonidos.sonidoOpcionCorrecta();
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
                 pictureBoxRespuesta.Image = null;
@@ -161,6 +162,7 @@ namespace ProyectoTCU
             else {
                 //MessageBox.Show("Bad answer");
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
+                csonidos.sonidoPerderSebastian();
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
                 labelAnswer.Text = " ";
@@ -174,7 +176,7 @@ namespace ProyectoTCU
 
         private void imagenRespuesta()
         {
-            System.Threading.Thread.Sleep(2000);
+            System.Threading.Thread.Sleep(2500);
 
         }
 
@@ -211,6 +213,18 @@ namespace ProyectoTCU
         private void Classroom_Load(object sender, EventArgs e)
         {
            // mensaje.neutralMensaje("Listen the sound and click on the right object");
+        }
+
+        private void mainPB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Instructions instruction = new Instructions();
+            instruction.classroom();
+            instruction.Show();
         }
 
         private void asignar() {

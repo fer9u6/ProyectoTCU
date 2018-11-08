@@ -213,23 +213,23 @@ namespace ProyectoTCU
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //sonido
-            PictureBox pb = pboxList[boxActual];
-            SoundPlayer soundP = parejas[pb];
-            Bitmap i = (Bitmap)pb.Image;
-            SoundPlayer soundO = imagenesYsonidos[i];
-            reproducirSonidoObjeto(soundO);
-            try
-            {
-                soundP.Play();    
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error " + ex.Message);
-            }
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    //sonido
+        //    PictureBox pb = pboxList[boxActual];
+        //    SoundPlayer soundP = parejas[pb];
+        //    Bitmap i = (Bitmap)pb.Image;
+        //    SoundPlayer soundO = imagenesYsonidos[i];
+        //    reproducirSonidoObjeto(soundO);
+        //    try
+        //    {
+        //        soundP.Play();    
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error " + ex.Message);
+        //    }
+        //} 
 
 
         private void reproducirSonidoObjeto(SoundPlayer k)
@@ -259,6 +259,7 @@ namespace ProyectoTCU
                 //MessageBox.Show("Correct answer");
                 labelAnswer.Text = palabras[((Bitmap)actual.Image)];
                 pictureBoxRespuesta.Image = Properties.Resources.check;
+                sonidos.sonidoOpcionCorrecta();
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
                 pictureBoxRespuesta.Image = null;
@@ -288,6 +289,7 @@ namespace ProyectoTCU
             {
                 //MessageBox.Show("Bad answer");
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
+                sonidos.sonidoPerderSebastian();
                 Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
                 labelAnswer.Text = " ";
@@ -295,9 +297,27 @@ namespace ProyectoTCU
             }
         }
 
-        private void audio_Button_Click(object sender, EventArgs e)
+        //private void audio_Button_Click(object sender, EventArgs e)
+        //{
+        //    //sonido
+        //    PictureBox pb = pboxList[boxActual];
+        //    SoundPlayer soundP = parejas[pb];
+        //    Bitmap i = (Bitmap)pb.Image;
+        //    SoundPlayer soundO = imagenesYsonidos[i];
+        //    reproducirSonidoObjeto(soundO);
+        //    try
+        //    {
+        //        soundP.Play();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error " + ex.Message);
+        //    }
+        //}
+
+        private void audio_Button_Click_1(object sender, EventArgs e)
         {
-            //sonido
+            //audio
             PictureBox pb = pboxList[boxActual];
             SoundPlayer soundP = parejas[pb];
             Bitmap i = (Bitmap)pb.Image;
@@ -311,6 +331,13 @@ namespace ProyectoTCU
             {
                 MessageBox.Show("Error " + ex.Message);
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Instructions instruction = new Instructions();
+            instruction.classroom();
+            instruction.Show();
         }
 
         private void imagenRespuesta()

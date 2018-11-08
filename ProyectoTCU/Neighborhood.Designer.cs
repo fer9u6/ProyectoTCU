@@ -85,7 +85,7 @@
             this.o1.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o1.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o1.Location = new System.Drawing.Point(153, 609);
+            this.o1.Location = new System.Drawing.Point(153, 600);
             this.o1.Name = "o1";
             this.o1.Size = new System.Drawing.Size(365, 51);
             this.o1.TabIndex = 7;
@@ -100,7 +100,7 @@
             this.o2.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
             this.o2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.o2.Font = new System.Drawing.Font("Open Sans Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.o2.Location = new System.Drawing.Point(587, 607);
+            this.o2.Location = new System.Drawing.Point(587, 598);
             this.o2.Name = "o2";
             this.o2.Size = new System.Drawing.Size(365, 53);
             this.o2.TabIndex = 8;

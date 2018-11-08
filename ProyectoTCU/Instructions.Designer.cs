@@ -44,7 +44,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(341, 391);
+            this.button1.Location = new System.Drawing.Point(338, 377);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 42);
             this.button1.TabIndex = 21;
@@ -57,29 +57,31 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(90, 308);
+            this.label1.Location = new System.Drawing.Point(56, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 24);
             this.label1.TabIndex = 22;
             this.label1.Text = "Click the sound button";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(352, 308);
+            this.label2.Location = new System.Drawing.Point(56, 284);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 24);
             this.label2.TabIndex = 23;
             this.label2.Text = "Click and drag";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(538, 308);
+            this.label3.Location = new System.Drawing.Point(56, 322);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 24);
             this.label3.TabIndex = 24;
@@ -88,7 +90,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(94, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(60, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(645, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -100,7 +102,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(823, 445);
+            this.ClientSize = new System.Drawing.Size(780, 437);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

@@ -213,6 +213,14 @@ namespace ProyectoTCU
 
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Instructions instructions;
+            instructions = new Instructions();
+            instructions.puffles();
+            instructions.Show();
+        }
+
         private void elegirColor()
         {
             //elige de la lista de usados los ultimos 3 numeros

@@ -25,6 +25,7 @@ namespace ProyectoTCU
         Bitmap gray = (Bitmap)Properties.Resources.ResourceManager.GetObject("gray");
         Dictionary<PictureBox, int> asignaciones;// imagen a pictureBox
         Dictionary<int, SoundPlayer> sonidos;
+        controlSonidos csonidos;
 
         public MemoryMatch()
         {
@@ -34,6 +35,7 @@ namespace ProyectoTCU
             play = false;
             turno = false;
             aciertos = 0;
+            csonidos = new controlSonidos();
             asignaciones = new Dictionary<PictureBox, int>();
             imagenesUsadas = new List<int>();
             parejas = new Dictionary<int, int>();
@@ -171,10 +173,20 @@ namespace ProyectoTCU
                 p.Image = mem;
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Instructions instruction;
+            instruction = new Instructions();
+            instruction.memory();
+            instruction.Show();
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //Control ctrl = sender as Control;
             PictureBox p = sender as PictureBox;
+            csonidos.sonidoOpcion();
             int imagenAsignada = asignaciones[p];
             p.Image = imageList1.Images[imagenAsignada];
             if (turno == false)

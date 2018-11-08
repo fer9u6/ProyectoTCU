@@ -120,7 +120,9 @@ namespace ProyectoTCU
             socializingOrdenar so = new socializingOrdenar();
             this.Hide();
             so.Show();
-            msj.neutralMensaje("Drag the words that make\n a correct sentence.");
+            Instructions instructions = new Instructions();
+            instructions.dragwords();
+            instructions.Show();
            
         }
 

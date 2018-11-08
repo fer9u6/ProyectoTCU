@@ -69,7 +69,7 @@
             // 
             // backB
             // 
-            this.backB.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.backB.BackColor = System.Drawing.Color.SkyBlue;
             this.backB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.backB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -110,7 +110,7 @@
             this.audio_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.audio_Button.ForeColor = System.Drawing.Color.Yellow;
             this.audio_Button.Image = global::ProyectoTCU.Properties.Resources.speaker__10_;
-            this.audio_Button.Location = new System.Drawing.Point(83, 166);
+            this.audio_Button.Location = new System.Drawing.Point(59, 166);
             this.audio_Button.Name = "audio_Button";
             this.audio_Button.Size = new System.Drawing.Size(57, 51);
             this.audio_Button.TabIndex = 1;

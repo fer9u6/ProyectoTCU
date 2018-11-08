@@ -45,6 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.backB = new System.Windows.Forms.Button();
             this.pictureBoxRespuesta = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRespuesta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,12 +277,29 @@
             this.pictureBoxRespuesta.TabIndex = 0;
             this.pictureBoxRespuesta.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.DarkMagenta;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(716, 23);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 34);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "?";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // socializingOrdenar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(792, 687);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBoxRespuesta);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.playButton);
@@ -324,6 +342,6 @@
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBoxRespuesta;
-        
+        private System.Windows.Forms.Button button8;
     }
 }

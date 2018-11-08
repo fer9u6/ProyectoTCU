@@ -122,6 +122,7 @@ namespace ProyectoTCU
             {
                 //correcta
                 pictureBoxRespuesta.Image = Properties.Resources.check;
+                sonidos.sonidoOpcionCorrecta();
                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                taskA.Wait();
                
@@ -130,6 +131,7 @@ namespace ProyectoTCU
             else {
                 //mala
                 pictureBoxRespuesta.Image = Properties.Resources.equis;
+                sonidos.sonidoPerderSebastian();
                Task taskA = Task.Factory.StartNew(() => imagenRespuesta());
                 taskA.Wait();
                 
@@ -278,6 +280,13 @@ namespace ProyectoTCU
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Instructions instruction = new Instructions();
+            instruction.dragwords();
+            instruction.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

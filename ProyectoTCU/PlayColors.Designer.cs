@@ -43,6 +43,7 @@
             this.pictureBoxcheck2 = new System.Windows.Forms.PictureBox();
             this.backB = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxstool2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxpuffle1)).BeginInit();
@@ -235,12 +236,29 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.Color.DarkMagenta;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Purple;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(822, 12);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 34);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "?";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // PlayColors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(886, 594);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBoxcheck3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBoxcheck1);
@@ -285,5 +303,6 @@
         private System.Windows.Forms.PictureBox pictureBoxcheck3;
         private System.Windows.Forms.PictureBox pictureBoxcheck2;
         private System.Windows.Forms.PictureBox pictureBoxcheck1;
+        private System.Windows.Forms.Button button8;
     }
 }
